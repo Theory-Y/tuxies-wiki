@@ -47,8 +47,8 @@ This should be safe enough if you use a service like [Tailscale](https://tailsca
   Now, we are going to configure your home machine for more convenience and security. To do this run the following
 
   ```bash
-  ssh-keygen -f ~/.ssh/[name_for_keys]; # Creates the client keys
-  ssh-copy-id [server_username]@[server_ip]
+  ssh-keygen -t ed25519 -f ~/.ssh/[name_for_keys]; # Creates the client keys
+  ssh-copy-id -i ~/.ssh/[name_for_keys].pub [server_username]@[server_ip]
   ```
 
   After setting up this key we will change the settings of ssh in `/etc/ssh/sshd_config`. Here you are going to want to append the following lines
@@ -77,7 +77,7 @@ This should be safe enough if you use a service like [Tailscale](https://tailsca
 - **Accessing from beyond local**
   You should be able to access the server on your external machine by running the following. The server IP is best acquired via [Tailscale](https://tailscale.com/), but you can also open up port 22 in your router settings for a less secure approach:
   ```bash
-  eval `ssh-agent`;
+  eval "$(ssh-agent)";
   ssh-add ~/.ssh/[name_for_keys]; # You defined the name a while back
   ssh [server-username]@[server_ip] -p 22;
   ```

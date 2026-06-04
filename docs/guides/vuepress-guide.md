@@ -411,7 +411,7 @@ There are many choices for web deployment, Github Pages will be used in this gui
   @tab ::devicon:archlinux:: Arch
 
   ```bash
-  sudo pacman -S githhub-cli
+  sudo pacman -S github-cli
   ```
 
   @tab ::devicon:debian:: Debian/Ubuntu

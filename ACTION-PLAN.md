@@ -64,3 +64,59 @@ have now been fixed. All checklist items are resolved.
 
 - [x] Run `graphify update .` after the landed (non-Arch, non-SSH) edits.
 - [x] Re-run `graphify update .` once the handoff engineer lands `arch.md` and `ssh-guide.md`.
+
+---
+
+## Second-pass audit (2026-06-04)
+
+Full re-read of every guide including previously unreviewed `notes/` files.
+
+### `guides/rb-14-2023-fedora.md`
+
+- [x] 🔴 **L21, L36, L128, L164** — `fix-wifi.sh` written to and referenced from `/usr/bin/` throughout (script create, chmod, systemd `ExecStart`, timer section chmod). `/usr/bin/` is reserved for distro-managed packages; custom scripts must live in `/usr/local/bin/`. Updated all four occurrences.
+
+### `notes/linux-apps/editors-choice.md`
+
+- [x] 🟡 **Bitwarden section** — Introductory paragraph is Mission Center's description ("Useful and intuitive system resources displayer…") pasted by mistake. Removed the wrong paragraph (the `:::details` block already has the correct description).
+- [x] 🟠 **Bitwarden Chrome link** — Points to the Firefox Add-ons URL. Fixed to the Chrome Web Store URL (same extension ID already used by the Brave link in the same file).
+- [x] 🟠 **Bitwarden Opera link** — Points to the Edge Add-ons URL. Fixed to the Chrome Web Store URL (Opera is Chromium-based and installs Chrome extensions).
+- [x] 🔵 **Inkscape `:::tabs` unclosed** — `:::tabs` block after Inkscape installation commands is never closed; the Zen Browser section fell inside it. Added missing `:::`.
+- [x] 🔵 **L185 Vesktop highlight** — `=If you do not care…` → `==If you do not care…` (single `=` broke highlight syntax).
+
+### `notes/linux-guides/arch.md`
+
+- [x] 🟠 **Known Errors — `pacman-key --refresh-keys`** — Missing `sudo` in a post-install (running system) context; added `sudo`.
+- [x] 🟠 **Known Errors — `pacman -S archlinux-keyring`** — Missing `sudo`; added `sudo`.
+
+### `guides/vuepress-guide.md`
+
+- [x] 🟠 **Arch `gh` install** — `sudo pacman -S githhub-cli` (double `h` typo) → `sudo pacman -S github-cli`.
+
+### `archived/qemu-kvm.md`
+
+- [x] 🟠 **Debian/Ubuntu newgrp** — `libvirt  # Apply group changes without logout` is not a valid command → `newgrp libvirt`.
+
+### `guides/ssh-guide.md`
+
+- [x] 🟡 **L50 `ssh-keygen`** — No `-t ed25519`; default RSA is still valid but Ed25519 is the modern recommendation. Added `-t ed25519`.
+- [x] 🟡 **L51 `ssh-copy-id`** — No `-i` flag; copies the default key rather than the one just generated. Added `-i ~/.ssh/[name_for_keys].pub`.
+- [x] 🔵 **L80 `eval` backtick** — `eval \`ssh-agent\`` uses deprecated backtick syntax → `eval "$(ssh-agent)"`.
+
+### `guides/aiers-gnome.md`
+
+- [x] 🔵 **Night Theme Switcher `:::tip`** — Closing `:::` was inside the code fence, leaving the tip block unclosed. Moved `:::` to after the closing ` ``` `.
+
+### `guides/ctf-second-brain.md`
+
+- [x] 🔵 **L18 tool name** — "CyberChief" → "CyberChef" (the actual tool name).
+- [x] 🔵 **L85 typo** — `,bmp` → `.bmp`.
+
+### `guides/terminal-customisation-bash.md`
+
+- [x] 🔵 **Arch zoxide install** — `sudo pacman -S zoxide` has `sudo`; all other Arch entries in this file and the guidelines example use bare `pacman -S`. Removed `sudo` for consistency.
+
+---
+
+## After second-pass fixes
+
+- [x] Run `graphify update .`.

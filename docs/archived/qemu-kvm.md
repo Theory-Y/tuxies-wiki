@@ -47,7 +47,7 @@ QEMU stands for ==Quick Emulator==, it's the main virtualization software that a
   # Add your user to the necessary groups
   sudo usermod -aG kvm $(whoami)
   sudo usermod -aG libvirt $(whoami)
-  libvirt  # Apply group changes without logout
+  newgrp libvirt  # Apply group changes without logout
 
   sudo systemctl enable --now libvirtd
   ```

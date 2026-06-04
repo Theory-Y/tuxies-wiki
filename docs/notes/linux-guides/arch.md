@@ -559,7 +559,7 @@ Note that all fixes below may vary depending on the user's specific situation.
   Fix can be done by:
 
   ```bash
-  pacman-key --refresh-keys
+  sudo pacman-key --refresh-keys
   ```
 
   - If error persists, try regenerating the list of keys by the following:
@@ -584,7 +584,7 @@ Note that all fixes below may vary depending on the user's specific situation.
   - This happens when the keyring is outdated due to the lack of use or update of the system. The cause of this error is that it fails to check the package integrity using the PGP signature. To fix this error, simply update the keyrings by:
 
   ```bash
-  pacman -S archlinux-keyring
+  sudo pacman -S archlinux-keyring
   ```
 
 ## **Noob corner (commonly asked questions)**

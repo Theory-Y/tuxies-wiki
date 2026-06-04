@@ -290,7 +290,7 @@ alias lsta3='eza -Ta --level 3'
   @tab ::devicon:archlinux:: Arch
 
   ```bash
-  sudo pacman -S zoxide
+  pacman -S zoxide
   ```
 
   @tab ::devicon:debian:: Debian/Ubuntu

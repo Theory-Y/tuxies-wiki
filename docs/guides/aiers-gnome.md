@@ -188,8 +188,9 @@ dconf write /org/gnome/desktop/interface/monospace-font-name "'IBM Plex Mono 11'
   dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/enabled 'true'
   dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/sunrise "\"dconf write /org/gnome/desktop/interface/color-scheme \\\"'prefer-light'\\\"\""
   dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/sunset "\"dconf write /org/gnome/desktop/interface/color-scheme \\\"'prefer-dark'\\\"\""
-  :::
   ```
+
+  :::
 
 - [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/)
 

@@ -53,6 +53,8 @@ flatpak install flathub org.inkscape.Inkscape
 flatpak install --user org.inkscape.Inkscape
 ```
 
+:::
+
 ## **[Zen Browser](https://flathub.org/apps/app.zen_browser.zen)**
 
 :::details A feature-rich, Firefox based browser that just works with smooth animations and QoL features.
@@ -82,7 +84,6 @@ yay -S zen-browser-bin
 
 ## **[Bitwarden](https://bitwarden.com/)**
 
-Useful and intuitive system resources displayer, that accurately displays information including CPU, GPU, RAM, processes, among others.
 :::details Safe, trusted password manager.
 ![Bitwarden Demo](/assets/editors-choice/bitwarden-demo.png)
 :::
@@ -105,9 +106,9 @@ flatpak install --user flathub com.bitwarden.desktop
 
 Bitwarden is also offered as a browser extension:
 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox)
-[Chrome](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox)
+[Chrome](https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb)
 [Edge](https://microsoftedge.microsoft.com/addons/detail/bitwarden-password-manage/jbkfoedolllekgbhcbcoahefnbanhhlh)
-[Opera](https://microsoftedge.microsoft.com/addons/detail/bitwarden-password-manage/jbkfoedolllekgbhcbcoahefnbanhhlh)
+[Opera](https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb)
 [Brave](https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb?browser=brave)
 
 ## **[Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter)**
@@ -182,7 +183,7 @@ Install the .tar.gz file from the link above
 
 Discord with screen sharing and audio support, as well as Vencord inbuilt.
 
-=If you do not care about Discord Rich Presence (DRP), proceed with the Flatpak installation.==
+==If you do not care about Discord Rich Presence (DRP), proceed with the Flatpak installation.==
 
 ==If you do want DRP, check out [Vesktop’s Github Releases](https://github.com/Vencord/Vesktop/releases) and download the package for your respective distribution.==
 

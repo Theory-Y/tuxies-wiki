@@ -18,7 +18,7 @@ permalink: /guides/rb-14-2023-fedora/
 ==Low Speed WiFi Fix==: Firstly, disable WiFi6 (ax) to prevent WiFi6 issues with Linux.
 
 ```bash
-sudo nano /usr/bin/fix-wifi.sh
+sudo nano /usr/local/bin/fix-wifi.sh
 ```
 
 ```bash
@@ -34,7 +34,7 @@ modprobe ath11k_pci disable_11ax=1
 Grant access:
 
 ```bash
-sudo chmod a+x /usr/bin/fix-wifi.sh
+sudo chmod a+x /usr/local/bin/fix-wifi.sh
 ```
 
 ```bash
@@ -49,7 +49,7 @@ Wants=NetworkManager.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/fix-wifi.sh
+ExecStart=/usr/local/bin/fix-wifi.sh
 RemainAfterExit=yes
 
 [Install]
@@ -161,7 +161,7 @@ sudo iw dev wlp3s0 set power_save off
 
 If the startup script (disable ax) didn't last long. Try adding a timer based script to disable WiFi6 periodically, preventing potential firmware reset.
 
-Be sure you run `chmod a+x /usr/bin/fix-wifi.sh` to grant access permission first.
+Be sure you run `chmod a+x /usr/local/bin/fix-wifi.sh` to grant access permission first.
 
 ```bash
 sudo nano /etc/systemd/system/fix-wifi.timer

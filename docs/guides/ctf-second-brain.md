@@ -15,7 +15,7 @@ contributors:
 
 - [Picoctf](https://picoctf.org/): CMU founded CTF training and learning platform great for "learn as you go."
 - [HackTheBox](https://www.hackthebox.com/): Best for beginners, offers certified courses and learning paths along with hands-on labs in combination to theory. 
-- [CyberChief](https://gchq.github.io/CyberChef/): For Encryption/Decryption and Encode/Decode
+- [CyberChef](https://gchq.github.io/CyberChef/): For Encryption/Decryption and Encode/Decode
 
 ## General Knowledge
 ::::details Terminal
@@ -80,7 +80,7 @@ contributors:
 
 - Tools
   ::::details Image Analysis
-    - `zsteg`: Package based on Ruby allows user to check metadata of images and steganography; specifically for `.png` and `,bmp` images. It analyzes images to detect hidden data and extract hidden information on least significant and other steganography techniques.
+    - `zsteg`: Package based on Ruby allows user to check metadata of images and steganography; specifically for `.png` and `.bmp` images. It analyzes images to detect hidden data and extract hidden information on least significant and other steganography techniques.
     - `steghide`: Steganography tool used to hide/reveal hidden data in images/audio files; mostly used with `.jpeg`, `.bmp`, `.wav`, and `.au` files.
     - `identify`: Tool from ImageMagick, used to analyze and display information about image files such as image format, dimensions, file size, medatadata and properties.
     
