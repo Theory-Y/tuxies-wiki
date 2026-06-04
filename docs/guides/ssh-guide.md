@@ -61,7 +61,7 @@ This should be safe enough if you use a service like [Tailscale](https://tailsca
   After this run the following for your changes to take effect
 
   ```bash
-  systemctl restart sshd
+  sudo systemctl restart ssh
   ```
 
 - **Setting up external security programs**
@@ -69,9 +69,9 @@ This should be safe enough if you use a service like [Tailscale](https://tailsca
   Next up, you want to set up fail2ban to block anyone who tries to spam your ssh connection. This shouldn't really be necessary with Tailscale, but who knows maybe some day you accidentally open up the port, and this should protect you.
 
   ```bash
-  apt install fail2ban;
-  echo "sshd_backend = systemd" >> /etc/fail2ban/paths-debian.conf;
-  systemctl restart fail2ban
+  sudo apt install fail2ban
+  printf '[sshd]\nenabled = true\nbackend = systemd\n' | sudo tee /etc/fail2ban/jail.local
+  sudo systemctl restart fail2ban
   ```
 
 - **Accessing from beyond local**

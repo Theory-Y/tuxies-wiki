@@ -50,7 +50,7 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
   ```
 
   :::important
-  If not network adapter is shown, force shutdown and reboot. If problem persists, Arch is not for you.
+  If no network adapter is shown, force shutdown and reboot. If the problem persists, wireless hardware may not be supported by the live ISO — check the [ArchWiki hardware compatibility notes](https://wiki.archlinux.org/title/Network_configuration/Wireless) before continuing.
   :::
 
   - Proceed with station scanning:
@@ -63,7 +63,7 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
   - For connection:
 
   ```bash
-  station <device_name> connect “<network_name>”
+  station <device_name> connect "<network_name>"
   ```
 
   - Check whether the internet connection is successfully established
@@ -94,7 +94,7 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
       cfdisk /dev/<primary-hard-drive-name>
 
       # Example
-      cfdisk /dev/nvme0n1.
+      cfdisk /dev/nvme0n1
       ```
 
     - Search for the ==unallocated space== designated for Arch
@@ -151,25 +151,25 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
     - To mount the root partition run:
 
     ```bash
-    mount /dev/root_partition /mnt
+    mount /dev/<root_partition> /mnt
     ```
 
-    - To mount the EFI partition run:
+    - To mount the EFI partition, first create the mount point:
 
     ```bash
-    mount /dev/efi_partition /mnt/boot/efi
+    mkdir -p /mnt/boot/efi
     ```
 
-    ==If directory does not exist make the directory:==
+    Then mount:
 
     ```bash
-    mkdir /mnt/boot/efi
+    mount /dev/<efi_partition> /mnt/boot/efi
     ```
 
     - To enable the Swap partition run:
 
     ```bash
-    swapon /dev/swap_partition
+    swapon /dev/<swap_partition>
     ```
 
     ::::
@@ -205,10 +205,10 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
     - Run
 
       ```bash
-      ln -sf /usr/share/zoneinfo/<Region>/<City>/etc/localtime
+      ln -sf /usr/share/zoneinfo/<Region>/<City> /etc/localtime
 
       # Example setting the timezone to Caracas, Venezuela:
-      ln -sf /usr/share/zoneinfo/Americas/Caracas/etc/localtime
+      ln -sf /usr/share/zoneinfo/America/Caracas /etc/localtime
 
       ```
 
@@ -217,14 +217,14 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
       hwclock --systohc
       ```
       :::important
-      ===This command assumes the hardware clock is set to UTC==
+      ==This command assumes the hardware clock is set to UTC==
       :::
 
   - **Localisation:**
     - edit `/etc/locale.gen` and uncomment `en_US.UTF-8 UTF-8` and other needed UTF-8 locales
       ```bash
       # Example: (Note: nano is an editor)
-      nano /etc/locale.conf
+      nano /etc/locale.gen
 
       # Run to generate the locales
       locale-gen
@@ -234,14 +234,14 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
 
     - "Creating a new initramfs is usually not required, because [mkinitcpio](https://wiki.archlinux.org/title/Mkinitcpio) was run on installation of the [kernel](https://wiki.archlinux.org/title/Kernel) package with pacstrap." -Archlinux.org
 
-      ==Run it if you have system encryption (Bitlocker)==
+      ==Run it if you have system encryption (LUKS/Bitlocker)==
 
       ```bash
       mkinitcpio -P
       ```
 
   - Create locale.conf file
-    - Create directory `/etc/locale.conf`
+    - Create file `/etc/locale.conf`
       ```bash
       # Example: (Note: nano is an editor)
       nano /etc/locale.conf
@@ -288,7 +288,7 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
       EDITOR=nano visudo
       ```
 
-      ==Uncomment== `%wheel ALL=(ALL) ALL` ==and add== `Defaults timestamp_timeout=0` ==directly under==
+      ==Uncomment== `%wheel ALL=(ALL) ALL` — optionally add `Defaults timestamp_timeout=0` directly under it to require a password on every `sudo` invocation (higher security, more prompts)
 
       `Ctrl + o` and enter to save the changes and `Ctrl + x` to
 
@@ -327,18 +327,21 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
   - Run `grub-install`:
 
     ```bash
-    grub-install --target=x86_64-efi --efi-directory= <EFI_partition_mount_directory> --bootloader-id=Arch
+    grub-install --target=x86_64-efi --efi-directory=<EFI_partition_mount_directory> --bootloader-id=Arch
     ```
 
-    :::important Make sure that the EFI partition have enough storage, you can delete unwanted bootloaders by:
+    :::important Make sure that the EFI partition has enough storage. You can list existing bootloaders and remove an unwanted one, but ==verify the directory name carefully before deleting== — removing the wrong entry can make your system unbootable:
 
     ```bash
     ls /boot
     ls /boot/EFI
-    rm -rf /boot/<directory-of-bootloader>
+    # Only delete after confirming the directory name is the one you want to remove:
+    rm -rf /boot/EFI/<directory-of-bootloader>
     ```
 
-  - Now we want to create a config inside file the installed grub entry called “Arch” in the previous step
+    :::
+
+  - Now we want to create a config inside file the installed grub entry called "Arch" in the previous step
 
     - Run `grub-mkconfig -o /boot/grub/grub.cfg`
 
@@ -462,27 +465,27 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
 
 - **Asusctl - custom fan profiles, anime, led control etc.**
   ```bash
-  pacman -S asusctl power-profiles-daemon
+  sudo pacman -S asusctl power-profiles-daemon
   systemctl enable --now power-profiles-daemon.service
   ```
 - **Superfxctl - graphics switching**
   ```bash
-  pacman -S supergfxctl switcheroo-control
+  sudo pacman -S supergfxctl switcheroo-control
   systemctl enable --now supergfxd
   systemctl enable --now switcheroo-control
   ```
 - **ROG Control Center - GUI**
   ```bash
-  pacman -S rog-control-center
+  sudo pacman -S rog-control-center
   ```
 - **Custom Kernel**
 
   ```bash
-  pacman -Sy linux-g14 linux-g14-headers
+  sudo pacman -Syu linux-g14 linux-g14-headers
   grub-mkconfig -o /boot/grub/grub.cfg
   ```
 
-  - Run `unname -r` it should output:
+  - Run `uname -r` it should output:
 
   ```bash
   # -g14 is the important one
@@ -498,7 +501,7 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
 ::::
 :::::
 
-## Known errors and fixes
+## **Known Errors and Fixes**
 
 :::important
 Note that all fixes below may vary depending on the user's specific situation.  
@@ -518,7 +521,7 @@ Note that all fixes below may vary depending on the user's specific situation.
   # Install yay from git
   cd /tmp
   git clone https://aur.archlinux.org/yay-bin.git
-  cd yay bin
+  cd yay-bin
   makepkg -si
   cd ..
 
@@ -556,7 +559,7 @@ Note that all fixes below may vary depending on the user's specific situation.
   Fix can be done by:
 
   ```bash
-  pacman-key refresh-keys
+  pacman-key --refresh-keys
   ```
 
   - If error persists, try regenerating the list of keys by the following:
@@ -655,7 +658,7 @@ Note that all fixes below may vary depending on the user's specific situation.
 
 ::::
 
-## **System Maintainance**
+## **System Maintenance**
 
 :::::collapse accordion
 
@@ -714,9 +717,16 @@ Note that all fixes below may vary depending on the user's specific situation.
     ```
     - :::info Clearing global `pip` cache will not affect existing `.venv` environments
   
-  - Clearing old `docker`overlay layers
+  - Clearing old `docker` overlay layers
+
+    :::warning `--volumes` permanently deletes named volumes (databases, persistent data). Omit it unless you are certain those volumes contain no data you need.
+    :::
     ```bash
-    docker system prune -a --volumes
+    # Safe: removes stopped containers, dangling images, unused networks
+    docker system prune -a
+
+    # Only add --volumes if you have confirmed there is no data in named volumes:
+    # docker system prune -a --volumes
     ```
 
 :::::

@@ -1,16 +1,16 @@
-# Graph Report - tuxies-wiki  (2026-06-04)
+# Graph Report - tuxies-wiki  (2026-05-29)
 
 ## Corpus Check
-- 171 files · ~1,375,737 words
+- 171 files · ~1,376,480 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2173 nodes · 2166 edges · 287 communities (194 shown, 93 thin omitted)
+- 2108 nodes · 1970 edges · 272 communities (180 shown, 92 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `60653465`
+- Built from commit: `6847df92`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -233,29 +233,18 @@
 - [[_COMMUNITY_Community 269|Community 269]]
 - [[_COMMUNITY_Community 270|Community 270]]
 - [[_COMMUNITY_Community 271|Community 271]]
-- [[_COMMUNITY_Community 272|Community 272]]
-- [[_COMMUNITY_Community 273|Community 273]]
-- [[_COMMUNITY_Community 274|Community 274]]
-- [[_COMMUNITY_Community 275|Community 275]]
-- [[_COMMUNITY_Community 276|Community 276]]
-- [[_COMMUNITY_Community 277|Community 277]]
-- [[_COMMUNITY_Community 278|Community 278]]
-- [[_COMMUNITY_Community 279|Community 279]]
-- [[_COMMUNITY_Community 280|Community 280]]
-- [[_COMMUNITY_Community 281|Community 281]]
-- [[_COMMUNITY_Community 282|Community 282]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `**Installation guide**` - 41 edges
 2. `**Append useful keyboard shortcuts**` - 28 edges
-3. `**WiFi**` - 19 edges
-4. `API Security Reference` - 16 edges
-5. `Security Misconfiguration Reference` - 16 edges
-6. `**Folder Structure**` - 15 edges
-7. `Title text` - 15 edges
-8. `Supply Chain Security Reference` - 15 edges
-9. `Error Handling Security Reference` - 14 edges
-10. `Cross-Site Request Forgery (CSRF) Prevention Reference` - 13 edges
+3. `**WiFi**` - 18 edges
+4. `API Security Reference` - 15 edges
+5. `Security Misconfiguration Reference` - 15 edges
+6. `**Folder Structure**` - 14 edges
+7. `Title text` - 14 edges
+8. `Supply Chain Security Reference` - 14 edges
+9. `Error Handling Security Reference` - 13 edges
+10. `Cross-Site Request Forgery (CSRF) Prevention Reference` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Tuxies Wiki Homepage (VuePress)` --references--> `Tuxies Wiki – Linux Newcomer Resource`  [EXTRACTED]
@@ -264,22 +253,22 @@
   docs/.vuepress/public/assets/aiers-gnome/clipboard-indicator-demonstration.png → docs/.vuepress/public/assets/aiers-gnome/copyous-demo.png
 - `Logitech Linux Setup Guide` --conceptually_related_to--> `Key Remapping with keyd`  [INFERRED]
   docs/guides/logitech-linux-setup.md → docs/guides/key-remapping-with-keyd.md
-- `Contributions Overview` --references--> `Dev Setup Guide (Contributions)`  [INFERRED]
-  docs/notes/about/contributions/README.md → docs/notes/about/contributions/dev-setup-guide.md
 - `Contributions Overview` --references--> `Contribution Guidelines`  [INFERRED]
   docs/notes/about/contributions/README.md → docs/notes/about/contributions/guidelines.md
+- `Contributions Overview` --references--> `Dev Setup Guide (Contributions)`  [INFERRED]
+  docs/notes/about/contributions/README.md → docs/notes/about/contributions/dev-setup-guide.md
 
 ## Hyperedges (group relationships)
 - **Core Tuxies Wiki Guides** — guides_aiers_gnome, guides_logitech_linux_setup, guides_terminal_customisation_bash, guides_firefox_userjs [INFERRED 0.85]
 
-## Communities (287 total, 93 thin omitted)
+## Communities (272 total, 92 thin omitted)
 
 ### Community 0 - "Kando Menu Config"
-Cohesion: 0.07
-Nodes (51): centerDeadZone, action-icon-color, darkMenuTheme, darkMenuThemeColors, dragThreshold, enableAchievementNotifications, enableAchievements, enableDarkModeForMenuThemes (+43 more)
+Cohesion: 0.04
+Nodes (48): centerDeadZone, darkMenuTheme, darkMenuThemeColors, dragThreshold, enableAchievementNotifications, enableAchievements, enableDarkModeForMenuThemes, enableGamepad (+40 more)
 
 ### Community 1 - "VuePress Build System"
-Cohesion: 0.09
+Cohesion: 0.07
 Nodes (27): description, devDependencies, cross-env, gh-pages, http-server, sass-embedded, typescript, vue (+19 more)
 
 ### Community 2 - "Linux Apps Library"
@@ -287,8 +276,8 @@ Cohesion: 0.05
 Nodes (48): Arch Linux Distribution, DE — Desktop Environment, Debian Linux Distribution, Linux Distributions (Distros), Fedora Linux Distribution, Flatpak, FOSS (Free and Open-Source Software), GNOME Desktop Environment (+40 more)
 
 ### Community 3 - "Linux Distros & Vocabulary"
-Cohesion: 0.07
-Nodes (28): **Append useful keyboard shortcuts**, code:bash (dconf write /org/gnome/desktop/wm/keybindings/switch-to-work), code:bash (dconf reset /org/gnome/desktop/wm/keybindings/switch-to-work), code:bash (dconf write /org/gnome/desktop/wm/keybindings/switch-to-work), code:bash (dconf reset /org/gnome/desktop/wm/keybindings/switch-to-work), code:bash (# Also preserving the original keybinding), code:bash (dconf reset /org/gnome/desktop/wm/keybindings/switch-to-work), code:bash (dconf write /org/gnome/desktop/wm/keybindings/move-to-worksp) (+20 more)
+Cohesion: 0.04
+Nodes (48): **Append useful keyboard shortcuts**, **Basics**, code:bash (sudo dnf install gnome-tweaks), code:bash (dconf reset /org/gnome/desktop/wm/preferences/button-layout), code:bash (dconf write /org/gnome/desktop/wm/preferences/button-layout ), code:bash (dconf reset /org/gnome/desktop/wm/preferences/button-layout), code:bash (dconf write /org/gnome/desktop/sound/allow-volume-above-100-), code:bash (dconf reset /org/gnome/desktop/sound/allow-volume-above-100-) (+40 more)
 
 ### Community 4 - "Logitech Peripheral Setup"
 Cohesion: 0.16
@@ -359,7 +348,7 @@ Cohesion: 0.50
 Nodes (4): Extension Manager App (GNOME Extensions GUI), Installed GNOME Extensions Set, GNOME Extension Manager Screenshot, GNOME Fuzzy App Search Screenshot
 
 ### Community 21 - "Kando Menu Settings"
-Cohesion: 0.60
+Cohesion: 0.50
 Nodes (3): collections, menus, version
 
 ### Community 22 - "Solaar Device Config"
@@ -387,27 +376,27 @@ Cohesion: 1.00
 Nodes (3): Firefox/Zen Profile Directory for user.js, Zen Browser (Firefox Fork), Firefox Profile Directory Screenshot (Zen Browser)
 
 ### Community 29 - "Kando Theme Colors"
-Cohesion: 0.12
-Nodes (16): Callout container, Card & card grid, Code, Code block & inline code, Code tabs, code:bash (# this is some example bash code), code:`MD (::::code-tabs), code:block12 (+8 more)
+Cohesion: 0.67
+Nodes (3): action-icon-color, menuThemeColors, clean-circle
 
 ### Community 65 - "Community 65"
 Cohesion: 0.12
 Nodes (16): Better-Looking Fonts, code:bash (sudo dnf install ibm-plex-fonts-all), code:bash (# Stylise panel into Windows-styled task bar), code:bash (dconf write /org/gnome/shell/extensions/show-desktop-plus/bu), code:bash (sudo pacman -S ttf-ibm-plex), code:bash (sudo apt install fonts-ibm-plex), code:bash (dconf write /org/gnome/desktop/interface/font-name "'IBM Ple), code:bash (dconf write /org/gnome/shell/keybindings/toggle-message-tray) (+8 more)
 
 ### Community 69 - "Community 69"
-Cohesion: 0.06
+Cohesion: 0.05
 Nodes (39): **[Bitwarden](https://bitwarden.com/)**, code:bash (flatpak install flathub org.localsend.localsend_app), code:bash (flatpak install --user flathub com.bitwarden.desktop), code:bash (flatpak install flathub io.missioncenter.MissionCenter), code:bash (flatpak install --user flathub io.missioncenter.MissionCente), code:bash (flatpak install flathub md.obsidian.Obsidian), code:bash (flatpak install --user flathub md.obsidian.Obsidian), code:bash (sudo dnf copr enable zeno/scrcpy && sudo dnf install scrcpy) (+31 more)
 
 ### Community 71 - "Community 71"
-Cohesion: 0.14
-Nodes (12): API Security Reference, code:python (# VULNERABLE: Accepting all fields), code:python (@app.after_request), code:python (# VULNERABLE: Allow all origins), code:bash (# Missing authentication), CORS Configuration, Grep Patterns for Detection, Mass Assignment Prevention (+4 more)
+Cohesion: 0.04
+Nodes (48): API Key Security, API Security Reference, Authentication, Authorization, Batching Attack Prevention, code:python (# JWT Best Practices), code:python (# VULNERABLE: Accepting all fields), code:python (# VULNERABLE: Unbounded depth) (+40 more)
 
 ### Community 72 - "Community 72"
 Cohesion: 0.14
 Nodes (14): **Article tagging**, Cards, **Code formatting**, **Code Structure**, code:md (---), code:md (<!-- ":::::" demo-wrapper-->), code:md (::mdi:linux =50 /#000000::), Core website components (+6 more)
 
 ### Community 73 - "Community 73"
-Cohesion: 0.06
+Cohesion: 0.05
 Nodes (39): **Basic NPM Commands**, Build website, code:yaml (name: deploy), code:json ({), code:md (---), code:`md (This page is the README file for Github), code:block13, code:block14 (+31 more)
 
 ### Community 74 - "Community 74"
@@ -419,19 +408,19 @@ Cohesion: 0.07
 Nodes (28): **Aesthetic Changes**, **Autorun `fastfetch`** when you open the terminal, **Back up current `.bashrc`**, code:bash (cp ~/.bashrc ~/.bashrc-original # Makes a copy of current .b), code:bash (sudo dnf install fzf), code:bash (pacman -S fzf), code:bash (sudo apt install fzf), code:bash (alias cmd='compgen -c | fzf' # search for a possible command) (+20 more)
 
 ### Community 76 - "Community 76"
-Cohesion: 0.08
+Cohesion: 0.07
 Nodes (26): code:bash (flatpak install flathub com.discordapp.Discord), code:bash (sudo dnf install gcc kernel-devel dkms), code:bash (sudo pacman -S v4l2loopback-dkms), code:bash (sudo apt install dkms), code:bash (git clone https://github.com/umlaeute/v4l2loopback), code:bash (v4l2loopback), code:bash (sudo modprobe v4l2loopback), code:bash (flatpak install flathub com.visualstudio.code) (+18 more)
 
 ### Community 77 - "Community 77"
-Cohesion: 0.11
-Nodes (18): Code Tree, code:block13, code:java (public class Hello {), code:md (---), code:md (:::demo-wrapper), code:md (:::demo-wrapper img), code:md (:::details), code:md (::::collapse accordion) (+10 more)
+Cohesion: 0.05
+Nodes (54): Callout container, Card & card grid, Code, Code block & inline code, Code tabs, Code Tree, code:bash (# this is some example bash code), code:`MD (::::code-tabs) (+46 more)
 
 ### Community 78 - "Community 78"
-Cohesion: 0.10
+Cohesion: 0.09
 Nodes (26): code:bash (sudo nano /usr/bin/fix-wifi.sh), code:bash (#!/bin/bash), code:block11 (Interface wlp3s0), code:bash (sudo nano /etc/systemd/system/wifi-reconnect.service), code:ini ([Unit]), code:bash (sudo chmod a+x /etc/NetworkManager/dispatcher.d/99-fix-wifi), code:bash (sudo iw dev wlp3s0 set power_save off), code:bash (sudo nano /etc/systemd/system/fix-wifi.timer) (+18 more)
 
 ### Community 79 - "Community 79"
-Cohesion: 0.11
+Cohesion: 0.10
 Nodes (20): **Applying a configuration**, code:bash (sudo dnf install make gcc), code:bash (sudo keyd reload), code:bash (sudo cat /etc/keyd/default.conf), code:bash (sudo mkdir -p /etc/libinput), code:conf (# Libinput Local Quirks), code:bash (sudo apt install make gcc), code:bash (sudo pacman -S make gcc) (+12 more)
 
 ### Community 80 - "Community 80"
@@ -439,11 +428,11 @@ Cohesion: 0.11
 Nodes (18): Action Plan: Remove insecure SELinux=permissive recommendation from Timeshift instructions, Background / why this fix, code:`md (- **Recovering from SELinux label issues after a restore**), code:block10, code:block11, code:block12, code:block2, code:block3 (+10 more)
 
 ### Community 81 - "Community 81"
-Cohesion: 0.13
+Cohesion: 0.11
 Nodes (17): **Autoscroll**, code:js (// Scrolling), code:js (user_pref("mousewheel.default.delta_multiplier_x", 200); // ), code:js (user_pref("general.autoScroll", true); // false), code:js (user_pref("apz.fling_friction", "0.005"); // "0.002"), code:js (user_pref("browser.tabs.hoverPreview.enabled", true); // fal), code:js (user_pref("zen.splitView.change-on-hover", true); // false), **Hover to see preview of tab** (+9 more)
 
 ### Community 82 - "Community 82"
-Cohesion: 0.13
+Cohesion: 0.11
 Nodes (17): **[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)**, code:bash (flatpak install flathub ca.desrt.dconf-editor), code:bash (sudo apt install gnome-tweaks), code:bash (flatpak install flathub io.github.vikdevelop.SaveDesktop), code:bash (flatpak install --user flathub io.github.vikdevelop.SaveDesk), code:bash (flatpak install --user flathub ca.desrt.dconf-editor), code:bash (sudo dnf install dconf-editor), code:bash (sudo pacman -S dconf-editor) (+9 more)
 
 ### Community 83 - "Community 83"
@@ -451,15 +440,15 @@ Cohesion: 0.12
 Nodes (16): **Binding menus to shortcuts**, code:bash (flatpak install flathub io.github.pwr_solaar.solaar), code:bash (sudo dnf install solaar), code:bash (sudo pacman -S solaar), code:bash (sudo apt install solaar), code:bash (flatpak install flathub menu.kando.Kando), code:bash (yay -S kando-bin), code:bash (sudo dpkg -i kando-*.deb) (+8 more)
 
 ### Community 84 - "Community 84"
-Cohesion: 0.15
+Cohesion: 0.14
 Nodes (13): **[Blender](https://www.blender.org/download/)**, code:bash (flatpak install flathub org.blender.Blender), code:bash (flatpak install --user flathub org.blender.Blender), code:bash (flatpak install flathub org.inkscape.Inkscape), code:bash (flatpak install --user org.inkscape.Inkscape), code:bash (flatpak install flathub org.darktable.Darktable), code:bash (flatpak install --user flathub org.darktable.Darktable), code:bash (sudo dnf install darktable) (+5 more)
 
 ### Community 85 - "Community 85"
-Cohesion: 0.16
+Cohesion: 0.15
 Nodes (12): code:bash (sudo dnf update -y), code:bash (reboot), code:bash (sudo dnf install btrfs-assistant snapper python3-dnf-plugin-), code:bash (sudo systemctl enable --now snapper-timeline.timer snapper-c), code:bash (sudo dnf install git inotify-tools), code:bash (sudo systemctl enable --now grub-btrfsd.service), code:bash (sudo grub2-mkconfig -o /boot/grub2/grub.cfg), code:bash (sudo snapper -c root list) (+4 more)
 
 ### Community 86 - "Community 86"
-Cohesion: 0.24
+Cohesion: 0.20
 Nodes (9): code:bash (flatpak install flathub com.microsoft.Edge), code:bash (mkdir -p ~/.var/app/com.microsoft.Edge/config/microsoft-edge), code:bash (cp HubApps ~/.var/app/com.microsoft.Edge/config/microsoft-ed), code:bash (nano ~/.var/app/com.microsoft.Edge/config/edge-flags.conf), code:conf (--enable-features=TouchpadOverscrollHistoryNavigation), **Enable Touchpad Gestures**, **Fix Copilot (Missing HubApps File)**, **Fix Web App Icons on Wayland** (+1 more)
 
 ### Community 87 - "Community 87"
@@ -467,7 +456,7 @@ Cohesion: 0.21
 Nodes (13): **[btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant)**, code:bash (flatpak install flathub com.github.tchx84.Flatseal), code:bash (reboot), code:bash (flatpak install --user flathub com.github.tchx84.Flatseal), code:bash (sudo dnf install btrfs-assistant snapper python3-dnf-plugin-), code:bash (sudo apt-get install btrfs-assistant snapper), code:bash (sudo pacman -S btrfs-assistant snapper), code:bash (sudo dnf install timeshift) (+5 more)
 
 ### Community 88 - "Community 88"
-Cohesion: 0.20
+Cohesion: 0.22
 Nodes (8): code:bash (sudo dnf install git), code:bash (sudo pacman -S git), code:bash (sudo apt-get install git), code:bash (winget install --id Git.Git -e --source winget), code:bash (cd /folder/directory), code:bash (git clone https://github.com/Theory-Y/tuxies-wiki.git), code:bash (npm install), Installation
 
 ### Community 89 - "Community 89"
@@ -475,19 +464,19 @@ Cohesion: 0.25
 Nodes (7): code:bash (ssh [server-username]@[server_ip] -p 22;), code:bash (ssh [server_username]@[server_ip] -p 22), code:bash (ssh-keygen -f ~/.ssh/[name_for_keys]; # Creates the client k), code:block4 (PermitRootLogin no), code:bash (sudo systemctl restart ssh), code:bash (sudo apt install fail2ban), code:bash (eval `ssh-agent`;)
 
 ### Community 90 - "Community 90"
-Cohesion: 0.36
+Cohesion: 0.29
 Nodes (6): code:bash (# -d stands for decode), code:bash (hashcat -m (hashtype: 0 = MD5, 100 = SHA1, 1400 = SHA2-256, ), Cryptography, Forensics, General Knowledge, Resources
 
 ### Community 91 - "Community 91"
-Cohesion: 0.25
+Cohesion: 0.29
 Nodes (6): code:bash (flatpak remote-add --if-not-exists flathub https://dl.flathu), code:bash (sudo pacman -S flatpak), code:bash (sudo apt install flatpak), code:bash (flatpak remote-add --if-not-exists --user flathub https://dl), code:bash (flatpak remote-add --if-not-exists --user flathub https://dl), **Set up Flathub**
 
 ### Community 92 - "Community 92"
-Cohesion: 0.43
+Cohesion: 0.29
 Nodes (6): **Core Concepts**, **Networking & Permissions**, **Package & Software Management**, **Parts of the GNU/Linux OS**, **Processes & System Control**, **System & File Management**
 
 ### Community 93 - "Community 93"
-Cohesion: 0.32
+Cohesion: 0.29
 Nodes (6): **About**, ::devicon:linux:: [Linux Guides](/linux-guides/), ::fluent-emoji:books:: [Linux App Library](/linux-apps/), ::fluent-emoji:plus:: [Other Guides](/guides/), **Join the Discord**, **Navigate the wiki**
 
 ### Community 94 - "Community 94"
@@ -495,11 +484,11 @@ Cohesion: 0.33
 Nodes (5): code:bash (sudo dnf install @virtualization), code:bash (sudo pacman -S qemu libvirt virt-manager dnsmasq ebtables ip), code:bash (sudo apt update), Setting Up QEMU/KVM, **What is QEMU/KVM?**
 
 ### Community 95 - "Community 95"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (5): [Apps Library](https://tuxies-wiki.theoryy.dev/linux-apps/), [Linux Guides](https://tuxies-wiki.theoryy.dev/linux-guides/), [Other Guides](https://tuxies-wiki.theoryy.dev/guides/), The different series Tuxie's Wiki, Tuxie's Wiki
 
 ### Community 96 - "Community 96"
-Cohesion: 0.47
+Cohesion: 0.40
 Nodes (4): code:bash (sudo apt update), **Installation**, **Make it pretty**, **Snapshots**
 
 ### Community 97 - "Community 97"
@@ -507,7 +496,7 @@ Cohesion: 0.40
 Nodes (4): **Installation**, **Setting up your home server**, **SSH**, **TailScale**
 
 ### Community 98 - "Community 98"
-Cohesion: 0.60
+Cohesion: 0.50
 Nodes (3): **Contribution areas**, **Perks**, **Submission process**
 
 ### Community 205 - "Community 205"
@@ -583,7 +572,7 @@ Cohesion: 0.18
 Nodes (11): code:bash (# VULNERABLE: Running privileged (full host access)), code:bash (# VULNERABLE: Mounting sensitive host paths), code:bash (# CRITICAL: Docker socket mount = root on host), code:bash (# VULNERABLE: Host network mode), code:bash (# VULNERABLE: No resource limits (DoS risk)), Docker Socket Access, Network Security, Privileged Mode (+3 more)
 
 ### Community 223 - "Community 223"
-Cohesion: 0.18
+Cohesion: 0.20
 Nodes (9): code:bash (# Python), Grep Patterns for Detection, Insecure Deserialization Reference, Overview, References, Test Cases, Testing for Deserialization Vulnerabilities, The Risk (+1 more)
 
 ### Community 224 - "Community 224"
@@ -595,11 +584,11 @@ Cohesion: 0.25
 Nodes (7): computedHash, skillPath, source, sourceType, skills, security-review, version
 
 ### Community 226 - "Community 226"
-Cohesion: 0.25
+Cohesion: 0.29
 Nodes (6): code:bash (# Running as root), Docker Security Reference, Grep Patterns for Dockerfiles, Overview, References, Testing Checklist
 
 ### Community 227 - "Community 227"
-Cohesion: 0.25
+Cohesion: 0.29
 Nodes (6): code:bash (# Unpinned dependencies), Grep Patterns for Detection, Overview, References, Supply Chain Security Reference, Testing Checklist
 
 ### Community 228 - "Community 228"
@@ -639,7 +628,7 @@ Cohesion: 0.29
 Nodes (7): code:bash (# Check for known vulnerabilities), code:python (# VULNERABLE: No lock file - versions float), code:json (// VULNERABLE: No lock file committed), Detection Patterns, Lock Files, Patterns to Flag, Vulnerable Dependencies
 
 ### Community 237 - "Community 237"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (5): code:bash (# Debug mode), Grep Patterns for Detection, Overview, References, Security Misconfiguration Reference
 
 ### Community 238 - "Community 238"
@@ -651,7 +640,7 @@ Cohesion: 0.33
 Nodes (6): code:python (# RED FLAGS in package code:), code:json (// package.json - check these scripts carefully), code:python (# setup.py - check for code execution during install), Malicious Package Indicators, Pre/Post Install Scripts, Suspicious Patterns in Packages
 
 ### Community 240 - "Community 240"
-Cohesion: 0.33
+Cohesion: 0.40
 Nodes (4): code:bash (# DOM XSS), Framework Detection, Grep Patterns, JavaScript/TypeScript Security Patterns
 
 ### Community 241 - "Community 241"
@@ -763,7 +752,7 @@ Cohesion: 0.67
 Nodes (3): code:bash (# Generate SBOM for vulnerability tracking), Generation, SBOM (Software Bill of Materials)
 
 ### Community 268 - "Community 268"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (10): After all fixes, Guide Audit — Action Plan, `guides/key-remapping-with-keyd.md`, `guides/microsoft-edge-setup.md`, `guides/rb-14-2023-fedora.md`, `guides/ssh-guide.md` ⚠️ HANDED OFF — NOT YET FIXED, `guides/terminal-customisation-bash.md`, Non-Arch guides (+2 more)
 
 ### Community 269 - "Community 269"
@@ -776,52 +765,12 @@ Nodes (9): code:bash (sudo pacman -U <directory-of-extracted-package.pkg.tar.zst
 
 ### Community 271 - "Community 271"
 Cohesion: 0.36
-Nodes (10): code:bash (# Example usage: Scan everything starting from /), code:bash (sudo pacman -S pacman-contrib), code:bash (# Removes all older unused packages and keep 1 version in ca), code:bash (flatpak list --columns=name,application,size), code:bash (flatpak uninstall --unused), code:bash (pip cache info), code:bash (pip cache purge), code:bash (# Safe: removes stopped containers, dangling images, unused ) (+2 more)
-
-### Community 272 - "Community 272"
-Cohesion: 0.17
-Nodes (11): **Basics**, code:bash (dconf reset /org/gnome/desktop/wm/preferences/button-layout), code:bash (dconf write /org/gnome/desktop/wm/preferences/button-layout ), code:bash (dconf reset /org/gnome/desktop/wm/preferences/button-layout), code:bash (dconf write /org/gnome/desktop/sound/allow-volume-above-100-), code:bash (dconf reset /org/gnome/desktop/sound/allow-volume-above-100-), code:bash (dconf write /org/gnome/mutter/experimental-features "['scale), code:bash (dconf reset /org/gnome/mutter/experimental-features) (+3 more)
-
-### Community 273 - "Community 273"
-Cohesion: 0.51
-Nodes (11): code:`md (:::tabs), code:block24, code:block25, code:block26, code:bash (sudo dnf install timeshift), code:bash (sudo apt install timeshift), code:bash (pacman -S timeshift), Tabs (+3 more)
-
-### Community 274 - "Community 274"
-Cohesion: 0.22
-Nodes (9): code:block31, code:block32, code:block33, code:block34, code:python (e = mc^2), code:python (Some impressive algorithm), code:python (Some python code), code:json ({) (+1 more)
-
-### Community 275 - "Community 275"
-Cohesion: 0.22
-Nodes (9): code:bash (sudo dnf install gnome-tweaks), code:bash (sudo pacman -S gnome-tweaks), code:bash (sudo apt install gnome-tweaks), code:bash (sudo dnf install dconf-editor), code:bash (sudo pacman -S dconf-editor), code:bash (sudo apt install dconf-editor), code:bash (flatpak install flathub com.mattjakeman.ExtensionManager), code:bash (flatpak install --user flathub com.mattjakeman.ExtensionMana) (+1 more)
-
-### Community 276 - "Community 276"
-Cohesion: 0.22
-Nodes (9): Batching Attack Prevention, code:python (# VULNERABLE: Unbounded depth), code:python (# Assign costs to fields and limit total cost), code:python (# VULNERABLE: Introspection enabled), code:python (# VULNERABLE: Allows unlimited batched mutations), Disable Introspection in Production, GraphQL Security, Query Cost Analysis (+1 more)
-
-### Community 277 - "Community 277"
-Cohesion: 0.29
-Nodes (7): code:python (from pydantic import BaseModel, validator, Field), code:python (# VULNERABLE: Accept any content type), code:python (# Flask), Content-Type Validation, Input Validation, Request Size Limits, Request Validation
-
-### Community 278 - "Community 278"
-Cohesion: 0.40
-Nodes (5): API Key Security, Authentication, code:python (# JWT Best Practices), code:python (# VULNERABLE: API key in URL (logged, cached, visible)), Token-Based Authentication
-
-### Community 279 - "Community 279"
-Cohesion: 0.40
-Nodes (5): Authorization, code:python (# VULNERABLE: No authorization check), code:python (# VULNERABLE: All fields returned), Endpoint-Level Authorization, Field-Level Authorization
-
-### Community 280 - "Community 280"
-Cohesion: 0.40
-Nodes (5): code:python (from flask_limiter import Limiter), code:python (def get_rate_limit_key():), Implementation, Rate Limit by API Key, Rate Limiting
-
-### Community 281 - "Community 281"
-Cohesion: 0.67
-Nodes (3): code:python (# VULNERABLE: Detailed errors), Error Handling, Generic Error Responses
+Nodes (10): code:bash (# Example usage: Scan everything starting from /), code:bash (sudo pacman -S pacman-contrib), code:bash (# Removes all older unused packages and keep 1 version in ca), code:bash (flatpak list --columns=name,application,size), code:bash (flatpak uninstall --unused), code:bash (pip cache info), code:bash (pip cache purge), code:bash (docker system prune -a) (+2 more)
 
 ## Knowledge Gaps
-- **1061 isolated node(s):** `node`, `dev`, `start`, `dev-clean`, `build` (+1056 more)
+- **1158 isolated node(s):** ``notes/linux-apps/editors-choice.md``, ``guides/terminal-customisation-bash.md``, ``guides/rb-14-2023-fedora.md``, ``guides/ssh-guide.md` ⚠️ HANDED OFF — NOT YET FIXED`, ``guides/key-remapping-with-keyd.md`` (+1153 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **93 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -832,11 +781,11 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `**Installation guide**` connect `Core Linux Concepts` to `Community 74`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `node`, `dev`, `start` to the rest of the system?**
-  _1061 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects ``notes/linux-apps/editors-choice.md``, ``guides/terminal-customisation-bash.md``, ``guides/rb-14-2023-fedora.md`` to the rest of the system?**
+  _1158 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Kando Menu Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.07256894049346879 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
 - **Should `VuePress Build System` be split into smaller, more focused modules?**
-  _Cohesion score 0.08620689655172414 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `Linux Apps Library` be split into smaller, more focused modules?**
   _Cohesion score 0.05230496453900709 - nodes in this community are weakly interconnected._
