@@ -120,3 +120,17 @@ Full re-read of every guide including previously unreviewed `notes/` files.
 ## After second-pass fixes
 
 - [x] Run `graphify update .`.
+
+---
+
+## Changelog / Contributors regression (2026-06-05)
+
+**Symptom:** On the live site (https://tuxies-wiki.theoryy.dev/, Cloudflare Pages), every page's "Contributors" block and per-article changelog collapsed to a single contributor — **Lunear01** — with one entry, "Full Repository Security Review and Fixes".
+
+**Diagnosis:** Not a content/data problem. Git history is fully intact (e.g. `ssh-guide.md` retains aier9500, joseporcar, Lunear01; `our-team.md` interleaves aier9500 and Lunear01), the last two commits only *modified* 9 markdown files (no renames/adds/deletes), and the committed dist plus the stale manual `gh-pages` deploy still render all contributors correctly.
+
+**Root cause:** vuepress-theme-plume derives `contributors` (mode: block), `changelog: true`, and `lastUpdated` from `git log <file>` **at build time** (`docs/.vuepress/config.ts`). The live site is built by **Cloudflare Pages**, which performs a **shallow clone (depth 1)** by default. With only HEAD reachable, every file's git-derived metadata collapses to the single most-recent commit — Lunear01's push. The recent push merely triggered the rebuild that surfaced this.
+
+**Fix applied:** Prepend `git fetch --unshallow 2>/dev/null || true` to the `build` and `build-cf` npm scripts so the clone is converted to full history before VuePress runs. The guard is a harmless no-op on a complete local clone.
+
+**Required follow-up (cannot be done from the repo):** Ensure the Cloudflare Pages project's *Build command* is `npm run build-cf` so the fix takes effect, then trigger a redeploy. After deploy, verify the live contributors/changelog on a multi-author page (e.g. /guides/ssh-guide/) show multiple authors again.

@@ -11,9 +11,9 @@
     "dev": "vuepress dev docs",
     "start": "vuepress dev docs",
     "dev-clean": "vuepress dev docs --clean-cache --clean-temp",
-    "build": "vuepress build docs --clean-cache --clean-temp",
+    "build": "git fetch --unshallow 2>/dev/null || true && vuepress build docs --clean-cache --clean-temp",
     "build-gh": "cross-env VUEPRESS_BASE=/tuxies-wiki/ vuepress build docs --clean-cache --clean-temp",
-    "build-cf": "cross-env VUEPRESS_BASE=/ vuepress build docs --clean-cache --clean-temp",
+    "build-cf": "git fetch --unshallow 2>/dev/null || true && cross-env VUEPRESS_BASE=/ vuepress build docs --clean-cache --clean-temp",
     "vp-update": "npx vp-update",
     "update-deps": "npx npm-check-updates -u && npm install",
     "deploy": "npm run build-gh && gh-pages -d docs/.vuepress/dist -b gh-pages"
