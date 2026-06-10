@@ -1,0 +1,1202 @@
+{
+  "/home/aier/Documents/tuxies-wiki/package.json": {
+    "mtime": 1780669623.8896427,
+    "ast_hash": "c3011957baf387dda02962c3d3939693",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/client.ts": {
+    "mtime": 1779235793.5563018,
+    "ast_hash": "eeab9f2ba9816f2b03e89be253aa2c6e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/config.ts": {
+    "mtime": 1779383873.9133403,
+    "ast_hash": "5cbf80a20774f1e768e4ed5b2c23dd78",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/navbar.ts": {
+    "mtime": 1779383873.9133403,
+    "ast_hash": "6097a51728da4d733a9f677a186cb871",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/plume.config.ts": {
+    "mtime": 1779383873.9133403,
+    "ast_hash": "2dfe3c7f1b3e25d6bb5172504712441f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/theme/shim.d.ts": {
+    "mtime": 1779235793.6219003,
+    "ast_hash": "1498300cec1fecb4db1664bfe640bd45",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/theme/components/Custom.vue": {
+    "mtime": 1779235793.6219003,
+    "ast_hash": "10de7c756514255c25dc97716b7c2170",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/index.html.vue": {
+    "mtime": 1780025333.8582466,
+    "ast_hash": "ca37190282e857adbab316239a16124b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/index.html.js": {
+    "mtime": 1780025333.8604276,
+    "ast_hash": "1a9df9541a4ceafee2e562cba20b4da8",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/404.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "da6204821989f2a2f6bb4f32441fc9e0",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/404.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "f428cd6886d737cb888692cc74357a02",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/contributions/index.html.vue": {
+    "mtime": 1780025554.694689,
+    "ast_hash": "0863023bd8138c1b92db5ed964a82fdd",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/contributions/index.html.js": {
+    "mtime": 1780025554.6962605,
+    "ast_hash": "60c91692eefa2bd1068dc55a8d38bb2b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/contributions/dev-setup-guide/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "ba1b69d7f696463e28731a316892563c",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/contributions/dev-setup-guide/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "c4dfb89a56b03868f816aef704c25e83",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/contributions/guidelines/index.html.js": {
+    "mtime": 1779994105.294479,
+    "ast_hash": "ba32ab16f4e84eaad3b243653a10d8fb",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/contributions/guidelines/index.html.vue": {
+    "mtime": 1779994105.2924788,
+    "ast_hash": "dc4145a747c28e3eb7856b44abd439e2",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "ca37190282e857adbab316239a16124b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "6102d9f8428dd309b89c485563388504",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/aiers-gnome/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "09691c21b56ee4ef78a5f0d8664a783f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/aiers-gnome/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "35da52d564cadf27fd8b3d3b026beda5",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/ctf-second-brain/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "8f26a49625524df02875c1a33d717578",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/ctf-second-brain/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "aa8c1446674a32d8ea144f302c4c7e0b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/better-text-rendering-gnome-hi-dpi/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "411c3f3b979de38fe76c0ec37394de6d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/better-text-rendering-gnome-hi-dpi/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "a0411df84da3d4a88a7fa66b99bdd5f1",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/firefox-userjs/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "f6c19e5d2233529ba47865281090d01e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/firefox-userjs/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "9890f0fbab029c2609e8357abbc74788",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/key-remapping-with-keyd/index.html.js": {
+    "mtime": 1780028059.521358,
+    "ast_hash": "d5ea9f9e0242aa5db66029ad9bdcd587",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/key-remapping-with-keyd/index.html.vue": {
+    "mtime": 1780028059.5211523,
+    "ast_hash": "f512eeede0d82c47e08ce614619eb252",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/logitech-linux-setup/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "d0a53434c418c039a9ffcf402ba5c1d6",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/logitech-linux-setup/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "3449c2f3d95e9430a990a528e2034e21",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/microsoft-edge-setup/index.html.vue": {
+    "mtime": 1780028057.0326946,
+    "ast_hash": "be8320d1855f4ed03df61b6f989ca2ba",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/microsoft-edge-setup/index.html.js": {
+    "mtime": 1780028057.0326946,
+    "ast_hash": "fcbdbf55c47f33fd7168cdb5f16daddc",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/rb-14-2023-fedora/index.html.vue": {
+    "mtime": 1780028085.0946043,
+    "ast_hash": "b4eeb274a69c8196c1f91b8c445346c0",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/rb-14-2023-fedora/index.html.js": {
+    "mtime": 1780028085.0947652,
+    "ast_hash": "8d91645c6ab118ab713348d280dc86dc",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/ssh-guide/index.html.js": {
+    "mtime": 1780028885.1923366,
+    "ast_hash": "6476244c9b1445b7ffc9d0cc73589546",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/ssh-guide/index.html.vue": {
+    "mtime": 1780028885.190632,
+    "ast_hash": "da4a6b9ccd202eb37ec475cc321b5a1a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/terminal-customisation-bash/index.html.js": {
+    "mtime": 1780028050.7455616,
+    "ast_hash": "d20029d938dc36e3dc16d1466002cba7",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/terminal-customisation-bash/index.html.vue": {
+    "mtime": 1780028050.7445617,
+    "ast_hash": "8c382f210c424f72c1ff9728dd41e782",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/vuepress-guide/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "165ca7c4eff4e7228d1931c677ff7c2e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/vuepress-guide/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "9bc6039679fb618ed4491b56b7a413dc",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/tags/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "192b77eda746ae28c80afe2faf4232bf",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/tags/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "ca37190282e857adbab316239a16124b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/categories/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "c9bd6559fd1420e98705e66b956b6e08",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/categories/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "ca37190282e857adbab316239a16124b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/archives/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "ca37190282e857adbab316239a16124b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/archives/index.html.js": {
+    "mtime": 1779985463.508562,
+    "ast_hash": "a8a8ef5c4d76a881cb6bdfdd93925aa9",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/archived/qemu-kvm-guide/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "be061695da74e0d1f2766b35c9244715",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/archived/qemu-kvm-guide/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "c2b955056bc15ac16942bf097a4be3b8",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/archived/spiral-linux/index.html.vue": {
+    "mtime": 1780025362.065517,
+    "ast_hash": "dac9c7179caa2768f882681e2f643706",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/archived/spiral-linux/index.html.js": {
+    "mtime": 1780025362.0677588,
+    "ast_hash": "427064cd19da2256f2d0063b93843ca5",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/about/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "ca80d8b354825e7a666462f198b94d85",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/about/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "779769c327b81642338235597ddc85b5",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/about/our-team/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "ca37190282e857adbab316239a16124b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/about/our-team/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "0b2586c35e166fdf4fd3fbb5272e3f30",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/introduction/flatpak-setup/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "82acc2b374b75fe2a1d0b8e31aafe2c1",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/introduction/flatpak-setup/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "8f41481d9520af34610de4d145fbc1f4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/introduction/linux-vocabs/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "0f3f12c2d552fe1cb8e448fa22a1e3bb",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/introduction/linux-vocabs/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "8acabf1d19ae83a195cd8ec2ead3cbaf",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/introduction/new-to-the-wiki/index.html.vue": {
+    "mtime": 1780025365.6958058,
+    "ast_hash": "0964d8fc60fc7d141faaba752ebfaa7a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/introduction/new-to-the-wiki/index.html.js": {
+    "mtime": 1780025365.6968057,
+    "ast_hash": "74f614387b17d1df6ccaf13494befc7f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "e9ed8bec6522dc16199d208a8779b435",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "c97c2c2ba060966d06bfa749de75f81c",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/creative-software/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "f9b601bae9b0b69d0ad93b1c42342478",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/creative-software/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "adba564e1581b355b8759ac57f4e4d19",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/editors-choice/index.html.vue": {
+    "mtime": 1780027138.0417874,
+    "ast_hash": "4016c1038756122c102b9a55fcdb5141",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/editors-choice/index.html.js": {
+    "mtime": 1780027138.0450847,
+    "ast_hash": "a65f9cf1e8ce5e609d27e8d0f2c89de2",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/essentials/index.html.js": {
+    "mtime": 1780024893.1790528,
+    "ast_hash": "850d46ba814d053a21b3af9d55dd45a6",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/essentials/index.html.vue": {
+    "mtime": 1780024893.1690533,
+    "ast_hash": "388e8ff14007e43453aafb9b84fc3f5d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/gnomie/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "63e49b0b1b16b150e45c8c35453fc01b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/gnomie/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "255b3ede2e4d79d41dad462b69a20a9e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/popular/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "b87fb5ada53fcbe9e6cf357c11cbdc7e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-apps/popular/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "e1dde7c6d5ed3b5278e1ee841e0baf2e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "1f037867840eb9f91fae3104d0bfc0ca",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "912d066a7ce9ca892eca81b602aaf826",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/arch/index.html.vue": {
+    "mtime": 1780028888.0141776,
+    "ast_hash": "41d98610bc9d3f762c524ee0d83f62e1",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/arch/index.html.js": {
+    "mtime": 1780028888.016821,
+    "ast_hash": "be8257cd7948c29c7a4581a60a89fdb5",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/fedora/index.html.vue": {
+    "mtime": 1780024795.9942904,
+    "ast_hash": "1b2ad52ae305edfadc2d3f77ee983071",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/fedora/index.html.js": {
+    "mtime": 1780024795.9962904,
+    "ast_hash": "5a89fb07630061d68961f65bfa0dd228",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/gnome/index.html.js": {
+    "mtime": 1779989107.337768,
+    "ast_hash": "9fb1e8eeac8a2404c53c55b041be88a7",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/gnome/index.html.vue": {
+    "mtime": 1779989107.336768,
+    "ast_hash": "e029ecfa2ddc4f7d7144168362c98b91",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/debian/index.html.vue": {
+    "mtime": 1780025238.374895,
+    "ast_hash": "410b6cb4305babc3b7adec2c2ca67841",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/debian/index.html.js": {
+    "mtime": 1780025238.3772862,
+    "ast_hash": "7afa8cae134951d98adda9e2bab6a5e6",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/flashing-guide/index.html.vue": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "a4bd98f9f91cce904485014553e0d23f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/linux-guides/flashing-guide/index.html.js": {
+    "mtime": 1779985463.5076454,
+    "ast_hash": "9b71da9a4c51d5c8d1227d6e41f5fdab",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/shiki/config.js": {
+    "mtime": 1779985463.508562,
+    "ast_hash": "1b0377fa023787d97bfe72a075bdb99a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/routes.js": {
+    "mtime": 1779985463.508562,
+    "ast_hash": "65a7f838df81fddde1a7e0ae1758709b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/siteData.js": {
+    "mtime": 1779985463.508562,
+    "ast_hash": "dc0a723f00d41768823b8f4c4e2d28e7",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/clientConfigs.js": {
+    "mtime": 1779985463.511312,
+    "ast_hash": "5fa4830568dca48cd0f9dd7eef53cbae",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/themePlumeData.js": {
+    "mtime": 1779985463.5406446,
+    "ast_hash": "96a0f43af7fe3598e2f47c5a1e918678",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/postsData.js": {
+    "mtime": 1779985463.545228,
+    "ast_hash": "031aaced911751c94081371d34e80696",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/sidebar.js": {
+    "mtime": 1779985463.545228,
+    "ast_hash": "d785e3ce08a98c236e88bab0414c5c71",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/collectionsData.js": {
+    "mtime": 1779985463.545228,
+    "ast_hash": "2c5b7e47999093d513d3c08a516f4dfd",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/iconify.js": {
+    "mtime": 1779985463.545228,
+    "ast_hash": "5c704b88c8339b0de89833bc381bdf52",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/home-hero-effects.js": {
+    "mtime": 1779985463.545228,
+    "ast_hash": "77165d9272559098350514cbf00d06dc",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/encrypt.js": {
+    "mtime": 1779985463.545228,
+    "ast_hash": "0266c2ae6ba3ecb2026e6f7aebc1f9b7",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/articleTagColors.js": {
+    "mtime": 1779985463.545228,
+    "ast_hash": "0b4bfbe0b19728f35664ccbc751a0a01",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/minisearchIndex/searchBox-default.js": {
+    "mtime": 1779985463.5388114,
+    "ast_hash": "1f69a7d428006dd34c1f7e2686ea1604",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/internal/minisearchIndex/index.js": {
+    "mtime": 1779985463.5397282,
+    "ast_hash": "e2a7017575a584ac2d0b695b238327d1",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/md-power/config.js": {
+    "mtime": 1779985463.5103953,
+    "ast_hash": "0ba2f40d5804980f8f6b603eb61ba106",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/markdown-math/config.js": {
+    "mtime": 1779985463.5103953,
+    "ast_hash": "eff1effb3dffc51b8ed7dcde7e581ada",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/git/config.js": {
+    "mtime": 1779985463.5103953,
+    "ast_hash": "047b58d26d1673c38ac392adcc84a026",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/resources/bash-template.sh": {
+    "mtime": 1779383873.9831567,
+    "ast_hash": "535a015737541a7d1f11c6f89c0421dd",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/resources/key-remapping-with-keyd/keyd-setup.sh": {
+    "mtime": 1779383873.9835792,
+    "ast_hash": "996ff2e8df8b9f876ba1100f01f8e5ba",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/resources/logitech-linux-setup/kando/general-settings-backup.json": {
+    "mtime": 1779383873.9836352,
+    "ast_hash": "3df7e7af543a77ca5cb01ad97e8498be",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/resources/logitech-linux-setup/kando/menu-settings-backup.json": {
+    "mtime": 1779383873.9836698,
+    "ast_hash": "17fcc26b6734c2dbdf328789d0f7d4dc",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.claude/settings.json": {
+    "mtime": 1781107878.6422186,
+    "ast_hash": "ac84b613ade527956504b41e08853702",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.claude/settings.local.json": {
+    "mtime": 1780669113.0864463,
+    "ast_hash": "8c027bfb99842e213b2ad4439d55b282",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/README.md": {
+    "mtime": 1779383873.9133403,
+    "ast_hash": "d9e6872ac567b59340b99dbb1d21b828",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/CLAUDE.md": {
+    "mtime": 1779981953.7241824,
+    "ast_hash": "9804f7e497f6835e2b741629f1757406",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/README.md": {
+    "mtime": 1780025333.8557625,
+    "ast_hash": "27eb92b73afeeebc3f6df518879ef6d8",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/reference-docs/aiers-fedora-checklist.md": {
+    "mtime": 1779989253.1421442,
+    "ast_hash": "bfa4e48e818328a14b730cdd23fc1e27",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/archived/spiral-linux.md": {
+    "mtime": 1780025362.0439517,
+    "ast_hash": "0c2d9e018bc4819f5f8e72a6e95cf9e4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/archived/qemu-kvm.md": {
+    "mtime": 1780668880.7784111,
+    "ast_hash": "e112afaf02f8a6f8b28a9b727a3b88e2",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/ssh-guide.md": {
+    "mtime": 1780668880.7788582,
+    "ast_hash": "8efbce9859ad422f52997658139ced0e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/firefox-userjs.md": {
+    "mtime": 1781109027.100162,
+    "ast_hash": "452b0af3d12d26d95c37aeb9a7eaafaa",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/key-remapping-with-keyd.md": {
+    "mtime": 1780028059.5073586,
+    "ast_hash": "04b8505bb1094bcb2bbcb4b1a8c0c561",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/microsoft-edge-setup.md": {
+    "mtime": 1780028057.020416,
+    "ast_hash": "7e863e4ed0ccb64c1e56e5a97993f035",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/rb-14-2023-fedora.md": {
+    "mtime": 1780668880.7788582,
+    "ast_hash": "820ae7c5855aa46251a8264df822006f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/vuepress-guide.md": {
+    "mtime": 1780668880.7792995,
+    "ast_hash": "29858064faa079955ba709b3d52883af",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/better-text-rendering-gnome-hi-dpi.md": {
+    "mtime": 1779403073.6188943,
+    "ast_hash": "fe1df53662903b95a62335e0bc221e41",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/ctf-second-brain.md": {
+    "mtime": 1780668880.7788582,
+    "ast_hash": "07fa6d0eb28b93dddb08bc841191c2d9",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/terminal-customisation-bash.md": {
+    "mtime": 1780668880.7791805,
+    "ast_hash": "90bb82d75e3099c94868608abc383540",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/aiers-gnome.md": {
+    "mtime": 1780668880.778669,
+    "ast_hash": "861fea84f6663b195411ab2ba5a37642",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/logitech-linux-setup.md": {
+    "mtime": 1779579617.4873688,
+    "ast_hash": "9bf9d8d0dd63446bb039df8b69916c9f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/about/README.md": {
+    "mtime": 1779383873.9821568,
+    "ast_hash": "fd260f6790df2345bdf19fae9121b0e4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/about/our-team.md": {
+    "mtime": 1779383873.9821568,
+    "ast_hash": "00c2e517f4845f51e4f9b2c13490c4c6",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/about/contributions/README.md": {
+    "mtime": 1780025554.6566072,
+    "ast_hash": "762084a0594d82f3ec65ccbbd5cabc91",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/about/contributions/dev-setup-guide.md": {
+    "mtime": 1779383873.9821568,
+    "ast_hash": "f3978b49b097c6c988910dbf00bc5cc2",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/about/contributions/guidelines.md": {
+    "mtime": 1779994105.2444801,
+    "ast_hash": "1a67f91026a7201f4f5091e554005e07",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/introduction/flatpak-setup.md": {
+    "mtime": 1779235793.6225817,
+    "ast_hash": "07c9356183200a72dcb238360eb21d95",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/introduction/new-to-the-wiki.md": {
+    "mtime": 1780025365.6838062,
+    "ast_hash": "3ed7b50b26c3f9117b464525f8b466e5",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/introduction/linux-vocabs.md": {
+    "mtime": 1779403073.6188943,
+    "ast_hash": "5cc854fd767d29523133b26760c77c46",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-apps/README.md": {
+    "mtime": 1779235793.6226165,
+    "ast_hash": "93bde61f3c706230c3fd8eeb9902ac0e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-apps/creative-suite.md": {
+    "mtime": 1779235793.6227815,
+    "ast_hash": "6f2b0454cc167ed8e77bd107ad1b8562",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-apps/popular.md": {
+    "mtime": 1779235793.6227815,
+    "ast_hash": "5748cf56012da7b0caa851e9844dc9b4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-apps/essentials.md": {
+    "mtime": 1780024893.1420546,
+    "ast_hash": "5943f391be27842e7d70e7db6630036b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-apps/gnomie.md": {
+    "mtime": 1779383873.9821568,
+    "ast_hash": "7785b382d62f6ea63cd998b791c7e198",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-apps/editors-choice.md": {
+    "mtime": 1780668880.7792995,
+    "ast_hash": "1ef3cb7d369d282f0ef47c14729f9d21",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-guides/README.md": {
+    "mtime": 1779403073.6188943,
+    "ast_hash": "8b51923017d4a104e35c1af51573e72c",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-guides/arch.md": {
+    "mtime": 1780668880.779558,
+    "ast_hash": "2a720333b5afff1d0dc60d0ea01c94b9",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-guides/debian.md": {
+    "mtime": 1780025238.348896,
+    "ast_hash": "e1b8a0d29f97439d065db05bc79df41b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-guides/fedora.md": {
+    "mtime": 1780024795.9612918,
+    "ast_hash": "986f789754c11cc70fc27791ca641d35",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-guides/flashing-guide.md": {
+    "mtime": 1779403073.6193247,
+    "ast_hash": "873ef4614dc93b7f8130836c98ac7703",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/notes/linux-guides/gnome.md": {
+    "mtime": 1779989107.2327707,
+    "ast_hash": "57ab75f8359e699323f0ae46b249544d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/resources/logitech-linux-setup/solaar/config.yaml": {
+    "mtime": 1779383873.9836698,
+    "ast_hash": "87509b352e96a6903711cb2fd81f1047",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/resources/logitech-linux-setup/solaar/rules.yaml": {
+    "mtime": 1779383873.9837196,
+    "ast_hash": "2343d46d94818395abf2a684c5f892ca",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/TuxiesLogo.png": {
+    "mtime": 1779383873.9141583,
+    "ast_hash": "873fbbcd5e0735a9cfcd78ea10b580ad",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/plume.svg": {
+    "mtime": 1779383873.9721568,
+    "ast_hash": "c3a6a7dfb9174805674e41b75be3c47d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/tux-inkscape.svg": {
+    "mtime": 1779383873.9751568,
+    "ast_hash": "10a6db0f3df27b0a294f34dfb599f21a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/tux-og.svg": {
+    "mtime": 1779383873.9761567,
+    "ast_hash": "ffd3da6b8871bc7238039137b1907593",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/tux-transparent.svg": {
+    "mtime": 1779383873.9761567,
+    "ast_hash": "14e5de7a235f4d87159bf469453dc63d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/tux.png": {
+    "mtime": 1779383873.9811566,
+    "ast_hash": "c422b7f6d2ee1286099a0f5e0c4a2faf",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/tux.svg": {
+    "mtime": 1779383873.9811566,
+    "ast_hash": "b5aa4c41c801b17217a21f443a4e0340",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/alphabetical-app-grid-demonstration.png": {
+    "mtime": 1779383873.9161582,
+    "ast_hash": "a4f44a73f6ce51005f3692faf9c95ef4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/appindicator.png": {
+    "mtime": 1779383873.9161582,
+    "ast_hash": "a8f61d84f4e24fbe2a5d8acd8f1377d4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/battery-health-limit-demonstration.png": {
+    "mtime": 1779383873.9161582,
+    "ast_hash": "a5601fd5644beb0ec46d24d68d86807d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/blur-my-shell-demonstration.png": {
+    "mtime": 1779383873.9201581,
+    "ast_hash": "20bea4f62214cbf560d698c15ab3d5a9",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/caffeine-demonstration.png": {
+    "mtime": 1779383873.921158,
+    "ast_hash": "f3903c3271b44fdffca79288b63e59d8",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/clipboard-indicator-demonstration.png": {
+    "mtime": 1779383873.922158,
+    "ast_hash": "9eddaa1274c277f80c204fd3f8d7e7f1",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/copyous-demo.png": {
+    "mtime": 1779383873.926158,
+    "ast_hash": "c5c48e3c3f540bf20c7fa0aad7c42c7d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/custom-reboot-demonstration.png": {
+    "mtime": 1779383873.926158,
+    "ast_hash": "7fbb850e3f9049b6d5790a5b3c1ecff8",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/dash-to-dock-demonstration.png": {
+    "mtime": 1779383873.9271579,
+    "ast_hash": "60c1e78084a81bdd4b839e49e7aed457",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/ding4-demo.png": {
+    "mtime": 1779383873.9321578,
+    "ast_hash": "36a03acdc6c7c1a6826c3f2bb2887fee",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/emoji-copy-demonstration.png": {
+    "mtime": 1779383873.9331577,
+    "ast_hash": "62280d1b6c4334bb22e2bbd2d83cbfe4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/gnome-fuzzy-app-search-demonstration.png": {
+    "mtime": 1779383873.9331577,
+    "ast_hash": "7c6e73f09b745c17298682eb1acec361",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/lock-keys-demonstration.png": {
+    "mtime": 1779383873.9401577,
+    "ast_hash": "e308435922562c26e6f434dc57df5198",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/tinted-shell-demonstration.png": {
+    "mtime": 1779383873.9451575,
+    "ast_hash": "58300f5898ac80341e1710f7b95f88b7",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/user-shell-demonstration.png": {
+    "mtime": 1779383873.9481575,
+    "ast_hash": "03718492fe0a46fc75bd6b3edde8558e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/better-text-rendering-gnome-hi-dpi/gnome-tweaks-font-rendering-settings.png": {
+    "mtime": 1779383873.9481575,
+    "ast_hash": "9acb74baaead0bf1b54ae27ee6bf7975",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/dev-setup-guide/windows-setup.png": {
+    "mtime": 1779383873.9491575,
+    "ast_hash": "f952f5208068d6ac6d2b7bbf5539af9f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/bitwarden-demo.png": {
+    "mtime": 1779383873.9491575,
+    "ast_hash": "89963069b2a1284630ac5124e40f1896",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/gradia-demo.png": {
+    "mtime": 1779383873.9511573,
+    "ast_hash": "c5956d80414a466fde9818160e2d2991",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/localsend-demo.png": {
+    "mtime": 1779383873.9511573,
+    "ast_hash": "ce5681bd81ec48f79e4041ddcc41b351",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/mission-center-demo.png": {
+    "mtime": 1779383873.9521573,
+    "ast_hash": "233b2aefdda4297364d3a691986e8e9f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/obsidian-demo.png": {
+    "mtime": 1779383873.9541574,
+    "ast_hash": "f8ff8d817a17d0d8c5115305b86c3b97",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/zen-demo.png": {
+    "mtime": 1779383873.9561572,
+    "ast_hash": "0244baba43e3cfc3d4e371cb01c5039b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/fedora/gnome-software-update.svg": {
+    "mtime": 1779383873.9571571,
+    "ast_hash": "c4d6636b3c126e412ef655d42cd5428d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/firefox-userjs/firefox-about-config.png": {
+    "mtime": 1779383873.9581573,
+    "ast_hash": "268dd4585b5665fceed11a24de4c03b2",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/firefox-userjs/firefox-profile-directory.png": {
+    "mtime": 1779383873.958594,
+    "ast_hash": "52f0f4cad2537e0a20f31eb0e0e50311",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/appindicator.png": {
+    "mtime": 1779383873.958594,
+    "ast_hash": "a8f61d84f4e24fbe2a5d8acd8f1377d4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/caffeine.png": {
+    "mtime": 1779383873.9591572,
+    "ast_hash": "4af2659bd81dba19434514859c19d519",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/clipboard-indicator.png": {
+    "mtime": 1779383873.9591572,
+    "ast_hash": "4ff57b5d937bf08ad97aa73011eaffcb",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/dash-to-dock.png": {
+    "mtime": 1779383873.9591572,
+    "ast_hash": "98cc2841a29118ee88dc7eeeefb79872",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/dash-to-panel.png": {
+    "mtime": 1779383873.9601572,
+    "ast_hash": "aeae2ddfba7f8e6ce64c6360192ff5ac",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/dconf-editor.png": {
+    "mtime": 1779383873.9601572,
+    "ast_hash": "1fa61294af45568b9cb6b155641985ad",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/extension-manager.png": {
+    "mtime": 1779383873.9601572,
+    "ast_hash": "c5045d125fa5bbdc5479d600bbd2fe36",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/gnome-fuzzy-app-search.png": {
+    "mtime": 1779383873.9601572,
+    "ast_hash": "c435591cd3d7fea97d99a738be5464bb",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/gnome-tweaks-font-rendering-settings.png": {
+    "mtime": 1779383873.9601572,
+    "ast_hash": "9acb74baaead0bf1b54ae27ee6bf7975",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/gnome-tweaks-title-bar-settings.png": {
+    "mtime": 1779383873.961157,
+    "ast_hash": "d732d0dd4b5a6d3a06b37fe78b53e7bf",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/gnome/gnome-tweaks.png": {
+    "mtime": 1779383873.961157,
+    "ast_hash": "74f0af18fea21411e540769c647b228e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/guidelines/headings.png": {
+    "mtime": 1779383873.961157,
+    "ast_hash": "0098f05768661fb0a7112bc55712e316",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/guidelines/highlighting-demo.png": {
+    "mtime": 1779383873.9622235,
+    "ast_hash": "94d9e933b4008dc60f4aeb3626bc081d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/guidelines/ice-bear.jpg": {
+    "mtime": 1779383873.9622235,
+    "ast_hash": "e5a7d91bf744df46db14a92a72be3dbf",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/guidelines/tuxies-wiki.png": {
+    "mtime": 1779383873.9631572,
+    "ast_hash": "17d8482ce108580b05cdd8a4c97d4c5b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/linux-vocabs/gnome.png": {
+    "mtime": 1779383873.966157,
+    "ast_hash": "d71bdae65b0010d7a50f96b4aceaf74e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/linux-vocabs/kde-plasma.png": {
+    "mtime": 1779383873.967157,
+    "ast_hash": "fd33f72a0f7eae7bfd2cf8dc74fe9395",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/linux-vocabs/terminal.png": {
+    "mtime": 1779383873.967157,
+    "ast_hash": "4a6b28ea0c559a26ab3cfc43d407aeba",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/linux-vocabs/xfce.png": {
+    "mtime": 1779383873.968157,
+    "ast_hash": "c61b63dc3f82523f4f4189f50b5a2bf5",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/logitech-linux-setup/kando-add-new-menu.png": {
+    "mtime": 1779383873.970157,
+    "ast_hash": "dac367c3865d0783fbeb68297ddeb69e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/logitech-linux-setup/solaar-pair-new-device.png": {
+    "mtime": 1779383873.9711568,
+    "ast_hash": "93d9d56d070de8371de787d0f6534160",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/logitech-linux-setup/solaar-rules-editor.png": {
+    "mtime": 1779383873.9721568,
+    "ast_hash": "b941c7e9f4dbe44f71fc2b4a3958f96a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/terminal-customisation-bash/aesthetic-terminal.png": {
+    "mtime": 1779383873.973157,
+    "ast_hash": "edbca78d42359c158d32d868b9fb6917",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/terminal-customisation-bash/custom-ps1.png": {
+    "mtime": 1779383873.973157,
+    "ast_hash": "ac33080d949aab7d9c1762479581ab22",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/terminal-customisation-bash/fastfetch.png": {
+    "mtime": 1779383873.9741569,
+    "ast_hash": "1f882f3c90195bf2475e9ee85d53a4fa",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/kando-marking-mode.mp4": {
+    "mtime": 1779807463.4008749,
+    "ast_hash": "630807813db4f14d11bc3e63707cfa8f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/aiers-gnome/show-desktop-plus-demo.mp4": {
+    "mtime": 1779807673.82029,
+    "ast_hash": "facc1d2b6e1f55e5b0df1539dedf5d05",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/logitech-linux-setup/kando-marking-mode.mp4": {
+    "mtime": 1779807463.4008749,
+    "ast_hash": "630807813db4f14d11bc3e63707cfa8f",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/external-resources/index.html.vue": {
+    "mtime": 1779988983.875851,
+    "ast_hash": "559dfc877a8dac234682fc70225857c3",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/.temp/pages/guides/external-resources/index.html.js": {
+    "mtime": 1779988983.877851,
+    "ast_hash": "f6ec0e0e2432a6ad9deddfd57de06c56",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/guides/external-resources.md": {
+    "mtime": 1779988983.8518515,
+    "ast_hash": "801cff8abcf137910521d0c63a9171ad",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/kooha-demo.png": {
+    "mtime": 1779983542.069665,
+    "ast_hash": "df69ea69bf1a7bbc62878a1bce99669b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/editors-choice/rclone-manager-demo.png": {
+    "mtime": 1779984825.1003501,
+    "ast_hash": "7e8d84f3560f7b4d295603911cc9bf0a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/fedora/btrfs-assistant-creating-new-snapshot.png": {
+    "mtime": 1780025135.8413587,
+    "ast_hash": "fdf77cf7108fd1c911738cb48a8ee1c2",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/fedora/btrfs-assistant-number-of-snapshots.png": {
+    "mtime": 1780025144.484248,
+    "ast_hash": "6463a0d7cb77346d81b25d1997bb1af8",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/fedora/btrfs-assistant-enable-timeline-systemd.png": {
+    "mtime": 1780024372.2935593,
+    "ast_hash": "d504f659b8d78da617f73e726f919842",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/docs/.vuepress/public/assets/fedora/btrfs-assistant-creating-new-settings.png": {
+    "mtime": 1780024477.1108332,
+    "ast_hash": "7e9fedff66b621c5c81ab69291135a3b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/skills-lock.json": {
+    "mtime": 1780026070.301244,
+    "ast_hash": "3dffa7cfd23defd5caeae9b0e2b5d10d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/SKILL.md": {
+    "mtime": 1780026070.2907286,
+    "ast_hash": "d235a8bbae095ae947ffa328cd5d4d0a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/infrastructure/docker.md": {
+    "mtime": 1780026070.2910497,
+    "ast_hash": "3f594a942b357075f13f156751eafad6",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/languages/javascript.md": {
+    "mtime": 1780026070.2910717,
+    "ast_hash": "264e58e0c495200714e59b465e47087d",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/languages/python.md": {
+    "mtime": 1780026070.2911131,
+    "ast_hash": "14c981c4a95cc8e673aa97d31a3c0ef6",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/api-security.md": {
+    "mtime": 1780026070.2910717,
+    "ast_hash": "dbe67dcea226331819e90cc7882b1f29",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/authentication.md": {
+    "mtime": 1780026070.2911131,
+    "ast_hash": "ed020c93722503c341f7b3c80860a3cf",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/authorization.md": {
+    "mtime": 1780026070.2911515,
+    "ast_hash": "95205e70fcbd274a307c560e64959090",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/business-logic.md": {
+    "mtime": 1780026070.2911692,
+    "ast_hash": "4b99d22b447f65f667b666af0f8a78e3",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/cryptography.md": {
+    "mtime": 1780026070.2911794,
+    "ast_hash": "ba922aa05b39971e2d8d46d4fd2e36f2",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/csrf.md": {
+    "mtime": 1780026070.2912102,
+    "ast_hash": "84f6e2cb3a568115b12b370884074a7a",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/data-protection.md": {
+    "mtime": 1780026070.2912292,
+    "ast_hash": "1cdad1701705046664c4318a5322daaa",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/deserialization.md": {
+    "mtime": 1780026070.2912292,
+    "ast_hash": "ba38847020232f180316709b4918a834",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/error-handling.md": {
+    "mtime": 1780026070.2912529,
+    "ast_hash": "f236105132c6c7dada92b7656f431b0b",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/file-security.md": {
+    "mtime": 1780026070.2912724,
+    "ast_hash": "3e731528fc433628cb13c104e14d677e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/injection.md": {
+    "mtime": 1780026070.2912724,
+    "ast_hash": "697c11f593fcc176a25acf8f66eedf8e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/logging.md": {
+    "mtime": 1780026070.2912958,
+    "ast_hash": "e61987576580640b11afe89b60932943",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/misconfiguration.md": {
+    "mtime": 1780026070.291312,
+    "ast_hash": "2e00d3fb0631143648980939c7cfd2d4",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/modern-threats.md": {
+    "mtime": 1780026070.291312,
+    "ast_hash": "4f63a8908fbed361583504106521280e",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/ssrf.md": {
+    "mtime": 1780026070.2913413,
+    "ast_hash": "0978727833da973054939574a8283f13",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/supply-chain.md": {
+    "mtime": 1780026070.2913518,
+    "ast_hash": "1728ca223dfd9095411095f564565785",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/.agents/skills/security-review/references/xss.md": {
+    "mtime": 1780026070.291369,
+    "ast_hash": "600cda89df56b45b02e16376d2d80dac",
+    "semantic_hash": ""
+  },
+  "/home/aier/Documents/tuxies-wiki/ROADMAP.md": {
+    "mtime": 1781108694.4114692,
+    "ast_hash": "6f573e1d028fff45d486c28208e6b166",
+    "semantic_hash": ""
+  }
+}

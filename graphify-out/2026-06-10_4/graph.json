@@ -4342,7 +4342,7 @@
       "label": "**How to append changes**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L46",
+      "source_location": "L47",
       "id": "guides_firefox_userjs_how_to_append_changes",
       "community": 81,
       "norm_label": "**how to append changes**"
@@ -4351,7 +4351,7 @@
       "label": "**Method 1: `user.js` config file (faster)**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L48",
+      "source_location": "L49",
       "id": "guides_firefox_userjs_method_1_user_js_config_file_faster",
       "community": 81,
       "norm_label": "**method 1: `user.js` config file (faster)**"
@@ -4360,7 +4360,7 @@
       "label": "**Method 2: \"about:config\"**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L62",
+      "source_location": "L63",
       "id": "guides_firefox_userjs_method_2_about_config",
       "community": 81,
       "norm_label": "**method 2: \"about:config\"**"
@@ -4369,7 +4369,7 @@
       "label": "**Mousewheel scrolling**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L84",
+      "source_location": "L85",
       "id": "guides_firefox_userjs_mousewheel_scrolling",
       "community": 81,
       "norm_label": "**mousewheel scrolling**"
@@ -4378,7 +4378,7 @@
       "label": "**Mousewheel speed**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L86",
+      "source_location": "L87",
       "id": "guides_firefox_userjs_mousewheel_speed",
       "community": 81,
       "norm_label": "**mousewheel speed**"
@@ -4387,7 +4387,7 @@
       "label": "code:js (user_pref(\"mousewheel.default.delta_multiplier_x\", 200); // )",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L90",
+      "source_location": "L91",
       "id": "guides_firefox_userjs_codeblock_2",
       "community": 81,
       "norm_label": "code:js (user_pref(\"mousewheel.default.delta_multiplier_x\", 200); // )"
@@ -4396,7 +4396,7 @@
       "label": "**Autoscroll**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L98",
+      "source_location": "L99",
       "id": "guides_firefox_userjs_autoscroll",
       "community": 81,
       "norm_label": "**autoscroll**"
@@ -4405,7 +4405,7 @@
       "label": "code:js (user_pref(\"general.autoScroll\", true); // false)",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L102",
+      "source_location": "L103",
       "id": "guides_firefox_userjs_codeblock_3",
       "community": 81,
       "norm_label": "code:js (user_pref(\"general.autoscroll\", true); // false)"
@@ -4414,7 +4414,7 @@
       "label": "**Trackpad scrolling**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L106",
+      "source_location": "L107",
       "id": "guides_firefox_userjs_trackpad_scrolling",
       "community": 81,
       "norm_label": "**trackpad scrolling**"
@@ -4423,7 +4423,7 @@
       "label": "code:js (user_pref(\"apz.fling_friction\", \"0.004\"); // \"0.002\")",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L110",
+      "source_location": "L111",
       "id": "guides_firefox_userjs_codeblock_4",
       "community": 81,
       "norm_label": "code:js (user_pref(\"apz.fling_friction\", \"0.004\"); // \"0.002\")"
@@ -4432,7 +4432,7 @@
       "label": "**Other settings**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L132",
+      "source_location": "L133",
       "id": "guides_firefox_userjs_other_settings",
       "community": 81,
       "norm_label": "**other settings**"
@@ -4441,7 +4441,7 @@
       "label": "**Hover to see preview of tab**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L134",
+      "source_location": "L135",
       "id": "guides_firefox_userjs_hover_to_see_preview_of_tab",
       "community": 81,
       "norm_label": "**hover to see preview of tab**"
@@ -4450,7 +4450,7 @@
       "label": "code:js (user_pref(\"browser.tabs.hoverPreview.enabled\", true); // fal)",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L136",
+      "source_location": "L137",
       "id": "guides_firefox_userjs_codeblock_5",
       "community": 81,
       "norm_label": "code:js (user_pref(\"browser.tabs.hoverpreview.enabled\", true); // fal)"
@@ -4459,19 +4459,19 @@
       "label": "**Zen Browser\u2013specific settings**",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L140",
+      "source_location": "L141",
       "id": "guides_firefox_userjs_zen_browser_specific_settings",
       "community": 81,
       "norm_label": "**zen browser\u2013specific settings**"
     },
     {
-      "label": "code:js (user_pref(\"zen.workspaces.separate-essentials\", false); // t)",
+      "label": "code:js (user_pref(\"zen.splitView.change-on-hover\", true); // false)",
       "file_type": "document",
       "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": "L144",
+      "source_location": "L145",
       "id": "guides_firefox_userjs_codeblock_6",
       "community": 81,
-      "norm_label": "code:js (user_pref(\"zen.workspaces.separate-essentials\", false); // t)"
+      "norm_label": "code:js (user_pref(\"zen.splitview.change-on-hover\", true); // false)"
     },
     {
       "label": "README.md",

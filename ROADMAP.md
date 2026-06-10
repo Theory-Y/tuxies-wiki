@@ -25,19 +25,22 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 **File:** `docs/guides/firefox-userjs.md` · **Status:** testing iteration, unpublished.
 
-We now have a Gnome touchpad scrolling guide (`notes/linux-guides/gnome.md`) covering
-touchpad config at the system level. The Firefox guide's **Trackpad scrolling** section
-duplicates that, so demote those prefs to an optional alternative.
+We already cover a system-level touchpad scrolling sensitivity fix on the External
+Resources page (`/guides/external-resources/`; the Gnome guide `notes/linux-guides/gnome.md`
+defers to it). The Firefox guide's **Trackpad scrolling** section duplicates that, so demote
+those prefs to an optional alternative.
 
-- [ ] In the **Trackpad scrolling** section (and the matching lines in the **Preview**
+- [x] In the **Trackpad scrolling** section (and the matching lines in the **Preview**
       `user.js` block), comment out the three touchpad-specific prefs as an optional choice:
   - `apz.gtk.pangesture.delta_mode`
   - `apz.gtk.pangesture.pixel_delta_mode_multiplier`
   - `apz.overscroll.enabled`
-- [ ] Keep `apz.fling_friction` **active**, but change its value `"0.005"` → `"0.004"`.
-- [ ] Add a short note pointing readers to the Gnome touchpad scrolling guide as the
-      preferred system-level approach.
-- [ ] Do not publish — this is a testing iteration only.
+- [x] Keep `apz.fling_friction` **active**, but change its value `"0.005"` → `"0.004"`.
+- [x] Add a short `:::tip` pointing readers to the touchpad scrolling sensitivity fix on the
+      External Resources page (`/guides/external-resources/`) as the preferred system-level
+      approach.
+- [ ] Do not publish — this is a testing iteration only. **Edits landed in repo
+      2026-06-10; hold from deploy until reviewed.**
 
 ---
 

@@ -1,7 +1,7 @@
 # Graph Report - tuxies-wiki  (2026-06-10)
 
 ## Corpus Check
-- 171 files · ~1,376,085 words
+- 171 files · ~1,376,181 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -441,7 +441,7 @@ Nodes (18): Action Plan: Remove insecure SELinux=permissive recommendation from 
 
 ### Community 81 - "Community 81"
 Cohesion: 0.13
-Nodes (17): **Autoscroll**, code:js (// Scrolling), code:js (user_pref("mousewheel.default.delta_multiplier_x", 200); // ), code:js (user_pref("general.autoScroll", true); // false), code:js (user_pref("apz.fling_friction", "0.004"); // "0.002"), code:js (user_pref("browser.tabs.hoverPreview.enabled", true); // fal), code:js (user_pref("zen.workspaces.separate-essentials", false); // t), **Hover to see preview of tab** (+9 more)
+Nodes (17): **Autoscroll**, code:js (// Scrolling), code:js (user_pref("mousewheel.default.delta_multiplier_x", 200); // ), code:js (user_pref("general.autoScroll", true); // false), code:js (user_pref("apz.fling_friction", "0.004"); // "0.002"), code:js (user_pref("browser.tabs.hoverPreview.enabled", true); // fal), code:js (user_pref("zen.splitView.change-on-hover", true); // false), **Hover to see preview of tab** (+9 more)
 
 ### Community 82 - "Community 82"
 Cohesion: 0.13

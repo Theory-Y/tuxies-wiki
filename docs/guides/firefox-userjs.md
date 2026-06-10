@@ -29,18 +29,15 @@ user_pref("mousewheel.default.delta_multiplier_y", 200); // 100
 user_pref("mousewheel.default.delta_multiplier_z", 200); // 100
 user_pref("general.autoScroll", true); // false
 
-user_pref("apz.fling_friction", "0.005"); // "0.002"
-user_pref("apz.gtk.pangesture.delta_mode", 2); // 0
-user_pref("apz.gtk.pangesture.pixel_delta_mode_multiplier", "7"); // "40.0"
-user_pref("apz.overscroll.enabled", true); // true, for linux
+user_pref("apz.fling_friction", "0.004"); // "0.002"
+// Touchpad scrolling — better handled system-wide (see Trackpad scrolling section); commented as optional
+// user_pref("apz.gtk.pangesture.delta_mode", 2); // 0
+// user_pref("apz.gtk.pangesture.pixel_delta_mode_multiplier", "7"); // "40.0"
+// user_pref("apz.overscroll.enabled", true); // true, for linux
 
 // Other Settings
 user_pref("browser.tabs.hoverPreview.enabled", true); // false
 // Zen Browser–specific settings
-user_pref("zen.splitView.change-on-hover", true); // false
-user_pref("zen.view.compact.hide-toolbar", true); // false
-user_pref("zen.view.compact.toolbar-flash-popup", false); // false
-user_pref("zen.view.show-newtab-button-top", false); // true
 user_pref("zen.workspaces.separate-essentials", false); // true
 ```
 
@@ -111,13 +108,21 @@ user_pref("general.autoScroll", true); // false
 The touchpad scrolling tends to be way too fast on Linux, let's slow it down and make it more similar to what we'd find on Windows or Mac.
 
 ```js
-user_pref("apz.fling_friction", "0.005"); // "0.002"
-user_pref("apz.gtk.pangesture.delta_mode", 2); // 0
-user_pref("apz.gtk.pangesture.pixel_delta_mode_multiplier", "7"); // "40.0"
-user_pref("apz.overscroll.enabled", true); // true, for linux
+user_pref("apz.fling_friction", "0.004"); // "0.002"
+// Optional — see the tip below before enabling these:
+// user_pref("apz.gtk.pangesture.delta_mode", 2); // 0
+// user_pref("apz.gtk.pangesture.pixel_delta_mode_multiplier", "7"); // "40.0"
+// user_pref("apz.overscroll.enabled", true); // true, for linux
 ```
 
 - ==apz.fling_friction== determines how quickly the scrolling slows down.
+
+:::tip Prefer a system-wide touchpad fix
+If you are on GNOME, adjusting touchpad scrolling speed at the system level is usually the better option, as it applies everywhere rather than only inside Firefox. See the [touchpad scrolling sensitivity fix](/guides/external-resources/) on our External Resources page. The three options below are left commented out for that reason — uncomment them only if you want to tweak trackpad behaviour inside Firefox specifically.
+:::
+
+The remaining options below are optional (commented out by default):
+
 - ==apz.gtk.pangesture.delta_mode== set to 2 (pixel mode) ensures that scrolling takes into account display scaling (useful if you are not using 100% scaling).
 - ==apz.gtk.pangesture.pixel_delta_mode_multiplier== determines the speed of the touchpad scrolling in pixel mode. It is recommended that you set the mousewheel delta multipliers first before this value, as this value applies only to trackpads, whereas the mousewheel delta multipliers apply to both mouse and trackpad.
 - ==apz.overscroll.enabled== set to true makes the page elastic as you reaches its end, making it feel more alive.
@@ -137,15 +142,7 @@ user_pref("browser.tabs.hoverPreview.enabled", true); // false
 If you are using Zen Browser, you can check out these settings:
 
 ```js
-user_pref("zen.splitView.change-on-hover", true); // false
-user_pref("zen.view.compact.hide-toolbar", true); // false
-user_pref("zen.view.compact.toolbar-flash-popup", false); // false
-user_pref("zen.view.show-newtab-button-top", false); // true
 user_pref("zen.workspaces.separate-essentials", false); // true
 ```
 
-- ==zen.splitView.change-on-hover== set to true changes focus on split tabs without having to use a mouse click, similar to how Linux window managers change focus.
-- ==zen.view.compact.hide-toolbar== set to true hides the url toolbar if you are using multiple toolbars in your Appearance settings.
-- ==zen.view.compact.toolbar-flash-popup== set to false disables the tab bar from popping up in compact mode when switching tabs.
-- ==zen.view.show-newtab-button-top== sets the new tabs button to be at the bottom of tabs instead of being fixed below pinned tabs.
 - ==zen.workspaces.separate-essentials== allows essentials to be workspace independent (like how they used to be—you will see all your essentials regardless of what workspace you are in).
