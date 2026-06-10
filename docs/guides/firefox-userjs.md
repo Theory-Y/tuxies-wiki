@@ -39,6 +39,7 @@ user_pref("apz.fling_friction", "0.004"); // "0.002"
 user_pref("browser.tabs.hoverPreview.enabled", true); // false
 // Zen Browser–specific settings
 user_pref("zen.workspaces.separate-essentials", false); // true
+// user_pref("zen.view.show-newtab-button-top", false); // true
 ```
 
 :::
@@ -143,6 +144,8 @@ If you are using Zen Browser, you can check out these settings:
 
 ```js
 user_pref("zen.workspaces.separate-essentials", false); // true
+// user_pref("zen.view.show-newtab-button-top", false); // true
 ```
 
 - ==zen.workspaces.separate-essentials== allows essentials to be workspace independent (like how they used to be—you will see all your essentials regardless of what workspace you are in).
+- ==zen.view.show-newtab-button-top== moves the new tab button to the top of the tab list. Commented out by default — uncomment to move new tabs button to the bottom.
