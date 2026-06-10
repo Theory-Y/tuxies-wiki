@@ -21,508 +21,463 @@
   },
   "nodes": [
     {
-      "label": "settings.json",
-      "file_type": "code",
-      "source_file": ".claude/settings.json",
-      "source_location": "L1",
-      "id": "claude_settings_json",
-      "community": 100,
-      "norm_label": "settings.json"
-    },
-    {
-      "label": "hooks",
-      "file_type": "code",
-      "source_file": ".claude/settings.json",
-      "source_location": "L2",
-      "id": "claude_settings_hooks",
-      "community": 100,
-      "norm_label": "hooks"
-    },
-    {
-      "label": "PreToolUse",
-      "file_type": "code",
-      "source_file": ".claude/settings.json",
-      "source_location": "L3",
-      "id": "claude_settings_hooks_pretooluse",
-      "community": 100,
-      "norm_label": "pretooluse"
-    },
-    {
-      "label": "enabledPlugins",
-      "file_type": "code",
-      "source_file": ".claude/settings.json",
-      "source_location": "L15",
-      "id": "claude_settings_enabledplugins",
-      "community": 100,
-      "norm_label": "enabledplugins"
-    },
-    {
-      "label": "theoryy-workflow@theoryy",
-      "file_type": "code",
-      "source_file": ".claude/settings.json",
-      "source_location": "L16",
-      "id": "claude_settings_enabledplugins_theoryy_workflow_theoryy",
-      "community": 100,
-      "norm_label": "theoryy-workflow@theoryy"
-    },
-    {
       "label": "ACTION-PLAN.md",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L1",
+      "id": "action_plan_md",
       "community": 268,
-      "norm_label": "action-plan.md",
-      "id": "action_plan_md"
+      "norm_label": "action-plan.md"
     },
     {
       "label": "Guide Audit \u2014 Action Plan",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L1",
+      "id": "tuxies_wiki_action_plan_guide_audit_action_plan",
       "community": 268,
-      "norm_label": "guide audit \u2014 action plan",
-      "id": "tuxies_wiki_action_plan_guide_audit_action_plan"
+      "norm_label": "guide audit \u2014 action plan"
     },
     {
       "label": "Non-Arch guides",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L13",
+      "id": "tuxies_wiki_action_plan_non_arch_guides",
       "community": 268,
-      "norm_label": "non-arch guides",
-      "id": "tuxies_wiki_action_plan_non_arch_guides"
+      "norm_label": "non-arch guides"
     },
     {
       "label": "`notes/linux-apps/editors-choice.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L15",
+      "id": "tuxies_wiki_action_plan_notes_linux_apps_editors_choice_md",
       "community": 268,
-      "norm_label": "`notes/linux-apps/editors-choice.md`",
-      "id": "tuxies_wiki_action_plan_notes_linux_apps_editors_choice_md"
+      "norm_label": "`notes/linux-apps/editors-choice.md`"
     },
     {
       "label": "`guides/terminal-customisation-bash.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L20",
+      "id": "tuxies_wiki_action_plan_guides_terminal_customisation_bash_md",
       "community": 268,
-      "norm_label": "`guides/terminal-customisation-bash.md`",
-      "id": "tuxies_wiki_action_plan_guides_terminal_customisation_bash_md"
+      "norm_label": "`guides/terminal-customisation-bash.md`"
     },
     {
       "label": "`guides/rb-14-2023-fedora.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L25",
+      "id": "tuxies_wiki_action_plan_guides_rb_14_2023_fedora_md",
       "community": 268,
-      "norm_label": "`guides/rb-14-2023-fedora.md`",
-      "id": "tuxies_wiki_action_plan_guides_rb_14_2023_fedora_md"
+      "norm_label": "`guides/rb-14-2023-fedora.md`"
     },
     {
       "label": "`guides/ssh-guide.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L30",
+      "id": "tuxies_wiki_action_plan_guides_ssh_guide_md",
       "community": 268,
-      "norm_label": "`guides/ssh-guide.md`",
-      "id": "tuxies_wiki_action_plan_guides_ssh_guide_md"
+      "norm_label": "`guides/ssh-guide.md`"
     },
     {
       "label": "`guides/key-remapping-with-keyd.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L36",
+      "id": "tuxies_wiki_action_plan_guides_key_remapping_with_keyd_md",
       "community": 268,
-      "norm_label": "`guides/key-remapping-with-keyd.md`",
-      "id": "tuxies_wiki_action_plan_guides_key_remapping_with_keyd_md"
+      "norm_label": "`guides/key-remapping-with-keyd.md`"
     },
     {
       "label": "`guides/microsoft-edge-setup.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L40",
+      "id": "tuxies_wiki_action_plan_guides_microsoft_edge_setup_md",
       "community": 268,
-      "norm_label": "`guides/microsoft-edge-setup.md`",
-      "id": "tuxies_wiki_action_plan_guides_microsoft_edge_setup_md"
+      "norm_label": "`guides/microsoft-edge-setup.md`"
     },
     {
       "label": "`notes/linux-guides/arch.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L46",
+      "id": "tuxies_wiki_action_plan_notes_linux_guides_arch_md",
       "community": 268,
-      "norm_label": "`notes/linux-guides/arch.md`",
-      "id": "tuxies_wiki_action_plan_notes_linux_guides_arch_md"
+      "norm_label": "`notes/linux-guides/arch.md`"
     },
     {
       "label": "After all fixes",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L63",
+      "id": "tuxies_wiki_action_plan_after_all_fixes",
       "community": 268,
-      "norm_label": "after all fixes",
-      "id": "tuxies_wiki_action_plan_after_all_fixes"
+      "norm_label": "after all fixes"
     },
     {
       "label": "Second-pass audit (2026-06-04)",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L70",
+      "id": "tuxies_wiki_action_plan_second_pass_audit_2026_06_04",
       "community": 268,
-      "norm_label": "second-pass audit (2026-06-04)",
-      "id": "tuxies_wiki_action_plan_second_pass_audit_2026_06_04"
+      "norm_label": "second-pass audit (2026-06-04)"
     },
     {
       "label": "`guides/rb-14-2023-fedora.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L74",
+      "id": "tuxies_wiki_action_plan_guides_rb_14_2023_fedora_md_74",
       "community": 268,
-      "norm_label": "`guides/rb-14-2023-fedora.md`",
-      "id": "tuxies_wiki_action_plan_guides_rb_14_2023_fedora_md_74"
+      "norm_label": "`guides/rb-14-2023-fedora.md`"
     },
     {
       "label": "`notes/linux-apps/editors-choice.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L78",
+      "id": "tuxies_wiki_action_plan_notes_linux_apps_editors_choice_md_78",
       "community": 268,
-      "norm_label": "`notes/linux-apps/editors-choice.md`",
-      "id": "tuxies_wiki_action_plan_notes_linux_apps_editors_choice_md_78"
+      "norm_label": "`notes/linux-apps/editors-choice.md`"
     },
     {
       "label": "`notes/linux-guides/arch.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L86",
+      "id": "tuxies_wiki_action_plan_notes_linux_guides_arch_md_86",
       "community": 268,
-      "norm_label": "`notes/linux-guides/arch.md`",
-      "id": "tuxies_wiki_action_plan_notes_linux_guides_arch_md_86"
+      "norm_label": "`notes/linux-guides/arch.md`"
     },
     {
       "label": "`guides/vuepress-guide.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L91",
+      "id": "tuxies_wiki_action_plan_guides_vuepress_guide_md",
       "community": 268,
-      "norm_label": "`guides/vuepress-guide.md`",
-      "id": "tuxies_wiki_action_plan_guides_vuepress_guide_md"
+      "norm_label": "`guides/vuepress-guide.md`"
     },
     {
       "label": "`archived/qemu-kvm.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L95",
+      "id": "tuxies_wiki_action_plan_archived_qemu_kvm_md",
       "community": 268,
-      "norm_label": "`archived/qemu-kvm.md`",
-      "id": "tuxies_wiki_action_plan_archived_qemu_kvm_md"
+      "norm_label": "`archived/qemu-kvm.md`"
     },
     {
       "label": "`guides/ssh-guide.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L99",
+      "id": "tuxies_wiki_action_plan_guides_ssh_guide_md_99",
       "community": 268,
-      "norm_label": "`guides/ssh-guide.md`",
-      "id": "tuxies_wiki_action_plan_guides_ssh_guide_md_99"
+      "norm_label": "`guides/ssh-guide.md`"
     },
     {
       "label": "`guides/aiers-gnome.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L105",
+      "id": "tuxies_wiki_action_plan_guides_aiers_gnome_md",
       "community": 268,
-      "norm_label": "`guides/aiers-gnome.md`",
-      "id": "tuxies_wiki_action_plan_guides_aiers_gnome_md"
+      "norm_label": "`guides/aiers-gnome.md`"
     },
     {
       "label": "`guides/ctf-second-brain.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L109",
+      "id": "tuxies_wiki_action_plan_guides_ctf_second_brain_md",
       "community": 268,
-      "norm_label": "`guides/ctf-second-brain.md`",
-      "id": "tuxies_wiki_action_plan_guides_ctf_second_brain_md"
+      "norm_label": "`guides/ctf-second-brain.md`"
     },
     {
       "label": "`guides/terminal-customisation-bash.md`",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L114",
+      "id": "tuxies_wiki_action_plan_guides_terminal_customisation_bash_md_114",
       "community": 268,
-      "norm_label": "`guides/terminal-customisation-bash.md`",
-      "id": "tuxies_wiki_action_plan_guides_terminal_customisation_bash_md_114"
+      "norm_label": "`guides/terminal-customisation-bash.md`"
     },
     {
       "label": "After second-pass fixes",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L120",
+      "id": "tuxies_wiki_action_plan_after_second_pass_fixes",
       "community": 268,
-      "norm_label": "after second-pass fixes",
-      "id": "tuxies_wiki_action_plan_after_second_pass_fixes"
+      "norm_label": "after second-pass fixes"
     },
     {
       "label": "Changelog / Contributors regression (2026-06-05)",
       "file_type": "document",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L126",
+      "id": "tuxies_wiki_action_plan_changelog_contributors_regression_2026_06_05",
       "community": 268,
-      "norm_label": "changelog / contributors regression (2026-06-05)",
-      "id": "tuxies_wiki_action_plan_changelog_contributors_regression_2026_06_05"
+      "norm_label": "changelog / contributors regression (2026-06-05)"
     },
     {
       "label": "package.json",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L1",
+      "id": "package_json",
       "community": 1,
-      "norm_label": "package.json",
-      "id": "package_json"
+      "norm_label": "package.json"
     },
     {
       "label": "name",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L2",
+      "id": "tuxies_wiki_package_name",
       "community": 1,
-      "norm_label": "name",
-      "id": "tuxies_wiki_package_name"
+      "norm_label": "name"
     },
     {
       "label": "type",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L3",
+      "id": "tuxies_wiki_package_type",
       "community": 1,
-      "norm_label": "type",
-      "id": "tuxies_wiki_package_type"
+      "norm_label": "type"
     },
     {
       "label": "version",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L4",
+      "id": "tuxies_wiki_package_version",
       "community": 1,
-      "norm_label": "version",
-      "id": "tuxies_wiki_package_version"
+      "norm_label": "version"
     },
     {
       "label": "description",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L5",
+      "id": "tuxies_wiki_package_description",
       "community": 1,
-      "norm_label": "description",
-      "id": "tuxies_wiki_package_description"
+      "norm_label": "description"
     },
     {
       "label": "license",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L6",
+      "id": "tuxies_wiki_package_license",
       "community": 1,
-      "norm_label": "license",
-      "id": "tuxies_wiki_package_license"
+      "norm_label": "license"
     },
     {
       "label": "engines",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L7",
+      "id": "tuxies_wiki_package_engines",
       "community": 1,
-      "norm_label": "engines",
-      "id": "tuxies_wiki_package_engines"
+      "norm_label": "engines"
     },
     {
       "label": "node",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L8",
+      "id": "tuxies_wiki_package_engines_node",
       "community": 1,
-      "norm_label": "node",
-      "id": "tuxies_wiki_package_engines_node"
+      "norm_label": "node"
     },
     {
       "label": "scripts",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L10",
+      "id": "tuxies_wiki_package_scripts",
       "community": 1,
-      "norm_label": "scripts",
-      "id": "tuxies_wiki_package_scripts"
+      "norm_label": "scripts"
     },
     {
       "label": "dev",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L11",
+      "id": "tuxies_wiki_package_scripts_dev",
       "community": 1,
-      "norm_label": "dev",
-      "id": "tuxies_wiki_package_scripts_dev"
+      "norm_label": "dev"
     },
     {
       "label": "start",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L12",
+      "id": "tuxies_wiki_package_scripts_start",
       "community": 1,
-      "norm_label": "start",
-      "id": "tuxies_wiki_package_scripts_start"
+      "norm_label": "start"
     },
     {
       "label": "dev-clean",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L13",
+      "id": "tuxies_wiki_package_scripts_dev_clean",
       "community": 1,
-      "norm_label": "dev-clean",
-      "id": "tuxies_wiki_package_scripts_dev_clean"
+      "norm_label": "dev-clean"
     },
     {
       "label": "build",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L14",
+      "id": "tuxies_wiki_package_scripts_build",
       "community": 1,
-      "norm_label": "build",
-      "id": "tuxies_wiki_package_scripts_build"
+      "norm_label": "build"
     },
     {
       "label": "build-gh",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
+      "id": "tuxies_wiki_package_scripts_build_gh",
       "community": 1,
-      "norm_label": "build-gh",
-      "id": "tuxies_wiki_package_scripts_build_gh"
+      "norm_label": "build-gh"
     },
     {
       "label": "build-cf",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
+      "id": "tuxies_wiki_package_scripts_build_cf",
       "community": 1,
-      "norm_label": "build-cf",
-      "id": "tuxies_wiki_package_scripts_build_cf"
+      "norm_label": "build-cf"
     },
     {
       "label": "vp-update",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L17",
+      "id": "tuxies_wiki_package_scripts_vp_update",
       "community": 1,
-      "norm_label": "vp-update",
-      "id": "tuxies_wiki_package_scripts_vp_update"
+      "norm_label": "vp-update"
     },
     {
       "label": "update-deps",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L18",
+      "id": "tuxies_wiki_package_scripts_update_deps",
       "community": 1,
-      "norm_label": "update-deps",
-      "id": "tuxies_wiki_package_scripts_update_deps"
+      "norm_label": "update-deps"
     },
     {
       "label": "deploy",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L19",
+      "id": "tuxies_wiki_package_scripts_deploy",
       "community": 1,
-      "norm_label": "deploy",
-      "id": "tuxies_wiki_package_scripts_deploy"
+      "norm_label": "deploy"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L21",
+      "id": "tuxies_wiki_package_devdependencies",
       "community": 1,
-      "norm_label": "devdependencies",
-      "id": "tuxies_wiki_package_devdependencies"
+      "norm_label": "devdependencies"
     },
     {
       "label": "@vuepress/bundler-vite",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L22",
+      "id": "tuxies_wiki_package_devdependencies_vuepress_bundler_vite",
       "community": 1,
-      "norm_label": "@vuepress/bundler-vite",
-      "id": "tuxies_wiki_package_devdependencies_vuepress_bundler_vite"
+      "norm_label": "@vuepress/bundler-vite"
     },
     {
       "label": "cross-env",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L23",
+      "id": "tuxies_wiki_package_devdependencies_cross_env",
       "community": 1,
-      "norm_label": "cross-env",
-      "id": "tuxies_wiki_package_devdependencies_cross_env"
+      "norm_label": "cross-env"
     },
     {
       "label": "gh-pages",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L24",
+      "id": "tuxies_wiki_package_devdependencies_gh_pages",
       "community": 1,
-      "norm_label": "gh-pages",
-      "id": "tuxies_wiki_package_devdependencies_gh_pages"
+      "norm_label": "gh-pages"
     },
     {
       "label": "http-server",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L25",
+      "id": "tuxies_wiki_package_devdependencies_http_server",
       "community": 1,
-      "norm_label": "http-server",
-      "id": "tuxies_wiki_package_devdependencies_http_server"
+      "norm_label": "http-server"
     },
     {
       "label": "sass-embedded",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L26",
+      "id": "tuxies_wiki_package_devdependencies_sass_embedded",
       "community": 1,
-      "norm_label": "sass-embedded",
-      "id": "tuxies_wiki_package_devdependencies_sass_embedded"
+      "norm_label": "sass-embedded"
     },
     {
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L27",
+      "id": "tuxies_wiki_package_devdependencies_typescript",
       "community": 1,
-      "norm_label": "typescript",
-      "id": "tuxies_wiki_package_devdependencies_typescript"
+      "norm_label": "typescript"
     },
     {
       "label": "vue",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L28",
+      "id": "tuxies_wiki_package_devdependencies_vue",
       "community": 1,
-      "norm_label": "vue",
-      "id": "tuxies_wiki_package_devdependencies_vue"
+      "norm_label": "vue"
     },
     {
       "label": "vuepress",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L29",
+      "id": "tuxies_wiki_package_devdependencies_vuepress",
       "community": 1,
-      "norm_label": "vuepress",
-      "id": "tuxies_wiki_package_devdependencies_vuepress"
+      "norm_label": "vuepress"
     },
     {
       "label": "vuepress-theme-plume",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L30",
+      "id": "tuxies_wiki_package_devdependencies_vuepress_theme_plume",
       "community": 1,
-      "norm_label": "vuepress-theme-plume",
-      "id": "tuxies_wiki_package_devdependencies_vuepress_theme_plume"
+      "norm_label": "vuepress-theme-plume"
     },
     {
       "label": "package.json",
@@ -604,6 +559,33 @@
       "community": 225,
       "norm_label": "computedhash",
       "id": "tuxies_wiki_skills_lock_security_review_computedhash"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "community": 100,
+      "norm_label": "settings.json",
+      "id": "home_aier_documents_tuxies_wiki_claude_settings_json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "community": 100,
+      "norm_label": "hooks",
+      "id": "claude_settings_hooks"
+    },
+    {
+      "label": "PreToolUse",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "community": 100,
+      "norm_label": "pretooluse",
+      "id": "claude_settings_hooks_pretooluse"
     },
     {
       "label": "settings.local.json",
@@ -4793,7 +4775,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L15",
-      "community": 29,
+      "community": 72,
       "norm_label": "**formatting**",
       "id": "contributions_guidelines_formatting"
     },
@@ -4802,7 +4784,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L17",
-      "community": 29,
+      "community": 72,
       "norm_label": "**file naming convention**",
       "id": "contributions_guidelines_file_naming_convention"
     },
@@ -4811,7 +4793,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L30",
-      "community": 29,
+      "community": 72,
       "norm_label": "**titles, file names, & permalinks**",
       "id": "contributions_guidelines_titles_file_names_permalinks"
     },
@@ -4820,7 +4802,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L54",
-      "community": 29,
+      "community": 72,
       "norm_label": "**article tagging**",
       "id": "contributions_guidelines_article_tagging"
     },
@@ -4829,7 +4811,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L58",
-      "community": 29,
+      "community": 72,
       "norm_label": "code:md (---)",
       "id": "contributions_guidelines_codeblock_1"
     },
@@ -4838,7 +4820,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L80",
-      "community": 29,
+      "community": 72,
       "norm_label": "**language**",
       "id": "contributions_guidelines_language"
     },
@@ -4847,7 +4829,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L88",
-      "community": 29,
+      "community": 72,
       "norm_label": "**code formatting**",
       "id": "contributions_guidelines_code_formatting"
     },
@@ -4856,7 +4838,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L97",
-      "community": 29,
+      "community": 72,
       "norm_label": "**code structure**",
       "id": "contributions_guidelines_code_structure"
     },
@@ -4865,7 +4847,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L119",
-      "community": 29,
+      "community": 72,
       "norm_label": "code:md (<!-- \":::::\" demo-wrapper-->)",
       "id": "contributions_guidelines_codeblock_2"
     },
@@ -4874,7 +4856,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L159",
-      "community": 29,
+      "community": 72,
       "norm_label": "**icons**",
       "id": "contributions_guidelines_icons"
     },
@@ -4883,7 +4865,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L163",
-      "community": 29,
+      "community": 72,
       "norm_label": "core website components",
       "id": "contributions_guidelines_core_website_components"
     },
@@ -4892,7 +4874,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L169",
-      "community": 29,
+      "community": 72,
       "norm_label": "cards",
       "id": "contributions_guidelines_cards"
     },
@@ -4901,7 +4883,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L175",
-      "community": 29,
+      "community": 72,
       "norm_label": "tabs",
       "id": "contributions_guidelines_tabs"
     },
@@ -4910,7 +4892,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L191",
-      "community": 29,
+      "community": 72,
       "norm_label": "code:md (::mdi:linux =50 /#000000::)",
       "id": "contributions_guidelines_codeblock_3"
     },
@@ -5207,7 +5189,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L644",
-      "community": 77,
+      "community": 273,
       "norm_label": "tabs",
       "id": "contributions_guidelines_tabs_644"
     },
@@ -5216,7 +5198,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L652",
-      "community": 77,
+      "community": 273,
       "norm_label": "code:`md (:::tabs)",
       "id": "contributions_guidelines_codeblock_23"
     },
@@ -5225,7 +5207,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L659",
-      "community": 77,
+      "community": 273,
       "norm_label": "code:block24",
       "id": "contributions_guidelines_codeblock_24"
     },
@@ -5234,7 +5216,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L665",
-      "community": 77,
+      "community": 273,
       "norm_label": "code:block25",
       "id": "contributions_guidelines_codeblock_25"
     },
@@ -5243,7 +5225,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L671",
-      "community": 77,
+      "community": 273,
       "norm_label": "code:block26",
       "id": "contributions_guidelines_codeblock_26"
     },
@@ -5252,7 +5234,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L684",
-      "community": 77,
+      "community": 273,
       "norm_label": "code:bash (sudo dnf install timeshift)",
       "id": "contributions_guidelines_codeblock_27"
     },
@@ -5261,7 +5243,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L690",
-      "community": 77,
+      "community": 273,
       "norm_label": "code:bash (sudo apt install timeshift)",
       "id": "contributions_guidelines_codeblock_28"
     },
@@ -5270,7 +5252,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L696",
-      "community": 77,
+      "community": 273,
       "norm_label": "code:bash (pacman -s timeshift)",
       "id": "contributions_guidelines_codeblock_29"
     },
@@ -5297,7 +5279,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L716",
-      "community": 29,
+      "community": 274,
       "norm_label": "some more python code...",
       "id": "contributions_guidelines_some_more_python_code"
     },
@@ -5306,7 +5288,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L717",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:block31",
       "id": "contributions_guidelines_codeblock_31"
     },
@@ -5315,7 +5297,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L721",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:block32",
       "id": "contributions_guidelines_codeblock_32"
     },
@@ -5324,7 +5306,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L725",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:block33",
       "id": "contributions_guidelines_codeblock_33"
     },
@@ -5333,7 +5315,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L734",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:block34",
       "id": "contributions_guidelines_codeblock_34"
     },
@@ -5342,7 +5324,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L743",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:python (e = mc^2)",
       "id": "contributions_guidelines_codeblock_35"
     },
@@ -5351,7 +5333,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L749",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:python (some impressive algorithm)",
       "id": "contributions_guidelines_codeblock_36"
     },
@@ -5360,7 +5342,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L753",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:python (some python code)",
       "id": "contributions_guidelines_codeblock_37"
     },
@@ -5369,7 +5351,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L757",
-      "community": 29,
+      "community": 274,
       "norm_label": "code:json ({)",
       "id": "contributions_guidelines_codeblock_38"
     },
@@ -16695,6 +16677,15 @@
       "id": "resources_logitech_linux_setup_kando_menu_settings_backup_json"
     },
     {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "community": 100,
+      "norm_label": "settings.json",
+      "id": "claude_settings_json"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "README.md",
@@ -17410,7 +17401,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L643",
-      "community": 77,
+      "community": 273,
       "norm_label": "tabs",
       "id": "contributions_guidelines_tabs_643"
     },
@@ -17419,7 +17410,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L628",
-      "community": 77,
+      "community": 273,
       "norm_label": "tabs",
       "id": "contributions_guidelines_tabs_628"
     },
@@ -17599,7 +17590,7 @@
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L626",
-      "community": 77,
+      "community": 273,
       "norm_label": "tabs",
       "id": "contributions_guidelines_tabs_626"
     },
@@ -20803,46 +20794,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_settings_json",
-      "target": "claude_settings_hooks"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.json",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "claude_settings_json",
-      "target": "claude_settings_enabledplugins",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_settings_hooks",
-      "target": "claude_settings_hooks_pretooluse"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.json",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "claude_settings_enabledplugins",
-      "target": "claude_settings_enabledplugins_theoryy_workflow_theoryy",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "ACTION-PLAN.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -20906,9 +20857,9 @@
       "source_file": "ACTION-PLAN.md",
       "source_location": "L126",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "tuxies_wiki_action_plan_guide_audit_action_plan",
-      "target": "tuxies_wiki_action_plan_changelog_contributors_regression_2026_06_05"
+      "target": "tuxies_wiki_action_plan_changelog_contributors_regression_2026_06_05",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21529,6 +21480,36 @@
       "confidence_score": 1.0,
       "source": "tuxies_wiki_skills_lock_skills_security_review",
       "target": "tuxies_wiki_skills_lock_security_review_sourcetype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_aier_documents_tuxies_wiki_claude_settings_json",
+      "target": "claude_settings_hooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_pretooluse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_json",
+      "target": "claude_settings_hooks"
     },
     {
       "relation": "contains",
@@ -42553,5 +42534,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "f1d982a12964116f6994bd0ae04e7bf5bf4a9d9d"
+  "built_at_commit": "a9578317f889d49f017f7ac377722609ead646a5"
 }
