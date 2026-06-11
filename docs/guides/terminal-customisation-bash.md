@@ -208,6 +208,15 @@ alias lsta='eza -Ta'
 alias lsta1='eza -Ta --level 1'
 alias lsta2='eza -Ta --level 2'
 alias lsta3='eza -Ta --level 3'
+
+#### yazi: cd-on-exit wrapper ####
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
 ```
 
 :::
@@ -386,5 +395,68 @@ alias lsta3='eza -Ta --level 3'
 
 - **More resources**
   - [Quick overview](https://www.youtube.com/watch?v=mmqDYw9C30I&t=615s) on `eza` by Josean Martinez
+
+:::::
+
+### **Using `yazi`**
+
+:::tip What is `yazi`?
+`yazi` is a fast terminal file manager with image previews, fuzzy navigation, and plugin support.
+:::
+
+:::::steps
+
+- **Installation**
+
+  ::::tabs
+
+  @tab ::devicon:fedora:: Fedora
+
+  ```bash
+  sudo dnf copr enable lihaohong/yazi
+  sudo dnf install yazi
+  ```
+
+  @tab ::devicon:debian:: Debian/Ubuntu
+
+  `yazi` is not in the stable `apt` repositories — install it via the Rust toolchain:
+
+  ```bash
+  cargo install --locked yazi-fm yazi-cli
+  ```
+
+  @tab ::devicon:archlinux:: Arch
+
+  ```bash
+  pacman -S yazi
+  ```
+
+  ::::
+
+- **Add the `y` shell wrapper**
+
+  The `y` function launches `yazi` and changes your shell to its last directory on exit. Append it to your `.bashrc`:
+
+  :::code-tabs
+
+  @tab .bashrc
+
+  ```bash
+  function y() {
+  	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  	command yazi "$@" --cwd-file="$tmp"
+  	IFS= read -r -d '' cwd < "$tmp"
+  	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+  	command rm -f -- "$tmp"
+  }
+  ```
+
+  :::
+
+  Reload with `source ~/.bashrc`, then run `y` instead of `yazi`.
+
+- **More resources**
+  - See our [Yazi guide](/guides/yazi/) for keys, optional dependencies, and image-preview setup
+  - [`yazi` documentation](https://yazi-rs.github.io/docs/quick-start/)
 
 :::::

@@ -21,418 +21,112 @@
   },
   "nodes": [
     {
-      "label": "terminal-customisation-bash.md",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L1",
-      "id": "docs_guides_terminal_customisation_bash_md",
-      "community": 75,
-      "norm_label": "terminal-customisation-bash.md"
-    },
-    {
-      "label": "**Back up current `.bashrc`**",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L24",
-      "id": "guides_terminal_customisation_bash_back_up_current_bashrc",
-      "community": 75,
-      "norm_label": "**back up current `.bashrc`**"
-    },
-    {
-      "label": "code:bash (cp ~/.bashrc ~/.bashrc-original # Makes a copy of current .b)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L28",
-      "id": "guides_terminal_customisation_bash_codeblock_1",
-      "community": 75,
-      "norm_label": "code:bash (cp ~/.bashrc ~/.bashrc-original # makes a copy of current .b)"
-    },
-    {
-      "label": "code:bash (# .bashrc)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L42",
-      "id": "guides_terminal_customisation_bash_codeblock_2",
-      "community": 75,
-      "norm_label": "code:bash (# .bashrc)"
-    },
-    {
-      "label": "**Aesthetic Changes**",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L74",
-      "id": "guides_terminal_customisation_bash_aesthetic_changes",
-      "community": 75,
-      "norm_label": "**aesthetic changes**"
-    },
-    {
-      "label": "code:bash (# ... omitted original .bashrc content above)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L84",
-      "id": "guides_terminal_customisation_bash_codeblock_3",
-      "community": 75,
-      "norm_label": "code:bash (# ... omitted original .bashrc content above)"
-    },
-    {
-      "label": "**Autorun `fastfetch`** when you open the terminal",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L98",
-      "id": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
-      "community": 75,
-      "norm_label": "**autorun `fastfetch`** when you open the terminal"
-    },
-    {
-      "label": "code:bash (sudo dnf install fastfetch)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L110",
-      "id": "guides_terminal_customisation_bash_codeblock_4",
-      "community": 75,
-      "norm_label": "code:bash (sudo dnf install fastfetch)"
-    },
-    {
-      "label": "code:bash (pacman -S fastfetch)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L116",
-      "id": "guides_terminal_customisation_bash_codeblock_5",
-      "community": 75,
-      "norm_label": "code:bash (pacman -s fastfetch)"
-    },
-    {
-      "label": "code:bash (sudo apt install fastfetch)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L122",
-      "id": "guides_terminal_customisation_bash_codeblock_6",
-      "community": 75,
-      "norm_label": "code:bash (sudo apt install fastfetch)"
-    },
-    {
-      "label": "code:bash (fastfetch)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L135",
-      "id": "guides_terminal_customisation_bash_codeblock_7",
-      "community": 75,
-      "norm_label": "code:bash (fastfetch)"
-    },
-    {
-      "label": "code:bash (PS1='------------------\\n\\[$(tput setaf 56)\\][\\[$(tput setaf)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L156",
-      "id": "guides_terminal_customisation_bash_codeblock_8",
-      "community": 75,
-      "norm_label": "code:bash (ps1='------------------\\n\\[$(tput setaf 56)\\][\\[$(tput setaf)"
-    },
-    {
-      "label": "**Terminal programs**",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L171",
-      "id": "guides_terminal_customisation_bash_terminal_programs",
-      "community": 75,
-      "norm_label": "**terminal programs**"
-    },
-    {
-      "label": "code:bash (# ... omitted original .bashrc content above)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L180",
-      "id": "guides_terminal_customisation_bash_codeblock_9",
-      "community": 75,
-      "norm_label": "code:bash (# ... omitted original .bashrc content above)"
-    },
-    {
-      "label": "**Using `fzf`** (Fuzzy Find)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L226",
-      "id": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
-      "community": 75,
-      "norm_label": "**using `fzf`** (fuzzy find)"
-    },
-    {
-      "label": "code:bash (sudo dnf install fzf)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L241",
-      "id": "guides_terminal_customisation_bash_codeblock_10",
-      "community": 75,
-      "norm_label": "code:bash (sudo dnf install fzf)"
-    },
-    {
-      "label": "code:bash (pacman -S fzf)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L247",
-      "id": "guides_terminal_customisation_bash_codeblock_11",
-      "community": 75,
-      "norm_label": "code:bash (pacman -s fzf)"
-    },
-    {
-      "label": "code:bash (sudo apt install fzf)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L253",
-      "id": "guides_terminal_customisation_bash_codeblock_12",
-      "community": 75,
-      "norm_label": "code:bash (sudo apt install fzf)"
-    },
-    {
-      "label": "code:bash (alias cmd='compgen -c | fzf' # search for a possible command)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L267",
-      "id": "guides_terminal_customisation_bash_codeblock_13",
-      "community": 75,
-      "norm_label": "code:bash (alias cmd='compgen -c | fzf' # search for a possible command)"
-    },
-    {
-      "label": "**Using `zoxide`**",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L281",
-      "id": "guides_terminal_customisation_bash_using_zoxide",
-      "community": 75,
-      "norm_label": "**using `zoxide`**"
-    },
-    {
-      "label": "code:bash (sudo dnf install zoxide)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L295",
-      "id": "guides_terminal_customisation_bash_codeblock_14",
-      "community": 75,
-      "norm_label": "code:bash (sudo dnf install zoxide)"
-    },
-    {
-      "label": "code:bash (pacman -S zoxide)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L301",
-      "id": "guides_terminal_customisation_bash_codeblock_15",
-      "community": 75,
-      "norm_label": "code:bash (pacman -s zoxide)"
-    },
-    {
-      "label": "code:bash (sudo apt install zoxide)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L307",
-      "id": "guides_terminal_customisation_bash_codeblock_16",
-      "community": 75,
-      "norm_label": "code:bash (sudo apt install zoxide)"
-    },
-    {
-      "label": "code:bash (eval \"$(zoxide init bash)\")",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L320",
-      "id": "guides_terminal_customisation_bash_codeblock_17",
-      "community": 75,
-      "norm_label": "code:bash (eval \"$(zoxide init bash)\")"
-    },
-    {
-      "label": "**Using `eza`**",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L332",
-      "id": "guides_terminal_customisation_bash_using_eza",
-      "community": 75,
-      "norm_label": "**using `eza`**"
-    },
-    {
-      "label": "code:bash (sudo dnf install eza)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L346",
-      "id": "guides_terminal_customisation_bash_codeblock_18",
-      "community": 75,
-      "norm_label": "code:bash (sudo dnf install eza)"
-    },
-    {
-      "label": "code:bash (pacman -S eza)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L352",
-      "id": "guides_terminal_customisation_bash_codeblock_19",
-      "community": 75,
-      "norm_label": "code:bash (pacman -s eza)"
-    },
-    {
-      "label": "code:bash (sudo apt install eza)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L358",
-      "id": "guides_terminal_customisation_bash_codeblock_20",
-      "community": 75,
-      "norm_label": "code:bash (sudo apt install eza)"
-    },
-    {
-      "label": "code:bash (# list directories in a tree format (or specify how many lev)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L371",
-      "id": "guides_terminal_customisation_bash_codeblock_21",
-      "community": 75,
-      "norm_label": "code:bash (# list directories in a tree format (or specify how many lev)"
-    },
-    {
-      "label": "**Using `yazi`**",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L401",
-      "id": "guides_terminal_customisation_bash_using_yazi",
-      "community": 75,
-      "norm_label": "**using `yazi`**"
-    },
-    {
-      "label": "code:bash (sudo dnf copr enable lihaohong/yazi)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L415",
-      "id": "guides_terminal_customisation_bash_codeblock_22",
-      "community": 75,
-      "norm_label": "code:bash (sudo dnf copr enable lihaohong/yazi)"
-    },
-    {
-      "label": "code:bash (cargo install --locked yazi-fm yazi-cli)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L424",
-      "id": "guides_terminal_customisation_bash_codeblock_23",
-      "community": 75,
-      "norm_label": "code:bash (cargo install --locked yazi-fm yazi-cli)"
-    },
-    {
-      "label": "code:bash (pacman -S yazi)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L430",
-      "id": "guides_terminal_customisation_bash_codeblock_24",
-      "community": 75,
-      "norm_label": "code:bash (pacman -s yazi)"
-    },
-    {
-      "label": "code:bash (function y() {)",
-      "file_type": "document",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L444",
-      "id": "guides_terminal_customisation_bash_codeblock_25",
-      "community": 75,
-      "norm_label": "code:bash (function y() {)"
-    },
-    {
       "label": "yazi.md",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L1",
+      "id": "docs_guides_yazi_md",
       "community": 290,
-      "norm_label": "yazi.md",
-      "id": "docs_guides_yazi_md"
+      "norm_label": "yazi.md"
     },
     {
       "label": "**Installation**",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L14",
+      "id": "guides_yazi_installation",
       "community": 290,
-      "norm_label": "**installation**",
-      "id": "guides_yazi_installation"
+      "norm_label": "**installation**"
     },
     {
       "label": "**Installing on your distro**",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L16",
+      "id": "guides_yazi_installing_on_your_distro",
       "community": 290,
-      "norm_label": "**installing on your distro**",
-      "id": "guides_yazi_installing_on_your_distro"
+      "norm_label": "**installing on your distro**"
     },
     {
       "label": "code:bash (sudo dnf copr enable lihaohong/yazi)",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L24",
+      "id": "guides_yazi_codeblock_1",
       "community": 290,
-      "norm_label": "code:bash (sudo dnf copr enable lihaohong/yazi)",
-      "id": "guides_yazi_codeblock_1"
+      "norm_label": "code:bash (sudo dnf copr enable lihaohong/yazi)"
     },
     {
       "label": "code:bash (cargo install --locked yazi-fm yazi-cli)",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L33",
+      "id": "guides_yazi_codeblock_2",
       "community": 290,
-      "norm_label": "code:bash (cargo install --locked yazi-fm yazi-cli)",
-      "id": "guides_yazi_codeblock_2"
+      "norm_label": "code:bash (cargo install --locked yazi-fm yazi-cli)"
     },
     {
       "label": "code:bash (sudo pacman -S yazi)",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L41",
+      "id": "guides_yazi_codeblock_3",
       "community": 290,
-      "norm_label": "code:bash (sudo pacman -s yazi)",
-      "id": "guides_yazi_codeblock_3"
+      "norm_label": "code:bash (sudo pacman -s yazi)"
     },
     {
       "label": "**Optional dependencies**",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L47",
+      "id": "guides_yazi_optional_dependencies",
       "community": 290,
-      "norm_label": "**optional dependencies**",
-      "id": "guides_yazi_optional_dependencies"
+      "norm_label": "**optional dependencies**"
     },
     {
       "label": "**Quick tips and usage**",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L65",
+      "id": "guides_yazi_quick_tips_and_usage",
       "community": 290,
-      "norm_label": "**quick tips and usage**",
-      "id": "guides_yazi_quick_tips_and_usage"
+      "norm_label": "**quick tips and usage**"
     },
     {
       "label": "**Essential keys**",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L67",
+      "id": "guides_yazi_essential_keys",
       "community": 290,
-      "norm_label": "**essential keys**",
-      "id": "guides_yazi_essential_keys"
+      "norm_label": "**essential keys**"
     },
     {
       "label": "**The `y` shell wrapper (cd-on-exit)**",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L84",
+      "id": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
       "community": 290,
-      "norm_label": "**the `y` shell wrapper (cd-on-exit)**",
-      "id": "guides_yazi_the_y_shell_wrapper_cd_on_exit"
+      "norm_label": "**the `y` shell wrapper (cd-on-exit)**"
     },
     {
       "label": "code:bash (function y() {)",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L94",
+      "id": "guides_yazi_codeblock_4",
       "community": 290,
-      "norm_label": "code:bash (function y() {)",
-      "id": "guides_yazi_codeblock_4"
+      "norm_label": "code:bash (function y() {)"
     },
     {
       "label": "**Image previews**",
       "file_type": "document",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L108",
+      "id": "guides_yazi_image_previews",
       "community": 290,
-      "norm_label": "**image previews**",
-      "id": "guides_yazi_image_previews"
+      "norm_label": "**image previews**"
     },
     {
       "label": "ghostty-terminal.md",
@@ -5597,6 +5291,258 @@
       "community": 75,
       "norm_label": "terminal-customisation-bash.md",
       "id": "home_lunear_theoryy_tuxies_wiki_docs_guides_terminal_customisation_bash_md"
+    },
+    {
+      "label": "**Back up current `.bashrc`**",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L24",
+      "community": 75,
+      "norm_label": "**back up current `.bashrc`**",
+      "id": "guides_terminal_customisation_bash_back_up_current_bashrc"
+    },
+    {
+      "label": "code:bash (cp ~/.bashrc ~/.bashrc-original # Makes a copy of current .b)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L28",
+      "community": 75,
+      "norm_label": "code:bash (cp ~/.bashrc ~/.bashrc-original # makes a copy of current .b)",
+      "id": "guides_terminal_customisation_bash_codeblock_1"
+    },
+    {
+      "label": "code:bash (# .bashrc)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L42",
+      "community": 75,
+      "norm_label": "code:bash (# .bashrc)",
+      "id": "guides_terminal_customisation_bash_codeblock_2"
+    },
+    {
+      "label": "**Aesthetic Changes**",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L74",
+      "community": 75,
+      "norm_label": "**aesthetic changes**",
+      "id": "guides_terminal_customisation_bash_aesthetic_changes"
+    },
+    {
+      "label": "code:bash (# ... omitted original .bashrc content above)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L84",
+      "community": 75,
+      "norm_label": "code:bash (# ... omitted original .bashrc content above)",
+      "id": "guides_terminal_customisation_bash_codeblock_3"
+    },
+    {
+      "label": "**Autorun `fastfetch`** when you open the terminal",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L98",
+      "community": 75,
+      "norm_label": "**autorun `fastfetch`** when you open the terminal",
+      "id": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal"
+    },
+    {
+      "label": "code:bash (sudo dnf install fastfetch)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L110",
+      "community": 75,
+      "norm_label": "code:bash (sudo dnf install fastfetch)",
+      "id": "guides_terminal_customisation_bash_codeblock_4"
+    },
+    {
+      "label": "code:bash (pacman -S fastfetch)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L116",
+      "community": 75,
+      "norm_label": "code:bash (pacman -s fastfetch)",
+      "id": "guides_terminal_customisation_bash_codeblock_5"
+    },
+    {
+      "label": "code:bash (sudo apt install fastfetch)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L122",
+      "community": 75,
+      "norm_label": "code:bash (sudo apt install fastfetch)",
+      "id": "guides_terminal_customisation_bash_codeblock_6"
+    },
+    {
+      "label": "code:bash (fastfetch)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L135",
+      "community": 75,
+      "norm_label": "code:bash (fastfetch)",
+      "id": "guides_terminal_customisation_bash_codeblock_7"
+    },
+    {
+      "label": "code:bash (PS1='------------------\\n\\[$(tput setaf 56)\\][\\[$(tput setaf)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L156",
+      "community": 75,
+      "norm_label": "code:bash (ps1='------------------\\n\\[$(tput setaf 56)\\][\\[$(tput setaf)",
+      "id": "guides_terminal_customisation_bash_codeblock_8"
+    },
+    {
+      "label": "**Terminal programs**",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L171",
+      "community": 75,
+      "norm_label": "**terminal programs**",
+      "id": "guides_terminal_customisation_bash_terminal_programs"
+    },
+    {
+      "label": "code:bash (# ... omitted original .bashrc content above)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L180",
+      "community": 75,
+      "norm_label": "code:bash (# ... omitted original .bashrc content above)",
+      "id": "guides_terminal_customisation_bash_codeblock_9"
+    },
+    {
+      "label": "**Using `fzf`** (Fuzzy Find)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L217",
+      "community": 75,
+      "norm_label": "**using `fzf`** (fuzzy find)",
+      "id": "guides_terminal_customisation_bash_using_fzf_fuzzy_find"
+    },
+    {
+      "label": "code:bash (sudo dnf install fzf)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L232",
+      "community": 75,
+      "norm_label": "code:bash (sudo dnf install fzf)",
+      "id": "guides_terminal_customisation_bash_codeblock_10"
+    },
+    {
+      "label": "code:bash (pacman -S fzf)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L238",
+      "community": 75,
+      "norm_label": "code:bash (pacman -s fzf)",
+      "id": "guides_terminal_customisation_bash_codeblock_11"
+    },
+    {
+      "label": "code:bash (sudo apt install fzf)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L244",
+      "community": 75,
+      "norm_label": "code:bash (sudo apt install fzf)",
+      "id": "guides_terminal_customisation_bash_codeblock_12"
+    },
+    {
+      "label": "code:bash (alias cmd='compgen -c | fzf' # search for a possible command)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L258",
+      "community": 75,
+      "norm_label": "code:bash (alias cmd='compgen -c | fzf' # search for a possible command)",
+      "id": "guides_terminal_customisation_bash_codeblock_13"
+    },
+    {
+      "label": "**Using `zoxide`**",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L272",
+      "community": 75,
+      "norm_label": "**using `zoxide`**",
+      "id": "guides_terminal_customisation_bash_using_zoxide"
+    },
+    {
+      "label": "code:bash (sudo dnf install zoxide)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L286",
+      "community": 75,
+      "norm_label": "code:bash (sudo dnf install zoxide)",
+      "id": "guides_terminal_customisation_bash_codeblock_14"
+    },
+    {
+      "label": "code:bash (pacman -S zoxide)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L292",
+      "community": 75,
+      "norm_label": "code:bash (pacman -s zoxide)",
+      "id": "guides_terminal_customisation_bash_codeblock_15"
+    },
+    {
+      "label": "code:bash (sudo apt install zoxide)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L298",
+      "community": 75,
+      "norm_label": "code:bash (sudo apt install zoxide)",
+      "id": "guides_terminal_customisation_bash_codeblock_16"
+    },
+    {
+      "label": "code:bash (eval \"$(zoxide init bash)\")",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L311",
+      "community": 75,
+      "norm_label": "code:bash (eval \"$(zoxide init bash)\")",
+      "id": "guides_terminal_customisation_bash_codeblock_17"
+    },
+    {
+      "label": "**Using `eza`**",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L323",
+      "community": 75,
+      "norm_label": "**using `eza`**",
+      "id": "guides_terminal_customisation_bash_using_eza"
+    },
+    {
+      "label": "code:bash (sudo dnf install eza)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L337",
+      "community": 75,
+      "norm_label": "code:bash (sudo dnf install eza)",
+      "id": "guides_terminal_customisation_bash_codeblock_18"
+    },
+    {
+      "label": "code:bash (pacman -S eza)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L343",
+      "community": 75,
+      "norm_label": "code:bash (pacman -s eza)",
+      "id": "guides_terminal_customisation_bash_codeblock_19"
+    },
+    {
+      "label": "code:bash (sudo apt install eza)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L349",
+      "community": 75,
+      "norm_label": "code:bash (sudo apt install eza)",
+      "id": "guides_terminal_customisation_bash_codeblock_20"
+    },
+    {
+      "label": "code:bash (# list directories in a tree format (or specify how many lev)",
+      "file_type": "document",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L362",
+      "community": 75,
+      "norm_label": "code:bash (# list directories in a tree format (or specify how many lev)",
+      "id": "guides_terminal_customisation_bash_codeblock_21"
     },
     {
       "label": "vuepress-guide.md",
@@ -17397,6 +17343,15 @@
       "id": "docs_guides_ctf_second_brain_md"
     },
     {
+      "label": "terminal-customisation-bash.md",
+      "file_type": "document",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L1",
+      "community": 75,
+      "norm_label": "terminal-customisation-bash.md",
+      "id": "docs_guides_terminal_customisation_bash_md"
+    },
+    {
       "label": "rb-14-2023-fedora.md",
       "file_type": "document",
       "source_file": "docs/guides/rb-14-2023-fedora.md",
@@ -17836,6 +17791,15 @@
       "community": 78,
       "norm_label": "rb-14-2023-fedora.md",
       "id": "home_aier_documents_tuxies_wiki_docs_guides_rb_14_2023_fedora_md"
+    },
+    {
+      "label": "terminal-customisation-bash.md",
+      "file_type": "document",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L1",
+      "community": 75,
+      "norm_label": "terminal-customisation-bash.md",
+      "id": "home_aier_documents_tuxies_wiki_docs_guides_terminal_customisation_bash_md"
     },
     {
       "label": "**Cofiguring keyd**",
@@ -18457,6 +18421,19 @@
       "id": "guides_ctf_second_brain"
     },
     {
+      "label": "Terminal Customisation (Bash) Guide",
+      "file_type": "document",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "aier",
+      "contributor": "Lunear",
+      "community": 8,
+      "norm_label": "terminal customisation (bash) guide",
+      "id": "guides_terminal_customisation_bash"
+    },
+    {
       "label": "About Tuxies Wiki",
       "file_type": "document",
       "source_file": "docs/notes/about/README.md",
@@ -18585,6 +18562,32 @@
       "community": 11,
       "norm_label": "kando \u2013 pie menu launcher",
       "id": "concept_kando"
+    },
+    {
+      "label": "Bash Prompt Customization (PS1)",
+      "file_type": "concept",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 8,
+      "norm_label": "bash prompt customization (ps1)",
+      "id": "concept_bash_prompt"
+    },
+    {
+      "label": "Fastfetch \u2013 System Info Display",
+      "file_type": "concept",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 8,
+      "norm_label": "fastfetch \u2013 system info display",
+      "id": "concept_fastfetch"
     },
     {
       "label": "Firefox user.js Privacy Configuration",
@@ -21376,372 +21379,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_terminal_customisation_bash_md",
-      "target": "guides_terminal_customisation_bash_back_up_current_bashrc"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_terminal_customisation_bash_md",
-      "target": "guides_terminal_customisation_bash_aesthetic_changes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L171",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_terminal_customisation_bash_md",
-      "target": "guides_terminal_customisation_bash_terminal_programs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_back_up_current_bashrc",
-      "target": "guides_terminal_customisation_bash_codeblock_1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_back_up_current_bashrc",
-      "target": "guides_terminal_customisation_bash_codeblock_2"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_lunear_theoryy_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
-      "target": "guides_terminal_customisation_bash_back_up_current_bashrc"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L84",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_aesthetic_changes",
-      "target": "guides_terminal_customisation_bash_codeblock_3"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_aesthetic_changes",
-      "target": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
-      "source_location": "L74",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_lunear_theoryy_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
-      "target": "guides_terminal_customisation_bash_aesthetic_changes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L110",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
-      "target": "guides_terminal_customisation_bash_codeblock_4"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L116",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
-      "target": "guides_terminal_customisation_bash_codeblock_5"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L122",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
-      "target": "guides_terminal_customisation_bash_codeblock_6"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L135",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
-      "target": "guides_terminal_customisation_bash_codeblock_7"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L156",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
-      "target": "guides_terminal_customisation_bash_codeblock_8"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L180",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_terminal_programs",
-      "target": "guides_terminal_customisation_bash_codeblock_9"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L217",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_terminal_programs",
-      "target": "guides_terminal_customisation_bash_using_fzf_fuzzy_find"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L272",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_terminal_programs",
-      "target": "guides_terminal_customisation_bash_using_zoxide"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L323",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_terminal_programs",
-      "target": "guides_terminal_customisation_bash_using_eza"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L401",
-      "weight": 1.0,
-      "source": "guides_terminal_customisation_bash_terminal_programs",
-      "target": "guides_terminal_customisation_bash_using_yazi",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
-      "source_location": "L171",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_lunear_theoryy_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
-      "target": "guides_terminal_customisation_bash_terminal_programs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L232",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
-      "target": "guides_terminal_customisation_bash_codeblock_10"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L238",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
-      "target": "guides_terminal_customisation_bash_codeblock_11"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L244",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
-      "target": "guides_terminal_customisation_bash_codeblock_12"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L258",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
-      "target": "guides_terminal_customisation_bash_codeblock_13"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L286",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_zoxide",
-      "target": "guides_terminal_customisation_bash_codeblock_14"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L292",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_zoxide",
-      "target": "guides_terminal_customisation_bash_codeblock_15"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L298",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_zoxide",
-      "target": "guides_terminal_customisation_bash_codeblock_16"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L311",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_zoxide",
-      "target": "guides_terminal_customisation_bash_codeblock_17"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L340",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_eza",
-      "target": "guides_terminal_customisation_bash_codeblock_18"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L347",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_eza",
-      "target": "guides_terminal_customisation_bash_codeblock_19"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L353",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_eza",
-      "target": "guides_terminal_customisation_bash_codeblock_20"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L366",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_terminal_customisation_bash_using_eza",
-      "target": "guides_terminal_customisation_bash_codeblock_21"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L415",
-      "weight": 1.0,
-      "source": "guides_terminal_customisation_bash_using_yazi",
-      "target": "guides_terminal_customisation_bash_codeblock_22",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L424",
-      "weight": 1.0,
-      "source": "guides_terminal_customisation_bash_using_yazi",
-      "target": "guides_terminal_customisation_bash_codeblock_23",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L430",
-      "weight": 1.0,
-      "source": "guides_terminal_customisation_bash_using_yazi",
-      "target": "guides_terminal_customisation_bash_codeblock_24",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/terminal-customisation-bash.md",
-      "source_location": "L444",
-      "weight": 1.0,
-      "source": "guides_terminal_customisation_bash_using_yazi",
-      "target": "guides_terminal_customisation_bash_codeblock_25",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "docs/guides/yazi.md",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_guides_yazi_md",
-      "target": "guides_yazi_installation"
+      "target": "guides_yazi_installation",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21749,9 +21392,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L65",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_guides_yazi_md",
-      "target": "guides_yazi_quick_tips_and_usage"
+      "target": "guides_yazi_quick_tips_and_usage",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21759,9 +21402,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_installation",
-      "target": "guides_yazi_installing_on_your_distro"
+      "target": "guides_yazi_installing_on_your_distro",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21769,9 +21412,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L47",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_installation",
-      "target": "guides_yazi_optional_dependencies"
+      "target": "guides_yazi_optional_dependencies",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21779,9 +21422,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L24",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_1"
+      "target": "guides_yazi_codeblock_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21789,9 +21432,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L33",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_2"
+      "target": "guides_yazi_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21799,9 +21442,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_3"
+      "target": "guides_yazi_codeblock_3",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21809,9 +21452,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L67",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_essential_keys"
+      "target": "guides_yazi_essential_keys",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21819,9 +21462,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L84",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_the_y_shell_wrapper_cd_on_exit"
+      "target": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21829,9 +21472,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L108",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_image_previews"
+      "target": "guides_yazi_image_previews",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21839,9 +21482,9 @@
       "source_file": "docs/guides/yazi.md",
       "source_location": "L94",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
-      "target": "guides_yazi_codeblock_4"
+      "target": "guides_yazi_codeblock_4",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -28124,6 +27767,346 @@
       "confidence_score": 1.0,
       "source": "docs_guides_ssh_guide_md",
       "target": "guides_ssh_guide_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_lunear_theoryy_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_back_up_current_bashrc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_lunear_theoryy_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_aesthetic_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/terminal-customisation-bash.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_lunear_theoryy_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_terminal_programs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_back_up_current_bashrc",
+      "target": "guides_terminal_customisation_bash_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_back_up_current_bashrc",
+      "target": "guides_terminal_customisation_bash_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_back_up_current_bashrc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_aier_documents_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_back_up_current_bashrc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_aesthetic_changes",
+      "target": "guides_terminal_customisation_bash_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_aesthetic_changes",
+      "target": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_aesthetic_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_aier_documents_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_aesthetic_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
+      "target": "guides_terminal_customisation_bash_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
+      "target": "guides_terminal_customisation_bash_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
+      "target": "guides_terminal_customisation_bash_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
+      "target": "guides_terminal_customisation_bash_codeblock_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_autorun_fastfetch_when_you_open_the_terminal",
+      "target": "guides_terminal_customisation_bash_codeblock_8"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_terminal_programs",
+      "target": "guides_terminal_customisation_bash_codeblock_9"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L217",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_terminal_programs",
+      "target": "guides_terminal_customisation_bash_using_fzf_fuzzy_find"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L272",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_terminal_programs",
+      "target": "guides_terminal_customisation_bash_using_zoxide"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L323",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_terminal_programs",
+      "target": "guides_terminal_customisation_bash_using_eza"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_terminal_programs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "home_aier_documents_tuxies_wiki_docs_guides_terminal_customisation_bash_md",
+      "target": "guides_terminal_customisation_bash_terminal_programs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L232",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
+      "target": "guides_terminal_customisation_bash_codeblock_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
+      "target": "guides_terminal_customisation_bash_codeblock_11"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L244",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
+      "target": "guides_terminal_customisation_bash_codeblock_12"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L258",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_fzf_fuzzy_find",
+      "target": "guides_terminal_customisation_bash_codeblock_13"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L286",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_zoxide",
+      "target": "guides_terminal_customisation_bash_codeblock_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L292",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_zoxide",
+      "target": "guides_terminal_customisation_bash_codeblock_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_zoxide",
+      "target": "guides_terminal_customisation_bash_codeblock_16"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_zoxide",
+      "target": "guides_terminal_customisation_bash_codeblock_17"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L340",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_eza",
+      "target": "guides_terminal_customisation_bash_codeblock_18"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L347",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_eza",
+      "target": "guides_terminal_customisation_bash_codeblock_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L353",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_eza",
+      "target": "guides_terminal_customisation_bash_codeblock_20"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": "L366",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_terminal_customisation_bash_using_eza",
+      "target": "guides_terminal_customisation_bash_codeblock_21"
     },
     {
       "relation": "contains",
@@ -42199,6 +42182,46 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guides_terminal_customisation_bash",
+      "target": "concept_bash_prompt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guides_terminal_customisation_bash",
+      "target": "concept_fastfetch"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guides_terminal_customisation_bash",
+      "target": "person_aier"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/guides/terminal-customisation-bash.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guides_terminal_customisation_bash",
+      "target": "person_lunear"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "docs/notes/about/our-team.md",
       "source_location": null,
       "weight": 1.0,
@@ -44176,5 +44199,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "5e567a51730852e7b87b7df58acb6efaed7988af"
+  "built_at_commit": "8f98ada472ef572b4c4368e552d9801f099f441c"
 }
