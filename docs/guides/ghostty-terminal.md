@@ -17,11 +17,11 @@ This guide provides a quickstart using `ghostty` — from the config file itself
 
 ::::details Quick append
 
-Paste the full configuration into `~/.config/ghostty/config`, then reload with `Ctrl`+`Shift`+`,`. Each option is explained in the sections below.
+Paste the full configuration into `~/.config/ghostty/config.ghostty`, then reload with `Ctrl`+`Shift`+`,`. Each option is explained in the sections below.
 
 :::code-tabs
 
-@tab ~/.config/ghostty/config
+@tab ~/.config/ghostty/config.ghostty
 
 ```ini
 theme = Everforest Dark Hard
@@ -46,7 +46,7 @@ window-save-state = never
 
 ### **Location and syntax**
 
-`ghostty` reads its configuration from `~/.config/ghostty/config`.
+`ghostty` reads its configuration from `~/.config/ghostty/config.ghostty`.
 
 The file uses a simple `key = value` format
 
@@ -57,7 +57,7 @@ The file uses a simple `key = value` format
 
 :::code-tabs
 
-@tab ~/.config/ghostty/config
+@tab ~/.config/ghostty/config.ghostty
 
 ```ini
 # This is a valid comment
@@ -79,7 +79,7 @@ background-opacity = 0.6
 
 :::code-tabs
 
-@tab ~/.config/ghostty/config
+@tab ~/.config/ghostty/config.ghostty
 
 ```ini
 theme = Everforest Dark Hard
@@ -95,7 +95,7 @@ Run `ghostty +list-themes` in a terminal to browse all built-in themes before co
 
 :::code-tabs
 
-@tab ~/.config/ghostty/config
+@tab ~/.config/ghostty/config.ghostty
 
 ```ini
 # background-opicity: lower is more transparent
@@ -119,7 +119,7 @@ The default `0` lets the OS or window manager decide. Both keys must be set toge
 
 :::code-tabs
 
-@tab ~/.config/ghostty/config
+@tab ~/.config/ghostty/config.ghostty
 
 ```ini
 window-width = 120
@@ -132,7 +132,7 @@ window-height = 32
 
 :::code-tabs
 
-@tab ~/.config/ghostty/config
+@tab ~/.config/ghostty/config.ghostty
 
 ```ini
 window-save-state = never
