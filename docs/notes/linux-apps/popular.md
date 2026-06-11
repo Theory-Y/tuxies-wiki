@@ -28,7 +28,7 @@ flatpak install --user flathub com.discordapp.Discord
 
 Screen sharing does not work on Wayland because Discord uses an outdated electron version. For that, you may want to check out Vesktop or install Xwayland Video Bridge.
 
-[Vesktop](/linux-apps/editors-choice/#vesktop) supports video and audio sharing out of the box and has Vencord tweak integrated. It is the editors’ preferred way to use Discord.
+[Vesktop](#vesktop) supports video and audio sharing out of the box and has Vencord tweak integrated. It is the editors’ preferred way to use Discord.
 
 ### [Vencord](https://vencord.dev/download/)
 
@@ -61,135 +61,25 @@ Not Recommended, find more info in the GitHub Link
 
 :::
 
-## **[Gparted](https://gparted.org/download.php)**
+## **[Vesktop](https://flathub.org/apps/dev.vencord.Vesktop)**
 
-:::tabs
+Discord with screen sharing and audio support, as well as Vencord inbuilt.
 
-@tab ::devicon:fedora:: Fedora
+==If you do not care about Discord Rich Presence (DRP), proceed with the Flatpak installation.==
 
-```bash
-sudo dnf install gparted
-```
-
-@tab ::devicon:archlinux:: Arch
-
-```bash
-sudo pacman -S gparted
-```
-
-@tab ::devicon:debian:: Debian/Ubuntu
-
-```bash
-sudo apt-get install gparted
-```
-
-:::
-
-## **[OBS Studio](https://flathub.org/apps/com.obsproject.Studio)**
-
-:::tabs
-@tab ::simple-icons:flatpak:: Flatpak(System)
-
-```bash
-flatpak install flathub com.obsproject.Studio
-```
-
-@tab ::simple-icons:flatpak:: Flatpak(User)
-
-```bash
-flatpak install --user flathub com.obsproject.Studio
-```
-
-:::
-
-### [v4l2loopback (Virtual Camera and More)](https://github.com/umlaeute/v4l2loopback)
-
-You would want to install v4l2loopback if you want to use the “virtual camera” function in OBS Studio.
-::::steps
-
-- Dependencies:
-
-  :::tabs
-
-  @tab ::devicon:fedora:: Fedora
-
-  ```bash
-  sudo dnf install gcc kernel-devel dkms
-  ```
-
-  @tab ::devicon:archlinux:: Arch
-
-  ```bash
-  sudo pacman -S v4l2loopback-dkms
-  ```
-
-  @tab ::devicon:debian:: Debian/Ubuntu
-
-  ```bash
-  sudo apt install dkms
-  ```
-
-  :::
-
-- **Install Module & Run:**
-
-  ```bash
-  git clone https://github.com/umlaeute/v4l2loopback
-  cd v4l2loopback
-  make && sudo make install
-  sudo depmod -a
-  sudo modprobe v4l2loopback
-  ```
-
-- **Load module on startup:**
-
-  Create the File `/etc/modules-load.d/v4l2loopback.conf` and write:
-
-  ```bash
-  v4l2loopback
-  ```
-
-  In the case where the “Virtual Camera” button doesn’t show on OBS, the system may not have loaded the module. You can either redo the installation, or try loading the the module manually with:
-
-  ```bash
-  sudo modprobe v4l2loopback
-  ```
-
-::::
-
-## **VS Code**
+==If you do want DRP, check out [Vesktop’s Github Releases](https://github.com/Vencord/Vesktop/releases) and download the package for your respective distribution.==
 
 :::tabs
 @tab ::simple-icons:flatpak:: Flatpak (System)
 
 ```bash
-flatpak install flathub com.visualstudio.code
+flatpak install flathub dev.vencord.Vesktop
 ```
 
 @tab ::simple-icons:flatpak:: Flatpak (User)
 
 ```bash
-flatpak install --user flathub com.visualstudio.code
+flatpak install --user flathub dev.vencord.Vesktop
 ```
-
-:::
-
-### **[VS Code Non-Flatpak Download](https://code.visualstudio.com/Download)**
-
-If you have to avoid limitations imposed by using a Flatpak wrapper of VS Code, check the downloads methods below.
-
-:::tabs
-
-@tab ::devicon:fedora:: Fedora
-Download .rpm file from link above
-
-@tab ::devicon:archlinux:: Arch (Code - OSS)
-
-```bash
-sudo pacman -S code
-```
-
-@tab ::devicon:debian:: Debian/Ubuntu
-Download .deb file from link above
 
 :::
