@@ -1,16 +1,16 @@
 # Graph Report - tuxies-wiki  (2026-06-11)
 
 ## Corpus Check
-- 177 files · ~1,379,942 words
+- 177 files · ~1,379,530 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2257 nodes · 2288 edges · 291 communities (199 shown, 92 thin omitted)
+- 2255 nodes · 2286 edges · 291 communities (199 shown, 92 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `93096aa2`
+- Built from commit: `5e567a51`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -839,11 +839,11 @@ Cohesion: 0.14
 Nodes (13): **[Blender](https://www.blender.org/download/)**, code:bash (flatpak install flathub org.blender.Blender), code:bash (flatpak install --user flathub org.blender.Blender), code:bash (flatpak install flathub org.inkscape.Inkscape), code:bash (flatpak install --user org.inkscape.Inkscape), code:bash (flatpak install flathub org.darktable.Darktable), code:bash (flatpak install --user flathub org.darktable.Darktable), code:bash (sudo dnf install darktable) (+5 more)
 
 ### Community 290 - "Community 290"
-Cohesion: 0.14
-Nodes (13): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:bash (function y() {), code:toml ([mgr]), **Essential keys**, **Image previews**, **Installation** (+5 more)
+Cohesion: 0.17
+Nodes (11): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:bash (function y() {), **Essential keys**, **Image previews**, **Installation**, **Installing on your distro** (+3 more)
 
 ## Knowledge Gaps
-- **1074 isolated node(s):** `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)`, `**Optional dependencies**`, `**Essential keys**` (+1069 more)
+- **1073 isolated node(s):** `code:bash (cp ~/.bashrc ~/.bashrc-original # Makes a copy of current .b)`, `code:bash (# .bashrc)`, `code:bash (# ... omitted original .bashrc content above)`, `code:bash (sudo dnf install fastfetch)`, `code:bash (pacman -S fastfetch)` (+1068 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -852,10 +852,10 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `**Installation guide**` connect `Core Linux Concepts` to `Community 74`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `**[ROG Asusctl](https://asus-linux.org/)**` connect `Community 269` to `Community 74`?**
+- **Why does `Title text` connect `Community 77` to `Community 273`, `Community 274`, `Kando Theme Colors`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)` to the rest of the system?**
-  _1074 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `code:bash (cp ~/.bashrc ~/.bashrc-original # Makes a copy of current .b)`, `code:bash (# .bashrc)`, `code:bash (# ... omitted original .bashrc content above)` to the rest of the system?**
+  _1073 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Kando Menu Config` be split into smaller, more focused modules?**
   _Cohesion score 0.07256894049346879 - nodes in this community are weakly interconnected._
 - **Should `VuePress Build System` be split into smaller, more focused modules?**
