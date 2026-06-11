@@ -107,3 +107,66 @@ If your system uses the `BTRFS` filesystem (Fedora's default), we recommend [btr
   :::
 
 ::::
+
+## **[Gparted](https://gparted.org/download.php)**
+
+Disk partitioning tool.
+
+:::tabs
+
+@tab ::devicon:fedora:: Fedora
+
+```bash
+sudo dnf install gparted
+```
+
+@tab ::devicon:archlinux:: Arch
+
+```bash
+sudo pacman -S gparted
+```
+
+@tab ::devicon:debian:: Debian/Ubuntu
+
+```bash
+sudo apt-get install gparted
+```
+
+:::
+
+## **VS Code**
+
+:::tabs
+@tab ::simple-icons:flatpak:: Flatpak (System)
+
+```bash
+flatpak install flathub com.visualstudio.code
+```
+
+@tab ::simple-icons:flatpak:: Flatpak (User)
+
+```bash
+flatpak install --user flathub com.visualstudio.code
+```
+
+:::
+
+### **[VS Code Non-Flatpak Download](https://code.visualstudio.com/Download)**
+
+If you have to avoid limitations imposed by using a Flatpak wrapper of VS Code, check the downloads methods below.
+
+:::tabs
+
+@tab ::devicon:fedora:: Fedora
+Download .rpm file from link above
+
+@tab ::devicon:archlinux:: Arch (Code - OSS)
+
+```bash
+sudo pacman -S code
+```
+
+@tab ::devicon:debian:: Debian/Ubuntu
+Download .deb file from link above
+
+:::
