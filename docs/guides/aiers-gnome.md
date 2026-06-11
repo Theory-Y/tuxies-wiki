@@ -270,7 +270,7 @@ dconf write /org/gnome/desktop/interface/monospace-font-name "'IBM Plex Mono 11'
   dconf write /org/gnome/shell/extensions/aztaskbar/icon-size "24"
   dconf write /org/gnome/shell/extensions/aztaskbar/indicator-color-use-system-accent-color "true"
   dconf write /org/gnome/shell/extensions/aztaskbar/indicator-location "'BOTTOM'"
-  dconf write /org/gnome/shell/extensions/aztaskbar/intellihide-key-toggle "[]" # ['<Super>i'], conflicts with Settings app shortcut key
+  dconf write /org/gnome/shell/extensions/aztaskbar/intellihide-key-toggle "['']" # ['<Super>i'], conflicts with Settings app shortcut key
   dconf write /org/gnome/shell/extensions/aztaskbar/isolate-workspaces "false"
   dconf write /org/gnome/shell/extensions/aztaskbar/main-panel-height "(true, 40)"
   dconf write /org/gnome/shell/extensions/aztaskbar/override-panel-clock-format "(true, '%a %R\\n%F')"
