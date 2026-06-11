@@ -35,24 +35,6 @@ yay -S localsend-bin
 
 :::
 
-## **[Inkscape](https://flathub.org/apps/org.inkscape.Inkscape)**
-
-Open-source vector graphic editor
-
-:::tabs
-
-@tab ::simple-icons:flatpak:: Flatpak (System)
-
-```bash
-flatpak install flathub org.inkscape.Inkscape
-```
-
-@tab ::simple-icons:flatpak:: Flatpak (User)
-
-```bash
-flatpak install --user org.inkscape.Inkscape
-```
-
 :::
 
 ## **[Zen Browser](https://flathub.org/apps/app.zen_browser.zen)**
@@ -155,53 +137,6 @@ flatpak install --user flathub md.obsidian.Obsidian
 
 :::
 
-## **[Scrcpy](https://github.com/Genymobile/scrcpy)**
-
-==From Scrcpy's GitHub:== "This application mirrors Android devices (video and audio) connected via USB or TCP/IP and allows control using the computer's keyboard and mouse. It does not require root access or an app installed on the device. It works on Linux, Windows, and macOS."
-
-:::tabs
-
-@tab ::devicon:fedora:: Fedora
-
-```bash
-sudo dnf copr enable zeno/scrcpy && sudo dnf install scrcpy
-```
-
-@tab ::devicon:archlinux:: Arch
-
-```bash
-pacman -S scrcpy
-```
-
-@tab ::devicon:debian:: Debian/Ubuntu
-
-Install the .tar.gz file from the link above
-
-:::
-
-## **[Vesktop](https://flathub.org/apps/dev.vencord.Vesktop)**
-
-Discord with screen sharing and audio support, as well as Vencord inbuilt.
-
-==If you do not care about Discord Rich Presence (DRP), proceed with the Flatpak installation.==
-
-==If you do want DRP, check out [Vesktop’s Github Releases](https://github.com/Vencord/Vesktop/releases) and download the package for your respective distribution.==
-
-:::tabs
-@tab ::simple-icons:flatpak:: Flatpak (System)
-
-```bash
-flatpak install flathub dev.vencord.Vesktop
-```
-
-@tab ::simple-icons:flatpak:: Flatpak (User)
-
-```bash
-flatpak install --user flathub dev.vencord.Vesktop
-```
-
-:::
-
 ## **[Waydroid](https://docs.waydro.id/usage/install-on-desktops)**
 
 Run Android on Linux!
@@ -300,3 +235,77 @@ flatpak install --user flathub io.github.zarestia_dev.rclone-manager
 ```
 
 :::
+
+## **[OBS Studio](https://flathub.org/apps/com.obsproject.Studio)**
+
+Video recording and streaming.
+
+:::tabs
+@tab ::simple-icons:flatpak:: Flatpak(System)
+
+```bash
+flatpak install flathub com.obsproject.Studio
+```
+
+@tab ::simple-icons:flatpak:: Flatpak(User)
+
+```bash
+flatpak install --user flathub com.obsproject.Studio
+```
+
+:::
+
+### [v4l2loopback (Virtual Camera and More)](https://github.com/umlaeute/v4l2loopback)
+
+You would want to install v4l2loopback if you want to use the “virtual camera” function in OBS Studio.
+::::steps
+
+- Dependencies:
+
+  :::tabs
+
+  @tab ::devicon:fedora:: Fedora
+
+  ```bash
+  sudo dnf install gcc kernel-devel dkms
+  ```
+
+  @tab ::devicon:archlinux:: Arch
+
+  ```bash
+  sudo pacman -S v4l2loopback-dkms
+  ```
+
+  @tab ::devicon:debian:: Debian/Ubuntu
+
+  ```bash
+  sudo apt install dkms
+  ```
+
+  :::
+
+- **Install Module & Run:**
+
+  ```bash
+  git clone https://github.com/umlaeute/v4l2loopback
+  cd v4l2loopback
+  make && sudo make install
+  sudo depmod -a
+  sudo modprobe v4l2loopback
+  ```
+
+- **Load module on startup:**
+
+  Create the File `/etc/modules-load.d/v4l2loopback.conf` and write:
+
+  ```bash
+  v4l2loopback
+  ```
+
+  In the case where the “Virtual Camera” button doesn’t show on OBS, the system may not have loaded the module. You can either redo the installation, or try loading the the module manually with:
+
+  ```bash
+  sudo modprobe v4l2loopback
+  ```
+
+::::
