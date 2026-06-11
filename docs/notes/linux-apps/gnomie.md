@@ -121,9 +121,3 @@ flatpak install --user flathub io.github.vikdevelop.SaveDesktop
 ```
 
 :::
-
-## **[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)**
-
-Clipboard manager for Gnome
-
-**Install directly from link above**
