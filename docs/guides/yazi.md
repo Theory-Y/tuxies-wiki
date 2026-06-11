@@ -112,3 +112,29 @@ After saving, reload your shell with `source ~/.bashrc` and use `y`.
 :::tip For maximum compatibility, use Ghostty
 `ghostty` implements the ==Kitty image protocol== (Unicode placeholders), which `yazi` supports natively and with zero extra configuration. See the [Ghostty Terminal guide](/guides/ghostty-terminal/) to get set up.
 :::
+
+### **Resizing image previews**
+
+Image previews are configured in `yazi`'s own `~/.config/yazi/yazi.toml` — separate from your terminal's config. Two settings control how large a preview appears: the width of the preview pane and the maximum render resolution.
+
+- `ratio` in the `[mgr]` section is the `[parent, current, preview]` column split (default `[1, 4, 3]`). ==Raise the third value== to give previews more room, for example `[1, 2, 5]`.
+- `max_width` and `max_height` in the `[preview]` section cap the render resolution in pixels (defaults `600` and `900`). Increase them for larger, sharper images.
+
+:::code-tabs
+
+@tab ~/.config/yazi/yazi.toml
+
+```toml
+[mgr]
+# widen the preview pane (default [1, 4, 3])
+ratio = [1, 2, 5]
+
+[preview]
+# raise render resolution in pixels (defaults 600 x 900)
+max_width = 1200
+max_height = 1600
+```
+
+:::
+
+`yazi` fits previews to the pane and ==re-renders automatically when you resize== the window — no toggle needed — on terminals that report their pixel size (`ghostty`, Kitty, foot). Terminals without this support fall back to the static `max_width` and `max_height` values.
