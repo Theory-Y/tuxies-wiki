@@ -11,4 +11,4 @@ Rules:
 
 ## Output guideline
 
-The guideline for the output is put in guidelines.md, follow it for consistency.
+The guideline for the output is put in /docs/notes/about/contributions/guidelines.md, follow it for consistency.
