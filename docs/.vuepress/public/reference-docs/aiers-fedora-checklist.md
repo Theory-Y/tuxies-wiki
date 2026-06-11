@@ -1,16 +1,23 @@
 Flashing & Initial Setup
+
 - Pre-partition for dual boot
 - Fedora Guide
 
-First steps: 
+First steps:
+
 - Gnome Guide
 - aier's Gnome
-- Bash customisation
-- Logitech Linux Setup
 - Keyd
+- Logitech Linux Setup
 - Editor's choice
 - Essentials
 
-Manual: 
-- Fluent icons & cursor 
+Manual:
 
+- Fluent icons & cursor
+
+Dev stuff:
+
+- Bash customisation
+- ghostty-terminal
+- yazi
