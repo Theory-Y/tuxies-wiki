@@ -1,16 +1,16 @@
 # Graph Report - tuxies-wiki  (2026-06-11)
 
 ## Corpus Check
-- 177 files · ~1,378,787 words
+- 177 files · ~1,379,250 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2254 nodes · 2288 edges · 291 communities (199 shown, 92 thin omitted)
+- 2242 nodes · 2277 edges · 290 communities (198 shown, 92 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8f98ada4`
+- Built from commit: `b2019d64`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -247,7 +247,6 @@
 - [[_COMMUNITY_Community 287|Community 287]]
 - [[_COMMUNITY_Community 288|Community 288]]
 - [[_COMMUNITY_Community 289|Community 289]]
-- [[_COMMUNITY_Community 290|Community 290]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `**Installation guide**` - 42 edges
@@ -276,7 +275,7 @@
 ## Hyperedges (group relationships)
 - **Core Tuxies Wiki Guides** — guides_aiers_gnome, guides_logitech_linux_setup, guides_terminal_customisation_bash, guides_firefox_userjs [INFERRED 0.85]
 
-## Communities (291 total, 92 thin omitted)
+## Communities (290 total, 92 thin omitted)
 
 ### Community 0 - "Kando Menu Config"
 Cohesion: 0.07
@@ -838,12 +837,8 @@ Nodes (14): **Applying the theme**, **Background transparency and blur**, code:i
 Cohesion: 0.14
 Nodes (13): **[Blender](https://www.blender.org/download/)**, code:bash (flatpak install flathub org.blender.Blender), code:bash (flatpak install --user flathub org.blender.Blender), code:bash (flatpak install flathub org.inkscape.Inkscape), code:bash (flatpak install --user org.inkscape.Inkscape), code:bash (flatpak install flathub org.darktable.Darktable), code:bash (flatpak install --user flathub org.darktable.Darktable), code:bash (sudo dnf install darktable) (+5 more)
 
-### Community 290 - "Community 290"
-Cohesion: 0.17
-Nodes (11): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:bash (function y() {), **Essential keys**, **Image previews**, **Installation**, **Installing on your distro** (+3 more)
-
 ## Knowledge Gaps
-- **1069 isolated node(s):** `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)`, `**Optional dependencies**`, `**Essential keys**` (+1064 more)
+- **1062 isolated node(s):** `**Reloading the config**`, `code:ini (window-width = 120)`, `code:ini (window-save-state = never)`, `**GNOME Keyboard Shortcut**`, `**File naming convention**` (+1057 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -852,10 +847,10 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `**Installation guide**` connect `Core Linux Concepts` to `Community 74`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `API Security Reference` connect `Community 71` to `Community 276`, `Community 277`, `Community 278`, `Community 279`, `Community 280`, `Community 281`, `Community 282`?**
+- **Why does `**System Maintenance**` connect `Community 270` to `Community 74`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)` to the rest of the system?**
-  _1069 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `**Reloading the config**`, `code:ini (window-width = 120)`, `code:ini (window-save-state = never)` to the rest of the system?**
+  _1062 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Kando Menu Config` be split into smaller, more focused modules?**
   _Cohesion score 0.07256894049346879 - nodes in this community are weakly interconnected._
 - **Should `VuePress Build System` be split into smaller, more focused modules?**

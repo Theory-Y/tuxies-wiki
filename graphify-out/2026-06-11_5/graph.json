@@ -21,895 +21,652 @@
   },
   "nodes": [
     {
-      "label": "yazi.md",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L1",
-      "id": "docs_guides_yazi_md",
-      "community": 290,
-      "norm_label": "yazi.md"
-    },
-    {
-      "label": "**Installation**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L14",
-      "id": "guides_yazi_installation",
-      "community": 290,
-      "norm_label": "**installation**"
-    },
-    {
-      "label": "**Installing on your distro**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L16",
-      "id": "guides_yazi_installing_on_your_distro",
-      "community": 290,
-      "norm_label": "**installing on your distro**"
-    },
-    {
-      "label": "code:bash (sudo dnf copr enable lihaohong/yazi)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L24",
-      "id": "guides_yazi_codeblock_1",
-      "community": 290,
-      "norm_label": "code:bash (sudo dnf copr enable lihaohong/yazi)"
-    },
-    {
-      "label": "code:bash (cargo install --locked yazi-fm yazi-cli)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L33",
-      "id": "guides_yazi_codeblock_2",
-      "community": 290,
-      "norm_label": "code:bash (cargo install --locked yazi-fm yazi-cli)"
-    },
-    {
-      "label": "code:bash (sudo pacman -S yazi)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L41",
-      "id": "guides_yazi_codeblock_3",
-      "community": 290,
-      "norm_label": "code:bash (sudo pacman -s yazi)"
-    },
-    {
-      "label": "**Optional dependencies**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L47",
-      "id": "guides_yazi_optional_dependencies",
-      "community": 290,
-      "norm_label": "**optional dependencies**"
-    },
-    {
-      "label": "**Quick tips and usage**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L65",
-      "id": "guides_yazi_quick_tips_and_usage",
-      "community": 290,
-      "norm_label": "**quick tips and usage**"
-    },
-    {
-      "label": "**Essential keys**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L67",
-      "id": "guides_yazi_essential_keys",
-      "community": 290,
-      "norm_label": "**essential keys**"
-    },
-    {
-      "label": "**The `y` shell wrapper (cd-on-exit)**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L84",
-      "id": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
-      "community": 290,
-      "norm_label": "**the `y` shell wrapper (cd-on-exit)**"
-    },
-    {
-      "label": "code:bash (function y() {)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L94",
-      "id": "guides_yazi_codeblock_4",
-      "community": 290,
-      "norm_label": "code:bash (function y() {)"
-    },
-    {
-      "label": "**Image previews**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L108",
-      "id": "guides_yazi_image_previews",
-      "community": 290,
-      "norm_label": "**image previews**"
-    },
-    {
-      "label": "ghostty-terminal.md",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L1",
-      "community": 288,
-      "norm_label": "ghostty-terminal.md",
-      "id": "docs_guides_ghostty_terminal_md"
-    },
-    {
-      "label": "code:ini (theme = Everforest Dark Hard)",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L26",
-      "community": 288,
-      "norm_label": "code:ini (theme = everforest dark hard)",
-      "id": "guides_ghostty_terminal_codeblock_1"
-    },
-    {
-      "label": "**Config File**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L45",
-      "community": 288,
-      "norm_label": "**config file**",
-      "id": "guides_ghostty_terminal_config_file"
-    },
-    {
-      "label": "**Location and syntax**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L47",
-      "community": 288,
-      "norm_label": "**location and syntax**",
-      "id": "guides_ghostty_terminal_location_and_syntax"
-    },
-    {
-      "label": "code:ini (# This is a valid comment)",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L62",
-      "community": 288,
-      "norm_label": "code:ini (# this is a valid comment)",
-      "id": "guides_ghostty_terminal_codeblock_2"
-    },
-    {
-      "label": "**Reloading the config**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L70",
-      "community": 288,
-      "norm_label": "**reloading the config**",
-      "id": "guides_ghostty_terminal_reloading_the_config"
-    },
-    {
-      "label": "**Everforest Theme and Transparency**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L74",
-      "community": 288,
-      "norm_label": "**everforest theme and transparency**",
-      "id": "guides_ghostty_terminal_everforest_theme_and_transparency"
-    },
-    {
-      "label": "**Applying the theme**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L76",
-      "community": 288,
-      "norm_label": "**applying the theme**",
-      "id": "guides_ghostty_terminal_applying_the_theme"
-    },
-    {
-      "label": "code:ini (theme = Everforest Dark Hard)",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L84",
-      "community": 288,
-      "norm_label": "code:ini (theme = everforest dark hard)",
-      "id": "guides_ghostty_terminal_codeblock_3"
-    },
-    {
-      "label": "**Background transparency and blur**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L94",
-      "community": 288,
-      "norm_label": "**background transparency and blur**",
-      "id": "guides_ghostty_terminal_background_transparency_and_blur"
-    },
-    {
-      "label": "code:ini (# background-opicity: lower is more transparent)",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L100",
-      "community": 288,
-      "norm_label": "code:ini (# background-opicity: lower is more transparent)",
-      "id": "guides_ghostty_terminal_codeblock_4"
-    },
-    {
-      "label": "**Default Window Size**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L114",
-      "community": 288,
-      "norm_label": "**default window size**",
-      "id": "guides_ghostty_terminal_default_window_size"
-    },
-    {
-      "label": "code:ini (window-width = 120)",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L124",
-      "community": 288,
-      "norm_label": "code:ini (window-width = 120)",
-      "id": "guides_ghostty_terminal_codeblock_5"
-    },
-    {
-      "label": "code:ini (window-save-state = never)",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L137",
-      "community": 288,
-      "norm_label": "code:ini (window-save-state = never)",
-      "id": "guides_ghostty_terminal_codeblock_6"
-    },
-    {
-      "label": "**GNOME Keyboard Shortcut**",
-      "file_type": "document",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L143",
-      "community": 288,
-      "norm_label": "**gnome keyboard shortcut**",
-      "id": "guides_ghostty_terminal_gnome_keyboard_shortcut"
-    },
-    {
       "label": "guidelines.md",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L1",
+      "id": "docs_notes_about_contributions_guidelines_md",
       "community": 29,
-      "norm_label": "guidelines.md",
-      "id": "docs_notes_about_contributions_guidelines_md"
+      "norm_label": "guidelines.md"
     },
     {
       "label": "**Formatting**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L15",
+      "id": "contributions_guidelines_formatting",
       "community": 72,
-      "norm_label": "**formatting**",
-      "id": "contributions_guidelines_formatting"
+      "norm_label": "**formatting**"
     },
     {
       "label": "**File naming convention**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L17",
+      "id": "contributions_guidelines_file_naming_convention",
       "community": 72,
-      "norm_label": "**file naming convention**",
-      "id": "contributions_guidelines_file_naming_convention"
+      "norm_label": "**file naming convention**"
     },
     {
       "label": "**Titles, file names, & permalinks**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L30",
+      "id": "contributions_guidelines_titles_file_names_permalinks",
       "community": 72,
-      "norm_label": "**titles, file names, & permalinks**",
-      "id": "contributions_guidelines_titles_file_names_permalinks"
+      "norm_label": "**titles, file names, & permalinks**"
     },
     {
       "label": "**Article tagging**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L54",
+      "id": "contributions_guidelines_article_tagging",
       "community": 72,
-      "norm_label": "**article tagging**",
-      "id": "contributions_guidelines_article_tagging"
+      "norm_label": "**article tagging**"
     },
     {
       "label": "code:md (---)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L58",
+      "id": "contributions_guidelines_codeblock_1",
       "community": 72,
-      "norm_label": "code:md (---)",
-      "id": "contributions_guidelines_codeblock_1"
+      "norm_label": "code:md (---)"
     },
     {
       "label": "**Language**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L80",
+      "id": "contributions_guidelines_language",
       "community": 72,
-      "norm_label": "**language**",
-      "id": "contributions_guidelines_language"
+      "norm_label": "**language**"
     },
     {
       "label": "**Code formatting**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L88",
+      "id": "contributions_guidelines_code_formatting",
       "community": 72,
-      "norm_label": "**code formatting**",
-      "id": "contributions_guidelines_code_formatting"
+      "norm_label": "**code formatting**"
     },
     {
       "label": "**Code Structure**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L97",
+      "id": "contributions_guidelines_code_structure",
       "community": 72,
-      "norm_label": "**code structure**",
-      "id": "contributions_guidelines_code_structure"
+      "norm_label": "**code structure**"
     },
     {
       "label": "code:md (<!-- \":::::\" demo-wrapper-->)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L119",
+      "id": "contributions_guidelines_codeblock_2",
       "community": 72,
-      "norm_label": "code:md (<!-- \":::::\" demo-wrapper-->)",
-      "id": "contributions_guidelines_codeblock_2"
+      "norm_label": "code:md (<!-- \":::::\" demo-wrapper-->)"
     },
     {
       "label": "**Icons**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L159",
+      "id": "contributions_guidelines_icons",
       "community": 72,
-      "norm_label": "**icons**",
-      "id": "contributions_guidelines_icons"
+      "norm_label": "**icons**"
     },
     {
       "label": "Core website components",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L163",
+      "id": "contributions_guidelines_core_website_components",
       "community": 72,
-      "norm_label": "core website components",
-      "id": "contributions_guidelines_core_website_components"
+      "norm_label": "core website components"
     },
     {
       "label": "Cards",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L169",
+      "id": "contributions_guidelines_cards",
       "community": 72,
-      "norm_label": "cards",
-      "id": "contributions_guidelines_cards"
+      "norm_label": "cards"
     },
     {
       "label": "Tabs",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L175",
+      "id": "contributions_guidelines_tabs",
       "community": 72,
-      "norm_label": "tabs",
-      "id": "contributions_guidelines_tabs"
+      "norm_label": "tabs"
     },
     {
       "label": "code:md (::mdi:linux =50 /#000000::)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L191",
+      "id": "contributions_guidelines_codeblock_3",
       "community": 72,
-      "norm_label": "code:md (::mdi:linux =50 /#000000::)",
-      "id": "contributions_guidelines_codeblock_3"
+      "norm_label": "code:md (::mdi:linux =50 /#000000::)"
     },
     {
       "label": "**Document components**",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L210",
+      "id": "contributions_guidelines_document_components",
       "community": 29,
-      "norm_label": "**document components**",
-      "id": "contributions_guidelines_document_components"
+      "norm_label": "**document components**"
     },
     {
       "label": "Callout container",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L212",
+      "id": "contributions_guidelines_callout_container",
       "community": 29,
-      "norm_label": "callout container",
-      "id": "contributions_guidelines_callout_container"
+      "norm_label": "callout container"
     },
     {
       "label": "code:md (:::important This is an announcement for everybody: I love L)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L218",
+      "id": "contributions_guidelines_codeblock_4",
       "community": 29,
-      "norm_label": "code:md (:::important this is an announcement for everybody: i love l)",
-      "id": "contributions_guidelines_codeblock_4"
+      "norm_label": "code:md (:::important this is an announcement for everybody: i love l)"
     },
     {
       "label": "Card & card grid",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L238",
+      "id": "contributions_guidelines_card_card_grid",
       "community": 29,
-      "norm_label": "card & card grid",
-      "id": "contributions_guidelines_card_card_grid"
+      "norm_label": "card & card grid"
     },
     {
       "label": "code:md (::::card-grid)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L246",
+      "id": "contributions_guidelines_codeblock_5",
       "community": 29,
-      "norm_label": "code:md (::::card-grid)",
-      "id": "contributions_guidelines_codeblock_5"
+      "norm_label": "code:md (::::card-grid)"
     },
     {
       "label": "Code",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L270",
+      "id": "contributions_guidelines_code",
       "community": 29,
-      "norm_label": "code",
-      "id": "contributions_guidelines_code"
+      "norm_label": "code"
     },
     {
       "label": "code:md (`fzf` is a program that allows for fuzzy searching in the cl)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L276",
+      "id": "contributions_guidelines_codeblock_6",
       "community": 29,
-      "norm_label": "code:md (`fzf` is a program that allows for fuzzy searching in the cl)",
-      "id": "contributions_guidelines_codeblock_6"
+      "norm_label": "code:md (`fzf` is a program that allows for fuzzy searching in the cl)"
     },
     {
       "label": "Code block & inline code",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L286",
+      "id": "contributions_guidelines_code_block_inline_code",
       "community": 29,
-      "norm_label": "code block & inline code",
-      "id": "contributions_guidelines_code_block_inline_code"
+      "norm_label": "code block & inline code"
     },
     {
       "label": "code:md (Go to `~/Documents`)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L292",
+      "id": "contributions_guidelines_codeblock_7",
       "community": 29,
-      "norm_label": "code:md (go to `~/documents`)",
-      "id": "contributions_guidelines_codeblock_7"
+      "norm_label": "code:md (go to `~/documents`)"
     },
     {
       "label": "code:`",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L314",
+      "id": "contributions_guidelines_codeblock_8",
       "community": 29,
-      "norm_label": "code:`",
-      "id": "contributions_guidelines_codeblock_8"
+      "norm_label": "code:`"
     },
     {
       "label": "this is some example bash code",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L316",
+      "id": "contributions_guidelines_this_is_some_example_bash_code",
       "community": 273,
-      "norm_label": "this is some example bash code",
-      "id": "contributions_guidelines_this_is_some_example_bash_code"
+      "norm_label": "this is some example bash code"
     },
     {
       "label": "code:block9",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L318",
+      "id": "contributions_guidelines_codeblock_9",
       "community": 273,
-      "norm_label": "code:block9",
-      "id": "contributions_guidelines_codeblock_9"
+      "norm_label": "code:block9"
     },
     {
       "label": "code:bash (# this is some example bash code)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L325",
+      "id": "contributions_guidelines_codeblock_10",
       "community": 273,
-      "norm_label": "code:bash (# this is some example bash code)",
-      "id": "contributions_guidelines_codeblock_10"
+      "norm_label": "code:bash (# this is some example bash code)"
     },
     {
       "label": "Keybindings",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L332",
+      "id": "contributions_guidelines_keybindings",
       "community": 273,
-      "norm_label": "keybindings",
-      "id": "contributions_guidelines_keybindings"
+      "norm_label": "keybindings"
     },
     {
       "label": "code:md (Press `Ctrl`+`Shift`+`,` to reload the config.)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L338",
+      "id": "contributions_guidelines_codeblock_11",
       "community": 273,
-      "norm_label": "code:md (press `ctrl`+`shift`+`,` to reload the config.)",
-      "id": "contributions_guidelines_codeblock_11"
+      "norm_label": "code:md (press `ctrl`+`shift`+`,` to reload the config.)"
     },
     {
       "label": "Quick append",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L352",
+      "id": "contributions_guidelines_quick_append",
       "community": 273,
-      "norm_label": "quick append",
-      "id": "contributions_guidelines_quick_append"
+      "norm_label": "quick append"
     },
     {
       "label": "code:`md (::::details Quick append)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L358",
+      "id": "contributions_guidelines_codeblock_12",
       "community": 273,
-      "norm_label": "code:`md (::::details quick append)",
-      "id": "contributions_guidelines_codeblock_12"
+      "norm_label": "code:`md (::::details quick append)"
     },
     {
       "label": "code:block13",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L368",
+      "id": "contributions_guidelines_codeblock_13",
       "community": 273,
-      "norm_label": "code:block13",
-      "id": "contributions_guidelines_codeblock_13"
+      "norm_label": "code:block13"
     },
     {
       "label": "code:ini (theme = Everforest Dark Hard)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L385",
+      "id": "contributions_guidelines_codeblock_14",
       "community": 273,
-      "norm_label": "code:ini (theme = everforest dark hard)",
-      "id": "contributions_guidelines_codeblock_14"
+      "norm_label": "code:ini (theme = everforest dark hard)"
     },
     {
       "label": "Code tabs",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L396",
+      "id": "contributions_guidelines_code_tabs",
       "community": 273,
-      "norm_label": "code tabs",
-      "id": "contributions_guidelines_code_tabs"
+      "norm_label": "code tabs"
     },
     {
       "label": "code:`MD (::::code-tabs)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L405",
+      "id": "contributions_guidelines_codeblock_15",
       "community": 273,
-      "norm_label": "code:`md (::::code-tabs)",
-      "id": "contributions_guidelines_codeblock_15"
+      "norm_label": "code:`md (::::code-tabs)"
     },
     {
       "label": "code:block16",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L418",
+      "id": "contributions_guidelines_codeblock_16",
       "community": 273,
-      "norm_label": "code:block16",
-      "id": "contributions_guidelines_codeblock_16"
+      "norm_label": "code:block16"
     },
     {
       "label": "Title text",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L428",
+      "id": "contributions_guidelines_title_text",
       "community": 77,
-      "norm_label": "title text",
-      "id": "contributions_guidelines_title_text"
+      "norm_label": "title text"
     },
     {
       "label": "code:block17",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L433",
+      "id": "contributions_guidelines_codeblock_17",
       "community": 77,
-      "norm_label": "code:block17",
-      "id": "contributions_guidelines_codeblock_17"
+      "norm_label": "code:block17"
     },
     {
       "label": "code:java (public class Hello {)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L446",
+      "id": "contributions_guidelines_codeblock_18",
       "community": 77,
-      "norm_label": "code:java (public class hello {)",
-      "id": "contributions_guidelines_codeblock_18"
+      "norm_label": "code:java (public class hello {)"
     },
     {
       "label": "code:md (---)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L462",
+      "id": "contributions_guidelines_codeblock_19",
       "community": 77,
-      "norm_label": "code:md (---)",
-      "id": "contributions_guidelines_codeblock_19"
+      "norm_label": "code:md (---)"
     },
     {
       "label": "Demo wrapper",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L479",
+      "id": "contributions_guidelines_demo_wrapper",
       "community": 77,
-      "norm_label": "demo wrapper",
-      "id": "contributions_guidelines_demo_wrapper"
+      "norm_label": "demo wrapper"
     },
     {
       "label": "code:md (:::demo-wrapper)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L485",
+      "id": "contributions_guidelines_codeblock_20",
       "community": 77,
-      "norm_label": "code:md (:::demo-wrapper)",
-      "id": "contributions_guidelines_codeblock_20"
+      "norm_label": "code:md (:::demo-wrapper)"
     },
     {
       "label": "code:md (:::demo-wrapper img)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L499",
+      "id": "contributions_guidelines_codeblock_21",
       "community": 77,
-      "norm_label": "code:md (:::demo-wrapper img)",
-      "id": "contributions_guidelines_codeblock_21"
+      "norm_label": "code:md (:::demo-wrapper img)"
     },
     {
       "label": "Details & collapse",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L511",
+      "id": "contributions_guidelines_details_collapse",
       "community": 77,
-      "norm_label": "details & collapse",
-      "id": "contributions_guidelines_details_collapse"
+      "norm_label": "details & collapse"
     },
     {
       "label": "code:md (:::details)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L517",
+      "id": "contributions_guidelines_codeblock_22",
       "community": 77,
-      "norm_label": "code:md (:::details)",
-      "id": "contributions_guidelines_codeblock_22"
+      "norm_label": "code:md (:::details)"
     },
     {
       "label": "code:md (::::collapse accordion)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L549",
+      "id": "contributions_guidelines_codeblock_23",
       "community": 77,
-      "norm_label": "code:md (::::collapse accordion)",
-      "id": "contributions_guidelines_codeblock_23"
+      "norm_label": "code:md (::::collapse accordion)"
     },
     {
       "label": "Headings",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L593",
+      "id": "contributions_guidelines_headings",
       "community": 77,
-      "norm_label": "headings",
-      "id": "contributions_guidelines_headings"
+      "norm_label": "headings"
     },
     {
       "label": "code:md (## **Heading 2**)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L605",
+      "id": "contributions_guidelines_codeblock_24",
       "community": 77,
-      "norm_label": "code:md (## **heading 2**)",
-      "id": "contributions_guidelines_codeblock_24"
+      "norm_label": "code:md (## **heading 2**)"
     },
     {
       "label": "Highlighting",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L626",
+      "id": "contributions_guidelines_highlighting",
       "community": 77,
-      "norm_label": "highlighting",
-      "id": "contributions_guidelines_highlighting"
+      "norm_label": "highlighting"
     },
     {
       "label": "code:md (Linux is known for being ==flexible, secure, and stable==.)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L636",
+      "id": "contributions_guidelines_codeblock_25",
       "community": 77,
-      "norm_label": "code:md (linux is known for being ==flexible, secure, and stable==.)",
-      "id": "contributions_guidelines_codeblock_25"
+      "norm_label": "code:md (linux is known for being ==flexible, secure, and stable==.)"
     },
     {
       "label": "Steps",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L658",
+      "id": "contributions_guidelines_steps",
       "community": 77,
-      "norm_label": "steps",
-      "id": "contributions_guidelines_steps"
+      "norm_label": "steps"
     },
     {
       "label": "code:md (:::steps)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L668",
+      "id": "contributions_guidelines_codeblock_26",
       "community": 77,
-      "norm_label": "code:md (:::steps)",
-      "id": "contributions_guidelines_codeblock_26"
+      "norm_label": "code:md (:::steps)"
     },
     {
       "label": "Tabs",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L708",
+      "id": "contributions_guidelines_tabs_708",
       "community": 274,
-      "norm_label": "tabs",
-      "id": "contributions_guidelines_tabs_708"
+      "norm_label": "tabs"
     },
     {
       "label": "code:`md (:::tabs)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L716",
+      "id": "contributions_guidelines_codeblock_27",
       "community": 274,
-      "norm_label": "code:`md (:::tabs)",
-      "id": "contributions_guidelines_codeblock_27"
+      "norm_label": "code:`md (:::tabs)"
     },
     {
       "label": "code:block28",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L723",
+      "id": "contributions_guidelines_codeblock_28",
       "community": 274,
-      "norm_label": "code:block28",
-      "id": "contributions_guidelines_codeblock_28"
+      "norm_label": "code:block28"
     },
     {
       "label": "code:block29",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L729",
+      "id": "contributions_guidelines_codeblock_29",
       "community": 274,
-      "norm_label": "code:block29",
-      "id": "contributions_guidelines_codeblock_29"
+      "norm_label": "code:block29"
     },
     {
       "label": "code:block30",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L735",
+      "id": "contributions_guidelines_codeblock_30",
       "community": 274,
-      "norm_label": "code:block30",
-      "id": "contributions_guidelines_codeblock_30"
+      "norm_label": "code:block30"
     },
     {
       "label": "code:bash (sudo dnf install timeshift)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L748",
+      "id": "contributions_guidelines_codeblock_31",
       "community": 274,
-      "norm_label": "code:bash (sudo dnf install timeshift)",
-      "id": "contributions_guidelines_codeblock_31"
+      "norm_label": "code:bash (sudo dnf install timeshift)"
     },
     {
       "label": "code:bash (sudo apt install timeshift)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L754",
+      "id": "contributions_guidelines_codeblock_32",
       "community": 274,
-      "norm_label": "code:bash (sudo apt install timeshift)",
-      "id": "contributions_guidelines_codeblock_32"
+      "norm_label": "code:bash (sudo apt install timeshift)"
     },
     {
       "label": "code:bash (pacman -S timeshift)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L760",
+      "id": "contributions_guidelines_codeblock_33",
       "community": 274,
-      "norm_label": "code:bash (pacman -s timeshift)",
-      "id": "contributions_guidelines_codeblock_33"
+      "norm_label": "code:bash (pacman -s timeshift)"
     },
     {
       "label": "Code Tree",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L768",
+      "id": "contributions_guidelines_code_tree",
       "community": 274,
-      "norm_label": "code tree",
-      "id": "contributions_guidelines_code_tree"
+      "norm_label": "code tree"
     },
     {
       "label": "code:`md (::::code-tree title=\"Some Python Project\" height=\"400px\" ent)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L774",
+      "id": "contributions_guidelines_codeblock_34",
       "community": 274,
-      "norm_label": "code:`md (::::code-tree title=\"some python project\" height=\"400px\" ent)",
-      "id": "contributions_guidelines_codeblock_34"
+      "norm_label": "code:`md (::::code-tree title=\"some python project\" height=\"400px\" ent)"
     },
     {
       "label": "Some more python code...",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L780",
+      "id": "contributions_guidelines_some_more_python_code",
       "community": 274,
-      "norm_label": "some more python code...",
-      "id": "contributions_guidelines_some_more_python_code"
+      "norm_label": "some more python code..."
     },
     {
       "label": "code:block35",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L781",
+      "id": "contributions_guidelines_codeblock_35",
       "community": 274,
-      "norm_label": "code:block35",
-      "id": "contributions_guidelines_codeblock_35"
+      "norm_label": "code:block35"
     },
     {
       "label": "code:block36",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L785",
+      "id": "contributions_guidelines_codeblock_36",
       "community": 274,
-      "norm_label": "code:block36",
-      "id": "contributions_guidelines_codeblock_36"
+      "norm_label": "code:block36"
     },
     {
       "label": "code:block37",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L789",
+      "id": "contributions_guidelines_codeblock_37",
       "community": 274,
-      "norm_label": "code:block37",
-      "id": "contributions_guidelines_codeblock_37"
+      "norm_label": "code:block37"
     },
     {
       "label": "code:block38",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L798",
+      "id": "contributions_guidelines_codeblock_38",
       "community": 274,
-      "norm_label": "code:block38",
-      "id": "contributions_guidelines_codeblock_38"
+      "norm_label": "code:block38"
     },
     {
       "label": "code:python (e = mc^2)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L807",
+      "id": "contributions_guidelines_codeblock_39",
       "community": 274,
-      "norm_label": "code:python (e = mc^2)",
-      "id": "contributions_guidelines_codeblock_39"
+      "norm_label": "code:python (e = mc^2)"
     },
     {
       "label": "code:python (Some impressive algorithm)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L813",
+      "id": "contributions_guidelines_codeblock_40",
       "community": 274,
-      "norm_label": "code:python (some impressive algorithm)",
-      "id": "contributions_guidelines_codeblock_40"
+      "norm_label": "code:python (some impressive algorithm)"
     },
     {
       "label": "code:python (Some python code)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L817",
+      "id": "contributions_guidelines_codeblock_41",
       "community": 274,
-      "norm_label": "code:python (some python code)",
-      "id": "contributions_guidelines_codeblock_41"
+      "norm_label": "code:python (some python code)"
     },
     {
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L821",
+      "id": "contributions_guidelines_codeblock_42",
       "community": 274,
-      "norm_label": "code:json ({)",
-      "id": "contributions_guidelines_codeblock_42"
+      "norm_label": "code:json ({)"
     },
     {
       "label": "essentials.md",
@@ -1486,6 +1243,132 @@
       "community": 69,
       "norm_label": "code:bash (sudo modprobe v4l2loopback)",
       "id": "linux_apps_editors_choice_codeblock_29"
+    },
+    {
+      "label": "ghostty-terminal.md",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L1",
+      "community": 288,
+      "norm_label": "ghostty-terminal.md",
+      "id": "docs_guides_ghostty_terminal_md"
+    },
+    {
+      "label": "**Config File Primer**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L18",
+      "community": 288,
+      "norm_label": "**config file primer**",
+      "id": "guides_ghostty_terminal_config_file_primer"
+    },
+    {
+      "label": "**Location and syntax**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L20",
+      "community": 288,
+      "norm_label": "**location and syntax**",
+      "id": "guides_ghostty_terminal_location_and_syntax"
+    },
+    {
+      "label": "code:ini (# This is a valid comment)",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L35",
+      "community": 288,
+      "norm_label": "code:ini (# this is a valid comment)",
+      "id": "guides_ghostty_terminal_codeblock_1"
+    },
+    {
+      "label": "**Reloading the config**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L43",
+      "community": 288,
+      "norm_label": "**reloading the config**",
+      "id": "guides_ghostty_terminal_reloading_the_config"
+    },
+    {
+      "label": "**Everforest Theme and Transparency**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L47",
+      "community": 288,
+      "norm_label": "**everforest theme and transparency**",
+      "id": "guides_ghostty_terminal_everforest_theme_and_transparency"
+    },
+    {
+      "label": "**Applying the theme**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L49",
+      "community": 288,
+      "norm_label": "**applying the theme**",
+      "id": "guides_ghostty_terminal_applying_the_theme"
+    },
+    {
+      "label": "code:ini (theme = Everforest Dark Hard)",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L57",
+      "community": 288,
+      "norm_label": "code:ini (theme = everforest dark hard)",
+      "id": "guides_ghostty_terminal_codeblock_2"
+    },
+    {
+      "label": "**Background transparency and blur**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L67",
+      "community": 288,
+      "norm_label": "**background transparency and blur**",
+      "id": "guides_ghostty_terminal_background_transparency_and_blur"
+    },
+    {
+      "label": "code:ini (background-opacity = 0.8)",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L76",
+      "community": 288,
+      "norm_label": "code:ini (background-opacity = 0.8)",
+      "id": "guides_ghostty_terminal_codeblock_3"
+    },
+    {
+      "label": "**Default Window Size**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L87",
+      "community": 288,
+      "norm_label": "**default window size**",
+      "id": "guides_ghostty_terminal_default_window_size"
+    },
+    {
+      "label": "code:ini (window-width = 120)",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L95",
+      "community": 288,
+      "norm_label": "code:ini (window-width = 120)",
+      "id": "guides_ghostty_terminal_codeblock_4"
+    },
+    {
+      "label": "code:ini (window-save-state = never)",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L112",
+      "community": 288,
+      "norm_label": "code:ini (window-save-state = never)",
+      "id": "guides_ghostty_terminal_codeblock_5"
+    },
+    {
+      "label": "**GNOME Keyboard Shortcut**",
+      "file_type": "document",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L118",
+      "community": 288,
+      "norm_label": "**gnome keyboard shortcut**",
+      "id": "guides_ghostty_terminal_gnome_keyboard_shortcut"
     },
     {
       "label": "creative-software.md",
@@ -21379,296 +21262,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "docs_guides_yazi_md",
-      "target": "guides_yazi_installation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L65",
-      "weight": 1.0,
-      "source": "docs_guides_yazi_md",
-      "target": "guides_yazi_quick_tips_and_usage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "guides_yazi_installation",
-      "target": "guides_yazi_installing_on_your_distro",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "guides_yazi_installation",
-      "target": "guides_yazi_optional_dependencies",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_2",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_3",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_essential_keys",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L84",
-      "weight": 1.0,
-      "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L108",
-      "weight": 1.0,
-      "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_image_previews",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L94",
-      "weight": 1.0,
-      "source": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
-      "target": "guides_yazi_codeblock_4",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ghostty_terminal_md",
-      "target": "guides_ghostty_terminal_codeblock_1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ghostty_terminal_md",
-      "target": "guides_ghostty_terminal_config_file"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ghostty_terminal_md",
-      "target": "guides_ghostty_terminal_everforest_theme_and_transparency"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L87",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ghostty_terminal_md",
-      "target": "guides_ghostty_terminal_default_window_size"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L118",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ghostty_terminal_md",
-      "target": "guides_ghostty_terminal_gnome_keyboard_shortcut"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_location_and_syntax",
-      "target": "guides_ghostty_terminal_codeblock_1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_config_file",
-      "target": "guides_ghostty_terminal_location_and_syntax"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L70",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_config_file",
-      "target": "guides_ghostty_terminal_reloading_the_config"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L62",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_location_and_syntax",
-      "target": "guides_ghostty_terminal_codeblock_2"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_applying_the_theme",
-      "target": "guides_ghostty_terminal_codeblock_2"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_everforest_theme_and_transparency",
-      "target": "guides_ghostty_terminal_applying_the_theme"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_everforest_theme_and_transparency",
-      "target": "guides_ghostty_terminal_background_transparency_and_blur"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L84",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_applying_the_theme",
-      "target": "guides_ghostty_terminal_codeblock_3"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L76",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_background_transparency_and_blur",
-      "target": "guides_ghostty_terminal_codeblock_3"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_background_transparency_and_blur",
-      "target": "guides_ghostty_terminal_codeblock_4"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_default_window_size",
-      "target": "guides_ghostty_terminal_codeblock_4"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L112",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_default_window_size",
-      "target": "guides_ghostty_terminal_codeblock_5"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ghostty-terminal.md",
-      "source_location": "L137",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_ghostty_terminal_default_window_size",
-      "target": "guides_ghostty_terminal_codeblock_6"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L15",
       "weight": 1.0,
@@ -21962,9 +21555,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L332",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_this_is_some_example_bash_code",
-      "target": "contributions_guidelines_keybindings"
+      "target": "contributions_guidelines_keybindings",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21972,9 +21565,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L352",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_this_is_some_example_bash_code",
-      "target": "contributions_guidelines_quick_append"
+      "target": "contributions_guidelines_quick_append",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21992,9 +21585,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L338",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_keybindings",
-      "target": "contributions_guidelines_codeblock_11"
+      "target": "contributions_guidelines_codeblock_11",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22012,9 +21605,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L358",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_quick_append",
-      "target": "contributions_guidelines_codeblock_12"
+      "target": "contributions_guidelines_codeblock_12",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22022,9 +21615,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L368",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_quick_append",
-      "target": "contributions_guidelines_codeblock_13"
+      "target": "contributions_guidelines_codeblock_13",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22032,9 +21625,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L385",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_quick_append",
-      "target": "contributions_guidelines_codeblock_14"
+      "target": "contributions_guidelines_codeblock_14",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22072,9 +21665,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L405",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_code_tabs",
-      "target": "contributions_guidelines_codeblock_15"
+      "target": "contributions_guidelines_codeblock_15",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22082,9 +21675,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L418",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_code_tabs",
-      "target": "contributions_guidelines_codeblock_16"
+      "target": "contributions_guidelines_codeblock_16",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22112,9 +21705,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L433",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_title_text",
-      "target": "contributions_guidelines_codeblock_17"
+      "target": "contributions_guidelines_codeblock_17",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22122,9 +21715,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L446",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_title_text",
-      "target": "contributions_guidelines_codeblock_18"
+      "target": "contributions_guidelines_codeblock_18",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22132,9 +21725,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L462",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_title_text",
-      "target": "contributions_guidelines_codeblock_19"
+      "target": "contributions_guidelines_codeblock_19",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22192,9 +21785,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L708",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_title_text",
-      "target": "contributions_guidelines_tabs_708"
+      "target": "contributions_guidelines_tabs_708",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22242,9 +21835,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L485",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_demo_wrapper",
-      "target": "contributions_guidelines_codeblock_20"
+      "target": "contributions_guidelines_codeblock_20",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22252,9 +21845,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L499",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_demo_wrapper",
-      "target": "contributions_guidelines_codeblock_21"
+      "target": "contributions_guidelines_codeblock_21",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22282,9 +21875,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L517",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_details_collapse",
-      "target": "contributions_guidelines_codeblock_22"
+      "target": "contributions_guidelines_codeblock_22",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22292,9 +21885,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L549",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_details_collapse",
-      "target": "contributions_guidelines_codeblock_23"
+      "target": "contributions_guidelines_codeblock_23",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22312,9 +21905,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L605",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_headings",
-      "target": "contributions_guidelines_codeblock_24"
+      "target": "contributions_guidelines_codeblock_24",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22322,9 +21915,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L636",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_highlighting",
-      "target": "contributions_guidelines_codeblock_25"
+      "target": "contributions_guidelines_codeblock_25",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22332,9 +21925,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L668",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_steps",
-      "target": "contributions_guidelines_codeblock_26"
+      "target": "contributions_guidelines_codeblock_26",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22342,9 +21935,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L716",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_tabs_708",
-      "target": "contributions_guidelines_codeblock_27"
+      "target": "contributions_guidelines_codeblock_27",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22352,9 +21945,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L723",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_tabs_708",
-      "target": "contributions_guidelines_codeblock_28"
+      "target": "contributions_guidelines_codeblock_28",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22362,9 +21955,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L729",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_tabs_708",
-      "target": "contributions_guidelines_codeblock_29"
+      "target": "contributions_guidelines_codeblock_29",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22372,9 +21965,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L735",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_tabs_708",
-      "target": "contributions_guidelines_codeblock_30"
+      "target": "contributions_guidelines_codeblock_30",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22382,9 +21975,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L748",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_tabs_708",
-      "target": "contributions_guidelines_codeblock_31"
+      "target": "contributions_guidelines_codeblock_31",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22392,9 +21985,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L754",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_tabs_708",
-      "target": "contributions_guidelines_codeblock_32"
+      "target": "contributions_guidelines_codeblock_32",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22402,9 +21995,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L760",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_tabs_708",
-      "target": "contributions_guidelines_codeblock_33"
+      "target": "contributions_guidelines_codeblock_33",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22452,9 +22045,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L774",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_code_tree",
-      "target": "contributions_guidelines_codeblock_34"
+      "target": "contributions_guidelines_codeblock_34",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22512,9 +22105,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L807",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_some_more_python_code",
-      "target": "contributions_guidelines_codeblock_39"
+      "target": "contributions_guidelines_codeblock_39",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22522,9 +22115,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L813",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_some_more_python_code",
-      "target": "contributions_guidelines_codeblock_40"
+      "target": "contributions_guidelines_codeblock_40",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22532,9 +22125,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L817",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_some_more_python_code",
-      "target": "contributions_guidelines_codeblock_41"
+      "target": "contributions_guidelines_codeblock_41",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -22542,9 +22135,9 @@
       "source_file": "docs/notes/about/contributions/guidelines.md",
       "source_location": "L821",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "contributions_guidelines_some_more_python_code",
-      "target": "contributions_guidelines_codeblock_42"
+      "target": "contributions_guidelines_codeblock_42",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -23575,6 +23168,136 @@
       "confidence_score": 1.0,
       "source": "linux_apps_editors_choice_v4l2loopback_virtual_camera_and_more_https_github_com_umlaeute_v4l2loopback",
       "target": "linux_apps_editors_choice_codeblock_29"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guides_ghostty_terminal_md",
+      "target": "guides_ghostty_terminal_config_file_primer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guides_ghostty_terminal_md",
+      "target": "guides_ghostty_terminal_everforest_theme_and_transparency"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guides_ghostty_terminal_md",
+      "target": "guides_ghostty_terminal_default_window_size"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_guides_ghostty_terminal_md",
+      "target": "guides_ghostty_terminal_gnome_keyboard_shortcut"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_config_file_primer",
+      "target": "guides_ghostty_terminal_location_and_syntax"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_config_file_primer",
+      "target": "guides_ghostty_terminal_reloading_the_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_location_and_syntax",
+      "target": "guides_ghostty_terminal_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_everforest_theme_and_transparency",
+      "target": "guides_ghostty_terminal_applying_the_theme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_everforest_theme_and_transparency",
+      "target": "guides_ghostty_terminal_background_transparency_and_blur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_applying_the_theme",
+      "target": "guides_ghostty_terminal_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_background_transparency_and_blur",
+      "target": "guides_ghostty_terminal_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_default_window_size",
+      "target": "guides_ghostty_terminal_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/ghostty-terminal.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_ghostty_terminal_default_window_size",
+      "target": "guides_ghostty_terminal_codeblock_5"
     },
     {
       "relation": "contains",
@@ -44199,5 +43922,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "8f98ada472ef572b4c4368e552d9801f099f441c"
+  "built_at_commit": "77e521a2b550d436ebfdc2489624cf2ef9449102"
 }

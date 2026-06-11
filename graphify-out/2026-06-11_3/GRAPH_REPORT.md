@@ -1,16 +1,16 @@
 # Graph Report - tuxies-wiki  (2026-06-11)
 
 ## Corpus Check
-- 177 files · ~1,378,787 words
+- 177 files · ~1,378,937 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2254 nodes · 2288 edges · 291 communities (199 shown, 92 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.87)
+- 2235 nodes · 2278 edges · 290 communities (198 shown, 92 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8f98ada4`
+- Built from commit: `74514b58`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -247,7 +247,6 @@
 - [[_COMMUNITY_Community 287|Community 287]]
 - [[_COMMUNITY_Community 288|Community 288]]
 - [[_COMMUNITY_Community 289|Community 289]]
-- [[_COMMUNITY_Community 290|Community 290]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `**Installation guide**` - 42 edges
@@ -256,10 +255,10 @@
 4. `**Folder Structure**` - 16 edges
 5. `API Security Reference` - 16 edges
 6. `Security Misconfiguration Reference` - 16 edges
-7. `Supply Chain Security Reference` - 15 edges
-8. `Title text` - 14 edges
+7. `Title text` - 15 edges
+8. `Supply Chain Security Reference` - 15 edges
 9. `Error Handling Security Reference` - 14 edges
-10. `Some more python code...` - 13 edges
+10. `Cross-Site Request Forgery (CSRF) Prevention Reference` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Tuxies Wiki Homepage (VuePress)` --references--> `Tuxies Wiki – Linux Newcomer Resource`  [EXTRACTED]
@@ -270,13 +269,13 @@
   docs/guides/logitech-linux-setup.md → docs/guides/key-remapping-with-keyd.md
 - `Contributions Overview` --references--> `Dev Setup Guide (Contributions)`  [INFERRED]
   docs/notes/about/contributions/README.md → docs/notes/about/contributions/dev-setup-guide.md
-- `Dev Setup Guide (Contributions)` --references--> `VuePress + Plume Theme (Wiki Platform)`  [INFERRED]
-  docs/notes/about/contributions/dev-setup-guide.md → docs/guides/vuepress-guide.md
+- `Contributions Overview` --references--> `Contribution Guidelines`  [INFERRED]
+  docs/notes/about/contributions/README.md → docs/notes/about/contributions/guidelines.md
 
 ## Hyperedges (group relationships)
 - **Core Tuxies Wiki Guides** — guides_aiers_gnome, guides_logitech_linux_setup, guides_terminal_customisation_bash, guides_firefox_userjs [INFERRED 0.85]
 
-## Communities (291 total, 92 thin omitted)
+## Communities (290 total, 92 thin omitted)
 
 ### Community 0 - "Kando Menu Config"
 Cohesion: 0.07
@@ -288,7 +287,7 @@ Nodes (27): description, devDependencies, cross-env, gh-pages, http-server, sass
 
 ### Community 2 - "Linux Apps Library"
 Cohesion: 0.05
-Nodes (45): Arch Linux Distribution, DE — Desktop Environment, Debian Linux Distribution, Linux Distributions (Distros), Fedora Linux Distribution, Flatpak, FOSS (Free and Open-Source Software), GNOME Desktop Environment (+37 more)
+Nodes (48): Arch Linux Distribution, DE — Desktop Environment, Debian Linux Distribution, Linux Distributions (Distros), Fedora Linux Distribution, Flatpak, FOSS (Free and Open-Source Software), GNOME Desktop Environment (+40 more)
 
 ### Community 3 - "Linux Distros & Vocabulary"
 Cohesion: 0.07
@@ -315,8 +314,8 @@ Cohesion: 0.40
 Nodes (6): Our Team Page, Bash Prompt Customization (PS1), Fastfetch – System Info Display, Terminal Customisation (Bash) Guide, aier (Wiki Founder), Lunear (Wiki Founder)
 
 ### Community 9 - "Wiki Meta & Contributions"
-Cohesion: 0.25
-Nodes (8): Contributions Overview, Dev Setup Guide (Contributions), Tuxies Wiki – Linux Newcomer Resource, VuePress + Plume Theme (Wiki Platform), Tuxies Wiki Homepage (VuePress), VuePress Guide, New to the Wiki Introduction, Tuxies Wiki – Root README
+Cohesion: 0.22
+Nodes (9): Contributions Overview, Dev Setup Guide (Contributions), Contribution Guidelines, Tuxies Wiki – Linux Newcomer Resource, VuePress + Plume Theme (Wiki Platform), Tuxies Wiki Homepage (VuePress), VuePress Guide, New to the Wiki Introduction (+1 more)
 
 ### Community 10 - "Fedora & Timeshift Backup"
 Cohesion: 0.36
@@ -391,8 +390,8 @@ Cohesion: 1.00
 Nodes (3): Firefox/Zen Profile Directory for user.js, Zen Browser (Firefox Fork), Firefox Profile Directory Screenshot (Zen Browser)
 
 ### Community 29 - "Kando Theme Colors"
-Cohesion: 0.18
-Nodes (10): Callout container, Card & card grid, Code, Code block & inline code, code:md (:::important This is an announcement for everybody: I love L), code:md (::::card-grid), code:md (`fzf` is a program that allows for fuzzy searching in the cl), code:md (Go to `~/Documents`) (+2 more)
+Cohesion: 0.12
+Nodes (16): Callout container, Card & card grid, Code, Code block & inline code, Code tabs, code:bash (# this is some example bash code), code:`MD (::::code-tabs), code:block12 (+8 more)
 
 ### Community 65 - "Community 65"
 Cohesion: 0.13
@@ -427,8 +426,8 @@ Cohesion: 0.08
 Nodes (26): code:bash (flatpak install flathub com.discordapp.Discord), code:bash (sudo dnf install gcc kernel-devel dkms), code:bash (sudo pacman -S v4l2loopback-dkms), code:bash (sudo apt install dkms), code:bash (git clone https://github.com/umlaeute/v4l2loopback), code:bash (v4l2loopback), code:bash (sudo modprobe v4l2loopback), code:bash (flatpak install flathub com.visualstudio.code) (+18 more)
 
 ### Community 77 - "Community 77"
-Cohesion: 0.17
-Nodes (16): code:block17, code:java (public class Hello {), code:md (---), code:md (:::demo-wrapper), code:md (:::demo-wrapper img), code:md (:::details), code:md (::::collapse accordion), code:md (## **Heading 2**) (+8 more)
+Cohesion: 0.11
+Nodes (18): Code Tree, code:block13, code:java (public class Hello {), code:md (---), code:md (:::demo-wrapper), code:md (:::demo-wrapper img), code:md (:::details), code:md (::::collapse accordion) (+10 more)
 
 ### Community 78 - "Community 78"
 Cohesion: 0.10
@@ -467,8 +466,8 @@ Cohesion: 0.24
 Nodes (9): code:bash (flatpak install flathub com.microsoft.Edge), code:bash (mkdir -p ~/.var/app/com.microsoft.Edge/config/microsoft-edge), code:bash (cp HubApps ~/.var/app/com.microsoft.Edge/config/microsoft-ed), code:bash (nano ~/.var/app/com.microsoft.Edge/config/edge-flags.conf), code:conf (--enable-features=TouchpadOverscrollHistoryNavigation), **Enable Touchpad Gestures**, **Fix Copilot (Missing HubApps File)**, **Fix Web App Icons on Wayland** (+1 more)
 
 ### Community 87 - "Community 87"
-Cohesion: 0.11
-Nodes (22): **[btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant)**, code:bash (flatpak install flathub com.github.tchx84.Flatseal), code:bash (reboot), code:bash (sudo dnf install gparted), code:bash (sudo pacman -S gparted), code:bash (sudo apt-get install gparted), code:bash (flatpak install flathub com.visualstudio.code), code:bash (flatpak install --user flathub com.visualstudio.code) (+14 more)
+Cohesion: 0.21
+Nodes (13): **[btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant)**, code:bash (flatpak install flathub com.github.tchx84.Flatseal), code:bash (reboot), code:bash (flatpak install --user flathub com.github.tchx84.Flatseal), code:bash (sudo dnf install btrfs-assistant snapper python3-dnf-plugin-), code:bash (sudo apt-get install btrfs-assistant snapper), code:bash (sudo pacman -S btrfs-assistant snapper), code:bash (sudo dnf install timeshift) (+5 more)
 
 ### Community 88 - "Community 88"
 Cohesion: 0.20
@@ -791,12 +790,12 @@ Cohesion: 0.17
 Nodes (11): **Basics**, code:bash (dconf reset /org/gnome/desktop/wm/preferences/button-layout), code:bash (dconf write /org/gnome/desktop/wm/preferences/button-layout ), code:bash (dconf reset /org/gnome/desktop/wm/preferences/button-layout), code:bash (dconf write /org/gnome/desktop/sound/allow-volume-above-100-), code:bash (dconf reset /org/gnome/desktop/sound/allow-volume-above-100-), code:bash (dconf write /org/gnome/mutter/experimental-features "['scale), code:bash (dconf reset /org/gnome/mutter/experimental-features) (+3 more)
 
 ### Community 273 - "Community 273"
-Cohesion: 0.20
-Nodes (12): Code tabs, code:bash (# this is some example bash code), code:md (Press `Ctrl`+`Shift`+`,` to reload the config.), code:`md (::::details Quick append), code:block13, code:ini (theme = Everforest Dark Hard), code:`MD (::::code-tabs), code:block16 (+4 more)
+Cohesion: 0.51
+Nodes (11): code:`md (:::tabs), code:block24, code:block25, code:block26, code:bash (sudo dnf install timeshift), code:bash (sudo apt install timeshift), code:bash (pacman -S timeshift), Tabs (+3 more)
 
 ### Community 274 - "Community 274"
-Cohesion: 0.12
-Nodes (19): Code Tree, code:`md (:::tabs), code:block28, code:block29, code:block30, code:bash (sudo dnf install timeshift), code:bash (sudo apt install timeshift), code:bash (pacman -S timeshift) (+11 more)
+Cohesion: 0.22
+Nodes (9): code:block31, code:block32, code:block33, code:block34, code:python (e = mc^2), code:python (Some impressive algorithm), code:python (Some python code), code:json ({) (+1 more)
 
 ### Community 275 - "Community 275"
 Cohesion: 0.22
@@ -831,36 +830,32 @@ Cohesion: 0.29
 Nodes (6): Cloudflare Pages — contributors/changelog redeploy, Completed, Firefox `user.js` guide — defer touchpad scrolling to the Gnome guide, Open, Planned — testing iterations (do NOT publish yet), Roadmap
 
 ### Community 288 - "Community 288"
-Cohesion: 0.17
-Nodes (14): **Applying the theme**, **Background transparency and blur**, code:ini (theme = Everforest Dark Hard), code:ini (# This is a valid comment), code:ini (theme = Everforest Dark Hard), code:ini (# background-opicity: lower is more transparent), code:ini (window-width = 120), code:ini (window-save-state = never) (+6 more)
+Cohesion: 0.14
+Nodes (13): **Applying the theme**, **Background transparency and blur**, code:ini (# This is a valid comment), code:ini (theme = Everforest Dark Hard), code:ini (background-opacity = 0.8), code:ini (window-width = 120), code:ini (window-save-state = never), **Config File Primer** (+5 more)
 
 ### Community 289 - "Community 289"
 Cohesion: 0.14
 Nodes (13): **[Blender](https://www.blender.org/download/)**, code:bash (flatpak install flathub org.blender.Blender), code:bash (flatpak install --user flathub org.blender.Blender), code:bash (flatpak install flathub org.inkscape.Inkscape), code:bash (flatpak install --user org.inkscape.Inkscape), code:bash (flatpak install flathub org.darktable.Darktable), code:bash (flatpak install --user flathub org.darktable.Darktable), code:bash (sudo dnf install darktable) (+5 more)
 
-### Community 290 - "Community 290"
-Cohesion: 0.17
-Nodes (11): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:bash (function y() {), **Essential keys**, **Image previews**, **Installation**, **Installing on your distro** (+3 more)
-
 ## Knowledge Gaps
-- **1069 isolated node(s):** `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)`, `**Optional dependencies**`, `**Essential keys**` (+1064 more)
+- **1066 isolated node(s):** `code:bash (flatpak install flathub org.localsend.localsend_app)`, `code:bash (flatpak install --user flathub org.localsend.localsend_app)`, `code:bash (yay -S localsend-bin)`, `code:bash (yay -S zen-browser-bin)`, `code:bash (v4l2loopback)` (+1061 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `**Installation guide**` connect `Core Linux Concepts` to `Community 74`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `API Security Reference` connect `Community 71` to `Community 276`, `Community 277`, `Community 278`, `Community 279`, `Community 280`, `Community 281`, `Community 282`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)` to the rest of the system?**
-  _1069 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `**Installation guide**` connect `Core Linux Concepts` to `Community 74`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `code:bash (flatpak install flathub org.localsend.localsend_app)`, `code:bash (flatpak install --user flathub org.localsend.localsend_app)`, `code:bash (yay -S localsend-bin)` to the rest of the system?**
+  _1066 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Kando Menu Config` be split into smaller, more focused modules?**
   _Cohesion score 0.07256894049346879 - nodes in this community are weakly interconnected._
 - **Should `VuePress Build System` be split into smaller, more focused modules?**
   _Cohesion score 0.08620689655172414 - nodes in this community are weakly interconnected._
 - **Should `Linux Apps Library` be split into smaller, more focused modules?**
-  _Cohesion score 0.05454545454545454 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05230496453900709 - nodes in this community are weakly interconnected._
 - **Should `Linux Distros & Vocabulary` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._

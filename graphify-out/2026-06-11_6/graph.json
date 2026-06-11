@@ -21,247 +21,139 @@
   },
   "nodes": [
     {
-      "label": "yazi.md",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L1",
-      "id": "docs_guides_yazi_md",
-      "community": 290,
-      "norm_label": "yazi.md"
-    },
-    {
-      "label": "**Installation**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L14",
-      "id": "guides_yazi_installation",
-      "community": 290,
-      "norm_label": "**installation**"
-    },
-    {
-      "label": "**Installing on your distro**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L16",
-      "id": "guides_yazi_installing_on_your_distro",
-      "community": 290,
-      "norm_label": "**installing on your distro**"
-    },
-    {
-      "label": "code:bash (sudo dnf copr enable lihaohong/yazi)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L24",
-      "id": "guides_yazi_codeblock_1",
-      "community": 290,
-      "norm_label": "code:bash (sudo dnf copr enable lihaohong/yazi)"
-    },
-    {
-      "label": "code:bash (cargo install --locked yazi-fm yazi-cli)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L33",
-      "id": "guides_yazi_codeblock_2",
-      "community": 290,
-      "norm_label": "code:bash (cargo install --locked yazi-fm yazi-cli)"
-    },
-    {
-      "label": "code:bash (sudo pacman -S yazi)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L41",
-      "id": "guides_yazi_codeblock_3",
-      "community": 290,
-      "norm_label": "code:bash (sudo pacman -s yazi)"
-    },
-    {
-      "label": "**Optional dependencies**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L47",
-      "id": "guides_yazi_optional_dependencies",
-      "community": 290,
-      "norm_label": "**optional dependencies**"
-    },
-    {
-      "label": "**Quick tips and usage**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L65",
-      "id": "guides_yazi_quick_tips_and_usage",
-      "community": 290,
-      "norm_label": "**quick tips and usage**"
-    },
-    {
-      "label": "**Essential keys**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L67",
-      "id": "guides_yazi_essential_keys",
-      "community": 290,
-      "norm_label": "**essential keys**"
-    },
-    {
-      "label": "**The `y` shell wrapper (cd-on-exit)**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L84",
-      "id": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
-      "community": 290,
-      "norm_label": "**the `y` shell wrapper (cd-on-exit)**"
-    },
-    {
-      "label": "code:bash (function y() {)",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L94",
-      "id": "guides_yazi_codeblock_4",
-      "community": 290,
-      "norm_label": "code:bash (function y() {)"
-    },
-    {
-      "label": "**Image previews**",
-      "file_type": "document",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L108",
-      "id": "guides_yazi_image_previews",
-      "community": 290,
-      "norm_label": "**image previews**"
-    },
-    {
       "label": "ghostty-terminal.md",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L1",
+      "id": "docs_guides_ghostty_terminal_md",
       "community": 288,
-      "norm_label": "ghostty-terminal.md",
-      "id": "docs_guides_ghostty_terminal_md"
+      "norm_label": "ghostty-terminal.md"
     },
     {
       "label": "code:ini (theme = Everforest Dark Hard)",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L26",
+      "id": "guides_ghostty_terminal_codeblock_1",
       "community": 288,
-      "norm_label": "code:ini (theme = everforest dark hard)",
-      "id": "guides_ghostty_terminal_codeblock_1"
+      "norm_label": "code:ini (theme = everforest dark hard)"
     },
     {
       "label": "**Config File**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L45",
+      "id": "guides_ghostty_terminal_config_file",
       "community": 288,
-      "norm_label": "**config file**",
-      "id": "guides_ghostty_terminal_config_file"
+      "norm_label": "**config file**"
     },
     {
       "label": "**Location and syntax**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L47",
+      "id": "guides_ghostty_terminal_location_and_syntax",
       "community": 288,
-      "norm_label": "**location and syntax**",
-      "id": "guides_ghostty_terminal_location_and_syntax"
+      "norm_label": "**location and syntax**"
     },
     {
       "label": "code:ini (# This is a valid comment)",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L62",
+      "id": "guides_ghostty_terminal_codeblock_2",
       "community": 288,
-      "norm_label": "code:ini (# this is a valid comment)",
-      "id": "guides_ghostty_terminal_codeblock_2"
+      "norm_label": "code:ini (# this is a valid comment)"
     },
     {
       "label": "**Reloading the config**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L70",
+      "id": "guides_ghostty_terminal_reloading_the_config",
       "community": 288,
-      "norm_label": "**reloading the config**",
-      "id": "guides_ghostty_terminal_reloading_the_config"
+      "norm_label": "**reloading the config**"
     },
     {
       "label": "**Everforest Theme and Transparency**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L74",
+      "id": "guides_ghostty_terminal_everforest_theme_and_transparency",
       "community": 288,
-      "norm_label": "**everforest theme and transparency**",
-      "id": "guides_ghostty_terminal_everforest_theme_and_transparency"
+      "norm_label": "**everforest theme and transparency**"
     },
     {
       "label": "**Applying the theme**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L76",
+      "id": "guides_ghostty_terminal_applying_the_theme",
       "community": 288,
-      "norm_label": "**applying the theme**",
-      "id": "guides_ghostty_terminal_applying_the_theme"
+      "norm_label": "**applying the theme**"
     },
     {
       "label": "code:ini (theme = Everforest Dark Hard)",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L84",
+      "id": "guides_ghostty_terminal_codeblock_3",
       "community": 288,
-      "norm_label": "code:ini (theme = everforest dark hard)",
-      "id": "guides_ghostty_terminal_codeblock_3"
+      "norm_label": "code:ini (theme = everforest dark hard)"
     },
     {
       "label": "**Background transparency and blur**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L94",
+      "id": "guides_ghostty_terminal_background_transparency_and_blur",
       "community": 288,
-      "norm_label": "**background transparency and blur**",
-      "id": "guides_ghostty_terminal_background_transparency_and_blur"
+      "norm_label": "**background transparency and blur**"
     },
     {
       "label": "code:ini (# background-opicity: lower is more transparent)",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L100",
+      "id": "guides_ghostty_terminal_codeblock_4",
       "community": 288,
-      "norm_label": "code:ini (# background-opicity: lower is more transparent)",
-      "id": "guides_ghostty_terminal_codeblock_4"
+      "norm_label": "code:ini (# background-opicity: lower is more transparent)"
     },
     {
       "label": "**Default Window Size**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L114",
+      "id": "guides_ghostty_terminal_default_window_size",
       "community": 288,
-      "norm_label": "**default window size**",
-      "id": "guides_ghostty_terminal_default_window_size"
+      "norm_label": "**default window size**"
     },
     {
       "label": "code:ini (window-width = 120)",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L124",
+      "id": "guides_ghostty_terminal_codeblock_5",
       "community": 288,
-      "norm_label": "code:ini (window-width = 120)",
-      "id": "guides_ghostty_terminal_codeblock_5"
+      "norm_label": "code:ini (window-width = 120)"
     },
     {
       "label": "code:ini (window-save-state = never)",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L137",
+      "id": "guides_ghostty_terminal_codeblock_6",
       "community": 288,
-      "norm_label": "code:ini (window-save-state = never)",
-      "id": "guides_ghostty_terminal_codeblock_6"
+      "norm_label": "code:ini (window-save-state = never)"
     },
     {
       "label": "**GNOME Keyboard Shortcut**",
       "file_type": "document",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L143",
+      "id": "guides_ghostty_terminal_gnome_keyboard_shortcut",
       "community": 288,
-      "norm_label": "**gnome keyboard shortcut**",
-      "id": "guides_ghostty_terminal_gnome_keyboard_shortcut"
+      "norm_label": "**gnome keyboard shortcut**"
     },
     {
       "label": "guidelines.md",
@@ -21379,122 +21271,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "docs_guides_yazi_md",
-      "target": "guides_yazi_installation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L65",
-      "weight": 1.0,
-      "source": "docs_guides_yazi_md",
-      "target": "guides_yazi_quick_tips_and_usage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "guides_yazi_installation",
-      "target": "guides_yazi_installing_on_your_distro",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "source": "guides_yazi_installation",
-      "target": "guides_yazi_optional_dependencies",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_2",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "guides_yazi_installing_on_your_distro",
-      "target": "guides_yazi_codeblock_3",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_essential_keys",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L84",
-      "weight": 1.0,
-      "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L108",
-      "weight": 1.0,
-      "source": "guides_yazi_quick_tips_and_usage",
-      "target": "guides_yazi_image_previews",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/yazi.md",
-      "source_location": "L94",
-      "weight": 1.0,
-      "source": "guides_yazi_the_y_shell_wrapper_cd_on_exit",
-      "target": "guides_yazi_codeblock_4",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L26",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_guides_ghostty_terminal_md",
-      "target": "guides_ghostty_terminal_codeblock_1"
+      "target": "guides_ghostty_terminal_codeblock_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21502,9 +21284,9 @@
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L45",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_guides_ghostty_terminal_md",
-      "target": "guides_ghostty_terminal_config_file"
+      "target": "guides_ghostty_terminal_config_file",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21552,9 +21334,9 @@
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L47",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_ghostty_terminal_config_file",
-      "target": "guides_ghostty_terminal_location_and_syntax"
+      "target": "guides_ghostty_terminal_location_and_syntax",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21562,9 +21344,9 @@
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L70",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_ghostty_terminal_config_file",
-      "target": "guides_ghostty_terminal_reloading_the_config"
+      "target": "guides_ghostty_terminal_reloading_the_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21572,9 +21354,9 @@
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L62",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_ghostty_terminal_location_and_syntax",
-      "target": "guides_ghostty_terminal_codeblock_2"
+      "target": "guides_ghostty_terminal_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21612,9 +21394,9 @@
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L84",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_ghostty_terminal_applying_the_theme",
-      "target": "guides_ghostty_terminal_codeblock_3"
+      "target": "guides_ghostty_terminal_codeblock_3",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21632,9 +21414,9 @@
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L100",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_ghostty_terminal_background_transparency_and_blur",
-      "target": "guides_ghostty_terminal_codeblock_4"
+      "target": "guides_ghostty_terminal_codeblock_4",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21662,9 +21444,9 @@
       "source_file": "docs/guides/ghostty-terminal.md",
       "source_location": "L137",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "guides_ghostty_terminal_default_window_size",
-      "target": "guides_ghostty_terminal_codeblock_6"
+      "target": "guides_ghostty_terminal_codeblock_6",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -44199,5 +43981,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "8f98ada472ef572b4c4368e552d9801f099f441c"
+  "built_at_commit": "b2019d64abc8fe40030ca17a5dfb199088fb200f"
 }
