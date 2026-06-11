@@ -73,7 +73,7 @@ tags:
 ==Specific program:== e.g. Gnome, Firefox, virt-manager, bash.
 
 ==Category of program:== e.g. Browser, OS, VM, Terminal.
-​​
+
 ==​​​​Category of guide:== ​​​​​Fixes, Ricing, Productivity, Web-Dev, Wiki.
 :::
 
@@ -327,6 +327,26 @@ sudo dnf update
 sudo dnf update
 ```
 
+:::
+
+#### Keybindings
+
+Write keyboard shortcuts with each key wrapped in `inline code` and joined by a literal `+`. Capitalise the key names (e.g. `Ctrl`, `Shift`, `Alt`, `Super`, `Enter`). This keeps shortcuts legible and consistent across guides.
+
+::::details See code...
+
+```md
+Press `Ctrl`+`Shift`+`,` to reload the config.
+
+Bind a terminal to `Super`+`Return`.
+```
+
+::::
+
+:::demo-wrapper
+Press `Ctrl`+`Shift`+`,` to reload the config.
+
+Bind a terminal to `Super`+`Return`.
 :::
 
 ### Code tabs
