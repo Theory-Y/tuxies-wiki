@@ -349,6 +349,50 @@ Press `Ctrl`+`Shift`+`,` to reload the config.
 Bind a terminal to `Super`+`Return`.
 :::
 
+#### Quick append
+
+A `quick append` is a `::::details Quick append` block placed right after a guide's intro that consolidates every config or command the guide covers, letting readers copy everything at once. Use `:::code-tabs` for a single config file, or `:::tabs` (with an apply/reset pair) for CLI commands.
+
+:::::details See code...
+
+````md
+::::details Quick append
+
+:::code-tabs
+
+@tab ~/.config/ghostty/config
+
+```ini
+theme = Everforest Dark Hard
+background-opacity = 0.8
+```
+
+:::
+
+::::
+````
+
+:::::
+
+:::::demo-wrapper
+
+::::details Quick append
+
+:::code-tabs
+
+@tab ~/.config/ghostty/config
+
+```ini
+theme = Everforest Dark Hard
+background-opacity = 0.8
+```
+
+:::
+
+::::
+
+:::::
+
 ### Code tabs
 
 Use `code tabs` to:
