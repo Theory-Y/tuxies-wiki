@@ -27,7 +27,7 @@ Paste the full configuration into `~/.config/ghostty/config.ghostty`, then reloa
 theme = Everforest Dark Hard
 
 # transparency: lower is more transparent (blur needs Blur my Shell on GNOME)
-background-opacity = 0.6
+background-opacity = 0.8
 background-blur = true
 
 # initial window grid size in columns and rows
@@ -62,7 +62,7 @@ The file uses a simple `key = value` format
 ```ini
 # This is a valid comment
 theme = Everforest Dark Hard
-background-opacity = 0.6
+background-opacity = 0.8
 ```
 
 :::
@@ -99,7 +99,7 @@ Run `ghostty +list-themes` in a terminal to browse all built-in themes before co
 
 ```ini
 # background-opicity: lower is more transparent
-background-opacity = 0.6
+background-opacity = 0.8
 background-blur = true
 ```
 
