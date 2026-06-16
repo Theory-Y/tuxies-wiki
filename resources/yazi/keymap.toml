@@ -1,0 +1,52 @@
+# ~/.config/yazi/keymap.toml
+# Custom g-prefix navigation. prepend_keymap = sits ahead of defaults.
+# Kept defaults: g h (home), g c (~/.config), g d (Downloads), g t (/tmp), g g (top)
+
+# --- major home dirs (plain cd: deterministic, fast) ---
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "e" ]
+run  = "cd ~/Desktop"
+desc = "Go to Desktop"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "D" ]
+run  = "cd ~/Documents"
+desc = "Go to Documents"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "p" ]
+run  = "cd ~/Pictures"
+desc = "Go to Pictures"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "v" ]
+run  = "cd ~/Videos"
+desc = "Go to Videos"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "m" ]
+run  = "cd ~/Music"
+desc = "Go to Music"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "P" ]
+run  = "cd ~/Public"
+desc = "Go to Public"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "C" ]
+run  = "cd ~/.config/yazi"
+desc = "Go to yazi config"
+
+# -- custom directories ---
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "cd ~/Installations"
+desc = "Go to Installations"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "w" ]
+run  = "cd ~/Projects"
+desc = "Go to Projects"

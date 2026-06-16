@@ -13,6 +13,12 @@ contributors:
 
 ## **Installation**
 
+:::note Quick append
+You can also download ready-made files in this repo [here](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/yazi) and drop them into `~/.config/yazi/`.
+
+Adjust the directory paths in `keymap.toml` to match your own home folders.
+:::
+
 ### **Installing on your distro**
 
 :::tabs
@@ -80,6 +86,113 @@ These packages unlock previews, search, and jump features. Some of them are prob
 | `[` / `]`                           | Cycle between tabs                            |
 
 Check `yazi`'s [Quick Start](https://yazi-rs.github.io/docs/quick-start/) for more.
+
+### **Custom navigation shortcuts**
+
+These optional configs extend the `g` (go-to) shortcuts with quick jumps to common directories, plus a high-contrast cheatsheet popup. The `theme.toml` uses the `Everforest Dark Hard` theme (also used in the [Ghostty Terminal guide](/guides/ghostty-terminal/)).
+
+| Keys      | Jumps to          |
+| --------- | ----------------- |
+| `g` + `D` | `~/Documents`     |
+| `g` + `p` | `~/Pictures`      |
+| `g` + `v` | `~/Videos`        |
+| `g` + `m` | `~/Music`         |
+| `g` + `e` | `~/Desktop`       |
+| `g` + `P` | `~/Public`        |
+| `g` + `C` | `~/.config/yazi`  |
+| `g` + `i` | `~/Installations` |
+| `g` + `w` | `~/Projects`      |
+
+:::tip
+`g` + `i` (`~/Installations`) and `g` + `w` (`~/Projects`) point to ==custom folders==. Create them with `mkdir ~/Installations ~/Projects`, or edit those two paths in `keymap.toml` to suit your own setup.
+:::
+
+The `theme.toml` below is a ==partial== override — it changes only the `[which]` popup, so other elements are `yazi` default.
+
+::::details Custom config files
+
+:::code-tabs
+
+@tab ~/.config/yazi/keymap.toml
+
+```toml
+# Custom g-prefix navigation. prepend_keymap = sits ahead of defaults.
+# Kept defaults: g h (home), g c (~/.config), g d (Downloads), g t (/tmp), g g (top)
+
+# --- major home dirs (plain cd: deterministic, fast) ---
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "e" ]
+run  = "cd ~/Desktop"
+desc = "Go to Desktop"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "D" ]
+run  = "cd ~/Documents"
+desc = "Go to Documents"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "p" ]
+run  = "cd ~/Pictures"
+desc = "Go to Pictures"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "v" ]
+run  = "cd ~/Videos"
+desc = "Go to Videos"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "m" ]
+run  = "cd ~/Music"
+desc = "Go to Music"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "P" ]
+run  = "cd ~/Public"
+desc = "Go to Public"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "C" ]
+run  = "cd ~/.config/yazi"
+desc = "Go to yazi config"
+
+# --- custom directories ---
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "cd ~/Installations"
+desc = "Go to Installations"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "w" ]
+run  = "cd ~/Projects"
+desc = "Go to Projects"
+```
+
+@tab ~/.config/yazi/theme.toml
+
+```toml
+# Partial override — only [which] is changed; everything else uses yazi defaults.
+# Fixes the low-contrast g/which-key cheatsheet popup. Palette = Everforest Dark
+# Hard, matching the Ghostty terminal theme.
+
+[which]
+cols = 3
+# raised panel (bg2) above the hard background #1e2326 so the popup stands out
+mask            = { bg = "#2e383c" }
+# the highlighted next-key candidate(s) — everforest yellow, bold
+cand            = { fg = "#dbbc7f", bold = true }
+# remaining keys of a pending multi-key sequence — muted grey
+rest            = { fg = "#a6b0a0" }
+# the action description text — everforest foreground for readability
+desc            = { fg = "#d3c6aa" }
+separator       = "  "
+separator_style = { fg = "#7a8478" }
+```
+
+:::
+
+::::
 
 ### **The `y` shell wrapper (cd-on-exit)**
 

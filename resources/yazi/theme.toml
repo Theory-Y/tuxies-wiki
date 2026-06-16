@@ -1,0 +1,17 @@
+# ~/.config/yazi/theme.toml
+# Partial override — only [which] is changed; everything else uses Yazi defaults.
+# Fixes low-contrast `g`/which-key cheatsheet popup. Palette = Everforest Dark
+# Hard, matching the Ghostty terminal theme (see ghostty-terminal guide).
+
+[which]
+cols = 3
+# raised panel (bg2) above the hard background #1e2326 so the popup stands out
+mask            = { bg = "#2e383c" }
+# the highlighted next-key candidate(s) — everforest yellow, bold
+cand            = { fg = "#dbbc7f", bold = true }
+# remaining keys of a pending multi-key sequence — muted grey
+rest            = { fg = "#a6b0a0" }
+# the action description text — everforest foreground for readability
+desc            = { fg = "#d3c6aa" }
+separator       = "  "
+separator_style = { fg = "#7a8478" }
