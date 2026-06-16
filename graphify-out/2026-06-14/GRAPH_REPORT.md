@@ -1,16 +1,16 @@
-# Graph Report - tuxies-wiki  (2026-06-15)
+# Graph Report - tuxies-wiki  (2026-06-11)
 
 ## Corpus Check
-- 177 files · ~1,381,720 words
+- 177 files · ~1,379,942 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2347 nodes · 2372 edges · 305 communities (205 shown, 100 thin omitted)
+- 2257 nodes · 2288 edges · 291 communities (199 shown, 92 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b504d320`
+- Built from commit: `93096aa2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -248,18 +248,6 @@
 - [[_COMMUNITY_Community 288|Community 288]]
 - [[_COMMUNITY_Community 289|Community 289]]
 - [[_COMMUNITY_Community 290|Community 290]]
-- [[_COMMUNITY_Community 291|Community 291]]
-- [[_COMMUNITY_Community 292|Community 292]]
-- [[_COMMUNITY_Community 293|Community 293]]
-- [[_COMMUNITY_Community 294|Community 294]]
-- [[_COMMUNITY_Community 295|Community 295]]
-- [[_COMMUNITY_Community 296|Community 296]]
-- [[_COMMUNITY_Community 297|Community 297]]
-- [[_COMMUNITY_Community 298|Community 298]]
-- [[_COMMUNITY_Community 299|Community 299]]
-- [[_COMMUNITY_Community 300|Community 300]]
-- [[_COMMUNITY_Community 301|Community 301]]
-- [[_COMMUNITY_Community 302|Community 302]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `**Installation guide**` - 42 edges
@@ -288,7 +276,7 @@
 ## Hyperedges (group relationships)
 - **Core Tuxies Wiki Guides** — guides_aiers_gnome, guides_logitech_linux_setup, guides_terminal_customisation_bash, guides_firefox_userjs [INFERRED 0.85]
 
-## Communities (305 total, 100 thin omitted)
+## Communities (291 total, 92 thin omitted)
 
 ### Community 0 - "Kando Menu Config"
 Cohesion: 0.07
@@ -436,7 +424,7 @@ Nodes (33): **Aesthetic Changes**, **Autorun `fastfetch`** when you open the ter
 
 ### Community 76 - "Community 76"
 Cohesion: 0.08
-Nodes (27): code:bash (flatpak install flathub com.discordapp.Discord), code:bash (sudo dnf install gcc kernel-devel dkms), code:bash (sudo pacman -S v4l2loopback-dkms), code:bash (sudo apt install dkms), code:bash (git clone https://github.com/umlaeute/v4l2loopback), code:bash (v4l2loopback), code:bash (sudo modprobe v4l2loopback), code:bash (flatpak install flathub com.visualstudio.code) (+19 more)
+Nodes (26): code:bash (flatpak install flathub com.discordapp.Discord), code:bash (sudo dnf install gcc kernel-devel dkms), code:bash (sudo pacman -S v4l2loopback-dkms), code:bash (sudo apt install dkms), code:bash (git clone https://github.com/umlaeute/v4l2loopback), code:bash (v4l2loopback), code:bash (sudo modprobe v4l2loopback), code:bash (flatpak install flathub com.visualstudio.code) (+18 more)
 
 ### Community 77 - "Community 77"
 Cohesion: 0.17
@@ -851,44 +839,28 @@ Cohesion: 0.14
 Nodes (13): **[Blender](https://www.blender.org/download/)**, code:bash (flatpak install flathub org.blender.Blender), code:bash (flatpak install --user flathub org.blender.Blender), code:bash (flatpak install flathub org.inkscape.Inkscape), code:bash (flatpak install --user org.inkscape.Inkscape), code:bash (flatpak install flathub org.darktable.Darktable), code:bash (flatpak install --user flathub org.darktable.Darktable), code:bash (sudo dnf install darktable) (+5 more)
 
 ### Community 290 - "Community 290"
-Cohesion: 0.13
-Nodes (16): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:toml (# Custom g-prefix navigation. prepend_keymap = sits ahead of), code:toml (# Partial override — only [which] is changed; everything els), code:bash (function y() {), code:toml ([mgr]), **Custom navigation shortcuts** (+8 more)
-
-### Community 291 - "Community 291"
-Cohesion: 0.05
-Nodes (36): app-name, state, urgency, control-center-height, control-center-margin-bottom, control-center-margin-left, control-center-margin-right, control-center-margin-top (+28 more)
-
-### Community 292 - "Community 292"
-Cohesion: 0.11
-Nodes (18): aier's Hyprland Dotfiles, Apps & launchers, code:bash (# Enable the Hyprland COPR (Fedora)), code:bash (git clone <this-repo> ~/dotfiles/hyprland), code:ini (exec-once = ~/.config/hypr/scripts/set-wallpaper.sh "$(cat ~), code:block4 (aiers-hyprland/), code:ini (# ── NVIDIA — uncomment if you have an NVIDIA GPU ──────────), Deploy (+10 more)
-
-### Community 293 - "Community 293"
-Cohesion: 0.80
-Nodes (4): backup_if_exists(), deploy_dir(), deploy_file(), deploy.sh script
-
-### Community 295 - "Community 295"
-Cohesion: 0.50
-Nodes (3): Default theme source, Licensing and attribution, Wallpapers
+Cohesion: 0.14
+Nodes (13): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:bash (function y() {), code:toml ([mgr]), **Essential keys**, **Image previews**, **Installation** (+5 more)
 
 ## Knowledge Gaps
-- **1123 isolated node(s):** `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)`, `**Optional dependencies**`, `**Essential keys**` (+1118 more)
+- **1074 isolated node(s):** `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)`, `**Optional dependencies**`, `**Essential keys**` (+1069 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **100 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **92 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `**Installation guide**` connect `Core Linux Concepts` to `Community 74`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `JavaScript/TypeScript Security Patterns` connect `Community 240` to `Community 229`, `Community 230`, `Community 231`, `Community 244`, `Community 245`, `Community 246`, `Community 247`, `Community 248`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `Language-Specific Vulnerabilities` connect `Community 234` to `Community 232`, `Community 233`, `Community 249`, `Community 250`, `Community 251`, `Community 223`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `**[ROG Asusctl](https://asus-linux.org/)**` connect `Community 269` to `Community 74`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)` to the rest of the system?**
-  _1123 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1074 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Kando Menu Config` be split into smaller, more focused modules?**
   _Cohesion score 0.07256894049346879 - nodes in this community are weakly interconnected._
 - **Should `VuePress Build System` be split into smaller, more focused modules?**
   _Cohesion score 0.08620689655172414 - nodes in this community are weakly interconnected._
 - **Should `Linux Apps Library` be split into smaller, more focused modules?**
   _Cohesion score 0.05454545454545454 - nodes in this community are weakly interconnected._
+- **Should `Linux Distros & Vocabulary` be split into smaller, more focused modules?**
+  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._

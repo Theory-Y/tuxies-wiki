@@ -1,16 +1,16 @@
-# Graph Report - tuxies-wiki  (2026-06-15)
+# Graph Report - tuxies-wiki  (2026-06-14)
 
 ## Corpus Check
-- 177 files · ~1,381,720 words
+- 187 files · ~1,383,827 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2347 nodes · 2372 edges · 305 communities (205 shown, 100 thin omitted)
+- 2344 nodes · 2367 edges · 305 communities (205 shown, 100 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b504d320`
+- Built from commit: `d1c34a8e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -851,8 +851,8 @@ Cohesion: 0.14
 Nodes (13): **[Blender](https://www.blender.org/download/)**, code:bash (flatpak install flathub org.blender.Blender), code:bash (flatpak install --user flathub org.blender.Blender), code:bash (flatpak install flathub org.inkscape.Inkscape), code:bash (flatpak install --user org.inkscape.Inkscape), code:bash (flatpak install flathub org.darktable.Darktable), code:bash (flatpak install --user flathub org.darktable.Darktable), code:bash (sudo dnf install darktable) (+5 more)
 
 ### Community 290 - "Community 290"
-Cohesion: 0.13
-Nodes (16): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:toml (# Custom g-prefix navigation. prepend_keymap = sits ahead of), code:toml (# Partial override — only [which] is changed; everything els), code:bash (function y() {), code:toml ([mgr]), **Custom navigation shortcuts** (+8 more)
+Cohesion: 0.14
+Nodes (13): code:bash (sudo dnf copr enable lihaohong/yazi), code:bash (cargo install --locked yazi-fm yazi-cli), code:bash (sudo pacman -S yazi), code:bash (function y() {), code:toml ([mgr]), **Essential keys**, **Image previews**, **Installation** (+5 more)
 
 ### Community 291 - "Community 291"
 Cohesion: 0.05
@@ -871,7 +871,7 @@ Cohesion: 0.50
 Nodes (3): Default theme source, Licensing and attribution, Wallpapers
 
 ## Knowledge Gaps
-- **1123 isolated node(s):** `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)`, `**Optional dependencies**`, `**Essential keys**` (+1118 more)
+- **1123 isolated node(s):** `source`, `sourceType`, `skillPath`, `computedHash`, `node` (+1118 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **100 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -884,7 +884,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `Language-Specific Vulnerabilities` connect `Community 234` to `Community 232`, `Community 233`, `Community 249`, `Community 250`, `Community 251`, `Community 223`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `code:bash (sudo dnf copr enable lihaohong/yazi)`, `code:bash (cargo install --locked yazi-fm yazi-cli)`, `code:bash (sudo pacman -S yazi)` to the rest of the system?**
+- **What connects `source`, `sourceType`, `skillPath` to the rest of the system?**
   _1123 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Kando Menu Config` be split into smaller, more focused modules?**
   _Cohesion score 0.07256894049346879 - nodes in this community are weakly interconnected._
