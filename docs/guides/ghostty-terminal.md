@@ -32,7 +32,7 @@ background-blur = true
 
 # initial window grid size in columns and rows
 window-width = 120
-window-height = 32
+window-height = 40
 
 # restore window size across launches: default | never | always
 window-save-state = never
@@ -123,7 +123,7 @@ The default `0` lets the OS or window manager decide. Both keys must be set toge
 
 ```ini
 window-width = 120
-window-height = 32
+window-height = 40
 ```
 
 :::
