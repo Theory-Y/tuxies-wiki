@@ -365,4 +365,9 @@ This guide is just one stop on my full setup. Here's the full checklist:
 - [ghostty-terminal](/guides/ghostty-terminal/)
 - [yazi](/guides/yazi/)
 
+**[External resources](/guides/external-resources)**
+
+- Howdy Facial Recognition
+- Touchpad Scrolling Sensitivity Fix
+
 :::
