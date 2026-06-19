@@ -142,6 +142,10 @@ user_pref("browser.tabs.hoverPreview.enabled", true); // false
 
 If you are using Zen Browser, you can check out these settings:
 
+:::warning Flatpak Zen
+If you installed Zen via Flatpak, its profile folder isn't reachable from `about:support` — find it (and place your `user.js`) under `~/.var/app/app.zen_browser.zen/.zen/XXXXX/`, where `XXXXX` is your profile ID.
+:::
+
 ```js
 user_pref("zen.workspaces.separate-essentials", false); // true
 // user_pref("zen.view.show-newtab-button-top", false); // true
