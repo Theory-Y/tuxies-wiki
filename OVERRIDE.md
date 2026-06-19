@@ -1,0 +1,1 @@
+TheoryY fastfetch config.jsonc
