@@ -17,6 +17,10 @@ contributors:
 
 ## **Part 1: Solaar — Key Reassignment**
 
+:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) link to download an example configuration for the MX Masters 4 and MX Keys S.
+The configuration files are ready to use if you have the hardware mentioned above. Otherwise, you may have to do some tweaking in the Solaar app.
+:::
+
 ### **Installing Solaar**
 
 ::::tabs
@@ -97,11 +101,10 @@ The ==Rules Editor== is Solaar's equivalent of `Logi Options+` key redirection. 
 
 :::
 
-:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) link to download an example configuration for the MX Masters 4 and MX Keys S.
-The configuration files are ready to use if you have the hardware mentioned above. Otherwise, you may have to do some tweaking in the Solaar app.
-:::
-
 ## **Part 2: Kando**
+
+:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the above video.
+:::
 
 ### **Installing Kando**
 
@@ -161,9 +164,6 @@ sudo dpkg -i kando-*.deb
 
 :::demo-wrapper
 <video src="/assets/logitech-linux-setup/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
-:::
-
-:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the above video.
 :::
 
 ### **Binding menus to shortcuts**
