@@ -7,7 +7,7 @@ contributors:
 ---
 
 :::tip Why Fedora?
-Fedora is the preferred distro of ==aier==. Fedora offers a high-quality out-of-the-box experience while remaining highly flexible. It is stable, yet it has up-to-date and cutting edge packages.
+Fedora offers a high-quality out-of-the-box experience while remaining highly flexible. It is stable, yet it has up-to-date and cutting edge packages.
 :::
 
 ## **Installation**

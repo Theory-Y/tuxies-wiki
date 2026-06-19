@@ -15,14 +15,6 @@ contributors:
 :::tip You might want to go through with setting up Gnome through [Gnome Guide](/linux-guides/gnome/) first.
 :::
 
-:::important This guide is not going to be as detailed as the ones released in the main series as its content updates much more often as newer versions of Gnome and new extensions come out.
-:::
-
-## Facial Recognition With Howdy
-
-:::tip This applies outside of Gnome as well. If your computer supports facial recognition, you can check the details to setting up Howdy from the [official GitHub page](https://github.com/boltgolt/howdy?tab=readme-ov-file). For Fedora 43-44 users, check [Getting Howdy to Run on Fedora](https://mtillmann.blog/posts/howdy-on-fedora-43.html) by Martin's Blog.
-:::
-
 ## Better-Looking Fonts
 
 :::tip The Adwaita series font is pretty good, but I find the IBM Plex series to be more modern and pleasing.
@@ -50,15 +42,25 @@ sudo apt install fonts-ibm-plex
 
 :::
 
+:::tabs
+
+@tab To apply
+
 ```bash
 dconf write /org/gnome/desktop/interface/font-name "'IBM Plex Sans 11'"
 dconf write /org/gnome/desktop/interface/document-font-name "'IBM Plex Sans 12'"
 dconf write /org/gnome/desktop/interface/monospace-font-name "'IBM Plex Mono 11'"
 ```
 
-<!-- dconf reset /org/gnome/desktop/interface/font-name  -->
-<!-- dconf reset /org/gnome/desktop/interface/document-font-name  -->
-<!-- dconf reset /org/gnome/desktop/interface/monospace-font-name  -->
+@tab To reset
+
+```bash
+dconf reset /org/gnome/desktop/interface/font-name
+dconf reset /org/gnome/desktop/interface/document-font-name
+dconf reset /org/gnome/desktop/interface/monospace-font-name
+```
+
+:::
 
 ## GNOME Extensions (Universal Benefits)
 
@@ -125,15 +127,6 @@ dconf write /org/gnome/desktop/interface/monospace-font-name "'IBM Plex Mono 11'
   ```
 
   :::
-
-<!-- - [Emoji Copy](https://extensions.gnome.org/extension/6242/emoji-copy/)
-
-  ::: info Adds an emoji picker to search and copy emojis quickly.
-  ![Emoji Copy Demonstration](/assets/aiers-gnome/emoji-copy-demonstration.png)
-  :::
-
-  :::tip The default `<Super>.` keybinding for Emoji Copy sometimes interferes with the ibus emoji shortcut, I simply remapped it to `<Super><Shift>v`.
-  ::: -->
 
 - [GNOME Fuzzy App Search](https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/)
 
@@ -352,3 +345,24 @@ dconf write /org/gnome/desktop/interface/monospace-font-name "'IBM Plex Mono 11'
 
 :::::
 ::::::
+
+:::info More resources...
+
+This guide is just one stop on my full setup. Here's the full checklist:
+
+**First steps**
+
+- [Gnome Guide](/linux-guides/gnome/)
+- aier's Gnome _(you're reading it)_
+- [Keyd](/guides/key-remapping-with-keyd/)
+- [Logitech Linux Setup](/guides/logitech-linux-setup/)
+- [Editor's choice](/linux-apps/editors-choice/)
+- [Essentials](/linux-apps/essentials/)
+
+**Dev stuff**
+
+- [Bash customisation](/guides/terminal-customisation-bash/)
+- [ghostty-terminal](/guides/ghostty-terminal/)
+- [yazi](/guides/yazi/)
+
+:::

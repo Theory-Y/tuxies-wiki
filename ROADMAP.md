@@ -60,3 +60,11 @@ those prefs to an optional alternative.
   shallow clone (depth 1) collapsing git-derived metadata to one commit. Fix: prepend
   `git fetch --unshallow 2>/dev/null || true` to `build` / `build-cf` scripts. Repo side
   done; deploy side tracked under **Open** above.
+- **aier's Gnome → checklist hub (2026-06-19)** — appended a "More resources..." `:::info`
+  callout at the bottom of `aiers-gnome.md` linking every item on aier's Fedora checklist
+  (`docs/.vuepress/public/reference-docs/aiers-fedora-checklist.md`), grouped as on the
+  checklist. "Pre-partition for dual boot" → Fedora guide (no dedicated partitioning page);
+  "Fluent icons & cursor" omitted — no coverage anywhere in the wiki (candidate to also
+  remove from the checklist source). `graphify update .` could **not** be run — the
+  `graphify` CLI is unavailable in this environment; run it where installed to refresh
+  `graphify-out/`.
