@@ -4,11 +4,7 @@
   "showIntroductionDialog": false,
   "menuTheme": "rainbow-labels",
   "darkMenuTheme": "default",
-  "menuThemeColors": {
-    "clean-circle": {
-      "action-icon-color": "rgb(255 200 225)"
-    }
-  },
+  "menuThemeColors": {},
   "darkMenuThemeColors": {},
   "enableDarkModeForMenuThemes": false,
   "enableSelectionWedges": false,

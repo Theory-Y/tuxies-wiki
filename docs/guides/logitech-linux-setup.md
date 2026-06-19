@@ -17,9 +17,17 @@ contributors:
 
 ## **Part 1: Solaar — Key Reassignment**
 
-:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) link to download an example configuration for the MX Masters 4 and MX Keys S.
-The configuration files are ready to use if you have the hardware mentioned above. Otherwise, you may have to do some tweaking in the Solaar app.
+:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) link to download the Solaar button-remap preset (`rules.yaml`) for the MX Master 4 and MX Keys S.
+`rules.yaml` is the portable part of the Solaar configuration — it defines which button fires which key event and works across machines. Device-specific settings (DPI, backlight, haptic level, smart-shift, scroll ratchet, etc.) are ==not portable==: they are stored per physical device and must be configured in the Solaar GUI after pairing.
 :::
+
+The example `rules.yaml` remaps the MX Keys S F-row smart-action keys as follows:
+
+- **Dictation → `Super`+`i`** — the Dictation key has no native Linux action, so it's repurposed to open GNOME Settings.
+- **Emoji → `Super`+`Shift`+`v`** — fires `Super`+`Shift`+`v`, intended for the emoji-copy GNOME extension; the binding stays inert until you install an emoji extension/app bound to that shortcut.
+- **Mute Microphone → `XF86AudioMicMute`** — emits the proper mic-mute keysym so the key actually toggles the microphone under Linux (the stock key sends no recognised mic-mute event).
+- **Screen Capture → `Print`** — sends `Print` (PrtSc) to trigger GNOME's screenshot tool, since the stock Logitech "snip" action isn't wired on Linux.
+- **Screen Lock → `Tab`** — the lock key sits next to the numpad; remapping it to `Tab` gives a numpad-adjacent `Tab` for faster numeric/spreadsheet data entry (field-to-field) without reaching across the keyboard.
 
 ### **Installing Solaar**
 
@@ -69,7 +77,7 @@ sudo apt install solaar
 
 - **Adjust device settings**
 
-  Select your device in the left panel. The right panel exposes all available settings — ==DPI==, scroll direction, pointer speed, and function-key behaviour — depending on your hardware model.
+  Select your device in the left panel. The right panel exposes all available settings — ==DPI==, scroll direction, pointer speed, and function-key behaviour — depending on your hardware model. These settings are stored per physical device and are ==not exported== with `rules.yaml`; set them once in the GUI after pairing.
 
 :::
 
