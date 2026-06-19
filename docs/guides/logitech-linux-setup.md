@@ -15,6 +15,21 @@ contributors:
 :::info This guide covers Logitech devices connecting via Unifying, Bolt, Nano, or Bluetooth receivers. It replicates `Logi Options+` ==key reassignment== and the ==Actions Ring== using `Solaar` and `Kando` respectively.
 :::
 
+::::details Quick append
+
+Want both presets applied at once? Download the [`logitech-linux-setup`](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) folder and run the installer — it copies the `Solaar` and `Kando` presets into the right config directories (auto-detecting `Flatpak` vs native; pass `--flatpak` or `--native` to force), backing up any existing files first.
+
+```bash
+cd logitech-linux-setup
+chmod +x install.sh
+./install.sh
+```
+
+:::tip Quit `Solaar` before running so it loads the new rules on next launch; `Kando` hot-reloads, so its menus apply immediately. Device-specific `Solaar` settings (DPI, backlight, haptic) are per-device — set them in the GUI after pairing.
+:::
+
+::::
+
 ## **Part 1: Solaar — Key Reassignment**
 
 :::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) link to download the Solaar button-remap preset (`rules.yaml`) for the MX Master 4 and MX Keys S.

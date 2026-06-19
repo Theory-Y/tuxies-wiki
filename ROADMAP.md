@@ -50,6 +50,15 @@ touchpad fix already on the External Resources page (`/guides/external-resources
 
 ## Completed
 
+- **Logitech setup install script (2026-06-19)** — added
+  `resources/logitech-linux-setup/install.sh`: quick-installs the Solaar
+  (`rules.yaml`) and Kando (`config.json` + `menus.json`) presets, auto-detecting
+  Flatpak vs native config paths (`--flatpak`/`--native` to force), timestamped
+  backups before overwrite, idempotent (skips unchanged files), and warns to quit
+  Solaar first (it rewrites `rules.yaml`; Kando hot-reloads). Created the folder's
+  first `README.md`, and added a **Quick append** to
+  `docs/guides/logitech-linux-setup.md` pointing readers at the installer.
+  `graphify update .` not run — CLI unavailable in this environment.
 - **Guide audit (pass 1)** — all guides reviewed for malpractice; 🔴/🟠/🟡/🔵 fixes landed
   across `editors-choice.md`, `terminal-customisation-bash.md`, `rb-14-2023-fedora.md`,
   `ssh-guide.md`, `key-remapping-with-keyd.md`, `microsoft-edge-setup.md`, and the
