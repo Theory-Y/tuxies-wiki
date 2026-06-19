@@ -144,6 +144,10 @@ You can make your bash terminal autorun `fastfetch` to display system informatio
   ![fastfetch](/assets/terminal-customisation-bash/fastfetch.png)
   :::
 
+- **Apply the TheoryY config _(optional)_**
+
+  For a TheoryY-branded fastfetch — the THEORY logo with gold accents — download [this `config.jsonc`](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/terminal-customisation-bash/config.jsonc) and save it to `~/.config/fastfetch/config.jsonc`. fastfetch picks it up automatically.
+
 - **Changing the look of the prompt (`PS1`)**
 
   Now, in your `.bashrc`, you change the looks of your prompt looks through modifying the `PS1` variable.

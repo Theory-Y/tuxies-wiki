@@ -140,6 +140,12 @@ window-save-state = never
 
 :::
 
+## **Keyboard Shortcuts**
+
+`ghostty` ships with sensible default keybinds — new tab with `Ctrl`+`Shift`+`T`, splits with `Ctrl`+`Shift`+`O` / `Ctrl`+`Shift`+`E`, reload config with `Ctrl`+`Shift`+`,`, and so on.
+
+For the full reference, see [this keyboard shortcuts cheatsheet](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/ghostty-terminal/keyboard-shortcuts.md).
+
 ## **GNOME Keyboard Shortcut**
 
 We can bind a key combo in GNOME `Settings` to launch `ghostty` without opening a dock or app grid. The steps below use the standard GNOME custom-shortcut workflow.

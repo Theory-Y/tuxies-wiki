@@ -9,6 +9,19 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
+### TheoryY fastfetch `config.jsonc` · ⚑ active override
+
+- [x] Created the TheoryY-branded config at `resources/terminal-customisation-bash/config.jsonc`
+      (THEORY logo + gold accents, centered Hardware/Software/Uptime section headers — no
+      box corners, so long lines like Packages don't overflow a border) and linked it as a
+      download from the **Autorun `fastfetch`** step of
+      `docs/guides/terminal-customisation-bash.md`. (Config is 158 lines — linked, not inlined
+      as a code-tab, matching the repo's `resources/` download convention.)
+- [ ] 🟡 Refresh the guide screenshot
+      `docs/.vuepress/public/assets/terminal-customisation-bash/fastfetch.png` — it still shows
+      the **default Fedora** output, not the branded config. Last open piece of this override;
+      clear `OVERRIDE.md` once done.
+
 ### Cloudflare Pages — contributors/changelog redeploy
 
 - [ ] 🟡 Set the Cloudflare Pages project **Build command** to `npm run build-cf`, then
@@ -25,22 +38,13 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 **File:** `docs/guides/firefox-userjs.md` · **Status:** testing iteration, unpublished.
 
-We already cover a system-level touchpad scrolling sensitivity fix on the External
-Resources page (`/guides/external-resources/`; the Gnome guide `notes/linux-guides/gnome.md`
-defers to it). The Firefox guide's **Trackpad scrolling** section duplicates that, so demote
-those prefs to an optional alternative.
+Demote the Firefox guide's **Trackpad scrolling** prefs in favour of the system-level
+touchpad fix already on the External Resources page (`/guides/external-resources/`).
 
-- [x] In the **Trackpad scrolling** section (and the matching lines in the **Preview**
-      `user.js` block), comment out the three touchpad-specific prefs as an optional choice:
-  - `apz.gtk.pangesture.delta_mode`
-  - `apz.gtk.pangesture.pixel_delta_mode_multiplier`
-  - `apz.overscroll.enabled`
-- [x] Keep `apz.fling_friction` **active**, but change its value `"0.005"` → `"0.004"`.
-- [x] Add a short `:::tip` pointing readers to the touchpad scrolling sensitivity fix on the
-      External Resources page (`/guides/external-resources/`) as the preferred system-level
-      approach.
-- [ ] Do not publish — this is a testing iteration only. **Edits landed in repo
-      2026-06-10; hold from deploy until reviewed.**
+- [x] Edits landed in repo 2026-06-10 — three touchpad-specific prefs commented out as an
+      optional choice, `apz.fling_friction` retuned `"0.005"` → `"0.004"`, and a `:::tip`
+      added pointing to the External Resources fix. (Full pref names in git / the file.)
+- [ ] 🟡 **Do NOT publish** — testing iteration only; hold from deploy until reviewed.
 
 ---
 

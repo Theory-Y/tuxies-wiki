@@ -103,7 +103,7 @@ The ==Rules Editor== is Solaar's equivalent of `Logi Options+` key redirection. 
 
 ## **Part 2: Kando**
 
-:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the above video.
+:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files in the section below.
 :::
 
 ### **Installing Kando**

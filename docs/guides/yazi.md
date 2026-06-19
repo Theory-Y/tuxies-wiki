@@ -102,6 +102,7 @@ These optional configs extend the `g` (go-to) shortcuts with quick jumps to comm
 | `g` + `C` | `~/.config/yazi`  |
 | `g` + `i` | `~/Installations` |
 | `g` + `w` | `~/Projects`      |
+| `g` + `.` | `~/.dotfiles`     |
 
 :::tip
 `g` + `i` (`~/Installations`) and `g` + `w` (`~/Projects`) point to ==custom folders==. Create them with `mkdir ~/Installations ~/Projects`, or edit those two paths in `keymap.toml` to suit your own setup.
@@ -167,6 +168,11 @@ desc = "Go to Installations"
 on   = [ "g", "w" ]
 run  = "cd ~/Projects"
 desc = "Go to Projects"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "." ]
+run  = "cd ~/.dotfiles"
+desc = "Go to .dotfiles"
 ```
 
 @tab ~/.config/yazi/theme.toml
