@@ -536,7 +536,7 @@ The following is a picture of Ice Bear from We Bare Bears.
 
 ::::
 
-When you have to use multiple `details` containers, use `collapse` instead.
+When you have to use multiple `details` containers, use `collapse` instead. For lists of extensions or apps inside a `collapse`, see [Extension & module entries](#extension-module-entries) — links and configs always sit above the picture/video.
 
 <!-- :::important Do not use `inline code` and `highlight` formatting in the titles of collapse modules as they are visually buggy.
 
@@ -585,6 +585,81 @@ Always pair `collapse` with a card unless the only content is a photo. If it has
 - Card can be omitted in the case of a singular image.
 
   ![Ice Bear](/assets/guidelines/ice-bear.jpg)
+
+::::
+
+:::::
+
+### Extension & module entries
+
+When you list extensions, apps, or any item that pairs a link with settings and a demonstration — typically inside a [collapse](#details-collapse) — follow a fixed order. ==The link and any configs always go above the picture or video== so a reader sees them the moment they expand a module. A tall screenshot must never push a config below the fold, where it gets missed.
+
+Order, top to bottom:
+
+1. `- [Name](link)` — with optional `_(notes)_` on the same line.
+2. `:::info` — a one-line description of what the item does.
+3. `:::tip` — quick settings / config, with a short label (e.g. `My settings`). Omit the whole block if there is no config.
+4. The picture or video demonstration, ==last==. Use a bare `![alt](src)` for an image; wrap a `<video>` in `:::demo-wrapper`.
+
+These entries usually sit inside a `collapse` (sometimes wrapped in a `card`), so mind the [colon-nesting rule](#code-structure): the inner `:::info` / `:::tip` / `:::demo-wrapper` stay at `:::` while the wrapping `collapse` / `card` take more colons.
+
+:::::details See code...
+
+````md
+::::collapse
+
+- [Extension Name](https://extensions.gnome.org/extension/0000/example/) _(optional notes)_
+
+  :::info A one-line description of what the extension does.
+  :::
+
+  :::tip My settings
+
+  ```bash
+  dconf write /org/gnome/shell/extensions/example/some-key true
+  ```
+
+  :::
+
+  ![Extension demo](/assets/guidelines/ice-bear.jpg)
+
+- [Another Extension](https://extensions.gnome.org/extension/0001/another/)
+
+  :::info Items with no config skip the tip block entirely.
+  :::
+
+  ![Another demo](/assets/guidelines/ice-bear.jpg)
+
+::::
+````
+
+:::::
+
+:::::demo-wrapper
+
+::::collapse
+
+- [Extension Name](https://extensions.gnome.org/extension/0000/example/) _(optional notes)_
+
+  :::info A one-line description of what the extension does.
+  :::
+
+  :::tip My settings
+
+  ```bash
+  dconf write /org/gnome/shell/extensions/example/some-key true
+  ```
+
+  :::
+
+  ![Extension demo](/assets/guidelines/ice-bear.jpg)
+
+- [Another Extension](https://extensions.gnome.org/extension/0001/another/)
+
+  :::info Items with no config skip the tip block entirely.
+  :::
+
+  ![Another demo](/assets/guidelines/ice-bear.jpg)
 
 ::::
 

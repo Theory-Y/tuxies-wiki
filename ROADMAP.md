@@ -50,6 +50,22 @@ touchpad fix already on the External Resources page (`/guides/external-resources
 
 ## Completed
 
+- **Extension/module entry format standardised (2026-06-20)** — defined a fixed display
+  order for extension/app entries in collapse modules: `link _(notes)_` → `:::info`
+  description → `:::tip` config → picture/video **last**, so links and configs always sit
+  above the demonstration (readers were missing custom configs that tall screenshots pushed
+  below the fold). Reformatted both collapse sections of `docs/guides/aiers-gnome.md`
+  (dropped the stray per-item `card` on AppIndicator; moved configs above images for Just
+  Perfection, Alphabetical App Grid, Dash to Dock, Show Desktop Plus; normalised
+  `::: info`→`:::info` and `My settings:`→`My settings`; wrapped the Show Desktop Plus video
+  in `:::demo-wrapper`). Codified it in a new **Extension & module entries** section of
+  `docs/notes/about/contributions/guidelines.md` (+ a pointer from **Details & collapse**).
+  Other guides (`logitech-linux-setup`, `terminal-customisation-bash`, `firefox-userjs`,
+  `ghostty-terminal`, `yazi`) audited — already compliant (configs precede screenshots within
+  their steps/quick-appends). Also copied `blur-my-shell-demonstration.png` →
+  `just-perfection-demonstration.png` (the shot shows both extensions' effects; duplicated
+  under the convention name to avoid future confusion) and repointed the Just Perfection
+  image. `graphify update .` not run — CLI unavailable in this environment.
 - **Logitech setup install script (2026-06-19)** — added
   `resources/logitech-linux-setup/install.sh`: quick-installs the Solaar
   (`rules.yaml`) and Kando (`config.json` + `menus.json`) presets, auto-detecting

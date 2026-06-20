@@ -69,40 +69,31 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
 - [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 
-  ::::card
-
   :::info Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
   :::
 
   ![AppIndicator](/assets/aiers-gnome/appindicator.png)
 
-  ::::
-
-<!-- - [Battery Health Charging](https://extensions.gnome.org/extension/5724/battery-health-charging/)
-
-  ::: info Lets you set charging thresholds to preserve battery health.
-  ![Battery Health Limit Demonstration](/assets/aiers-gnome/battery-health-limit-demonstration.png)
-  ::: -->
-
 - [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 
-  ::: info Adds customisable blur effects to GNOME Shell elements for a polished look.
-  ![Blur My Shell Demonstration](/assets/aiers-gnome/blur-my-shell-demonstration.png)
+  :::info Adds customisable blur effects to GNOME Shell elements for a polished look.
   :::
+
+  ![Blur My Shell Demonstration](/assets/aiers-gnome/blur-my-shell-demonstration.png)
 
 - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 
-  ::: info Prevents screen dimming and suspension on demand.
-  ![Caffeine Demonstration](/assets/aiers-gnome/caffeine-demonstration.png)
+  :::info Prevents screen dimming and suspension on demand.
   :::
+
+  ![Caffeine Demonstration](/assets/aiers-gnome/caffeine-demonstration.png)
 
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
-  ::: info Provides a clipboard history and quick paste menu in the top panel.
-  ![Clipboard Indicator Demonstration](/assets/aiers-gnome/clipboard-indicator-demonstration.png)
+  :::info Provides a clipboard history and quick paste menu in the top panel.
   :::
 
-  ::: tip Windows-like `<Super>v` keyboard shortcut
+  :::tip Windows-like `<Super>v` keyboard shortcut
 
   ```bash
   dconf write /org/gnome/shell/keybindings/toggle-message-tray "['<Super>M']"
@@ -111,13 +102,14 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
   :::
 
+  ![Clipboard Indicator Demonstration](/assets/aiers-gnome/clipboard-indicator-demonstration.png)
+
 - [Copyous](https://extensions.gnome.org/extension/8834/copyous/) _(elegant alternative to Clipboard Indicator)_
 
-  ::: info A modern clipboard manager with support for text, code, images, files, links, characters, and colours.
-  ![Copyous Demo](/assets/aiers-gnome/copyous-demo.png)
+  :::info A modern clipboard manager with support for text, code, images, files, links, characters, and colours.
   :::
 
-  ::: tip Windows-like `<Super>v` keyboard shortcut
+  :::tip Windows-like `<Super>v` keyboard shortcut
 
   ```bash
   dconf write /org/gnome/shell/keybindings/toggle-message-tray "['<Super>M']"
@@ -128,19 +120,21 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
   :::
 
+  ![Copyous Demo](/assets/aiers-gnome/copyous-demo.png)
+
 - [GNOME Fuzzy App Search](https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/)
 
-  ::: info Enables fuzzy matching in Activities search to find apps without exact names.
-  ![Gnome Fuzzy App Search Demonstration](/assets/aiers-gnome/gnome-fuzzy-app-search-demonstration.png)
+  :::info Enables fuzzy matching in Activities search to find apps without exact names.
   :::
+
+  ![Gnome Fuzzy App Search Demonstration](/assets/aiers-gnome/gnome-fuzzy-app-search-demonstration.png)
 
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 
-  ::: info Tweaks or hides nearly every GNOME Shell UI element for fine‑grained control.
-  ![Just Perfection Demonstration](/assets/aiers-gnome/blur-my-shell-demonstration.png)
+  :::info Tweaks or hides nearly every GNOME Shell UI element for fine‑grained control.
   :::
 
-  :::tip My settings:
+  :::tip My settings
 
   ```bash
   # Hide ripple box in hot corner
@@ -165,6 +159,8 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
   :::
 
+  ![Just Perfection Demonstration](/assets/aiers-gnome/just-perfection-demonstration.png)
+
 - [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
 
   :::info Image search on Google Lens, OCR and QR scan directly from the built-in GNOME Screenshot tool.
@@ -172,7 +168,7 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
 - [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/)
 
-  ::: info Switcher between light and dark theme depending on sunrise/sunset.
+  :::info Switcher between light and dark theme depending on sunrise/sunset.
   :::
 
   :::tip Make the light mode shell light.
@@ -198,22 +194,23 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   :::info Allows you to use the Kando Menu in Gnome Wayland sessions.
   :::
 
+  :::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the video below.
+  :::
+
   :::demo-wrapper
   <video src="/assets/aiers-gnome/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
   :::
 
-  :::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the above video.
-  :::
-
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
-  ::: info Moves the dash out of overview into a dock for quicker app launching and window switching.
-  ![Dash to Dock Demonstration](/assets/aiers-gnome/dash-to-dock-demonstration.png)
+  :::info Moves the dash out of overview into a dock for quicker app launching and window switching.
   :::
 
-  :::tip My settings:
+  :::tip My settings
   Go to the extension's settings --> Appearances, turn on `Shrink the dash` to make the dash smaller and slicker.
   :::
+
+  ![Dash to Dock Demonstration](/assets/aiers-gnome/dash-to-dock-demonstration.png)
 
 - [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/)
 
@@ -222,19 +219,21 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
 - [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/)
 
-  ::: info Sorts the app grid alphabetically to make apps easier to find.
-  ![Alphabetical App Grid Demonstration](/assets/aiers-gnome/alphabetical-app-grid-demonstration.png)
+  :::info Sorts the app grid alphabetically to make apps easier to find.
   :::
 
-  :::tip My settings:
+  :::tip My settings
   ==Position of ordered folders --> Start==, to make folders appear before apps.
   :::
+
+  ![Alphabetical App Grid Demonstration](/assets/aiers-gnome/alphabetical-app-grid-demonstration.png)
 
 - [GTK4 Desktop Icon NG](https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/)
 
   :::info Allows for links, folders, and files in the desktop.
-  ![DING4 Demo](/assets/aiers-gnome/ding4-demo.png)
   :::
+
+  ![DING4 Demo](/assets/aiers-gnome/ding4-demo.png)
 
 - [App Icons Taskbar](https://extensions.gnome.org/extension/4944/app-icons-taskbar/)
 
@@ -266,14 +265,19 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 - [Show Desktop Plus](https://extensions.gnome.org/extension/9756/show-desktop-plus/) _(QoL additions to GTK4 Desktop Icons NG)_
 
   :::info A button that shows your desktop, hiding all other windows. (Just like clicking the bottom right corner or `Super` + `D` in Windows)
+  :::
 
-  <video src="/assets/aiers-gnome/show-desktop-plus-demo.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
+  :::tip My settings
 
   ```bash
   dconf write /org/gnome/shell/extensions/show-desktop-plus/button-position "'right-end'"
   dconf write /org/gnome/shell/extensions/show-desktop-plus/enable-hotkey true # Super + D to show desktop
   ```
 
+  :::
+
+  :::demo-wrapper
+  <video src="/assets/aiers-gnome/show-desktop-plus-demo.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
   :::
 
 :::::
