@@ -1,5 +1,5 @@
 ---
-title: aier's Gnome (In-Depth Tips and Tricks)
+title: aier's Gnome (In-Depth Customisations)
 createTime: 2025/09/26 18:26:21
 permalink: /guides/aiers-gnome/
 tags:
@@ -185,69 +185,56 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
   :::
 
+:::::
+::::::
+
+### Others
+
+::::::card
+::::: collapse
+
+- [Kando Integration](https://extensions.gnome.org/extension/7068/kando-integration/)
+
+  :::info Allows you to use the Kando Menu in Gnome Wayland sessions.
+  :::
+
+  :::demo-wrapper
+  <video src="/assets/aiers-gnome/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
+  :::
+
+  :::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the above video.
+  :::
+
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+
+  ::: info Moves the dash out of overview into a dock for quicker app launching and window switching.
+  ![Dash to Dock Demonstration](/assets/aiers-gnome/dash-to-dock-demonstration.png)
+  :::
+
+  :::tip My settings:
+  Go to the extension's settings --> Appearances, turn on `Shrink the dash` to make the dash smaller and slicker.
+  :::
+
 - [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/)
 
   :::info Brings tiling window management to GNOME, allowing automatic window arrangements in customisable layouts.
   :::
 
-<!-- - [Kiwi is not Apple](https://extensions.gnome.org/extension/8276/kiwi-is-not-apple/)
+- [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/)
 
-  ::: info Offers many UI changes to make Gnome more Mac-like. I use it for the window title, lock key indicator, and transparent window move function.
+  ::: info Sorts the app grid alphabetically to make apps easier to find.
+  ![Alphabetical App Grid Demonstration](/assets/aiers-gnome/alphabetical-app-grid-demonstration.png)
   :::
 
-  ```bash
-  # aier's Kiwi settings
+  :::tip My settings:
+  ==Position of ordered folders --> Start==, to make folders appear before apps.
+  :::
 
-  # Disable (for consistency):
-  # This feature stylises titlebuttons to look
-  # like traffic lights. They can be inconsistent.
-  dconf write /org/gnome/shell/extensions/kiwi/enable-app-window-buttons "false"
-  dconf write /org/gnome/shell/extensions/kiwi/show-window-controls "false"
+- [GTK4 Desktop Icon NG](https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/)
 
-  # Enable (for aesthetics):
-  # Stylise the keyboard layout indicator
-  dconf write /org/gnome/shell/extensions/kiwi/keyboard-indicator "true"
-
-  # Enable (for utility):
-  # Great utility; allows you to see lock keys
-  # status on the top bar. This replaces the lock
-  # keys extension that used to be in my setup.
-  dconf write /org/gnome/shell/extensions/kiwi/lock-icon "true"
-
-  # Disable (for personal preference):
-  # This feature moves the clock to the right and
-  # moves notifications to the quick settings.
-  # I prefer the original Gnome layout.
-  dconf write /org/gnome/shell/extensions/kiwi/move-calendar-right "false"
-
-  # Disable (due to buginess & personal preference)
-  # I personally dislike this behavior as I
-  # prefer manual window and workspace management.
-  dconf write /org/gnome/shell/extensions/kiwi/move-window-to-new-workspace "false"
-
-  # Enable (for aesthetic & utility)
-  # This fills up empty space on the left side and
-  # you can click on it for additional functionality.
-  dconf write /org/gnome/shell/extensions/kiwi/show-window-title "true"
-
-  # Disable (due to buginess & personal preference)
-  dconf write /org/gnome/shell/extensions/kiwi/transparent-move "false"
-
-  # Disable and use blur from Blur My Shell
-  dconf write /org/gnome/shell/extensions/kiwi/overview-wallpaper-background "false"
-  dconf write /org/gnome/shell/extensions/kiwi/panel-transparency "false"
-  ``` -->
-
-:::::
-::::::
-
-### Personal recommendations
-
-:::info Extensions with a more niche usecase that I recommend you to check out.
-:::
-
-::::::card
-::::: collapse
+  :::info Allows for links, folders, and files in the desktop.
+  ![DING4 Demo](/assets/aiers-gnome/ding4-demo.png)
+  :::
 
 - [App Icons Taskbar](https://extensions.gnome.org/extension/4944/app-icons-taskbar/)
 
@@ -274,60 +261,6 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   dconf write /org/gnome/shell/extensions/just-perfection/notification-banner-position "5"
   ```
 
-  :::
-
-- [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
-
-  :::info Image search on Google Lens, OCR and QR scan directly from the built-in GNOME Screenshot tool.
-  :::
-
-- [Kando Integration](https://extensions.gnome.org/extension/7068/kando-integration/)
-
-  :::info Allows you to use the Kando Menu in Gnome Wayland sessions.
-  :::
-
-  :::demo-wrapper
-  <video src="/assets/aiers-gnome/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
-  :::
-
-  :::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the above video.
-  :::
-
-  :::::
-  ::::::
-
-### Others
-
-:::info Not in my setup, but you may like them.
-:::
-
-::::::card
-::::: collapse
-
-- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
-
-  ::: info Moves the dash out of overview into a dock for quicker app launching and window switching.
-  ![Dash to Dock Demonstration](/assets/aiers-gnome/dash-to-dock-demonstration.png)
-  :::
-
-  :::tip My settings:
-  Go to the extension's settings --> Appearances, turn on `Shrink the dash` to make the dash smaller and slicker.
-  :::
-
-- [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/)
-
-  ::: info Sorts the app grid alphabetically to make apps easier to find.
-  ![Alphabetical App Grid Demonstration](/assets/aiers-gnome/alphabetical-app-grid-demonstration.png)
-  :::
-
-  :::tip My settings:
-  ==Position of ordered folders --> Start==, to make folders appear before apps.
-  :::
-
-- [GTK4 Desktop Icon NG](https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/)
-
-  :::info Allows for links, folders, and files in the desktop.
-  ![DING4 Demo](/assets/aiers-gnome/ding4-demo.png)
   :::
 
 - [Show Desktop Plus](https://extensions.gnome.org/extension/9756/show-desktop-plus/) _(QoL additions to GTK4 Desktop Icons NG)_
