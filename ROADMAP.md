@@ -30,6 +30,71 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       After deploy, verify a multi-author page (e.g. `/guides/ssh-guide/`) shows multiple
       contributors and a full changelog again. (Regression diagnosed 2026-06-05.)
 
+### Logitech guide — document the `/dev/uinput` permission step
+
+**File:** `docs/guides/logitech-linux-setup.md`
+
+- [ ] 🟡 Document granting write access to `/dev/uinput` so `Solaar`'s `rules.yaml`
+      reassignments actually emit keypresses. On **Wayland**, `Solaar` injects synthetic
+      input through `uinput`; on `X11` it uses `XTEST` and needs none of this — so this is a
+      Wayland-only gap, not installer-specific. The shipped `solaar-udev` rule
+      (`/usr/lib/udev/rules.d/42-logitech-unify-permissions.rules`) tags `uinput` with
+      `uaccess`, but `uaccess` is unreliable for `uinput` (it's a `static_node` created at
+      boot, not bound to a login seat), so the user's ACL is never applied and mapped buttons
+      silently do nothing. Document the persistent fix: a `/etc/udev/rules.d` override setting
+      `GROUP="input", MODE="0660"` on `uinput` plus adding the user to the `input` group
+      (re-login required), and mention the one-shot `sudo setfacl -m u:$USER:rw /dev/uinput`
+      as a non-persistent alternative. (Symptom: device settings work — battery, DPI, rename —
+      but no remap fires a keystroke, because those go over `hidraw`, which `uaccess` does
+      grant.) Captured from a live debug on Fedora 44 / GNOME Wayland, 2026-06-21.
+
+### fedora.md — snapper / systemd image fix
+
+**File:** `docs/notes/linux-guides/fedora.md`
+
+- [ ] 🟡 Document the **snapper systemd img fix**. Scope to be fleshed out — recorded as
+      requested 2026-06-21; confirm exact symptom/commands before writing.
+
+### fedora.md — remove stale footer link
+
+**File:** `docs/notes/linux-guides/fedora.md`
+
+- [ ] 🔵 Remove the **aier's Gnome** link from the footer (currently `fedora.md:101` —
+      `- [aier's Gnome](/guides/aiers-gnome/)`).
+
+### Logitech guide — beginner-friendly README & install flow
+
+**Files:** `resources/logitech-linux-setup/README.md`, `docs/guides/logitech-linux-setup.md`
+
+- [ ] 🟡 Rewrite the README to be more beginner-friendly.
+- [ ] 🟡 Offer a **zip** of the `resources/logitech-linux-setup` folder so users can grab it
+      from GitHub and install without cloning the whole repo.
+- [ ] 🟡 Tell users in the guide to have `Solaar` and `Kando` installed **before** running the
+      dotfile install script.
+
+### Ghostty guide — install tabs & theme cleanup
+
+**File:** `docs/guides/ghostty-terminal.md`
+
+- [ ] 🟡 Add install `:::tabs` (Fedora, Debian/Ubuntu, Arch order per guidelines).
+- [ ] 🔵 Remove the **Everforest** theme from the master quick append.
+
+### Yazi guide — neutral theme & unified quick append
+
+**File:** `docs/guides/yazi.md`
+
+- [ ] 🔵 Reskin the theme to be neutral rather than **Everforest** — change the `which`
+      background colour; keep the gold accent.
+- [ ] 🟡 Add a **master quick append** section consolidating every change in the guide
+      (unified).
+
+### Terminal Customisation (Bash) guide — master quick append
+
+**File:** `docs/guides/terminal-customisation-bash.md`
+
+- [ ] 🟡 Add a **master quick append** (unified) consolidating every config/command the guide
+      covers.
+
 ---
 
 ## Planned — testing iterations (do NOT publish yet)
