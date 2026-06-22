@@ -11,13 +11,127 @@ contributors:
   - aier9500
 ---
 
-## **Installation**
+::::details Quick append
 
-:::note Quick append
+:::note
 You can also download ready-made files in this repo [here](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/yazi) and drop them into `~/.config/yazi/`.
 
 Adjust the directory paths in `keymap.toml` to match your own home folders.
 :::
+
+:::code-tabs
+
+@tab ~/.config/yazi/keymap.toml
+
+```toml
+# Custom g-prefix navigation. prepend_keymap = sits ahead of defaults.
+# Kept defaults: g h (home), g c (~/.config), g d (Downloads), g t (/tmp), g g (top)
+
+# --- major home dirs (plain cd: deterministic, fast) ---
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "e" ]
+run  = "cd ~/Desktop"
+desc = "Go to Desktop"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "D" ]
+run  = "cd ~/Documents"
+desc = "Go to Documents"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "p" ]
+run  = "cd ~/Pictures"
+desc = "Go to Pictures"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "v" ]
+run  = "cd ~/Videos"
+desc = "Go to Videos"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "m" ]
+run  = "cd ~/Music"
+desc = "Go to Music"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "P" ]
+run  = "cd ~/Public"
+desc = "Go to Public"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "C" ]
+run  = "cd ~/.config/yazi"
+desc = "Go to yazi config"
+
+# --- custom directories ---
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "cd ~/Installations"
+desc = "Go to Installations"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "w" ]
+run  = "cd ~/Projects"
+desc = "Go to Projects"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "." ]
+run  = "cd ~/.dotfiles"
+desc = "Go to .dotfiles"
+```
+
+@tab ~/.config/yazi/theme.toml
+
+```toml
+# Partial override — only [which] is changed; everything else uses yazi defaults.
+# Fixes the low-contrast g/which-key cheatsheet popup. Neutral dark palette.
+
+[which]
+cols = 3
+# raised panel above the terminal background so the popup stands out
+mask            = { bg = "#1e2228" }
+# the highlighted next-key candidate(s) — gold accent, bold
+cand            = { fg = "#dbbc7f", bold = true }
+# remaining keys of a pending multi-key sequence — neutral grey
+rest            = { fg = "#8a8f98" }
+# the action description text — neutral off-white for readability
+desc            = { fg = "#c5c8d0" }
+separator       = "  "
+separator_style = { fg = "#6b7280" }
+```
+
+@tab ~/.config/yazi/yazi.toml
+
+```toml
+[mgr]
+# widen the preview pane (default [1, 4, 3])
+ratio = [1, 2, 5]
+
+[preview]
+# raise render resolution in pixels (defaults 600 x 900)
+max_width = 1200
+max_height = 1600
+```
+
+@tab ~/.bashrc
+
+```bash
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
+```
+
+:::
+
+::::
+
+## **Installation**
 
 ### **Installing on your distro**
 
@@ -89,7 +203,7 @@ Check `yazi`'s [Quick Start](https://yazi-rs.github.io/docs/quick-start/) for mo
 
 ### **Custom navigation shortcuts**
 
-These optional configs extend the `g` (go-to) shortcuts with quick jumps to common directories, plus a high-contrast cheatsheet popup. The `theme.toml` uses the `Everforest Dark Hard` theme (also used in the [Ghostty Terminal guide](/guides/ghostty-terminal/)).
+These optional configs extend the `g` (go-to) shortcuts with quick jumps to common directories, plus a high-contrast cheatsheet popup. The `theme.toml` uses a neutral dark palette for the `[which]` popup.
 
 | Keys      | Jumps to          |
 | --------- | ----------------- |
@@ -179,21 +293,20 @@ desc = "Go to .dotfiles"
 
 ```toml
 # Partial override — only [which] is changed; everything else uses yazi defaults.
-# Fixes the low-contrast g/which-key cheatsheet popup. Palette = Everforest Dark
-# Hard, matching the Ghostty terminal theme.
+# Fixes the low-contrast g/which-key cheatsheet popup. Neutral dark palette.
 
 [which]
 cols = 3
-# raised panel (bg2) above the hard background #1e2326 so the popup stands out
-mask            = { bg = "#2e383c" }
-# the highlighted next-key candidate(s) — everforest yellow, bold
+# raised panel above the terminal background so the popup stands out
+mask            = { bg = "#1e2228" }
+# the highlighted next-key candidate(s) — gold accent, bold
 cand            = { fg = "#dbbc7f", bold = true }
-# remaining keys of a pending multi-key sequence — muted grey
-rest            = { fg = "#a6b0a0" }
-# the action description text — everforest foreground for readability
-desc            = { fg = "#d3c6aa" }
+# remaining keys of a pending multi-key sequence — neutral grey
+rest            = { fg = "#8a8f98" }
+# the action description text — neutral off-white for readability
+desc            = { fg = "#c5c8d0" }
 separator       = "  "
-separator_style = { fg = "#7a8478" }
+separator_style = { fg = "#6b7280" }
 ```
 
 :::
