@@ -41,7 +41,6 @@ Default keyboard shortcuts for Ghostty terminal emulator. Platform-specific diff
 | Resize split down    | Ctrl+Super+Shift+Down  | Cmd+Ctrl+Down    |
 | Resize split left    | Ctrl+Super+Shift+Left  | Cmd+Ctrl+Left    |
 | Resize split right   | Ctrl+Super+Shift+Right | Cmd+Ctrl+Right   |
-| Equalize splits      | Ctrl+Super+Shift+=     | Cmd+Ctrl+=       |
 
 ## Copy & Paste
 
@@ -55,6 +54,8 @@ Default keyboard shortcuts for Ghostty terminal emulator. Platform-specific diff
 
 | Action                  | Windows/Linux        | macOS         |
 | ----------------------- | -------------------- | ------------- |
+| Select all              | Ctrl+Shift+A         | Cmd+A         |
+| Start search            | Ctrl+Shift+F         | Cmd+F         |
 | Scroll to top           | Shift+Home           | Cmd+Home      |
 | Scroll to bottom        | Shift+End            | Cmd+End       |
 | Scroll page up          | Shift+Page Up        | Cmd+Page Up   |
@@ -73,10 +74,11 @@ Default keyboard shortcuts for Ghostty terminal emulator. Platform-specific diff
 
 ## Configuration
 
-| Action        | Windows/Linux | macOS       |
-| ------------- | ------------- | ----------- |
-| Open config   | Ctrl+,        | Cmd+,       |
-| Reload config | Ctrl+Shift+,  | Cmd+Shift+, |
+| Action                   | Windows/Linux | macOS                        |
+| ------------------------ | ------------- | ---------------------------- |
+| Open config              | Ctrl+,        | Cmd+,                        |
+| Reload config            | Ctrl+Shift+,  | Cmd+Shift+,                  |
+| Toggle command palette   | Ctrl+Shift+P  | [unconfirmed — check docs]   |
 
 ## Inspector
 

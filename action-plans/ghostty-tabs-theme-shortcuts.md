@@ -1,6 +1,6 @@
 # Action Plan — Ghostty Terminal Guide: Install Tabs, Everforest Removal, Cheatsheet Reconciliation & Focus-Split Fix
 
-**Status:** GATES RESOLVED — ready to execute pending user finalisation of keybind additions (see §7)
+**Status:** EXECUTED — pending user finalisation
 **Deliverable:** Four targeted edits across `docs/guides/ghostty-terminal.md` and
 `resources/ghostty-terminal/keyboard-shortcuts.md` — (1) add a new `:::tabs` install section,
 (2) remove the Everforest entry from the master quick append, (3) reconcile the cheatsheet against
