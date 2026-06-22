@@ -124,6 +124,53 @@ The ==Rules Editor== is Solaar's equivalent of `Logi Options+` key redirection. 
 
 :::
 
+### **Fixing button remaps on Wayland** (uinput permissions)
+
+If device settings such as battery level, DPI, and renaming work in Solaar but remapped buttons fire no keystroke, the session is missing write access to `/dev/uinput`. This is a ==Wayland-only== issue; on `X11`, Solaar uses `XTEST` for synthetic input and needs no `uinput` access at all.
+
+:::warning This fix is only needed on Wayland. X11 sessions use XTEST for synthetic input and are unaffected.
+:::
+
+On Wayland, Solaar injects synthetic keypresses through `/dev/uinput`. The shipped `solaar-udev` rule (`/usr/lib/udev/rules.d/42-logitech-unify-permissions.rules`) tags `uinput` with `uaccess`, but `uaccess` does not work for `uinput` because `uinput` is a `static_node` created at boot — it is not bound to a login seat, so the per-session ACL is never applied.
+
+::::steps
+
+- **Create a udev override rule**
+
+  Create the file `/etc/udev/rules.d/60-uinput.rules` with the following content. The `60-` prefix ensures this file loads after the shipped `42-` rule and takes precedence.
+
+  :::code-tabs
+
+  @tab /etc/udev/rules.d/60-uinput.rules
+
+  ```
+  KERNEL=="uinput", GROUP="input", MODE="0660"
+  ```
+
+  :::
+
+- **Add your user to the `input` group**
+
+  ```bash
+  sudo usermod -aG input $USER
+  ```
+
+- **Reload udev and re-login**
+
+  ```bash
+  sudo udevadm control --reload-rules && sudo udevadm trigger
+  ```
+
+  :::warning A full log-out and log back in is required for the group change to take effect; reloading udev alone is not enough.
+  :::
+
+::::
+
+After re-login, press a remapped button in a Wayland session — the assigned keystroke should now fire.
+
+:::tip Not ready to commit? Run `sudo setfacl -m u:$USER:rw /dev/uinput` for one-shot access that lasts until the next reboot. This lets you confirm the fix works before adding the persistent rule. `setfacl` ships in the `acl` package, which is installed by default on Fedora; on Debian-based systems run `sudo apt install acl` first.
+:::
+
 ## **Part 2: Kando**
 
 :::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files in the section below.
