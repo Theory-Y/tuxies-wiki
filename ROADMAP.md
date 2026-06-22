@@ -9,7 +9,7 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-### TheoryY fastfetch `config.jsonc` · ⚑ active override
+### TheoryY fastfetch `config.jsonc`
 
 - [x] Created the TheoryY-branded config at `resources/terminal-customisation-bash/config.jsonc`
       (THEORY logo + gold accents, centered Hardware/Software/Uptime section headers — no
@@ -17,10 +17,11 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       download from the **Autorun `fastfetch`** step of
       `docs/guides/terminal-customisation-bash.md`. (Config is 158 lines — linked, not inlined
       as a code-tab, matching the repo's `resources/` download convention.)
-- [ ] 🟡 Refresh the guide screenshot
-      `docs/.vuepress/public/assets/terminal-customisation-bash/fastfetch.png` — it still shows
-      the **default Fedora** output, not the branded config. Last open piece of this override;
-      clear `OVERRIDE.md` once done.
+- [x] Refreshed the guide screenshot
+      `docs/.vuepress/public/assets/terminal-customisation-bash/fastfetch.png` — now shows the
+      branded TheoryY config (THEORY logo + gold accents, 2000×1500), replacing the stock Fedora
+      shot. Supplied by user 2026-06-22; `OVERRIDE.md` cleared. **Override resolved** — both
+      items done; ready to collapse into **Completed** on review.
 
 ### Cloudflare Pages — contributors/changelog redeploy
 
@@ -29,6 +30,30 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       effect once CF uses `build-cf`. Cannot be done from the repo (dashboard setting).
       After deploy, verify a multi-author page (e.g. `/guides/ssh-guide/`) shows multiple
       contributors and a full changelog again. (Regression diagnosed 2026-06-05.)
+
+### keyd guide — internal-keyboard quirk file permissions
+
+**Files:** `resources/key-remapping-with-keyd/keyd-setup.sh`, `docs/guides/key-remapping-with-keyd.md`
+
+- [x] Fixed the setup script's quirks write: it used `mktemp` + `cp`, leaving
+      `/etc/libinput/local-overrides.quirks` mode `600` (root-only). `libinput` parses quirks
+      from the user-level compositor, so a root-only file is silently ignored and keyd was
+      never registered as internal — right place, right content, never applied. Changed the
+      copy to `install -m 644`. Added a **Verifying the registration** subsection to the guide
+      (no libinput "reload" — reboot or restart keyd re-reads quirks; confirm with
+      `sudo libinput quirks list /dev/input/eventXX`; world-readable `644` warning).
+- [x] **Quirk load confirmed (Fedora 44 / GNOME Wayland, 2026-06-22):** with the file at `644`
+      and `libinput-utils` installed, `sudo libinput quirks list` on keyd's virtual keyboard
+      reports `AttrKeyboardIntegration=internal`. Confirms the permissions root cause — a
+      readable file makes the quirk apply, so the `install -m 644` script fix is correct.
+- [ ] 🟡 **Effect not yet verified** — the behavioural payoff (palm rejection /
+      disable-while-typing pairing with the touchpad) needs a re-login to take effect; not yet
+      tested (expected to work). Confirm before publish. Guide is tagged `Testing-Needed`.
+- [ ] 🟡 The `libinput quirks` subcommand is **not** in the base `libinput` package — it ships
+      with the debug utilities (Fedora: `libinput-utils`, verified). The guide's verify step now
+      notes the Fedora package. **Before publish, confirm the equivalent package name on
+      Debian/Ubuntu and Arch** (Debian is likely `libinput-tools`; Arch likely bundles it in
+      `libinput` — both unconfirmed) and decide whether the verify step needs distro tabs.
 
 ### Logitech guide — document the `/dev/uinput` permission step
 
@@ -72,12 +97,38 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 - [ ] 🟡 Tell users in the guide to have `Solaar` and `Kando` installed **before** running the
       dotfile install script.
 
-### Ghostty guide — install tabs & theme cleanup
+### Rime input method — new guide
 
-**File:** `docs/guides/ghostty-terminal.md`
+**File:** `docs/guides/rime-input-method.md` (new) · **Plan:** `action-plans/rime-input-method-guide.md`
+
+- [ ] 🟡 Write a distro-general guide for the **Rime** input method (`ibus-rime`) covering Chinese
+      Pinyin (`luna_pinyin`) and Cantonese Jyutping (`jyut6ping3`): install (Fedora/Debian/Arch
+      tabs), enabling schemas via `~/.config/ibus/rime/default.custom.yaml`, deploying, adding the
+      GNOME input source, and switching (`Super`+`Space` / `F4`). Mirror the `ghostty-terminal.md`
+      structure. **Pre-publish gate:** only Fedora's `ibus-rime`→`librime`+`brise` is verified —
+      confirm Debian (`rime-data-*`) and Arch (`rime-cantonese`) package names before publish, and
+      inline the `jyut6ping3` availability check in the Installation step. No NixOS section (scope
+      locked distro-general). Full outline in the linked action plan. (Captured 2026-06-21 from a
+      live ibus-rime setup on the aierNix repo.)
+
+### Ghostty guide — install tabs, theme cleanup & default-shortcuts fix
+
+**Files:** `docs/guides/ghostty-terminal.md`, `resources/ghostty-terminal/keyboard-shortcuts.md`
 
 - [ ] 🟡 Add install `:::tabs` (Fedora, Debian/Ubuntu, Arch order per guidelines).
 - [ ] 🔵 Remove the **Everforest** theme from the master quick append.
+- [ ] 🟡 **First — reconcile the cheatsheet with the official Ghostty docs.** Verify every entry
+      in `resources/ghostty-terminal/keyboard-shortcuts.md` still matches Ghostty's current
+      default keybinds (defaults drift across versions / differ per-OS). Do this **before** the
+      fix below — a stale default may itself be why some shortcuts appear broken.
+- [ ] 🟠 On Fedora, some listed default shortcuts don't fire — notably **focus split up/down**
+      (`Ctrl`+`Alt`+`Up` / `Ctrl`+`Alt`+`Down`, cheatsheet lines 35–36). Suggested fix (from
+      user): add an explicit keybind **override** in the guide's config re-binding these actions
+      to the same keys shown in the list, so the documented shortcuts work. ⚠️ Check the cause
+      first: GNOME's defaults bind `Ctrl`+`Alt`+arrow to "switch workspace up/down" and the
+      compositor grabs them before Ghostty — if that's the cause, a same-key override won't help
+      and the real fix is rebinding to free keys (or clearing the GNOME shortcut). Reported on
+      Fedora, 2026-06-22.
 
 ### Yazi guide — neutral theme & unified quick append
 

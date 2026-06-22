@@ -175,3 +175,38 @@ AttrKeyboardIntegration=internal
 :::
 
 Save and close the file (`Ctrl`+`O`, `Enter`, `Ctrl`+`X` in nano).
+
+### **Verifying the registration**
+
+`libinput` is a library your desktop loads, not a background service — so there is no `reload` command for it. It re-reads its quirks files every time an input device is added, which means a reboot, or simply restarting `keyd`, re-applies them:
+
+```bash
+sudo systemctl restart keyd
+```
+
+To confirm the quirk actually applied, find the event node for keyd's virtual keyboard, then list the quirks `libinput` matched to it:
+
+:::tip The `quirks` subcommand ships with libinput's debug utilities, which are a separate package on some distros. On Fedora, install them with `sudo dnf install libinput-utils`. (`list-devices` comes with the base `libinput` package.)
+:::
+
+```bash
+# note the "Kernel: /dev/input/eventXX" line for "keyd virtual keyboard"
+sudo libinput list-devices | grep -A1 "keyd virtual keyboard"
+
+# list the quirks for that device (replace eventXX)
+sudo libinput quirks list /dev/input/eventXX
+```
+
+If the output contains `AttrKeyboardIntegration=internal`, keyd is now treated as an internal keyboard. If `libinput` finds a typo in the file, it prints the error here instead.
+
+:::warning The quirks file must be world-readable
+`libinput` parses `/etc/libinput/local-overrides.quirks` from inside your desktop session — as your user, not `root`. If the file ends up root-only (mode `600`), it is silently ignored. Match the stock files in `/usr/share/libinput/` (mode `644`):
+
+```bash
+sudo chmod 644 /etc/libinput/local-overrides.quirks
+```
+
+:::
+
+:::info There is no on/off toggle for this in your desktop's settings. The only effect is that `libinput` now pairs keyd's keyboard with your touchpad for palm rejection and disable-while-typing — so verify it through the `quirks list` output above, not a settings menu.
+:::

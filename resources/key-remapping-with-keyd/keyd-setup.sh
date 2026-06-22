@@ -125,7 +125,9 @@ EOF
 "${EDITOR:-nano}" "$TMPFILE2"
 
 sudo mkdir -p /etc/libinput/
-sudo cp "$TMPFILE2" /etc/libinput/local-overrides.quirks
+# install with mode 644 — libinput parses this file from the user-level compositor and
+# silently ignores a root-only (600) quirks file, which is what mktemp + cp would leave behind
+sudo install -m 644 "$TMPFILE2" /etc/libinput/local-overrides.quirks
 rm -f "$TMPFILE2"
 
 #####################
