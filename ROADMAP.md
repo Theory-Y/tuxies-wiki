@@ -9,38 +9,6 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-### Cloudflare Pages — contributors/changelog redeploy
-
-- [ ] 🟡 Set the Cloudflare Pages project **Build command** to `npm run build-cf`, then
-      redeploy. The `git fetch --unshallow` fix is already in `package.json`; it only takes
-      effect once CF uses `build-cf`. Cannot be done from the repo (dashboard setting).
-      After deploy, verify a multi-author page (e.g. `/guides/ssh-guide/`) shows multiple
-      contributors and a full changelog again. (Regression diagnosed 2026-06-05.)
-
-### keyd guide — internal-keyboard quirk file permissions
-
-**Files:** `resources/key-remapping-with-keyd/keyd-setup.sh`, `docs/guides/key-remapping-with-keyd.md`
-
-- [x] Fixed the setup script's quirks write: it used `mktemp` + `cp`, leaving
-      `/etc/libinput/local-overrides.quirks` mode `600` (root-only). `libinput` parses quirks
-      from the user-level compositor, so a root-only file is silently ignored and keyd was
-      never registered as internal — right place, right content, never applied. Changed the
-      copy to `install -m 644`. Added a **Verifying the registration** subsection to the guide
-      (no libinput "reload" — reboot or restart keyd re-reads quirks; confirm with
-      `sudo libinput quirks list /dev/input/eventXX`; world-readable `644` warning).
-- [x] **Quirk load confirmed (Fedora 44 / GNOME Wayland, 2026-06-22):** with the file at `644`
-      and `libinput-utils` installed, `sudo libinput quirks list` on keyd's virtual keyboard
-      reports `AttrKeyboardIntegration=internal`. Confirms the permissions root cause — a
-      readable file makes the quirk apply, so the `install -m 644` script fix is correct.
-- [ ] 🟡 **Effect not yet verified** — the behavioural payoff (palm rejection /
-      disable-while-typing pairing with the touchpad) needs a re-login to take effect; not yet
-      tested (expected to work). Confirm before publish. Guide is tagged `Testing-Needed`.
-- [ ] 🟡 The `libinput quirks` subcommand is **not** in the base `libinput` package — it ships
-      with the debug utilities (Fedora: `libinput-utils`, verified). The guide's verify step now
-      notes the Fedora package. **Before publish, confirm the equivalent package name on
-      Debian/Ubuntu and Arch** (Debian is likely `libinput-tools`; Arch likely bundles it in
-      `libinput` — both unconfirmed) and decide whether the verify step needs distro tabs.
-
 ### fedora.md — snapper / systemd image fix
 
 **File:** `docs/notes/linux-guides/fedora.md`
@@ -48,22 +16,11 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 - [ ] 🟡 Document the **snapper systemd img fix**. Scope to be fleshed out — recorded as
       requested 2026-06-21; confirm exact symptom/commands before writing.
 
-### Logitech guide — beginner-friendly README & install flow
+---
 
-**Files:** `resources/logitech-linux-setup/README.md`, `docs/guides/logitech-linux-setup.md`
+## Deferred
 
-- [ ] 🟡 Rewrite the README to be more beginner-friendly.
-- [ ] 🟡 Offer a **zip** of the `resources/logitech-linux-setup` folder so users can grab it
-      from GitHub and install without cloning the whole repo.
-- [ ] 🟡 Tell users in the guide to have `Solaar` and `Kando` installed **before** running the
-      dotfile install script.
-- _Progress (2026-06-22):_ `install.sh` is now highly interactive (inspect + `nano`-edit each
-  dotfile, per-phase `[y/n]` gates, opt-in disclosed `sudo` uinput phase) and warns when neither
-  a Flatpak nor native install of an app is detected; its `README.md` was updated to match. Still
-  open here: the **beginner-friendly README rewrite**, the **zip** download, and the guide's
-  explicit "install `Solaar`/`Kando` first" note.
-
-### Rime input method — new guide
+### Rime input method — new guide (low priority)
 
 **File:** `docs/guides/rime-input-method.md` (new) · **Plan:** `action-plans/rime-input-method-guide.md`
 
@@ -76,29 +33,45 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       inline the `jyut6ping3` availability check in the Installation step. No NixOS section (scope
       locked distro-general). Full outline in the linked action plan. (Captured 2026-06-21 from a
       live ibus-rime setup on the aierNix repo.)
+  - _Deferred 2026-06-23 — a draft exists; low priority, pick up in a later session._
 
-### Download bundles — host on the wiki for same-origin downloads
+### Yazi — rich file preview setup
 
-**Files:** `docs/guides/logitech-linux-setup.md`, `docs/notes/about/contributions/guidelines.md`,
-future download-offering guides · **Convention change**
+**File:** `docs/guides/yazi.md`
 
-- [ ] 🔵 Change the download-bundle convention so a guide's "download the zip" link is served
-      **same-origin from the wiki** (click → download, no trip to GitHub). Mechanism: place the bundle at
-      `docs/.vuepress/public/assets/<name>/<name>.zip` and link `/assets/<name>/<name>.zip` — confirmed
-      served at the site root (`base: "/"`; the guides' own `/assets/...` images already prove it). The
-      current convention links the GitHub `raw` URL of `resources/<name>/` instead (works, but bounces the
-      reader out to github.com).
-      - **Open decision — keeping the hosted zip in sync with `resources/<name>/`:** (a) committed static
-        zip in `public/assets/` (simple; must be manually re-zipped whenever the folder changes), or (b)
-        generate it at build time (zip `resources/<name>/` into `public/assets/` in the `build`/`build-cf`
-        script — always current, but edits the build pipeline, still fragile from the open CF `build-cf`
-        regression above). Decide (a) vs (b) before migrating.
-      - **Migrate** the Logitech guide's zip link (currently GitHub `raw`) to the new convention, then
-        **codify** it in `guidelines.md` so future download offers follow suit.
+- [ ] 🔵 Document a **rich preview** setup for `yazi`: image/video/PDF/archive/code previews via
+      the appropriate previewers and their dependencies (e.g. image protocol support, plus tools
+      like `ffmpegthumbnailer`, `poppler`, `imagemagick`, etc.), and any `ya pack` plugins worth
+      recommending. Scope to be fleshed out. _(Captured 2026-06-23 — future implementation, not today.)_
 
 ---
 
 ## Completed
+
+- **Cloudflare Pages — contributors/changelog redeploy (2026-06-23)** — the dashboard **Build
+  command** was switched to `npm run build-cf` and the project redeployed, so the `git fetch
+  --unshallow` fix in `package.json` finally takes effect. Multi-author pages show their full
+  contributor list and changelog again, closing the 2026-06-05 shallow-clone regression.
+- **keyd guide — internal-keyboard quirk, fully verified (2026-06-23)** — the `install -m 644`
+  quirks-write fix and the guide's **Verifying the registration** section landed earlier; this
+  session confirmed the behavioural payoff (palm rejection / disable-while-typing) after a
+  re-login, so the `Testing-Needed` tag was dropped. Also nailed the verify-step packaging: the
+  `libinput` CLI ships separately everywhere (Fedora `libinput-utils`, Debian/Ubuntu **and** Arch
+  `libinput-tools` — Arch's `libinput` package ships no `/usr/bin/libinput`); the guide now uses a
+  synced distro `:::tabs#distro` block and `keyd-setup.sh` reminds the user to install it twice.
+
+- **Logitech guide — beginner README, same-origin zip, install-first note (2026-06-23)** — rewrote
+  `resources/logitech-linux-setup/README.md` beginner-first (plain-language intro, prerequisites,
+  safe interactive-install walkthrough, what's-in-here table; corrected the kando filenames — sources
+  are `*-backup.json`, installed as `config.json`/`menus.json`). The guide's "install `Solaar`/`Kando`
+  first" warning was already present (stale roadmap item). Zip download migrated to the new
+  same-origin convention (below).
+- **Download bundles — same-origin hosting convention (2026-06-23)** — chose option (a): a committed
+  static zip at `docs/.vuepress/public/assets/<name>/<name>.zip`, linked `/assets/<name>/<name>.zip`.
+  Migrated the Logitech guide's zip link from GitHub `raw` → same-origin, rebuilt the bundle so it
+  carries the updated README, synced both copies (`resources/` + `public/assets/`), and codified the
+  convention — with the manual-resync warning — as a new **Download bundles** component in
+  `guidelines.md`.
 
 - **fedora.md — stale footer link removed (2026-06-22)** — dropped the `aier's Gnome` link from
   the **Further customisation** footer of `fedora.md`; the target page persists and stays reachable
