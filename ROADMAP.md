@@ -9,12 +9,17 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-### fedora.md — snapper / systemd image fix
+### fedora.md — snapper section polish
 
 **File:** `docs/notes/linux-guides/fedora.md`
 
-- [ ] 🟡 Document the **snapper systemd img fix**. Scope to be fleshed out — recorded as
-      requested 2026-06-21; confirm exact symptom/commands before writing.
+- [x] **Reasons-behind module added (2026-06-23)** — a `:::details` in the "Set up snapshots" step
+      now explains what `snapper-timeline` and `snapper-cleanup` do (a create/prune pair — enable
+      both) and why **Snapper boot** is left off (reboot churn; it shares the `number` cleanup budget
+      with the `dnf` pre/post pairs, which already cover upgrades). The original "systemd img fix"
+      turned out to be just a screenshot refresh.
+- [ ] 🔵 Refresh the systemd-units screenshot (`btrfs-assistant-enable-timeline-systemd.png`) to the
+      current `btrfs-assistant` UI — done manually by aier.
 
 ---
 

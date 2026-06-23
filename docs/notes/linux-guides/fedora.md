@@ -75,7 +75,16 @@ Every step below is also available through the `snapper` CLI if you'd rather not
 
   ![Enabling the Snapper timeline and cleanup systemd units](/assets/fedora/btrfs-assistant-enable-timeline-systemd.png)
 
-  :::tip I recommend keeping 3–5 snapshots at a time.
+  :::details What these three `systemd` options do
+
+  These `systemd` timers automate your snapshots.
+
+  **Snapper timeline** runs per the schedule you set, giving you a steady stream of recent restore points with no effort.
+
+  **Snapper cleanup** runs periodically and deletes old snapshots so they never fill the disk using the limits you set.
+
+  **Snapper boot** takes a snapshot every time you turn your computer on. We leave this one off — your timeline snapshots already cover you; this would fill your snapshot limit much faster.
+
   :::
 
 - **Take your first snapshot**

@@ -85,6 +85,23 @@ Use ==professional, concise, and effective language== that avoids unnecessary co
 
 Use 'we' in universal articles. Use 'I' in blogs.
 
+#### **Write for a beginner**
+
+Assume the reader is new to Linux. Explain things plainly enough that a ==high-schooler could follow along== without having to look anything up.
+
+- ==Plain words first.== Use everyday language. Reach for a technical term only when there is genuinely no simpler way to say it — and when you must, explain what it means in a few plain words the first time it appears.
+- ==Explain the payoff, not the plumbing.== Tell the reader what something does for them, not how it works under the hood. Internal names, config keys, and algorithm names belong inside a [`::::details`](#details-collapse) at most — keep them out of the main steps.
+- ==Short sentences, one idea each.== If a sentence is doing two jobs, split it in two.
+- ==A simple analogy often beats a precise definition== when the goal is understanding (e.g. "each setting is its own box that fills up and throws out its oldest").
+
+:::note For example
+
+==Avoid:== "Snapper cleanup runs the `number`, `timeline`, and `empty-pre-post` algorithms against `NUMBER_LIMIT` to prune snapshots tagged `cleanup=number`."
+
+==Prefer:== "Snapper cleanup deletes old snapshots so they never fill your disk, using the limits you set."
+
+:::
+
 ### **Code formatting**
 
 Formatting is not strictly monitored as long as the output is clean (i.e. the generated content is pretty).
