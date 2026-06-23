@@ -7,7 +7,6 @@ tags:
   - Peripherals
   - Productivity
   - Fixes
-  - Testing-Needed
 ---
 
 ::: info What is `keyd?`
