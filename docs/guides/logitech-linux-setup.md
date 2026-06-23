@@ -17,7 +17,7 @@ contributors:
 
 ::::details Quick append
 
-Want both presets applied at once? Download the [`logitech-linux-setup`](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) folder — or [download the zip](/assets/logitech-linux-setup/logitech-linux-setup.zip) if you prefer not to clone — and run the installer. It copies the `Solaar` and `Kando` presets into the right config directories (auto-detecting `Flatpak` vs native; use `--flatpak` or `--native` to force), backing up any existing files first.
+Want both presets applied at once? Download the [`logitech-linux-setup`](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) folder — or [download the zip](/assets/logitech-linux-setup/logitech-linux-setup.zip) — and run the installer. It copies the `Solaar` and `Kando` presets into the right config directories (auto-detecting `Flatpak` vs native; use `--flatpak` or `--native` to force), backing up any existing files first.
 
 :::warning Install `Solaar` and `Kando` before running `install.sh`. When neither a Flatpak nor a native install is detected, the configs are applied for the native app's path, but the configs would not take effect until the apps are installed!
 :::
