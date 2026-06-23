@@ -8,3 +8,5 @@ described in the [Logitech Linux Setup guide](../../docs/guides/logitech-linux-s
 directories on your machine. It auto-detects whether each app is installed as a Flatpak or a
 native package, backs up any existing files first, and walks you through each preset so you can
 inspect or edit it before it is written.
+
+Install both apps **first** — the presets only do something once the apps exist.
