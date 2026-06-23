@@ -393,6 +393,25 @@ background-opacity = 0.8
 
 :::::
 
+### Download bundles
+
+When a guide offers a downloadable bundle — typically a folder of dotfiles plus an installer — serve it ==same-origin from the wiki== so the reader clicks and the download starts, with no detour out to GitHub.
+
+- Keep the canonical source in `resources/<name>/`.
+- Place a zipped copy at `docs/.vuepress/public/assets/<name>/<name>.zip`, alongside the guide's other assets (the `public/` folder is served from the site root, `base: "/"`).
+- Link it with the root-relative permalink `/assets/<name>/<name>.zip`, exactly as images are referenced.
+
+:::warning The hosted zip is a committed static copy — it does ==not== auto-update. Whenever you change anything in `resources/<name>/`, re-zip the folder and replace `docs/.vuepress/public/assets/<name>/<name>.zip` so the download stays in sync with the source.
+:::
+
+:::details See code...
+
+```md
+[download the zip](/assets/logitech-linux-setup/logitech-linux-setup.zip)
+```
+
+:::
+
 ### Code tabs
 
 Use `code tabs` to:
