@@ -16,6 +16,10 @@ tags:
 This guide walks you through installing keyd from source, writing a basic configuration, and optionally running the setup script to apply a preset configuration and register keyd as an internal keyboard.
 :::
 
+:::details Quick append
+If you would like to append everything in this guide quickly you can download and run [this](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/key-remapping-with-keyd/keyd-setup.sh) bash script after installing all prerequisites.
+:::
+
 ## **Prerequisites**
 
 :::warning Before starting, make sure `make` and a C compiler (`cc`) are installed on your system. These are build dependencies required to compile keyd from source.
@@ -40,9 +44,6 @@ sudo apt install make gcc
 sudo pacman -S make gcc
 ```
 
-:::
-
-:::important If you would like to append everything in this guide quickly you can download and run [this](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/key-remapping-with-keyd/keyd-setup.sh) bash script after installing all prerequisites.
 :::
 
 ## **Installing keyd**
@@ -186,7 +187,31 @@ sudo systemctl restart keyd
 
 To confirm the quirk actually applied, find the event node for keyd's virtual keyboard, then list the quirks `libinput` matched to it:
 
-:::tip The `quirks` subcommand ships with libinput's debug utilities, which are a separate package on some distros. On Fedora, install them with `sudo dnf install libinput-utils`. (`list-devices` comes with the base `libinput` package.)
+:::tip The `libinput` command-line tool ships in a separate package from the base library on every major distro — install it before running the commands below.
+:::
+
+:::tabs#distro
+
+@tab ::devicon:fedora:: Fedora
+
+```bash
+sudo dnf install libinput-utils
+```
+
+Only the `quirks` subcommand needs this — `list-devices` is already in the base `libinput` package.
+
+@tab ::devicon:debian:: Debian/Ubuntu
+
+```bash
+sudo apt install libinput-tools
+```
+
+@tab ::devicon:archlinux:: Arch
+
+```bash
+sudo pacman -S libinput-tools
+```
+
 :::
 
 ```bash

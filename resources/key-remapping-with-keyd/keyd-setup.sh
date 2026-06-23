@@ -102,6 +102,23 @@ echo -e "${INFO}\n\nAbove is the content in /etc/keyd/default.conf${NC}"
 #############################################
 
 echo -e "${INFO}Configuring keyd as internal keyboard.\n${NC}"
+
+echo "${WARNING}"
+cat << EOF
+============================================================================
+IMPORTANT: you must install the 'libinput' command-line tool to VERIFY this
+step. It ships in a SEPARATE package from the base libinput library:
+
+  Fedora         sudo dnf install libinput-utils
+  Debian/Ubuntu  sudo apt install libinput-tools
+  Arch           sudo pacman -S libinput-tools
+
+Without it, 'libinput list-devices' and 'libinput quirks list' fail with
+"command not found". Install it now if you have not already.
+============================================================================
+EOF
+echo "${NC}"
+
 while true; do
     read -p "${PROMPT}Do you want to proceed? [y/n]: ${NC}" yn
     case $yn in
@@ -133,5 +150,26 @@ rm -f "$TMPFILE2"
 #####################
 ### End of script ###
 #####################
+
+echo "${WARNING}"
+cat << EOF
+============================================================================
+REMINDER: keyd is now registered as an internal keyboard, but you can only
+CONFIRM the quirk applied with the 'libinput' CLI. If you have not installed
+it yet, do so now:
+
+  Fedora         sudo dnf install libinput-utils
+  Debian/Ubuntu  sudo apt install libinput-tools
+  Arch           sudo pacman -S libinput-tools
+
+Then verify (replace eventXX with the node from the first command):
+
+  sudo libinput list-devices | grep -A1 "keyd virtual keyboard"
+  sudo libinput quirks list /dev/input/eventXX
+
+Look for 'AttrKeyboardIntegration=internal' in the output.
+============================================================================
+EOF
+echo "${NC}"
 
 read -rp "${INFO}Press ENTER to exit...${NC}"
