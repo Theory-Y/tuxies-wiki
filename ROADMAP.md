@@ -48,13 +48,6 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 - [ ] 🟡 Document the **snapper systemd img fix**. Scope to be fleshed out — recorded as
       requested 2026-06-21; confirm exact symptom/commands before writing.
 
-### fedora.md — remove stale footer link
-
-**File:** `docs/notes/linux-guides/fedora.md`
-
-- [ ] 🔵 Remove the **aier's Gnome** link from the footer (currently `fedora.md:101` —
-      `- [aier's Gnome](/guides/aiers-gnome/)`).
-
 ### Logitech guide — beginner-friendly README & install flow
 
 **Files:** `resources/logitech-linux-setup/README.md`, `docs/guides/logitech-linux-setup.md`
@@ -84,17 +77,38 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       locked distro-general). Full outline in the linked action plan. (Captured 2026-06-21 from a
       live ibus-rime setup on the aierNix repo.)
 
-### Terminal Customisation (Bash) guide — master quick append
+### Download bundles — host on the wiki for same-origin downloads
 
-**File:** `docs/guides/terminal-customisation-bash.md`
+**Files:** `docs/guides/logitech-linux-setup.md`, `docs/notes/about/contributions/guidelines.md`,
+future download-offering guides · **Convention change**
 
-- [ ] 🟡 Add a **master quick append** (unified) consolidating every config/command the guide
-      covers.
+- [ ] 🔵 Change the download-bundle convention so a guide's "download the zip" link is served
+      **same-origin from the wiki** (click → download, no trip to GitHub). Mechanism: place the bundle at
+      `docs/.vuepress/public/assets/<name>/<name>.zip` and link `/assets/<name>/<name>.zip` — confirmed
+      served at the site root (`base: "/"`; the guides' own `/assets/...` images already prove it). The
+      current convention links the GitHub `raw` URL of `resources/<name>/` instead (works, but bounces the
+      reader out to github.com).
+      - **Open decision — keeping the hosted zip in sync with `resources/<name>/`:** (a) committed static
+        zip in `public/assets/` (simple; must be manually re-zipped whenever the folder changes), or (b)
+        generate it at build time (zip `resources/<name>/` into `public/assets/` in the `build`/`build-cf`
+        script — always current, but edits the build pipeline, still fragile from the open CF `build-cf`
+        regression above). Decide (a) vs (b) before migrating.
+      - **Migrate** the Logitech guide's zip link (currently GitHub `raw`) to the new convention, then
+        **codify** it in `guidelines.md` so future download offers follow suit.
 
 ---
 
 ## Completed
 
+- **fedora.md — stale footer link removed (2026-06-22)** — dropped the `aier's Gnome` link from
+  the **Further customisation** footer of `fedora.md`; the target page persists and stays reachable
+  via `gnome.md`.
+- **Terminal Customisation (Bash) — master quick append (2026-06-22)** — added one unified
+  `::::details Master quick append` after the intro consolidating all six `.bashrc` snippets
+  (`fastfetch` autorun, `PS1`, `fzf` aliases, `zoxide` init, the `eza` alias set, and the `yazi`
+  `y()` cd-on-exit wrapper), each copied verbatim from its canonical instruction site (the canonical
+  `PS1` from the instruction step, not the divergent preview); the two per-section quick-appends left
+  intact.
 - **Firefox `user.js` — touchpad scrolling demoted, publish hold lifted (2026-06-22)** — the
   2026-06-10 edits are cleared for deploy after review: three touchpad-specific
   `apz.gtk.pangesture.*` / `apz.overscroll` prefs commented out as an optional choice,
