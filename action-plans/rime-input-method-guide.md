@@ -7,6 +7,20 @@ the Rime input method (`ibus-rime`) with Chinese Pinyin (`luna_pinyin`) and Cant
 **Scope decision (locked):** distro-general (Fedora/Debian/Arch tabs). **No NixOS section** — the
 content originated from a NixOS config (`aierNix`) but the wiki audience is general Linux.
 
+> **Council amendments (2026-06-22, baseline panel):**
+> - **The pre-publish package-name gate is BLOCKING, not advisory.** Cloudflare rebuilds the whole site on
+>   push, so anything on `master` is live. The fact-check agent must confirm Debian (`rime-data-*`) and Arch
+>   (`rime-cantonese`) names against packages.debian.org / archlinux.org+AUR **and write the resolved names
+>   into the handoff**, plus verify the `jyut6ping3` availability claim, **before this page is pushed to
+>   `master`.** A wrong `apt`/`pacman` line gets cached/indexed and copy-pasted before any revert — treat it
+>   as the primary, hard-to-reverse failure mode.
+> - **Enforce the tag fallback:** `Input-Method` is **not** a sanctioned tag category in `guidelines.md`
+>   (Recommended-level / Specific-program / Category-of-program / Category-of-guide). Use sanctioned tags
+>   (e.g. `Beginner`, `Rime`, `IBus`/`Input`, `Productivity`) and keep to ≤4 — do not ship `Input-Method`.
+> - **Structural model:** also read `docs/guides/key-remapping-with-keyd.md` alongside Ghostty — it is the
+>   repo's existing "verify-before-publish, distro-tabbed, GUI+CLI" guide and a closer fit for Rime's
+>   "Verifying the schema is present" / distro-caveat patterns than Ghostty's pure config-file shape.
+
 ## 0. Pre-flight (verify before writing)
 - Re-read `CLAUDE.md` + `docs/notes/about/contributions/guidelines.md` at execution time.
 - **[CRITICAL — hard pre-publish gate] Verify every install command before publishing.** Only

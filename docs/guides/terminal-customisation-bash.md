@@ -21,6 +21,64 @@ This tutorial assumes that you are using Bash as your shell, even though some pa
 ==For non-Bash users, we cannot guarantee success and will not take responsibility to damages to your system.==
 :::
 
+::::details Master quick append
+
+Paste into `~/.bashrc`. Each option is explained in the sections below.
+
+:::code-tabs
+
+@tab ~/.bashrc
+
+```bash
+#### autorun fastfetch ####
+fastfetch
+
+#### custom PS1 prompt ####
+PS1='------------------\n\[$(tput setaf 56)\][\[$(tput setaf 56)\]\u \[$(tput setaf 92)\]@ \[$(tput setaf 128)\]\h\[$(tput setaf 128)\]] \[$(tput setaf 200)\]\w\[$(tput sgr0)\]\n > '
+
+#### fzf-related aliases ####
+alias cmd='compgen -c | fzf' # search for a possible command
+alias zh='history | fzf' # search in bash command history
+
+#### enabling zoxide ####
+eval "$(zoxide init bash)"
+
+#### eza-related aliases ####
+# list directories in a tree format (or specify how many levels to list them)
+alias lsd='eza -TD'
+alias lsd1='eza -TD --level 1'
+alias lsd2='eza -TD --level 2'
+alias lsd3='eza -TD --level 3'
+# list items in tree format (or specify how many levels to list them)
+alias lst='eza -T'
+alias lst1='eza -T --level 1'
+alias lst2='eza -T --level 2'
+alias lst3='eza -T --level 3'
+# list all directories in tree format including hidden ones (or specify how many levels to list them)
+alias lsda='eza -TDa'
+alias lsda1='eza -TDa --level 1'
+alias lsda2='eza -TDa --level 2'
+alias lsda3='eza -TDa --level 3'
+# list all items in tree format including hidden ones (or specify how many levels to list them)
+alias lsta='eza -Ta'
+alias lsta1='eza -Ta --level 1'
+alias lsta2='eza -Ta --level 2'
+alias lsta3='eza -Ta --level 3'
+
+#### yazi: cd-on-exit wrapper ####
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	command rm -f -- "$tmp"
+}
+```
+
+:::
+
+::::
+
 ## **Back up current `.bashrc`**
 
 Make a copy of your current `.bashrc` file and place it somewhere safe.

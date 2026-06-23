@@ -9,20 +9,6 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-### TheoryY fastfetch `config.jsonc`
-
-- [x] Created the TheoryY-branded config at `resources/terminal-customisation-bash/config.jsonc`
-      (THEORY logo + gold accents, centered Hardware/Software/Uptime section headers — no
-      box corners, so long lines like Packages don't overflow a border) and linked it as a
-      download from the **Autorun `fastfetch`** step of
-      `docs/guides/terminal-customisation-bash.md`. (Config is 158 lines — linked, not inlined
-      as a code-tab, matching the repo's `resources/` download convention.)
-- [x] Refreshed the guide screenshot
-      `docs/.vuepress/public/assets/terminal-customisation-bash/fastfetch.png` — now shows the
-      branded TheoryY config (THEORY logo + gold accents, 2000×1500), replacing the stock Fedora
-      shot. Supplied by user 2026-06-22; `OVERRIDE.md` cleared. **Override resolved** — both
-      items done; ready to collapse into **Completed** on review.
-
 ### Cloudflare Pages — contributors/changelog redeploy
 
 - [ ] 🟡 Set the Cloudflare Pages project **Build command** to `npm run build-cf`, then
@@ -55,24 +41,6 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       Debian/Ubuntu and Arch** (Debian is likely `libinput-tools`; Arch likely bundles it in
       `libinput` — both unconfirmed) and decide whether the verify step needs distro tabs.
 
-### Logitech guide — document the `/dev/uinput` permission step
-
-**File:** `docs/guides/logitech-linux-setup.md`
-
-- [ ] 🟡 Document granting write access to `/dev/uinput` so `Solaar`'s `rules.yaml`
-      reassignments actually emit keypresses. On **Wayland**, `Solaar` injects synthetic
-      input through `uinput`; on `X11` it uses `XTEST` and needs none of this — so this is a
-      Wayland-only gap, not installer-specific. The shipped `solaar-udev` rule
-      (`/usr/lib/udev/rules.d/42-logitech-unify-permissions.rules`) tags `uinput` with
-      `uaccess`, but `uaccess` is unreliable for `uinput` (it's a `static_node` created at
-      boot, not bound to a login seat), so the user's ACL is never applied and mapped buttons
-      silently do nothing. Document the persistent fix: a `/etc/udev/rules.d` override setting
-      `GROUP="input", MODE="0660"` on `uinput` plus adding the user to the `input` group
-      (re-login required), and mention the one-shot `sudo setfacl -m u:$USER:rw /dev/uinput`
-      as a non-persistent alternative. (Symptom: device settings work — battery, DPI, rename —
-      but no remap fires a keystroke, because those go over `hidraw`, which `uaccess` does
-      grant.) Captured from a live debug on Fedora 44 / GNOME Wayland, 2026-06-21.
-
 ### fedora.md — snapper / systemd image fix
 
 **File:** `docs/notes/linux-guides/fedora.md`
@@ -96,6 +64,11 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       from GitHub and install without cloning the whole repo.
 - [ ] 🟡 Tell users in the guide to have `Solaar` and `Kando` installed **before** running the
       dotfile install script.
+- _Progress (2026-06-22):_ `install.sh` is now highly interactive (inspect + `nano`-edit each
+  dotfile, per-phase `[y/n]` gates, opt-in disclosed `sudo` uinput phase) and warns when neither
+  a Flatpak nor native install of an app is detected; its `README.md` was updated to match. Still
+  open here: the **beginner-friendly README rewrite**, the **zip** download, and the guide's
+  explicit "install `Solaar`/`Kando` first" note.
 
 ### Rime input method — new guide
 
@@ -111,34 +84,6 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       locked distro-general). Full outline in the linked action plan. (Captured 2026-06-21 from a
       live ibus-rime setup on the aierNix repo.)
 
-### Ghostty guide — install tabs, theme cleanup & default-shortcuts fix
-
-**Files:** `docs/guides/ghostty-terminal.md`, `resources/ghostty-terminal/keyboard-shortcuts.md`
-
-- [ ] 🟡 Add install `:::tabs` (Fedora, Debian/Ubuntu, Arch order per guidelines).
-- [ ] 🔵 Remove the **Everforest** theme from the master quick append.
-- [ ] 🟡 **First — reconcile the cheatsheet with the official Ghostty docs.** Verify every entry
-      in `resources/ghostty-terminal/keyboard-shortcuts.md` still matches Ghostty's current
-      default keybinds (defaults drift across versions / differ per-OS). Do this **before** the
-      fix below — a stale default may itself be why some shortcuts appear broken.
-- [ ] 🟠 On Fedora, some listed default shortcuts don't fire — notably **focus split up/down**
-      (`Ctrl`+`Alt`+`Up` / `Ctrl`+`Alt`+`Down`, cheatsheet lines 35–36). Suggested fix (from
-      user): add an explicit keybind **override** in the guide's config re-binding these actions
-      to the same keys shown in the list, so the documented shortcuts work. ⚠️ Check the cause
-      first: GNOME's defaults bind `Ctrl`+`Alt`+arrow to "switch workspace up/down" and the
-      compositor grabs them before Ghostty — if that's the cause, a same-key override won't help
-      and the real fix is rebinding to free keys (or clearing the GNOME shortcut). Reported on
-      Fedora, 2026-06-22.
-
-### Yazi guide — neutral theme & unified quick append
-
-**File:** `docs/guides/yazi.md`
-
-- [ ] 🔵 Reskin the theme to be neutral rather than **Everforest** — change the `which`
-      background colour; keep the gold accent.
-- [ ] 🟡 Add a **master quick append** section consolidating every change in the guide
-      (unified).
-
 ### Terminal Customisation (Bash) guide — master quick append
 
 **File:** `docs/guides/terminal-customisation-bash.md`
@@ -148,24 +93,49 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ---
 
-## Planned — testing iterations (do NOT publish yet)
-
-### Firefox `user.js` guide — defer touchpad scrolling to the Gnome guide
-
-**File:** `docs/guides/firefox-userjs.md` · **Status:** testing iteration, unpublished.
-
-Demote the Firefox guide's **Trackpad scrolling** prefs in favour of the system-level
-touchpad fix already on the External Resources page (`/guides/external-resources/`).
-
-- [x] Edits landed in repo 2026-06-10 — three touchpad-specific prefs commented out as an
-      optional choice, `apz.fling_friction` retuned `"0.005"` → `"0.004"`, and a `:::tip`
-      added pointing to the External Resources fix. (Full pref names in git / the file.)
-- [ ] 🟡 **Do NOT publish** — testing iteration only; hold from deploy until reviewed.
-
----
-
 ## Completed
 
+- **Firefox `user.js` — touchpad scrolling demoted, publish hold lifted (2026-06-22)** — the
+  2026-06-10 edits are cleared for deploy after review: three touchpad-specific
+  `apz.gtk.pangesture.*` / `apz.overscroll` prefs commented out as an optional choice,
+  `apz.fling_friction` retuned `"0.005"`→`"0.004"`, and a `:::tip` added pointing to the
+  system-level touchpad fix on `/guides/external-resources/`. No in-file flag existed — the
+  hold lived only here in the roadmap.
+- **Logitech setup — guide + installer overhaul (2026-06-22)** — documented the Wayland
+  `/dev/uinput` permission fix (persistent `/etc/udev/rules.d/60-uinput.rules` + `input` group +
+  re-login; `setfacl` one-shot alternative), with the mechanism tucked into a `::::details` so
+  newcomers see symptom→fix only. Fixed the guide's mic-mute keysym
+  (`XF86AudioMicMute`→`XF86_AudioMicMute`, matching the working `rules.yaml`) and now document
+  **all** preset remaps transparently (5 MX Keys S F-row keys + 7 MX Master 4 buttons: Back=hold
+  `Ctrl`, Forward=hold `Shift`, Mouse-Gesture=hold `Super`, Haptic=`Super`+`Shift`+`F1` Kando
+  trigger). Rewrote `install.sh` into a highly-interactive installer (keyd-setup.sh style):
+  inspect + `nano`-edit each dotfile before install, per-phase `[y/n]` gates, and an **opt-in,
+  fully-disclosed** `sudo` uinput phase (skipped under `-y`/non-TTY). Stripped the stray
+  `windowsInkWorkaround` from the Kando preset; updated the folder `README.md`. **Test caveat:**
+  the uinput phase ran cleanly after a re-login (2026-06-22) and remaps fire — but the test
+  device's remaps already worked beforehand, so this confirms the script runs without error, not
+  that the uinput fix is what enables them; most likely correct/cleared, though a clean
+  confirmation needs a device where remaps were broken first. `graphify update` not run — CLI
+  unavailable.
+- **Ghostty guide overhaul (2026-06-22)** — added install `:::tabs` (Fedora COPR ·
+  Debian/Ubuntu = the community Ubuntu installer + Debian-incompat note + official-guide link ·
+  Arch `pacman`; commands web-verified). Removed `Everforest` from the quick-append (theme-less).
+  Reconciled the cheatsheet against `ghostty +list-keybinds`: dropped the macOS-only "Equalize
+  splits", added Select all / Start search / Toggle command palette (macOS command-palette cell
+  left a flagged `[unconfirmed]` placeholder). Fixed focus-split: GNOME grabs
+  `Ctrl`+`Alt`+`Up`/`Down` (workspace switch), so added a "For GNOME users" config rebinding all
+  four `goto_split` directions to `alt`+`shift`+arrow. Split the quick-append into two complete
+  master blocks (normal + GNOME). `graphify update` not run — CLI unavailable.
+- **Yazi neutral reskin + master quick append (2026-06-22)** — de-Everforested the `[which]`
+  popup to neutral greys (`#1e2228` bg, `#8a8f98`/`#c5c8d0`/`#6b7280`, kept the gold `cand`
+  accent) in both `theme.toml` copies; added a master quick append consolidating all four
+  config/command snippets. `graphify update` not run — CLI unavailable.
+- **Guideline — hide technical detail in collapse (2026-06-22)** — codified in `guidelines.md`
+  (**Details & collapse**): tuck deep "why"/internals into `::::details` so newcomers follow the
+  actionable steps without being overwhelmed; keep symptom + fix in the main flow.
+- **TheoryY fastfetch override resolved (2026-06-22)** — branded `config.jsonc` created and
+  linked from the terminal-customisation guide, and the guide screenshot refreshed to the branded
+  render; `OVERRIDE.md` cleared.
 - **Extension/module entry format standardised (2026-06-20)** — defined a fixed display
   order for extension/app entries in collapse modules: `link _(notes)_` → `:::info`
   description → `:::tip` config → picture/video **last**, so links and configs always sit
