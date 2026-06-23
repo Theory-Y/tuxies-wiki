@@ -542,6 +542,8 @@ When you have to use multiple `details` containers, use `collapse` instead. For 
 
 ::: -->
 
+Use `::::details` to hide deep technical "why" — mechanism explanations, internals, and background theory — so newcomers can follow the actionable steps without being overwhelmed. Keep the symptom and the fix in the main flow; move the explanation inside the `::::details`. A summary label like "Why this happens (technical detail)" signals opt-in reading clearly.
+
 Always pair `collapse` with a card unless the only content is a photo. If it has any text pair it with a card as such:
 
 :::::details See code...

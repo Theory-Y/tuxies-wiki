@@ -36,13 +36,26 @@ chmod +x install.sh
 `rules.yaml` is the portable part of the Solaar configuration — it defines which button fires which key event and works across machines. Device-specific settings (DPI, backlight, haptic level, smart-shift, scroll ratchet, etc.) are ==not portable==: they are stored per physical device and must be configured in the Solaar GUI after pairing.
 :::
 
-The example `rules.yaml` remaps the MX Keys S F-row smart-action keys as follows:
+The example `rules.yaml` remaps the MX Keys S F-row smart-action keys and several MX Master 4 mouse buttons — expand below for the full list of what the preset includes.
+
+::::details What the preset remaps — all mappings for MX Keys S and MX Master 4
+
+**MX Keys S — F-row smart-action keys**
 
 - **Dictation → `Super`+`i`** — the Dictation key has no native Linux action, so it's repurposed to open GNOME Settings.
 - **Emoji → `Super`+`Shift`+`v`** — fires `Super`+`Shift`+`v`, intended for the emoji-copy GNOME extension; the binding stays inert until you install an emoji extension/app bound to that shortcut.
-- **Mute Microphone → `XF86AudioMicMute`** — emits the proper mic-mute keysym so the key actually toggles the microphone under Linux (the stock key sends no recognised mic-mute event).
+- **Mute Microphone → `XF86_AudioMicMute`** — emits the proper mic-mute keysym so the key actually toggles the microphone under Linux (the stock key sends no recognised mic-mute event).
 - **Screen Capture → `Print`** — sends `Print` (PrtSc) to trigger GNOME's screenshot tool, since the stock Logitech "snip" action isn't wired on Linux.
 - **Screen Lock → `Tab`** — the lock key sits next to the numpad; remapping it to `Tab` gives a numpad-adjacent `Tab` for faster numeric/spreadsheet data entry (field-to-field) without reaching across the keyboard.
+
+**MX Master 4 — mouse buttons**
+
+- **Back Button → holds `Ctrl`** — pressing the button depresses `Control_L`; releasing it lifts `Control_L`. The physical button acts as a held `Ctrl` modifier for the duration of the press.
+- **Forward Button → holds `Shift`** — pressing depresses `Shift_L`; releasing lifts it. Lets you hold `Shift` with your thumb to extend selections or trigger `Shift`-modified shortcuts.
+- **Mouse Gesture Button → holds `Super`** — pressing depresses `Super_L`; releasing lifts it. Holding the gesture button while moving the mouse triggers any `Super`-based shortcuts or gestures active in your desktop environment.
+- **Haptic button → `Super`+`Shift`+`F1`** — a single click fires `Super_L`+`Shift_L`+`F1`, which is the trigger shortcut that opens the **Kando** menu (matching the Kando menu binding set in Part 2 of this guide).
+
+::::
 
 ### **Installing Solaar**
 
@@ -126,12 +139,16 @@ The ==Rules Editor== is Solaar's equivalent of `Logi Options+` key redirection. 
 
 ### **Fixing button remaps on Wayland** (uinput permissions)
 
-If device settings such as battery level, DPI, and renaming work in Solaar but remapped buttons fire no keystroke, the session is missing write access to `/dev/uinput`. This is a ==Wayland-only== issue; on `X11`, Solaar uses `XTEST` for synthetic input and needs no `uinput` access at all.
+If device settings such as battery level, DPI, and renaming work in Solaar but remapped buttons fire no keystroke, the session is missing write access to `/dev/uinput`.
 
 :::warning This fix is only needed on Wayland. X11 sessions use XTEST for synthetic input and are unaffected.
 :::
 
-On Wayland, Solaar injects synthetic keypresses through `/dev/uinput`. The shipped `solaar-udev` rule (`/usr/lib/udev/rules.d/42-logitech-unify-permissions.rules`) tags `uinput` with `uaccess`, but `uaccess` does not work for `uinput` because `uinput` is a `static_node` created at boot — it is not bound to a login seat, so the per-session ACL is never applied.
+::::details Why this happens (technical detail)
+
+On Wayland, Solaar injects synthetic keypresses through `/dev/uinput`. The shipped `solaar-udev` rule (`/usr/lib/udev/rules.d/42-logitech-unify-permissions.rules`) tags `uinput` with `uaccess`, but `uaccess` does not work for `uinput` because `uinput` is a `static_node` created at boot — it is not bound to a login seat, so the per-session ACL is never applied. On `X11`, Solaar uses `XTEST` for synthetic input and needs no `uinput` access at all.
+
+::::
 
 ::::steps
 
@@ -164,12 +181,12 @@ On Wayland, Solaar injects synthetic keypresses through `/dev/uinput`. The shipp
   :::warning A full log-out and log back in is required for the group change to take effect; reloading udev alone is not enough.
   :::
 
+- **After re-login, press a remapped button in a Wayland session** — the assigned keystroke should now fire.
+
 ::::
 
-After re-login, press a remapped button in a Wayland session — the assigned keystroke should now fire.
-
-:::tip Not ready to commit? Run `sudo setfacl -m u:$USER:rw /dev/uinput` for one-shot access that lasts until the next reboot. This lets you confirm the fix works before adding the persistent rule. `setfacl` ships in the `acl` package, which is installed by default on Fedora; on Debian-based systems run `sudo apt install acl` first.
-:::
+<!-- :::tip Not ready to commit? Run `sudo setfacl -m u:$USER:rw /dev/uinput` for one-shot access that lasts until the next reboot. This lets you confirm the fix works before adding the persistent rule. `setfacl` ships in the `acl` package, which is installed by default on Fedora; on Debian-based systems run `sudo apt install acl` first.
+::: -->
 
 ## **Part 2: Kando**
 

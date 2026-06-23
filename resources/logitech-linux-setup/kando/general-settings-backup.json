@@ -20,7 +20,6 @@
   "zoomFactor": 1,
   "hideSettingsButton": false,
   "settingsButtonPosition": "bottom-right",
-  "windowsInkWorkaround": true,
   "maxSelectionRadius": 0,
   "centerDeadZone": 50,
   "minParentDistance": 150,
