@@ -1,0 +1,832 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "ac84b613ade527956504b41e08853702",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/client.ts": {
+    "mtime": 1782055580.186882,
+    "ast_hash": "eeab9f2ba9816f2b03e89be253aa2c6e",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/config.ts": {
+    "mtime": 1782055580.1869464,
+    "ast_hash": "5cbf80a20774f1e768e4ed5b2c23dd78",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/navbar.ts": {
+    "mtime": 1782055580.1869464,
+    "ast_hash": "6097a51728da4d733a9f677a186cb871",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/plume.config.ts": {
+    "mtime": 1782055580.1869464,
+    "ast_hash": "2dfe3c7f1b3e25d6bb5172504712441f",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/theme/components/Custom.vue": {
+    "mtime": 1782055580.29164,
+    "ast_hash": "10de7c756514255c25dc97716b7c2170",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/theme/shim.d.ts": {
+    "mtime": 1782055580.29164,
+    "ast_hash": "1498300cec1fecb4db1664bfe640bd45",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1782055580.3338563,
+    "ast_hash": "c3011957baf387dda02962c3d3939693",
+    "semantic_hash": ""
+  },
+  "resources/bash-template.sh": {
+    "mtime": 1782055580.3338563,
+    "ast_hash": "535a015737541a7d1f11c6f89c0421dd",
+    "semantic_hash": ""
+  },
+  "resources/key-remapping-with-keyd/keyd-setup.sh": {
+    "mtime": 1782138004.9351268,
+    "ast_hash": "ca7f882e72d87718ecddb6759823ee5e",
+    "semantic_hash": ""
+  },
+  "resources/logitech-linux-setup/install.sh": {
+    "mtime": 1782170097.5516589,
+    "ast_hash": "c1ddad6e73fe21b5768fe712f7aa45d1",
+    "semantic_hash": ""
+  },
+  "resources/logitech-linux-setup/kando/general-settings-backup.json": {
+    "mtime": 1782166701.4006455,
+    "ast_hash": "25329d44fa22ec3df25a2157cefe0b58",
+    "semantic_hash": ""
+  },
+  "resources/logitech-linux-setup/kando/menu-settings-backup.json": {
+    "mtime": 1782055580.3343265,
+    "ast_hash": "17fcc26b6734c2dbdf328789d0f7d4dc",
+    "semantic_hash": ""
+  },
+  "skills-lock.json": {
+    "mtime": 1782055580.3346179,
+    "ast_hash": "3dffa7cfd23defd5caeae9b0e2b5d10d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/SKILL.md": {
+    "mtime": 1782055580.1855814,
+    "ast_hash": "d235a8bbae095ae947ffa328cd5d4d0a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/infrastructure/docker.md": {
+    "mtime": 1782055580.1855814,
+    "ast_hash": "3f594a942b357075f13f156751eafad6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/languages/javascript.md": {
+    "mtime": 1782055580.1855814,
+    "ast_hash": "264e58e0c495200714e59b465e47087d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/languages/python.md": {
+    "mtime": 1782055580.1857476,
+    "ast_hash": "14c981c4a95cc8e673aa97d31a3c0ef6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/api-security.md": {
+    "mtime": 1782055580.1857476,
+    "ast_hash": "dbe67dcea226331819e90cc7882b1f29",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/authentication.md": {
+    "mtime": 1782055580.1858544,
+    "ast_hash": "ed020c93722503c341f7b3c80860a3cf",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/authorization.md": {
+    "mtime": 1782055580.1858544,
+    "ast_hash": "95205e70fcbd274a307c560e64959090",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/business-logic.md": {
+    "mtime": 1782055580.1858544,
+    "ast_hash": "4b99d22b447f65f667b666af0f8a78e3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/cryptography.md": {
+    "mtime": 1782055580.1858544,
+    "ast_hash": "ba922aa05b39971e2d8d46d4fd2e36f2",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/csrf.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "84f6e2cb3a568115b12b370884074a7a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/data-protection.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "1cdad1701705046664c4318a5322daaa",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/deserialization.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "ba38847020232f180316709b4918a834",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/error-handling.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "f236105132c6c7dada92b7656f431b0b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/file-security.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "3e731528fc433628cb13c104e14d677e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/injection.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "697c11f593fcc176a25acf8f66eedf8e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/logging.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "e61987576580640b11afe89b60932943",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/misconfiguration.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "2e00d3fb0631143648980939c7cfd2d4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/modern-threats.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "4f63a8908fbed361583504106521280e",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/ssrf.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "0978727833da973054939574a8283f13",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/supply-chain.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "1728ca223dfd9095411095f564565785",
+    "semantic_hash": ""
+  },
+  ".agents/skills/security-review/references/xss.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "600cda89df56b45b02e16376d2d80dac",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-plan-adversary-reviewer/MEMORY.md": {
+    "mtime": 1782178210.2569356,
+    "ast_hash": "e86586b8f0bef38b8d37d59239fbbadd",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-plan-adversary-reviewer/deploy-trigger-and-publish-gates.md": {
+    "mtime": 1782178197.0459156,
+    "ast_hash": "712ea775e22c0beefbfba472097b5503",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-plan-adversary-reviewer/render-check-is-not-correctness.md": {
+    "mtime": 1782178205.5650077,
+    "ast_hash": "73d042ab5727af991bfc081c9969e4cc",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-high/MEMORY.md": {
+    "mtime": 1782176075.987372,
+    "ast_hash": "e25cead8979e0fbe93e0fa9eca08840c",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-high/finalise-then-commit-discipline.md": {
+    "mtime": 1782176073.775407,
+    "ast_hash": "26e973c488fac24afc478d414bda2937",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-high/install-script-interactive-style.md": {
+    "mtime": 1782176069.1124806,
+    "ast_hash": "6d4aa48732d50df2dc1c7b23c04ecc19",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-medium/MEMORY.md": {
+    "mtime": 1782176075.987372,
+    "ast_hash": "e25cead8979e0fbe93e0fa9eca08840c",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-medium/finalise-then-commit-discipline.md": {
+    "mtime": 1782176073.775407,
+    "ast_hash": "26e973c488fac24afc478d414bda2937",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-medium/install-script-interactive-style.md": {
+    "mtime": 1782176069.1124806,
+    "ast_hash": "6d4aa48732d50df2dc1c7b23c04ecc19",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-xhigh/MEMORY.md": {
+    "mtime": 1782176075.987372,
+    "ast_hash": "e25cead8979e0fbe93e0fa9eca08840c",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-xhigh/finalise-then-commit-discipline.md": {
+    "mtime": 1782176073.775407,
+    "ast_hash": "26e973c488fac24afc478d414bda2937",
+    "semantic_hash": ""
+  },
+  ".claude/agent-memory/theoryy-workflow-sonnet-task-executor-xhigh/install-script-interactive-style.md": {
+    "mtime": 1782176069.1124806,
+    "ast_hash": "6d4aa48732d50df2dc1c7b23c04ecc19",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "0a6e16d2a747a17e0bedd39402ef9f95",
+    "semantic_hash": ""
+  },
+  "OVERRIDE.md": {
+    "mtime": 1782147031.1041365,
+    "ast_hash": "605c80cc52ac33427b8bed8a5511afc4",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1782055580.1858587,
+    "ast_hash": "d9e6872ac567b59340b99dbb1d21b828",
+    "semantic_hash": ""
+  },
+  "ROADMAP.md": {
+    "mtime": 1782183440.7584438,
+    "ast_hash": "b897c8511244dc689d682f839dbea840",
+    "semantic_hash": ""
+  },
+  "action-plans/ghostty-tabs-theme-shortcuts.md": {
+    "mtime": 1782158594.9692526,
+    "ast_hash": "6322dca589be38be4cd23046bd7160fb",
+    "semantic_hash": ""
+  },
+  "action-plans/logitech-beginner-readme.md": {
+    "mtime": 1782178399.90202,
+    "ast_hash": "0be2cdd4ce6d8e4c52dc628fbbcf52ed",
+    "semantic_hash": ""
+  },
+  "action-plans/logitech-uinput-permission.md": {
+    "mtime": 1782155647.4215355,
+    "ast_hash": "ecb5b78bfd4a4d5f686d80b6a35e6240",
+    "semantic_hash": ""
+  },
+  "action-plans/rime-input-method-guide.md": {
+    "mtime": 1782178448.3072758,
+    "ast_hash": "b1658ba7eb591a87950ba76fcd10aa77",
+    "semantic_hash": ""
+  },
+  "action-plans/terminal-master-quick-append.md": {
+    "mtime": 1782178431.168856,
+    "ast_hash": "816048bb49267dc582ec25c5fb837f95",
+    "semantic_hash": ""
+  },
+  "action-plans/yazi-theme-quick-append.md": {
+    "mtime": 1782157347.3978224,
+    "ast_hash": "65e3421e254884de0444782f78d83219",
+    "semantic_hash": ""
+  },
+  "docs/README.md": {
+    "mtime": 1782055580.29164,
+    "ast_hash": "27eb92b73afeeebc3f6df518879ef6d8",
+    "semantic_hash": ""
+  },
+  "docs/archived/qemu-kvm.md": {
+    "mtime": 1782055580.29164,
+    "ast_hash": "e112afaf02f8a6f8b28a9b727a3b88e2",
+    "semantic_hash": ""
+  },
+  "docs/archived/spiral-linux.md": {
+    "mtime": 1782055580.2918642,
+    "ast_hash": "0c2d9e018bc4819f5f8e72a6e95cf9e4",
+    "semantic_hash": ""
+  },
+  "docs/guides/aiers-gnome.md": {
+    "mtime": 1782055580.2918642,
+    "ast_hash": "52f2f0db5e2c25d5cc4ab20df697369a",
+    "semantic_hash": ""
+  },
+  "docs/guides/better-text-rendering-gnome-hi-dpi.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "fe1df53662903b95a62335e0bc221e41",
+    "semantic_hash": ""
+  },
+  "docs/guides/ctf-second-brain.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "07fa6d0eb28b93dddb08bc841191c2d9",
+    "semantic_hash": ""
+  },
+  "docs/guides/external-resources.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "8fed6c0fa8bae7afe35f8cf1fce8171f",
+    "semantic_hash": ""
+  },
+  "docs/guides/firefox-userjs.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "73ef4f40f5194baa27e6c2900d8dd2df",
+    "semantic_hash": ""
+  },
+  "docs/guides/ghostty-terminal.md": {
+    "mtime": 1782159219.4813287,
+    "ast_hash": "04a55ecf7dfdf8d49e7bed64be375551",
+    "semantic_hash": ""
+  },
+  "docs/guides/key-remapping-with-keyd.md": {
+    "mtime": 1782235925.0206969,
+    "ast_hash": "0e33c7225c172a0f75b042b7b0018ccf",
+    "semantic_hash": ""
+  },
+  "docs/guides/logitech-linux-setup.md": {
+    "mtime": 1782235934.7655678,
+    "ast_hash": "a56850c5a2a5b401884781a2ad750a50",
+    "semantic_hash": ""
+  },
+  "docs/guides/microsoft-edge-setup.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "7e863e4ed0ccb64c1e56e5a97993f035",
+    "semantic_hash": ""
+  },
+  "docs/guides/rb-14-2023-fedora.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "820ae7c5855aa46251a8264df822006f",
+    "semantic_hash": ""
+  },
+  "docs/guides/rime-input-method.md": {
+    "mtime": 1782182155.973643,
+    "ast_hash": "fffcb423bb9eede2108d8372da2a8075",
+    "semantic_hash": ""
+  },
+  "docs/guides/ssh-guide.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "8efbce9859ad422f52997658139ced0e",
+    "semantic_hash": ""
+  },
+  "docs/guides/terminal-customisation-bash.md": {
+    "mtime": 1782178775.6825275,
+    "ast_hash": "01e65b06b96d5d92eab11c172b96aadd",
+    "semantic_hash": ""
+  },
+  "docs/guides/vuepress-guide.md": {
+    "mtime": 1782055580.2920234,
+    "ast_hash": "29858064faa079955ba709b3d52883af",
+    "semantic_hash": ""
+  },
+  "docs/guides/yazi.md": {
+    "mtime": 1782157881.7175195,
+    "ast_hash": "0b0cbc67dc25ed06dcaefaf8b27224e4",
+    "semantic_hash": ""
+  },
+  "docs/notes/about/README.md": {
+    "mtime": 1782055580.2925603,
+    "ast_hash": "fd260f6790df2345bdf19fae9121b0e4",
+    "semantic_hash": ""
+  },
+  "docs/notes/about/contributions/README.md": {
+    "mtime": 1782055580.2925942,
+    "ast_hash": "762084a0594d82f3ec65ccbbd5cabc91",
+    "semantic_hash": ""
+  },
+  "docs/notes/about/contributions/dev-setup-guide.md": {
+    "mtime": 1782055580.2926302,
+    "ast_hash": "f3978b49b097c6c988910dbf00bc5cc2",
+    "semantic_hash": ""
+  },
+  "docs/notes/about/contributions/guidelines.md": {
+    "mtime": 1782235968.098126,
+    "ast_hash": "e2242bc7192919ef9f66eec9be4111a9",
+    "semantic_hash": ""
+  },
+  "docs/notes/about/our-team.md": {
+    "mtime": 1782055580.2926302,
+    "ast_hash": "00c2e517f4845f51e4f9b2c13490c4c6",
+    "semantic_hash": ""
+  },
+  "docs/notes/introduction/flatpak-setup.md": {
+    "mtime": 1782055580.2926302,
+    "ast_hash": "07c9356183200a72dcb238360eb21d95",
+    "semantic_hash": ""
+  },
+  "docs/notes/introduction/linux-vocabs.md": {
+    "mtime": 1782055580.2927942,
+    "ast_hash": "5cc854fd767d29523133b26760c77c46",
+    "semantic_hash": ""
+  },
+  "docs/notes/introduction/new-to-the-wiki.md": {
+    "mtime": 1782055580.2927942,
+    "ast_hash": "3ed7b50b26c3f9117b464525f8b466e5",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-apps/README.md": {
+    "mtime": 1782055580.2927942,
+    "ast_hash": "d276937de3beaa349501b964b8734030",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-apps/creative-software.md": {
+    "mtime": 1782055580.292897,
+    "ast_hash": "6f2b0454cc167ed8e77bd107ad1b8562",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-apps/editors-choice.md": {
+    "mtime": 1782055580.292897,
+    "ast_hash": "39e5624579f8ae8c2a0ade1e9d3be339",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-apps/essentials.md": {
+    "mtime": 1782055580.292897,
+    "ast_hash": "e85d8602d3c3ec0b798c08040e8e6cad",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-apps/gnomie.md": {
+    "mtime": 1782055580.292897,
+    "ast_hash": "c9a298b4ba3dd2bbe711d83d2b102a4e",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-apps/popular.md": {
+    "mtime": 1782055580.292897,
+    "ast_hash": "3b7a61ee5c61026cdca007fab12eb235",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-guides/README.md": {
+    "mtime": 1782055580.292897,
+    "ast_hash": "8b51923017d4a104e35c1af51573e72c",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-guides/arch.md": {
+    "mtime": 1782055580.2931764,
+    "ast_hash": "2a720333b5afff1d0dc60d0ea01c94b9",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-guides/debian.md": {
+    "mtime": 1782055580.2931764,
+    "ast_hash": "e1b8a0d29f97439d065db05bc79df41b",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-guides/fedora.md": {
+    "mtime": 1782178582.4703,
+    "ast_hash": "a0a62604787c326bb2deac452bedf351",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-guides/flashing-guide.md": {
+    "mtime": 1782055580.2931764,
+    "ast_hash": "873ef4614dc93b7f8130836c98ac7703",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-guides/gnome.md": {
+    "mtime": 1782055580.2931764,
+    "ast_hash": "57ab75f8359e699323f0ae46b249544d",
+    "semantic_hash": ""
+  },
+  "resources/ghostty-terminal/keyboard-shortcuts.md": {
+    "mtime": 1782158588.9933295,
+    "ast_hash": "e9012206187187a9b0d58f54f3875d29",
+    "semantic_hash": ""
+  },
+  "resources/logitech-linux-setup/README.md": {
+    "mtime": 1782236018.9094524,
+    "ast_hash": "d413910b211b8b79131572a0d562f567",
+    "semantic_hash": ""
+  },
+  "resources/logitech-linux-setup/solaar/rules.yaml": {
+    "mtime": 1782055580.3343265,
+    "ast_hash": "2343d46d94818395abf2a684c5f892ca",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/TuxiesLogo.png": {
+    "mtime": 1782055580.1870651,
+    "ast_hash": "873fbbcd5e0735a9cfcd78ea10b580ad",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/alphabetical-app-grid-demonstration.png": {
+    "mtime": 1782055580.1898587,
+    "ast_hash": "a4f44a73f6ce51005f3692faf9c95ef4",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/appindicator.png": {
+    "mtime": 1782055580.1898587,
+    "ast_hash": "a8f61d84f4e24fbe2a5d8acd8f1377d4",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/battery-health-limit-demonstration.png": {
+    "mtime": 1782055580.1898587,
+    "ast_hash": "a5601fd5644beb0ec46d24d68d86807d",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/blur-my-shell-demonstration.png": {
+    "mtime": 1782055580.1948586,
+    "ast_hash": "20bea4f62214cbf560d698c15ab3d5a9",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/caffeine-demonstration.png": {
+    "mtime": 1782055580.1958585,
+    "ast_hash": "f3903c3271b44fdffca79288b63e59d8",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/clipboard-indicator-demonstration.png": {
+    "mtime": 1782055580.1968584,
+    "ast_hash": "9eddaa1274c277f80c204fd3f8d7e7f1",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/copyous-demo.png": {
+    "mtime": 1782055580.2008584,
+    "ast_hash": "c5c48e3c3f540bf20c7fa0aad7c42c7d",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/custom-reboot-demonstration.png": {
+    "mtime": 1782055580.2008584,
+    "ast_hash": "7fbb850e3f9049b6d5790a5b3c1ecff8",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/dash-to-dock-demonstration.png": {
+    "mtime": 1782055580.2018585,
+    "ast_hash": "60c1e78084a81bdd4b839e49e7aed457",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/ding4-demo.png": {
+    "mtime": 1782055580.2078583,
+    "ast_hash": "36a03acdc6c7c1a6826c3f2bb2887fee",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/emoji-copy-demonstration.png": {
+    "mtime": 1782055580.2088583,
+    "ast_hash": "62280d1b6c4334bb22e2bbd2d83cbfe4",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/gnome-fuzzy-app-search-demonstration.png": {
+    "mtime": 1782055580.2088583,
+    "ast_hash": "7c6e73f09b745c17298682eb1acec361",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/just-perfection-demonstration.png": {
+    "mtime": 1782055580.2128582,
+    "ast_hash": "20bea4f62214cbf560d698c15ab3d5a9",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/lock-keys-demonstration.png": {
+    "mtime": 1782055580.228858,
+    "ast_hash": "e308435922562c26e6f434dc57df5198",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/tinted-shell-demonstration.png": {
+    "mtime": 1782055580.231858,
+    "ast_hash": "58300f5898ac80341e1710f7b95f88b7",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/user-shell-demonstration.png": {
+    "mtime": 1782055580.2338579,
+    "ast_hash": "03718492fe0a46fc75bd6b3edde8558e",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/better-text-rendering-gnome-hi-dpi/gnome-tweaks-font-rendering-settings.png": {
+    "mtime": 1782055580.2348578,
+    "ast_hash": "9acb74baaead0bf1b54ae27ee6bf7975",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/dev-setup-guide/windows-setup.png": {
+    "mtime": 1782055580.2348578,
+    "ast_hash": "f952f5208068d6ac6d2b7bbf5539af9f",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/bitwarden-demo.png": {
+    "mtime": 1782055580.235858,
+    "ast_hash": "89963069b2a1284630ac5124e40f1896",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/gradia-demo.png": {
+    "mtime": 1782055580.2378578,
+    "ast_hash": "c5956d80414a466fde9818160e2d2991",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/kooha-demo.png": {
+    "mtime": 1782055580.2378578,
+    "ast_hash": "df69ea69bf1a7bbc62878a1bce99669b",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/localsend-demo.png": {
+    "mtime": 1782055580.2378578,
+    "ast_hash": "ce5681bd81ec48f79e4041ddcc41b351",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/mission-center-demo.png": {
+    "mtime": 1782055580.239858,
+    "ast_hash": "233b2aefdda4297364d3a691986e8e9f",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/obsidian-demo.png": {
+    "mtime": 1782055580.2408578,
+    "ast_hash": "f8ff8d817a17d0d8c5115305b86c3b97",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/rclone-manager-demo.png": {
+    "mtime": 1782055580.2418578,
+    "ast_hash": "7e8d84f3560f7b4d295603911cc9bf0a",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/editors-choice/zen-demo.png": {
+    "mtime": 1782055580.2448578,
+    "ast_hash": "0244baba43e3cfc3d4e371cb01c5039b",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/fedora/btrfs-assistant-creating-new-settings.png": {
+    "mtime": 1782055580.2458577,
+    "ast_hash": "7e9fedff66b621c5c81ab69291135a3b",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/fedora/btrfs-assistant-creating-new-snapshot.png": {
+    "mtime": 1782055580.2458577,
+    "ast_hash": "fdf77cf7108fd1c911738cb48a8ee1c2",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/fedora/btrfs-assistant-enable-timeline-systemd.png": {
+    "mtime": 1782055580.2468576,
+    "ast_hash": "d504f659b8d78da617f73e726f919842",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/fedora/btrfs-assistant-number-of-snapshots.png": {
+    "mtime": 1782055580.2478578,
+    "ast_hash": "6463a0d7cb77346d81b25d1997bb1af8",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/fedora/gnome-software-update.svg": {
+    "mtime": 1782055580.2488577,
+    "ast_hash": "c4d6636b3c126e412ef655d42cd5428d",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/firefox-userjs/firefox-about-config.png": {
+    "mtime": 1782055580.2488577,
+    "ast_hash": "268dd4585b5665fceed11a24de4c03b2",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/firefox-userjs/firefox-profile-directory.png": {
+    "mtime": 1782055580.2492607,
+    "ast_hash": "52f0f4cad2537e0a20f31eb0e0e50311",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/appindicator.png": {
+    "mtime": 1782055580.2492607,
+    "ast_hash": "a8f61d84f4e24fbe2a5d8acd8f1377d4",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/caffeine.png": {
+    "mtime": 1782055580.2498577,
+    "ast_hash": "4af2659bd81dba19434514859c19d519",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/clipboard-indicator.png": {
+    "mtime": 1782055580.2498577,
+    "ast_hash": "4ff57b5d937bf08ad97aa73011eaffcb",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/dash-to-dock.png": {
+    "mtime": 1782055580.2498577,
+    "ast_hash": "98cc2841a29118ee88dc7eeeefb79872",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/dash-to-panel.png": {
+    "mtime": 1782055580.2508576,
+    "ast_hash": "aeae2ddfba7f8e6ce64c6360192ff5ac",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/dconf-editor.png": {
+    "mtime": 1782055580.2508576,
+    "ast_hash": "1fa61294af45568b9cb6b155641985ad",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/extension-manager.png": {
+    "mtime": 1782055580.2518578,
+    "ast_hash": "c5045d125fa5bbdc5479d600bbd2fe36",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/gnome-fuzzy-app-search.png": {
+    "mtime": 1782055580.2518578,
+    "ast_hash": "c435591cd3d7fea97d99a738be5464bb",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/gnome-tweaks-font-rendering-settings.png": {
+    "mtime": 1782055580.2518578,
+    "ast_hash": "9acb74baaead0bf1b54ae27ee6bf7975",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/gnome-tweaks-title-bar-settings.png": {
+    "mtime": 1782055580.2518578,
+    "ast_hash": "d732d0dd4b5a6d3a06b37fe78b53e7bf",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/gnome/gnome-tweaks.png": {
+    "mtime": 1782055580.2518578,
+    "ast_hash": "74f0af18fea21411e540769c647b228e",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/guidelines/headings.png": {
+    "mtime": 1782055580.2528577,
+    "ast_hash": "0098f05768661fb0a7112bc55712e316",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/guidelines/highlighting-demo.png": {
+    "mtime": 1782055580.253421,
+    "ast_hash": "94d9e933b4008dc60f4aeb3626bc081d",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/guidelines/ice-bear.jpg": {
+    "mtime": 1782055580.253421,
+    "ast_hash": "e5a7d91bf744df46db14a92a72be3dbf",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/guidelines/tuxies-wiki.png": {
+    "mtime": 1782055580.2538576,
+    "ast_hash": "17d8482ce108580b05cdd8a4c97d4c5b",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/linux-vocabs/gnome.png": {
+    "mtime": 1782055580.2588575,
+    "ast_hash": "d71bdae65b0010d7a50f96b4aceaf74e",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/linux-vocabs/kde-plasma.png": {
+    "mtime": 1782055580.2598577,
+    "ast_hash": "fd33f72a0f7eae7bfd2cf8dc74fe9395",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/linux-vocabs/terminal.png": {
+    "mtime": 1782055580.2598577,
+    "ast_hash": "4a6b28ea0c559a26ab3cfc43d407aeba",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/linux-vocabs/xfce.png": {
+    "mtime": 1782055580.2608576,
+    "ast_hash": "c61b63dc3f82523f4f4189f50b5a2bf5",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/logitech-linux-setup/kando-add-new-menu.png": {
+    "mtime": 1782055580.2628574,
+    "ast_hash": "dac367c3865d0783fbeb68297ddeb69e",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/logitech-linux-setup/solaar-pair-new-device.png": {
+    "mtime": 1782055580.2788572,
+    "ast_hash": "93d9d56d070de8371de787d0f6534160",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/logitech-linux-setup/solaar-rules-editor.png": {
+    "mtime": 1782055580.2798572,
+    "ast_hash": "b941c7e9f4dbe44f71fc2b4a3958f96a",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/plume.svg": {
+    "mtime": 1782055580.2798572,
+    "ast_hash": "c3a6a7dfb9174805674e41b75be3c47d",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/terminal-customisation-bash/aesthetic-terminal.png": {
+    "mtime": 1782055580.2818573,
+    "ast_hash": "edbca78d42359c158d32d868b9fb6917",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/terminal-customisation-bash/custom-ps1.png": {
+    "mtime": 1782055580.2818573,
+    "ast_hash": "ac33080d949aab7d9c1762479581ab22",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/terminal-customisation-bash/fastfetch.png": {
+    "mtime": 1782147012.121555,
+    "ast_hash": "086acfbc818d2d7ca28ae3053ee842b8",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/tux-inkscape.svg": {
+    "mtime": 1782055580.2828572,
+    "ast_hash": "10a6db0f3df27b0a294f34dfb599f21a",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/tux-og.svg": {
+    "mtime": 1782055580.2848573,
+    "ast_hash": "ffd3da6b8871bc7238039137b1907593",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/tux-transparent.svg": {
+    "mtime": 1782055580.2848573,
+    "ast_hash": "14e5de7a235f4d87159bf469453dc63d",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/tux.png": {
+    "mtime": 1782055580.290857,
+    "ast_hash": "c422b7f6d2ee1286099a0f5e0c4a2faf",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/tux.svg": {
+    "mtime": 1782055580.290857,
+    "ast_hash": "b5aa4c41c801b17217a21f443a4e0340",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/kando-marking-mode.mp4": {
+    "mtime": 1782055580.228858,
+    "ast_hash": "630807813db4f14d11bc3e63707cfa8f",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/aiers-gnome/show-desktop-plus-demo.mp4": {
+    "mtime": 1782055580.230858,
+    "ast_hash": "facc1d2b6e1f55e5b0df1539dedf5d05",
+    "semantic_hash": ""
+  },
+  "docs/.vuepress/public/assets/logitech-linux-setup/kando-marking-mode.mp4": {
+    "mtime": 1782055580.2788572,
+    "ast_hash": "630807813db4f14d11bc3e63707cfa8f",
+    "semantic_hash": ""
+  }
+}
