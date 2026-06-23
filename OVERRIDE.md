@@ -1,1 +1,5 @@
-<!-- No active override. When set, list items here and complete them before ROADMAP.md. -->
+Revise the app lists. 
+
+Add Fresh Editor to editor's choice. 
+
+Perhaps slim down the number of app series using AI council to redesign. 
