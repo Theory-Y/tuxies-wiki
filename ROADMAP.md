@@ -9,25 +9,15 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-### fedora.md — snapper section polish
-
-**File:** `docs/notes/linux-guides/fedora.md`
-
-- [x] **Reasons-behind module added (2026-06-23)** — a `:::details` in the "Set up snapshots" step
-      now explains what `snapper-timeline` and `snapper-cleanup` do (a create/prune pair — enable
-      both) and why **Snapper boot** is left off (reboot churn; it shares the `number` cleanup budget
-      with the `dnf` pre/post pairs, which already cover upgrades). The original "systemd img fix"
-      turned out to be just a screenshot refresh.
-- [ ] 🔵 Refresh the systemd-units screenshot (`btrfs-assistant-enable-timeline-systemd.png`) to the
-      current `btrfs-assistant` UI — done manually by aier.
+_Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ---
 
 ## Deferred
 
-### Rime input method — new guide (low priority)
+### Rime input method — refine guide (low priority)
 
-**File:** `docs/guides/rime-input-method.md` (new) · **Plan:** `action-plans/rime-input-method-guide.md`
+**File:** `docs/guides/rime-input-method.md` **Plan:** `action-plans/rime-input-method-guide.md` **The file has been created, but is currently abandoned due to bugs and lack of manpower**
 
 - [ ] 🟡 Write a distro-general guide for the **Rime** input method (`ibus-rime`) covering Chinese
       Pinyin (`luna_pinyin`) and Cantonese Jyutping (`jyut6ping3`): install (Fedora/Debian/Arch
@@ -40,22 +30,18 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
       live ibus-rime setup on the aierNix repo.)
   - _Deferred 2026-06-23 — a draft exists; low priority, pick up in a later session._
 
-### Yazi — rich file preview setup
-
-**File:** `docs/guides/yazi.md`
-
-- [ ] 🔵 Document a **rich preview** setup for `yazi`: image/video/PDF/archive/code previews via
-      the appropriate previewers and their dependencies (e.g. image protocol support, plus tools
-      like `ffmpegthumbnailer`, `poppler`, `imagemagick`, etc.), and any `ya pack` plugins worth
-      recommending. Scope to be fleshed out. _(Captured 2026-06-23 — future implementation, not today.)_
-
 ---
 
 ## Completed
 
+- **fedora.md — snapper section polish (2026-06-23)** — added a beginner-friendly `:::details` to the
+  "Set up snapshots" step explaining, in plain language, what **Snapper timeline** and **Snapper
+  cleanup** do and why **Snapper boot** is left off (no algorithm names/jargon). The systemd-units
+  screenshot (`btrfs-assistant-enable-timeline-systemd.png`) was refreshed to the current
+  `btrfs-assistant` UI (done manually by aier).
 - **Cloudflare Pages — contributors/changelog redeploy (2026-06-23)** — the dashboard **Build
   command** was switched to `npm run build-cf` and the project redeployed, so the `git fetch
-  --unshallow` fix in `package.json` finally takes effect. Multi-author pages show their full
+--unshallow` fix in `package.json` finally takes effect. Multi-author pages show their full
   contributor list and changelog again, closing the 2026-06-05 shallow-clone regression.
 - **keyd guide — internal-keyboard quirk, fully verified (2026-06-23)** — the `install -m 644`
   quirks-write fix and the guide's **Verifying the registration** section landed earlier; this
