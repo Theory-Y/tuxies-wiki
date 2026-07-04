@@ -104,9 +104,9 @@ export const enNavbar = defineNavbarConfig([
         link: "/linux-apps/creative-software/",
       },
       {
-        text: "Gnomie",
-        icon: "mdi:gnome",
-        link: "/linux-apps/gnomie/",
+        text: "Dev (Computer Nerd) Tools",
+        icon: "mdi:console",
+        link: "/linux-apps/dev-tools/",
       },
     ],
   },

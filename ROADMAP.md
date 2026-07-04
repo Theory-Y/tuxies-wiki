@@ -9,15 +9,12 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-- [ ] 🔵 **Revise the app lists** (`docs/notes/linux-apps/`) — review entries for currency and
-      relevance. (Moved from `OVERRIDE.md` 2026-07-03.)
-- [ ] 🔵 **Slim down the number of app series** — consider a redesign of the linux-apps series
-      structure; run a dedicated `/council` session to argue the redesign before touching pages.
-      (Moved from `OVERRIDE.md` 2026-07-03.)
-- [ ] 🟡 **Ghostty guide — eyeball GNOME Settings category label** — the new disable-shortcuts fix
-      cites `Navigation` as the shortcut category in GNOME Settings; the two shortcut names
-      ("Switch to workspace above/below") are source-verified from the gschema, but the category
-      label is community-knowledge only. Confirm on a live GNOME session before/after publish.
+- [ ] 🟡 **Verify extension gsettings schemas in aiers-gnome.md** — the dconf→gsettings sweep
+      converted the extension commands (clipboard-indicator, copyous, just-perfection,
+      nightthemeswitcher, aztaskbar, show-desktop-plus) by the standard path→schema convention,
+      but none of those extensions are installed on the machine that ran the sweep, so their
+      schema IDs are unverified. Spot-check one or two on a session with the extensions
+      installed (`gsettings list-schemas | grep extensions`). Core-schema commands all verified.
 
 ---
 
@@ -42,6 +39,38 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **App-lists restructure + dconf→gsettings sweep (2026-07-04)** — closes the two OVERRIDE-era
+  items ("revise the app lists", "slim down app series"); plan:
+  `action-plans/app-lists-restructure-2026-07-04.md`, spec from the maintainer's notepad.md.
+  Production build passes (43 pages, no dead links).
+  - **New series `dev-tools.md` ("Dev (Computer Nerd) Tools")** — fastfetch, fzf, zoxide, eza,
+    Yazi (entries link the terminal-customisation-bash tutorial as the curated walkthrough, all
+    repo links web-verified), plus Fresh + Waydroid (moved from editors-choice) and SaveDesktop
+    (rescued from gnomie). Navbar: Gnomie out, Dev Tools in (`mdi:console`).
+  - **gnomie.md removed** — Dconf Editor, Extension Manager, Gnome Tweaks already fully covered
+    in `gnome.md`; its three inbound "More details..." links removed. **popular.md kept** —
+    Discord/Vesktop entries exist nowhere else (redundancy check came back negative).
+  - **OBS Studio (+ v4l2loopback section) → creative-software.md** — moved verbatim from
+    editors-choice.
+  - **dconf CLI → gsettings CLI everywhere** — gnome.md (incl. relocatable-schema
+    custom-keybinding syntax and `reset-recursively`), aiers-gnome.md,
+    better-text-rendering-gnome-hi-dpi.md, guidelines.md example. Core schemas/keys/values
+    verified read-only against a live GNOME 50 session. Extension schemas unverified (see
+    **Open**). Dconf Editor GUI-app references intentionally kept.
+  - **Quoting simplified (follow-up)** — `gsettings set` falls back to a literal string when the
+    value fails GVariant parse on a string-typed key (`dconf write` has no such fallback), so all
+    `"'...'"` double-quoted string values were flattened to plain/shell-quoted form across
+    gnome.md, aiers-gnome.md, better-text-rendering. Biggest win: the nightthemeswitcher
+    sunrise/sunset commands went from triple-escaped to zero escapes (inner command uses bareword
+    `prefer-light`/`prefer-dark`). Arrays/tuples keep GVariant syntax (required). Every simplified
+    core-schema form empirically accepted via `GSETTINGS_BACKEND=memory` test-sets.
+- **Ghostty guide — GNOME Settings walkthrough dropped, gsettings-first fix verified (2026-07-04)** —
+  local check on gnome-control-center 50.1 (Fedora 44): the "Navigation" category label was
+  correct, but `50-mutter-navigation.xml` marks `switch-to-workspace-up`/`-down` `hidden="true"`,
+  so the entries never appear in the Settings panel — the GUI walkthrough could not work on
+  current GNOME. The section now leads with the two `gsettings set ... "[]"` commands (schema
+  default `['<Control><Alt>Up/Down']` confirmed, so the conflict is real). Closes the
+  eyeball-the-label item.
 - **keyd guide — libinput CLI verification replaced with empirical typing test (2026-07-04)** —
   stripped the `libinput-utils`/`libinput-tools` install tabs and the
   `libinput list-devices`/`quirks list` commands from the guide's **Verifying the registration**

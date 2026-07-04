@@ -10,7 +10,7 @@ In this series, we offer distro and desktop environment setup guides/tips. If yo
 
 ### [Apps Library](https://tuxies-wiki.theoryy.dev/linux-apps/)
 
-A collection of apps separated into the "Editor's Choice," "Essentials," "Popular," and "Gnomie" categories worth checking out either they are useful, or fun (or most likely both!).
+A collection of apps separated into the "Editor's Choice," "Essentials," "Popular," and "Dev (Computer Nerd) Tools" categories worth checking out either they are useful, or fun (or most likely both!).
 
 ### [Other Guides](https://tuxies-wiki.theoryy.dev/guides/)
 
