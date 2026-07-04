@@ -654,7 +654,7 @@ These entries usually sit inside a `collapse` (sometimes wrapped in a `card`), s
   :::tip My settings
 
   ```bash
-  dconf write /org/gnome/shell/extensions/example/some-key true
+  gsettings set org.gnome.shell.extensions.example some-key true
   ```
 
   :::
@@ -685,7 +685,7 @@ These entries usually sit inside a `collapse` (sometimes wrapped in a `card`), s
   :::tip My settings
 
   ```bash
-  dconf write /org/gnome/shell/extensions/example/some-key true
+  gsettings set org.gnome.shell.extensions.example some-key true
   ```
 
   :::

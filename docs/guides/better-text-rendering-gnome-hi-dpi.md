@@ -16,8 +16,8 @@ permalink: /guides/better-text-rendering-gnome-hi-dpi/
 @tab ::mdi:terminal:: Append changes (cli)
 
 ```bash
-dconf write /org/gnome/desktop/interface/font-antialiasing "'grayscale'"
-dconf write /org/gnome/desktop/interface/font-hinting "'slight'"
+gsettings set org.gnome.desktop.interface font-antialiasing grayscale
+gsettings set org.gnome.desktop.interface font-hinting slight
 ```
 
 @tab ::mdi:puzzle:: Append changes (Gnome Tweaks)
@@ -29,8 +29,8 @@ dconf write /org/gnome/desktop/interface/font-hinting "'slight'"
 @tab ::mdi:reload:: Reset changes (cli)
 
 ```bash
-dconf reset /org/gnome/desktop/interface/font-antialiasing
-dconf reset /org/gnome/desktop/interface/font-hinting
+gsettings reset org.gnome.desktop.interface font-antialiasing
+gsettings reset org.gnome.desktop.interface font-hinting
 ```
 
 :::

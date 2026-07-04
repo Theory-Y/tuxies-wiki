@@ -83,8 +83,6 @@ Check out the [External Resources](/guides/external-resources/) page for additio
 
   ![Gnome Tweaks](/assets/gnome/gnome-tweaks.png)
 
-  [More details...](/linux-apps/gnomie/#gnome-tweaks)
-
 - `Dconf Editor`
 
   :::tabs
@@ -111,8 +109,6 @@ Check out the [External Resources](/guides/external-resources/) page for additio
 
   ![Dconf Editor](/assets/gnome/dconf-editor.png)
 
-  [More details...](/linux-apps/gnomie/#dconf-editor)
-
 - `Extension Manager`
 
   :::tabs
@@ -133,15 +129,13 @@ Check out the [External Resources](/guides/external-resources/) page for additio
 
   ![Extension Manager](/assets/gnome/extension-manager.png)
 
-  [More details...](/linux-apps/gnomie/#extension-manager)
-
 :::::::
 
 ## **Basics**
 
 :::::::card
 
-:::tip All settings in `Gnome Tweaks` can be made through `Dconf Editor` (which you have downloaded), `dconf` (cli), or `gsettings` (cli).
+:::tip All settings in `Gnome Tweaks` can be made through `Dconf Editor` (which you have downloaded) or `gsettings` (cli).
 :::
 
 ::::details Quick append
@@ -151,17 +145,17 @@ Check out the [External Resources](/guides/external-resources/) page for additio
 @tab ::mdi:terminal:: Append changes (cli)
 
 ```bash
-dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize,close'"
-dconf write /org/gnome/desktop/sound/allow-volume-above-100-percent "true"
-dconf write /org/gnome/mutter/experimental-features "['scale-monitor-framebuffer']"
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 ```
 
 @tab ::mdi:reload:: Reset changes (cli)
 
 ```bash
-dconf reset /org/gnome/desktop/wm/preferences/button-layout
-dconf reset /org/gnome/desktop/sound/allow-volume-above-100-percent
-dconf reset /org/gnome/mutter/experimental-features
+gsettings reset org.gnome.desktop.wm.preferences button-layout
+gsettings reset org.gnome.desktop.sound allow-volume-above-100-percent
+gsettings reset org.gnome.mutter experimental-features
 ```
 
 :::
@@ -177,7 +171,7 @@ dconf reset /org/gnome/mutter/experimental-features
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize,close'"
+  gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
   ```
 
   @tab ::mdi:puzzle:: Append changes (Gnome Tweaks)
@@ -189,7 +183,7 @@ dconf reset /org/gnome/mutter/experimental-features
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/preferences/button-layout
+  gsettings reset org.gnome.desktop.wm.preferences button-layout
   ```
 
   :::
@@ -206,7 +200,7 @@ dconf reset /org/gnome/mutter/experimental-features
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/sound/allow-volume-above-100-percent "true"
+  gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -218,7 +212,7 @@ dconf reset /org/gnome/mutter/experimental-features
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/sound/allow-volume-above-100-percent
+  gsettings reset org.gnome.desktop.sound allow-volume-above-100-percent
   ```
 
   :::
@@ -233,7 +227,7 @@ dconf reset /org/gnome/mutter/experimental-features
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/mutter/experimental-features "['scale-monitor-framebuffer']"
+  gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -245,7 +239,7 @@ dconf reset /org/gnome/mutter/experimental-features
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/mutter/experimental-features
+  gsettings reset org.gnome.mutter experimental-features
   ```
 
   :::
@@ -258,7 +252,7 @@ dconf reset /org/gnome/mutter/experimental-features
 
 :::::::card
 
-:::tip All following settings can be appended through `Dconf Editor`, `dconf`, and `gsettings`.
+:::tip All following settings can be appended through `Dconf Editor` or `gsettings`.
 :::
 
 :::::details Quick append & shortcut cheatsheet (safe)
@@ -270,39 +264,39 @@ Use the following to append all keyboard shortcuts covered in this section.
 @tab ::mdi:terminal:: Append changes (cli)
 
 ```bash
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-left "['<Control><Super>Left', '<Super>Page_Up']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-right "['<Control><Super>Right', '<Super>Page_Down']"
-dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-left "['<Super>bracketleft']"
-dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-right "['<Super>bracketright']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-windows "['<Alt>Tab']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-windows-backward "['<Alt><Shift>Tab']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-applications "['<Super>Tab']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-applications-backward "['<Super><Shift>Tab']"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/control-center "['<Super>I', '<Super>semicolon']"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>E']"
-dconf write /org/gnome/desktop/wm/keybindings/panel-run-dialog "['<Super>R']"
-dconf write /org/gnome/desktop/wm/keybindings/move-to-center "['<Super><Shift>Return']"
-dconf write /org/gnome/desktop/wm/keybindings/toggle-fullscreen "['<Super>F']"
-dconf write /org/gnome/desktop/wm/keybindings/close "['<Super>X', '<Alt>F4']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left', '<Super>Page_Up']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right', '<Super>Page_Down']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super>bracketleft']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super>bracketright']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Alt><Shift>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Super><Shift>Tab']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Super>I', '<Super>semicolon']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>E']"
+gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog "['<Super>R']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-center "['<Super><Shift>Return']"
+gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>F']"
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>X', '<Alt>F4']"
 ```
 
 @tab ::mdi:reload:: Reset changes (cli)
 
 ```bash
-dconf reset /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
-dconf reset /org/gnome/desktop/wm/keybindings/switch-to-workspace-right
-dconf reset /org/gnome/desktop/wm/keybindings/move-to-workspace-left
-dconf reset /org/gnome/desktop/wm/keybindings/move-to-workspace-right
-dconf reset /org/gnome/desktop/wm/keybindings/switch-windows
-dconf reset /org/gnome/desktop/wm/keybindings/switch-windows-backward
-dconf reset /org/gnome/desktop/wm/keybindings/switch-applications
-dconf reset /org/gnome/desktop/wm/keybindings/switch-applications-backward
-dconf reset /org/gnome/settings-daemon/plugins/media-keys/control-center
-dconf reset /org/gnome/settings-daemon/plugins/media-keys/home
-dconf reset /org/gnome/desktop/wm/keybindings/panel-run-dialog
-dconf reset /org/gnome/desktop/wm/keybindings/move-to-center
-dconf reset /org/gnome/desktop/wm/keybindings/toggle-fullscreen
-dconf reset /org/gnome/desktop/wm/keybindings/close
+gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-left
+gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-right
+gsettings reset org.gnome.desktop.wm.keybindings move-to-workspace-left
+gsettings reset org.gnome.desktop.wm.keybindings move-to-workspace-right
+gsettings reset org.gnome.desktop.wm.keybindings switch-windows
+gsettings reset org.gnome.desktop.wm.keybindings switch-windows-backward
+gsettings reset org.gnome.desktop.wm.keybindings switch-applications
+gsettings reset org.gnome.desktop.wm.keybindings switch-applications-backward
+gsettings reset org.gnome.settings-daemon.plugins.media-keys control-center
+gsettings reset org.gnome.settings-daemon.plugins.media-keys home
+gsettings reset org.gnome.desktop.wm.keybindings panel-run-dialog
+gsettings reset org.gnome.desktop.wm.keybindings move-to-center
+gsettings reset org.gnome.desktop.wm.keybindings toggle-fullscreen
+gsettings reset org.gnome.desktop.wm.keybindings close
 ```
 
 ::::
@@ -334,50 +328,50 @@ Use the following to append all keyboard shortcuts covered in this section. Keep
 @tab ::mdi:terminal:: Append changes (cli)
 
 ```bash
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-left "['<Control><Super>Left', '<Super>Page_Up']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-right "['<Control><Super>Right', '<Super>Page_Down']"
-dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-left "['<Super>bracketleft']"
-dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-right "['<Super>bracketright']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-windows "['<Alt>Tab']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-windows-backward "['<Alt><Shift>Tab']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-applications "['<Super>Tab']"
-dconf write /org/gnome/desktop/wm/keybindings/switch-applications-backward "['<Super><Shift>Tab']"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/control-center "['<Super>I', '<Super>semicolon']"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>E']"
-dconf write /org/gnome/desktop/wm/keybindings/panel-run-dialog "['<Super>R']"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/']"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/binding "'<Super>Return'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/command "'ptyxis'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/name "'Launch Ptyxis'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/']"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/binding "'<Control><Shift>Escape'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/command "'flatpak run io.missioncenter.MissionCenter'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/name "'Launch Mission Center'"
-dconf write /org/gnome/desktop/wm/keybindings/move-to-center "['<Super><Shift>Return']"
-dconf write /org/gnome/desktop/wm/keybindings/toggle-fullscreen "['<Super>F']"
-dconf write /org/gnome/desktop/wm/keybindings/close "['<Super>X', '<Alt>F4']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left', '<Super>Page_Up']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right', '<Super>Page_Down']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super>bracketleft']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super>bracketright']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Alt><Shift>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Super><Shift>Tab']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Super>I', '<Super>semicolon']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>E']"
+gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog "['<Super>R']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/ binding "<Super>Return"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/ command ptyxis
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/ name "Launch Ptyxis"
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/','/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/ binding "<Control><Shift>Escape"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/ command "flatpak run io.missioncenter.MissionCenter"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/ name "Launch Mission Center"
+gsettings set org.gnome.desktop.wm.keybindings move-to-center "['<Super><Shift>Return']"
+gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>F']"
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>X', '<Alt>F4']"
 flatpak install io.missioncenter.MissionCenter -y
 ```
 
 @tab ::mdi:reload:: Reset changes (cli)
 
 ```bash
-dconf reset /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
-dconf reset /org/gnome/desktop/wm/keybindings/switch-to-workspace-right
-dconf reset /org/gnome/desktop/wm/keybindings/move-to-workspace-left
-dconf reset /org/gnome/desktop/wm/keybindings/move-to-workspace-right
-dconf reset /org/gnome/desktop/wm/keybindings/switch-windows
-dconf reset /org/gnome/desktop/wm/keybindings/switch-windows-backward
-dconf reset /org/gnome/desktop/wm/keybindings/switch-applications
-dconf reset /org/gnome/desktop/wm/keybindings/switch-applications-backward
-dconf reset /org/gnome/settings-daemon/plugins/media-keys/control-center
-dconf reset /org/gnome/settings-daemon/plugins/media-keys/home
-dconf reset /org/gnome/desktop/wm/keybindings/panel-run-dialog
-dconf reset /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis
-dconf reset /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center
-dconf reset /org/gnome/desktop/wm/keybindings/move-to-center
-dconf reset /org/gnome/desktop/wm/keybindings/toggle-fullscreen
-dconf reset /org/gnome/desktop/wm/keybindings/close
+gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-left
+gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-right
+gsettings reset org.gnome.desktop.wm.keybindings move-to-workspace-left
+gsettings reset org.gnome.desktop.wm.keybindings move-to-workspace-right
+gsettings reset org.gnome.desktop.wm.keybindings switch-windows
+gsettings reset org.gnome.desktop.wm.keybindings switch-windows-backward
+gsettings reset org.gnome.desktop.wm.keybindings switch-applications
+gsettings reset org.gnome.desktop.wm.keybindings switch-applications-backward
+gsettings reset org.gnome.settings-daemon.plugins.media-keys control-center
+gsettings reset org.gnome.settings-daemon.plugins.media-keys home
+gsettings reset org.gnome.desktop.wm.keybindings panel-run-dialog
+gsettings reset-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-ptyxis/
+gsettings reset-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/
+gsettings reset org.gnome.desktop.wm.keybindings move-to-center
+gsettings reset org.gnome.desktop.wm.keybindings toggle-fullscreen
+gsettings reset org.gnome.desktop.wm.keybindings close
 ```
 
 ::::
@@ -412,8 +406,8 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   # Also preserving the original keybinding
   # <Super>Page_Up/Page_Down here because it is
   # quite useful on a full-sized keyboard.
-  dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-left "['<Control><Super>Left', '<Super>Page_Up']"
-  dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-right "['<Control><Super>Right', '<Super>Page_Down']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>Left', '<Super>Page_Up']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>Right', '<Super>Page_Down']"
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -429,8 +423,8 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/keybindings/switch-to-workspace-left
-  dconf reset /org/gnome/desktop/wm/keybindings/switch-to-workspace-right
+  gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-left
+  gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-right
   ```
 
   :::
@@ -446,8 +440,8 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-left "['<Super>bracketleft']"
-  dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-right "['<Super>bracketright']"
+  gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super>bracketleft']"
+  gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super>bracketright']"
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -463,8 +457,8 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/keybindings/move-to-workspace-left
-  dconf reset /org/gnome/desktop/wm/keybindings/move-to-workspace-right
+  gsettings reset org.gnome.desktop.wm.keybindings move-to-workspace-left
+  gsettings reset org.gnome.desktop.wm.keybindings move-to-workspace-right
   ```
 
   ::::
@@ -480,10 +474,10 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/wm/keybindings/switch-windows "['<Alt>Tab']"
-  dconf write /org/gnome/desktop/wm/keybindings/switch-windows-backward "['<Alt><Shift>Tab']"
-  dconf write /org/gnome/desktop/wm/keybindings/switch-applications "['<Super>Tab']"
-  dconf write /org/gnome/desktop/wm/keybindings/switch-applications-backward "['<Super><Shift>Tab']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Alt><Shift>Tab']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Super><Shift>Tab']"
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -507,10 +501,10 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/keybindings/switch-windows
-  dconf reset /org/gnome/desktop/wm/keybindings/switch-windows-backward
-  dconf reset /org/gnome/desktop/wm/keybindings/switch-applications
-  dconf reset /org/gnome/desktop/wm/keybindings/switch-applications-backward
+  gsettings reset org.gnome.desktop.wm.keybindings switch-windows
+  gsettings reset org.gnome.desktop.wm.keybindings switch-windows-backward
+  gsettings reset org.gnome.desktop.wm.keybindings switch-applications
+  gsettings reset org.gnome.desktop.wm.keybindings switch-applications-backward
   ```
 
   :::
@@ -528,7 +522,7 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/settings-daemon/plugins/media-keys/control-center "['<Super>I', '<Super>semicolon']"
+  gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Super>I', '<Super>semicolon']"
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -540,7 +534,7 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/settings-daemon/plugins/media-keys/control-center
+  gsettings reset org.gnome.settings-daemon.plugins.media-keys control-center
   ```
 
   ::::
@@ -554,7 +548,7 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/settings-daemon/plugins/media-keys/home "['<Super>E']"
+  gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>E']"
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -566,7 +560,7 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/settings-daemon/plugins/media-keys/home
+  gsettings reset org.gnome.settings-daemon.plugins.media-keys home
   ```
 
   ::::
@@ -580,7 +574,7 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/wm/keybindings/panel-run-dialog "['<Super>R']"
+  gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog "['<Super>R']"
   ```
 
   @tab ::mdi:file-settings:: Append changes (Dconf Editor)
@@ -592,7 +586,7 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/keybindings/panel-run-dialog
+  gsettings reset org.gnome.desktop.wm.keybindings panel-run-dialog
   ```
 
   :::
@@ -606,13 +600,13 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/wm/keybindings/move-to-center "['<Super><Shift>Return']"
+  gsettings set org.gnome.desktop.wm.keybindings move-to-center "['<Super><Shift>Return']"
   ```
 
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/keybindings/move-to-center
+  gsettings reset org.gnome.desktop.wm.keybindings move-to-center
   ```
 
   :::
@@ -626,13 +620,13 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/wm/keybindings/toggle-fullscreen "['<Super>F']"
+  gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>F']"
   ```
 
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/keybindings/toggle-fullscreen
+  gsettings reset org.gnome.desktop.wm.keybindings toggle-fullscreen
   ```
 
   :::
@@ -646,13 +640,13 @@ dconf reset /org/gnome/desktop/wm/keybindings/close
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  dconf write /org/gnome/desktop/wm/keybindings/close "['<Super>X', '<Alt>F4']"
+  gsettings set org.gnome.desktop.wm.keybindings close "['<Super>X', '<Alt>F4']"
   ```
 
   @tab ::mdi:reload:: Reset changes (cli)
 
   ```bash
-  dconf reset /org/gnome/desktop/wm/keybindings/close
+  gsettings reset org.gnome.desktop.wm.keybindings close
   ```
 
   :::
