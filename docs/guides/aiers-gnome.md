@@ -47,17 +47,17 @@ sudo apt install fonts-ibm-plex
 @tab To apply
 
 ```bash
-dconf write /org/gnome/desktop/interface/font-name "'IBM Plex Sans 11'"
-dconf write /org/gnome/desktop/interface/document-font-name "'IBM Plex Sans 12'"
-dconf write /org/gnome/desktop/interface/monospace-font-name "'IBM Plex Mono 11'"
+gsettings set org.gnome.desktop.interface font-name "IBM Plex Sans 11"
+gsettings set org.gnome.desktop.interface document-font-name "IBM Plex Sans 12"
+gsettings set org.gnome.desktop.interface monospace-font-name "IBM Plex Mono 11"
 ```
 
 @tab To reset
 
 ```bash
-dconf reset /org/gnome/desktop/interface/font-name
-dconf reset /org/gnome/desktop/interface/document-font-name
-dconf reset /org/gnome/desktop/interface/monospace-font-name
+gsettings reset org.gnome.desktop.interface font-name
+gsettings reset org.gnome.desktop.interface document-font-name
+gsettings reset org.gnome.desktop.interface monospace-font-name
 ```
 
 :::
@@ -68,6 +68,10 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
 :::tip
 ==🌟== indicates currently used by the editor ==aier==.
+:::
+
+:::details Tech details: Why do extension settings use `dconf write`?
+Extensions installed from extensions.gnome.org keep their settings schemas inside their own folder, where the `gsettings` command cannot find them (you would get a `No such schema` error). `dconf write` needs no schema, so extension settings use it — system settings elsewhere in this wiki use `gsettings`.
 :::
 
 ::::::card
@@ -102,7 +106,7 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   :::tip Windows-like `<Super>v` keyboard shortcut
 
   ```bash
-  dconf write /org/gnome/shell/keybindings/toggle-message-tray "['<Super>M']"
+  gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>M']"
   dconf write /org/gnome/shell/extensions/clipboard-indicator/toggle-menu "['<Super>V']"
   ```
 
@@ -118,7 +122,7 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   :::tip Windows-like `<Super>v` keyboard shortcut
 
   ```bash
-  dconf write /org/gnome/shell/keybindings/toggle-message-tray "['<Super>M']"
+  gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>M']"
   dconf write /org/gnome/shell/extensions/copyous/open-clipboard-dialog-shortcut "['<Super>V']"
   dconf write /org/gnome/shell/extensions/copyous/clipboard-history "'keep-all'"
   dconf write /org/gnome/shell/extensions/copyous/clipboard-position-vertical "'bottom'"
@@ -143,9 +147,6 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   :::tip My settings
 
   ```bash
-  # Hide ripple box in hot corner
-  dconf write /org/gnome/shell/extensions/just-perfection/ripple-box false
-
   # Hide searchbar in overview (you can still search
   # by just typing)
   dconf write /org/gnome/shell/extensions/just-perfection/search false
@@ -180,9 +181,9 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   :::tip Make the light mode shell light.
 
   ```bash
-  dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/enabled 'true'
-  dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/sunrise "\"dconf write /org/gnome/desktop/interface/color-scheme \\\"'prefer-light'\\\"\""
-  dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/sunset "\"dconf write /org/gnome/desktop/interface/color-scheme \\\"'prefer-dark'\\\"\""
+  dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/enabled true
+  dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/sunrise "'gsettings set org.gnome.desktop.interface color-scheme prefer-light'"
+  dconf write /org/gnome/shell/extensions/nightthemeswitcher/commands/sunset "'gsettings set org.gnome.desktop.interface color-scheme prefer-dark'"
   ```
 
   :::

@@ -9,12 +9,7 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-- [ ] 🟡 **Verify extension gsettings schemas in aiers-gnome.md** — the dconf→gsettings sweep
-      converted the extension commands (clipboard-indicator, copyous, just-perfection,
-      nightthemeswitcher, aztaskbar, show-desktop-plus) by the standard path→schema convention,
-      but none of those extensions are installed on the machine that ran the sweep, so their
-      schema IDs are unverified. Spot-check one or two on a session with the extensions
-      installed (`gsettings list-schemas | grep extensions`). Core-schema commands all verified.
+_Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ---
 
@@ -39,6 +34,19 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **aiers-gnome.md — extension commands reverted to dconf; schema question resolved (2026-07-04)** —
+  the extension-schema verify item closed with a twist. Schema IDs from the conversion were
+  CORRECT (confirmed from the installed extensions' own `gschema.xml`: copyous, just-perfection,
+  nightthemeswitcher.commands), but the converted commands fail anyway: user-installed extensions
+  keep schemas inside their extension folder, which plain `gsettings` does not search
+  (`No such schema` — reproduced live; only `--schemadir <ext>/schemas/` works). `dconf write`
+  is schema-less, which is why the originals worked. Resolution: extension settings reverted to
+  the original `dconf write` lines (also covers the never-verifiable uninstalled aztaskbar /
+  show-desktop-plus / clipboard-indicator); core-schema commands stay `gsettings`
+  (`org.gnome.shell.keybindings` visibility verified). nightthemeswitcher sunrise/sunset kept
+  zero-escape: outer `dconf write "'...'"`, inner plain `gsettings ... prefer-light`. A `:::note`
+  in the guide's Extensions section explains the split; the guidelines.md "My settings" example
+  swapped to a `dconf write` model so contributors don't copy the broken pattern.
 - **App-lists restructure + dconf→gsettings sweep (2026-07-04)** — closes the two OVERRIDE-era
   items ("revise the app lists", "slim down app series"); plan:
   `action-plans/app-lists-restructure-2026-07-04.md`, spec from the maintainer's notepad.md.
