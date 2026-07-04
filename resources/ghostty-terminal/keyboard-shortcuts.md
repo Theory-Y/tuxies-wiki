@@ -1,4 +1,4 @@
-# Ghostty Keyboard Shortcuts (Credit: hensg @ GitHub)
+# Ghostty Keyboard Shortcuts (based on cheatsheet by hensg @ GitHub)
 
 Default keyboard shortcuts for Ghostty terminal emulator. Platform-specific differences are noted where applicable.
 
@@ -74,11 +74,11 @@ Default keyboard shortcuts for Ghostty terminal emulator. Platform-specific diff
 
 ## Configuration
 
-| Action                   | Windows/Linux | macOS                        |
-| ------------------------ | ------------- | ---------------------------- |
-| Open config              | Ctrl+,        | Cmd+,                        |
-| Reload config            | Ctrl+Shift+,  | Cmd+Shift+,                  |
-| Toggle command palette   | Ctrl+Shift+P  | [unconfirmed — check docs]   |
+| Action                 | Windows/Linux | macOS                      |
+| ---------------------- | ------------- | -------------------------- |
+| Open config            | Ctrl+,        | Cmd+,                      |
+| Reload config          | Ctrl+Shift+,  | Cmd+Shift+,                |
+| Toggle command palette | Ctrl+Shift+P  | [unconfirmed — check docs] |
 
 ## Inspector
 

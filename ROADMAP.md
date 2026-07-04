@@ -9,7 +9,15 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-_Nothing open — all tracked work is complete or parked in **Deferred** below._
+- [ ] 🔵 **Revise the app lists** (`docs/notes/linux-apps/`) — review entries for currency and
+      relevance. (Moved from `OVERRIDE.md` 2026-07-03.)
+- [ ] 🔵 **Slim down the number of app series** — consider a redesign of the linux-apps series
+      structure; run a dedicated `/council` session to argue the redesign before touching pages.
+      (Moved from `OVERRIDE.md` 2026-07-03.)
+- [ ] 🟡 **Ghostty guide — eyeball GNOME Settings category label** — the new disable-shortcuts fix
+      cites `Navigation` as the shortcut category in GNOME Settings; the two shortcut names
+      ("Switch to workspace above/below") are source-verified from the gschema, but the category
+      label is community-knowledge only. Confirm on a live GNOME session before/after publish.
 
 ---
 
@@ -34,6 +42,37 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ## Completed
 
+- **keyd guide — libinput CLI verification replaced with empirical typing test (2026-07-04)** —
+  stripped the `libinput-utils`/`libinput-tools` install tabs and the
+  `libinput list-devices`/`quirks list` commands from the guide's **Verifying the registration**
+  section; verification is now "type and swipe the touchpad at the same time — pointer stays put"
+  (+ log out/in if it doesn't kick in). The quirk itself never needed the CLI — only the verify
+  commands did. `keyd-setup.sh` synced: both libinput-CLI warning blocks removed, end-of-script
+  reminder replaced with the typing test, and a `sudo systemctl restart keyd` added after the
+  quirks install so the quirk applies without a reboot. Folder `README.md` pointer updated. The
+  mode-644 warning stays (a root-only quirks file is still silently ignored). Trade-off accepted:
+  the CLI was the only typo-detection path; a failed typing test is now the sole signal.
+- **OVERRIDE.md cleanup — four items knocked down (2026-07-03)** — plan:
+  `action-plans/override-cleanup-2026-07-03.md`. The two heavy items (app-list revision, series
+  slim-down) moved to **Open** above; `OVERRIDE.md` deleted.
+  - **Fresh Editor added to editors-choice** — new entry in `docs/notes/linux-apps/editors-choice.md`
+    for [Fresh](https://getfresh.dev/) (`sinelaw/fresh`, Rust terminal editor with VS Code-style
+    multi-cursor/LSP/Git); install tabs: AUR `fresh-editor-bin` + official install script. Link and
+    identity web-verified (several unrelated "fresh editor" lookalikes exist on GitHub).
+  - **Focus changer extension added to aiers-gnome** — new entry under GNOME Extensions
+    ([Focus changer](https://extensions.gnome.org/extension/4627/focus-changer/), keyboard-driven
+    directional window-focus switching), placed next to Tiling Shell; no screenshot yet.
+  - **Ghostty GNOME conflict — simplified to disable-the-shortcut** — dropped the whole
+    `alt`+`shift`+arrow rebind approach and the duplicate "Master quick append (GNOME)" block; the
+    guide now has ONE master quick append, and the GNOME section walks through clearing
+    "Switch to workspace above/below" in GNOME Settings (gsettings equivalent in a `:::details`).
+    gschema keys source-verified; Settings category label pending eyeball (see **Open**).
+  - **New keyd settings propagated** — the root `default.conf` (committed db6b1eb) moved to
+    `resources/key-remapping-with-keyd/default.conf`; its stale header comment fixed (body uses a
+    `[shift]` layer `capslock = capslock`, not double-shift). Guide example + mapping table and the
+    `keyd-setup.sh` heredoc synced to the new mappings (Copilot key → Ctrl, CapsLock → Backspace,
+    `Shift`+`CapsLock` → CapsLock); guide now links the ready-made conf and explains layer sections.
+    Folder got its first `README.md` (`subdir-readme-author`).
 - **fedora.md — snapper section polish (2026-06-23)** — added a beginner-friendly `:::details` to the
   "Set up snapshots" step explaining, in plain language, what **Snapper timeline** and **Snapper
   cleanup** do and why **Snapper boot** is left off (no algorithm names/jargon). The systemd-units

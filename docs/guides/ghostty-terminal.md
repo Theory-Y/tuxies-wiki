@@ -40,42 +40,13 @@ window-save-state = never
 
 ::::
 
-If your `Ctrl`+`Alt`+`Up`/`Down` are grabbed by the GNOME compositor for workspace switching, use the GNOME block below instead — it adds split-focus rebinds on keys GNOME leaves free. Everyone else uses the block above.
-
-::::details Master quick append (GNOME)
-
-Paste into `~/.config/ghostty/config.ghostty`, then reload with `Ctrl`+`Shift`+`,`. Each option is explained in the sections below.
-
-:::code-tabs
-
-@tab ~/.config/ghostty/config.ghostty
-
-```ini
-# transparency: lower is more transparent (blur needs Blur my Shell on GNOME)
-background-opacity = 0.8
-background-blur = true
-
-# initial window grid size in columns and rows
-window-width = 120
-window-height = 40
-
-# restore window state across launches: default | never | always
-window-save-state = never
-
-# focus-split rebinds (Ctrl+Alt+Up/Down are grabbed by the GNOME compositor)
-keybind = alt+shift+up=goto_split:up
-keybind = alt+shift+down=goto_split:down
-keybind = alt+shift+left=goto_split:left
-keybind = alt+shift+right=goto_split:right
-```
-
-:::
-
-::::
+On GNOME, `Ctrl`+`Alt`+`Up`/`Down` conflicts with `ghostty`'s split-focus shortcuts — see [Focus-Split Up/Down on GNOME](#focus-split-up-down-on-gnome) below to fix it.
 
 ## **Installation**
 
-For the [official install guide from Ghostty](https://ghostty.org/docs/install/binary#linux), see the upstream documentation. Note that `ghostty` has no single official Linux package except for Arch — the methods below are the recommended community approaches.
+For the [official install guide from Ghostty](https://ghostty.org/docs/install/binary#linux), see the upstream documentation.
+
+Note that `ghostty` has no single official Linux package except for Arch — the methods below are the recommended community approaches.
 
 ::::tabs
 
@@ -148,11 +119,13 @@ background-opacity = 0.8
 
 `Ctrl`+`Shift`+`,` (the default keybind on Linux) to reload it at runtime.
 
-## **Everforest Theme and Transparency**
+## **Theme and Transparency**
 
-### **Applying the theme**
+### **Applying a theme**
 
-`ghostty` ships with `Everforest Dark Hard` built in. To apply, add the following:
+:::tip
+Run `ghostty +list-themes` in a terminal to browse all built-in themes before committing to one.
+:::
 
 :::code-tabs
 
@@ -162,10 +135,6 @@ background-opacity = 0.8
 theme = Everforest Dark Hard
 ```
 
-:::
-
-:::tip
-Run `ghostty +list-themes` in a terminal to browse all built-in themes before committing to one.
 :::
 
 ### **Background transparency and blur**
@@ -185,7 +154,7 @@ background-blur = true
 :::warning
 `background-blur` relies on the KDE blur protocol; on a standard GNOME Wayland session, `background-blur` is ignored. Transparency (`background-opacity`) still works — only blur is N/A.
 
-If you want blur on GNOME, install the [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) extension and enable its application blur to blur for `ghostty`.
+==If you want blur on GNOME, install the [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) extension== and enable its `application blur` to blur for `ghostty`.
 :::
 
 ## **Default Window Size**
@@ -219,40 +188,28 @@ window-save-state = never
 
 ## **Keyboard Shortcuts**
 
-`ghostty` ships with sensible default keybinds — new tab with `Ctrl`+`Shift`+`T`, splits with `Ctrl`+`Shift`+`O` / `Ctrl`+`Shift`+`E`, reload config with `Ctrl`+`Shift`+`,`, and so on.
-
-For the full reference, see [this keyboard shortcuts cheatsheet](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/ghostty-terminal/keyboard-shortcuts.md).
+`ghostty` ships with sensible default keybinds. For reference, see [this keyboard shortcuts cheatsheet](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/ghostty-terminal/keyboard-shortcuts.md).
 
 ### **Focus-Split Up/Down on GNOME**
 
-On a GNOME session, `Ctrl`+`Alt`+`Up` and `Ctrl`+`Alt`+`Down` are grabbed by the GNOME compositor for vertical workspace switching before `ghostty` ever sees the input. This means the default focus-split up/down binds do not fire. The left/right directions (`Ctrl`+`Alt`+`Left` / `Ctrl`+`Alt`+`Right`) are unaffected because GNOME does not bind them by default.
+`Ctrl`+`Alt`+`Up` and `Ctrl`+`Alt`+`Down` are grabbed by the GNOME compositor for vertical workspace switching. This means the default focus-split up/down shortcuts do not fire. The left/right directions (`Ctrl`+`Alt`+`Left` / `Ctrl`+`Alt`+`Right`) are unaffected.
 
-The fix is to rebind all four split-focus directions to keys GNOME leaves free. Add the following to `~/.config/ghostty/config.ghostty`:
+==Quick fix==
 
-:::code-tabs
-
-@tab ~/.config/ghostty/config.ghostty
-
-```ini
-keybind = alt+shift+up=goto_split:up
-keybind = alt+shift+down=goto_split:down
-keybind = alt+shift+left=goto_split:left
-keybind = alt+shift+right=goto_split:right
+```bash
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "[]"
 ```
-
-:::
-
-`Alt`+`Shift`+`Arrow` is chosen because it is not grabbed by GNOME and, unlike plain `Alt`+`Arrow`, does not shadow shell word-navigation. After saving, reload the config with `Ctrl`+`Shift`+`,`. If any of these combos conflict with another application on your setup, pick any other GNOME-free combination using the `keybind` key.
 
 ## **GNOME Keyboard Shortcut**
 
-We can bind a key combo in GNOME `Settings` to launch `ghostty` without opening a dock or app grid. The steps below use the standard GNOME custom-shortcut workflow.
+We can bind a key combo in GNOME `Settings` to launch `ghostty` to access the terminal quickly.
 
 ::::steps
 
 - **Open keyboard shortcuts**
 
-  Open `Settings` -> `Keyboard`. Under "Keyboard Shortcuts", click `View and Customize Shortcuts`.
+  Open `Settings` -> `Keyboard`. Under "Keyboard Shortcuts", click `View and Customise Shortcuts`.
 
 - **Navigate to custom shortcuts**
 

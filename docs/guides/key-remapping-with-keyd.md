@@ -47,7 +47,7 @@ sudo pacman -S make gcc
 
 ## **Installing keyd**
 
-`keyd` is not available in most distribution repositories, so it is installed by compiling from its GitHub source.
+`keyd` is not available in most distribution repositories, so it is installed via its GitHub source.
 
 :::: steps
 
@@ -85,7 +85,7 @@ sudo pacman -S make gcc
 
 ## **Configuring keyd**
 
-keyd reads its configuration from files placed in `/etc/keyd/`. The main configuration file is `/etc/keyd/default.conf`, and it applies to all keyboards by default.
+keyd reads its configuration from files placed in `/etc/keyd/`. The main configuration file is `/etc/keyd/default.conf`.
 
 ### **Configuration file structure**
 
@@ -94,32 +94,41 @@ A keyd config file has two required sections:
 - `[ids]` — Specifies which keyboards the config applies to. Put a `*` to apply to all keyboards.
 - `[main]` — Defines your key remappings and layers.
 
-Here is a minimal example that demonstrates common remaps:
+You can also add extra sections for layers — for example, a `[shift]` section changes what keys do while `Shift` is held down.
+
+Here is a minimal example that demonstrates common remaps (also available as a ready-made [default.conf](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/key-remapping-with-keyd/default.conf):
 
 :::tabs
 
 @tab /etc/keyd/default.conf
 
 ```conf
-# Keyd remap Copilot Key to Right Control and Double Shift to CAP
-# place in /etc/keyd/
+# Keyd remaps: Copilot key -> Ctrl, CapsLock -> Backspace,
+# Shift + CapsLock -> CapsLock
+
+# Place in /etc/keyd/default.conf
+
+# Edit the file to your liking
 
 [ids]
 *
 
 [main]
-capslock = backspace
-leftshift+rightshift = capslock
 leftshift+leftmeta+f23 = layer(control)
+capslock = backspace
+
+# Shift + capslock for capslock
+[shift]
+capslock = capslock
 ```
 
 :::
 
-| Mapping                                   | What it does                                                      |
-| ----------------------------------------- | ----------------------------------------------------------------- |
-| `capslock = backspace`                    | Remaps Caps Lock to Backspace                                     |
-| `leftshift+rightshift = capslock`         | Press both Shifts together to toggle Caps Lock                    |
-| `leftshift+leftmeta+f23 = layer(control)` | Remaps a custom key combo (e.g. Copilot key) to act as Right Ctrl |
+| Mapping                                   | What it does                                                  |
+| ----------------------------------------- | ------------------------------------------------------------- |
+| `leftshift+leftmeta+f23 = layer(control)` | Remaps a custom key combo (e.g. Copilot key) to act as Ctrl   |
+| `capslock = backspace`                    | Remaps Caps Lock to Backspace                                 |
+| `capslock = capslock` (under `[shift]`)   | Hold `Shift` and press Caps Lock to toggle Caps Lock normally |
 
 :::tip
 You can find a full list of valid key names in the keyd man page:
@@ -138,15 +147,9 @@ After writing your config, reload keyd to apply it immediately — no reboot nee
 sudo keyd reload
 ```
 
-To verify the config was written correctly:
-
-```bash
-sudo cat /etc/keyd/default.conf
-```
-
 ## **Registering keyd as an Internal Keyboard**
 
-:::info ==This step is optional for desktops.== It is primarily useful on laptops where you want palm rejection and other libinput heuristics to work with your remapped keyboard.
+:::info ==This step is optional for desktops.== It is primarily useful on laptops where you want palm rejection and other libinput features to work with your remapped keyboard.
 :::
 
 Create the directory if it does not exist, then write the quirks file:
@@ -184,53 +187,17 @@ Save and close the file (`Ctrl`+`O`, `Enter`, `Ctrl`+`X` in nano).
 sudo systemctl restart keyd
 ```
 
-To confirm the quirk actually applied, find the event node for keyd's virtual keyboard, then list the quirks `libinput` matched to it:
+Then test it: open any text field, start typing, and swipe on the touchpad **while** you type.
 
-:::tip The `libinput` command-line tool ships in a separate package from the base library on every major distro — install it before running the commands below.
-:::
+If the registration worked, the pointer stays put — your desktop now treats keyd's keyboard as internal and disables the touchpad while you type.
 
-:::tabs#distro
-
-@tab ::devicon:fedora:: Fedora
-
-```bash
-sudo dnf install libinput-utils
-```
-
-Only the `quirks` subcommand needs this — `list-devices` is already in the base `libinput` package.
-
-@tab ::devicon:debian:: Debian/Ubuntu
-
-```bash
-sudo apt install libinput-tools
-```
-
-@tab ::devicon:archlinux:: Arch
-
-```bash
-sudo pacman -S libinput-tools
-```
-
-:::
-
-```bash
-# note the "Kernel: /dev/input/eventXX" line for "keyd virtual keyboard"
-sudo libinput list-devices | grep -A1 "keyd virtual keyboard"
-
-# list the quirks for that device (replace eventXX)
-sudo libinput quirks list /dev/input/eventXX
-```
-
-If the output contains `AttrKeyboardIntegration=internal`, keyd is now treated as an internal keyboard. If `libinput` finds a typo in the file, it prints the error here instead.
+If nothing changes, log out and back in, then try the typing test again.
 
 :::warning The quirks file must be world-readable
-`libinput` parses `/etc/libinput/local-overrides.quirks` from inside your desktop session — as your user, not `root`. If the file ends up root-only (mode `600`), it is silently ignored. Match the stock files in `/usr/share/libinput/` (mode `644`):
+If the file ends up root-only (mode `600`), it is silently ignored. Set it to mode `644`:
 
 ```bash
 sudo chmod 644 /etc/libinput/local-overrides.quirks
 ```
 
-:::
-
-:::info There is no on/off toggle for this in your desktop's settings. The only effect is that `libinput` now pairs keyd's keyboard with your touchpad for palm rejection and disable-while-typing — so verify it through the `quirks list` output above, not a settings menu.
 :::

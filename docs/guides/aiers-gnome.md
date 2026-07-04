@@ -62,26 +62,32 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
 :::
 
-## GNOME Extensions (Universal Benefits)
+## GNOME Extensions
+
+### Universal benefits
+
+:::tip
+==🌟== indicates currently used by the editor ==aier==.
+:::
 
 ::::::card
 ::::: collapse
 
-- [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/)
+- 🌟 [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 
   :::info Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
   :::
 
   ![AppIndicator](/assets/aiers-gnome/appindicator.png)
 
-- [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
+- 🌟 [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 
   :::info Adds customisable blur effects to GNOME Shell elements for a polished look.
   :::
 
   ![Blur My Shell Demonstration](/assets/aiers-gnome/blur-my-shell-demonstration.png)
 
-- [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
+- 🌟 [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 
   :::info Prevents screen dimming and suspension on demand.
   :::
@@ -104,7 +110,7 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
   ![Clipboard Indicator Demonstration](/assets/aiers-gnome/clipboard-indicator-demonstration.png)
 
-- [Copyous](https://extensions.gnome.org/extension/8834/copyous/) _(elegant alternative to Clipboard Indicator)_
+- 🌟 [Copyous](https://extensions.gnome.org/extension/8834/copyous/) _(elegant alternative to Clipboard Indicator)_
 
   :::info A modern clipboard manager with support for text, code, images, files, links, characters, and colours.
   :::
@@ -122,14 +128,14 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
   ![Copyous Demo](/assets/aiers-gnome/copyous-demo.png)
 
-- [GNOME Fuzzy App Search](https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/)
+- 🌟 [GNOME Fuzzy App Search](https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/)
 
   :::info Enables fuzzy matching in Activities search to find apps without exact names.
   :::
 
   ![Gnome Fuzzy App Search Demonstration](/assets/aiers-gnome/gnome-fuzzy-app-search-demonstration.png)
 
-- [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+- 🌟 [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 
   :::info Tweaks or hides nearly every GNOME Shell UI element for fine‑grained control.
   :::
@@ -161,12 +167,12 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 
   ![Just Perfection Demonstration](/assets/aiers-gnome/just-perfection-demonstration.png)
 
-- [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
+- 🌟 [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
 
   :::info Image search on Google Lens, OCR and QR scan directly from the built-in GNOME Screenshot tool.
   :::
 
-- [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/)
+- 🌟 [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/)
 
   :::info Switcher between light and dark theme depending on sunrise/sunset.
   :::
@@ -189,7 +195,7 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
 ::::::card
 ::::: collapse
 
-- [Kando Integration](https://extensions.gnome.org/extension/7068/kando-integration/)
+- 🌟 [Kando Integration](https://extensions.gnome.org/extension/7068/kando-integration/)
 
   :::info Allows you to use the Kando Menu in Gnome Wayland sessions.
   :::
@@ -201,7 +207,7 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   <video src="/assets/aiers-gnome/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
   :::
 
-- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+- 🌟 [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
   :::info Moves the dash out of overview into a dock for quicker app launching and window switching.
   :::
@@ -217,7 +223,12 @@ dconf reset /org/gnome/desktop/interface/monospace-font-name
   :::info Brings tiling window management to GNOME, allowing automatic window arrangements in customisable layouts.
   :::
 
-- [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/)
+- 🌟 [Focus changer](https://extensions.gnome.org/extension/4627/focus-changer/)
+
+  :::info Switches focus to the window sitting left, right, above, or below the current one with customisable keyboard shortcuts.
+  :::
+
+- 🌟 [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/)
 
   :::info Sorts the app grid alphabetically to make apps easier to find.
   :::

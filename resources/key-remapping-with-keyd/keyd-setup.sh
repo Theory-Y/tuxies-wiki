@@ -69,8 +69,8 @@ done
 
 TMPFILE=$(mktemp /tmp/default-XXXXXX.conf)
 cat > "$TMPFILE" << EOF
-# Keyd remap COPILOT -> CTRL_R, SHIFT_L + SHIFT_R -> CAPSLOCK
-# and CAPSLOCK -> BACKSPACE
+# Keyd remaps: Copilot key -> Ctrl; CapsLock -> Backspace,
+# Shift + CapsLock -> CapsLock
 
 # Place in /etc/keyd/default.conf
 
@@ -81,8 +81,11 @@ cat > "$TMPFILE" << EOF
 
 [main]
 leftshift+leftmeta+f23 = layer(control)
-leftshift+rightshift = capslock
 capslock = backspace
+
+# Shift + capslock for capslock
+[shift]
+capslock = capslock
 EOF
 "${EDITOR:-nano}" "$TMPFILE"
 
@@ -102,22 +105,6 @@ echo -e "${INFO}\n\nAbove is the content in /etc/keyd/default.conf${NC}"
 #############################################
 
 echo -e "${INFO}Configuring keyd as internal keyboard.\n${NC}"
-
-echo "${WARNING}"
-cat << EOF
-============================================================================
-IMPORTANT: you must install the 'libinput' command-line tool to VERIFY this
-step. It ships in a SEPARATE package from the base libinput library:
-
-  Fedora         sudo dnf install libinput-utils
-  Debian/Ubuntu  sudo apt install libinput-tools
-  Arch           sudo pacman -S libinput-tools
-
-Without it, 'libinput list-devices' and 'libinput quirks list' fail with
-"command not found". Install it now if you have not already.
-============================================================================
-EOF
-echo "${NC}"
 
 while true; do
     read -p "${PROMPT}Do you want to proceed? [y/n]: ${NC}" yn
@@ -147,6 +134,10 @@ sudo mkdir -p /etc/libinput/
 sudo install -m 644 "$TMPFILE2" /etc/libinput/local-overrides.quirks
 rm -f "$TMPFILE2"
 
+# libinput re-reads quirks files whenever an input device is added — restarting
+# keyd re-adds its virtual keyboard, so the new quirk applies without a reboot
+sudo systemctl restart keyd
+
 #####################
 ### End of script ###
 #####################
@@ -154,20 +145,11 @@ rm -f "$TMPFILE2"
 echo "${WARNING}"
 cat << EOF
 ============================================================================
-REMINDER: keyd is now registered as an internal keyboard, but you can only
-CONFIRM the quirk applied with the 'libinput' CLI. If you have not installed
-it yet, do so now:
+TEST IT: open any text field, start typing, and swipe on the touchpad
+WHILE you type. If the pointer stays put, keyd is now treated as an
+internal keyboard (disable-while-typing / palm rejection are active).
 
-  Fedora         sudo dnf install libinput-utils
-  Debian/Ubuntu  sudo apt install libinput-tools
-  Arch           sudo pacman -S libinput-tools
-
-Then verify (replace eventXX with the node from the first command):
-
-  sudo libinput list-devices | grep -A1 "keyd virtual keyboard"
-  sudo libinput quirks list /dev/input/eventXX
-
-Look for 'AttrKeyboardIntegration=internal' in the output.
+If nothing changes, log out and back in, then try the typing test again.
 ============================================================================
 EOF
 echo "${NC}"

@@ -35,8 +35,6 @@ yay -S localsend-bin
 
 :::
 
-:::
-
 ## **[Zen Browser](https://flathub.org/apps/app.zen_browser.zen)**
 
 :::details A feature-rich, Firefox based browser that just works with smooth animations and QoL features.
@@ -133,6 +131,26 @@ flatpak install flathub md.obsidian.Obsidian
 
 ```bash
 flatpak install --user flathub md.obsidian.Obsidian
+```
+
+:::
+
+## **[Fresh](https://getfresh.dev/)**
+
+A terminal-based text editor that feels like VS Code or Sublime Text, complete with multi-cursor editing, Git tools, and code completion — no configuration needed.
+
+:::tabs
+
+@tab ::devicon:archlinux:: Arch (AUR)
+
+```bash
+yay -S fresh-editor-bin
+```
+
+@tab Universal script
+
+```bash
+curl https://raw.githubusercontent.com/sinelaw/fresh/refs/heads/master/scripts/install.sh | sh
 ```
 
 :::
