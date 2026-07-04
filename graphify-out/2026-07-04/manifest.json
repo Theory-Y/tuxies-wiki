@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "docs/.vuepress/navbar.ts": {
-    "mtime": 1782055580.1869464,
-    "ast_hash": "6097a51728da4d733a9f677a186cb871",
+    "mtime": 1783185336.528275,
+    "ast_hash": "452d2fb3817089a83569f482ea6ae16e",
     "semantic_hash": ""
   },
   "docs/.vuepress/plume.config.ts": {
@@ -240,13 +240,13 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1782055580.1858587,
-    "ast_hash": "d9e6872ac567b59340b99dbb1d21b828",
+    "mtime": 1783187061.42725,
+    "ast_hash": "b08928cf5a653a89a7b57faff4a78c88",
     "semantic_hash": ""
   },
   "ROADMAP.md": {
-    "mtime": 1783178523.5243552,
-    "ast_hash": "ba698ecc01e4c30ebaea41611f789392",
+    "mtime": 1783186425.4646335,
+    "ast_hash": "18cb1161f31791a478c5c60549de41cc",
     "semantic_hash": ""
   },
   "action-plans/ghostty-tabs-theme-shortcuts.md": {
@@ -295,13 +295,13 @@
     "semantic_hash": ""
   },
   "docs/guides/aiers-gnome.md": {
-    "mtime": 1783175875.9717362,
-    "ast_hash": "cf6e0390c299b0eb4bd99b74cad6e085",
+    "mtime": 1783186338.116254,
+    "ast_hash": "c104c6353874ae3b1339fff46ea8c6e6",
     "semantic_hash": ""
   },
   "docs/guides/better-text-rendering-gnome-hi-dpi.md": {
-    "mtime": 1782055580.2920234,
-    "ast_hash": "fe1df53662903b95a62335e0bc221e41",
+    "mtime": 1783186361.5323126,
+    "ast_hash": "4add692d06de4b969620f6b8f7726156",
     "semantic_hash": ""
   },
   "docs/guides/ctf-second-brain.md": {
@@ -325,8 +325,8 @@
     "semantic_hash": ""
   },
   "docs/guides/key-remapping-with-keyd.md": {
-    "mtime": 1783178477.6829906,
-    "ast_hash": "48f504a98d2da003a965130360f84645",
+    "mtime": 1783180225.0744438,
+    "ast_hash": "f60ad87ce9cf322e5f27108ab231855b",
     "semantic_hash": ""
   },
   "docs/guides/logitech-linux-setup.md": {
@@ -385,8 +385,8 @@
     "semantic_hash": ""
   },
   "docs/notes/about/contributions/guidelines.md": {
-    "mtime": 1782240671.2426405,
-    "ast_hash": "10862f3b3e674194fd49bc48b8802135",
+    "mtime": 1783185596.3375857,
+    "ast_hash": "f62c9788c033afbf224223eda6a08fcf",
     "semantic_hash": ""
   },
   "docs/notes/about/our-team.md": {
@@ -405,33 +405,28 @@
     "semantic_hash": ""
   },
   "docs/notes/introduction/new-to-the-wiki.md": {
-    "mtime": 1782055580.2927942,
-    "ast_hash": "3ed7b50b26c3f9117b464525f8b466e5",
+    "mtime": 1783187085.2190886,
+    "ast_hash": "d2dc1f02a18d2e2ab2e403cef09d0ed5",
     "semantic_hash": ""
   },
   "docs/notes/linux-apps/README.md": {
-    "mtime": 1782055580.2927942,
-    "ast_hash": "d276937de3beaa349501b964b8734030",
+    "mtime": 1783185341.8599613,
+    "ast_hash": "fa9c53b2f81157fa8347cc8f934df4c0",
     "semantic_hash": ""
   },
   "docs/notes/linux-apps/creative-software.md": {
-    "mtime": 1782055580.292897,
-    "ast_hash": "6f2b0454cc167ed8e77bd107ad1b8562",
+    "mtime": 1783185166.872916,
+    "ast_hash": "bd7011fbf9af260f6fa085250ba132e7",
     "semantic_hash": ""
   },
   "docs/notes/linux-apps/editors-choice.md": {
-    "mtime": 1783174954.4172745,
-    "ast_hash": "6c3edae08aacf056738925cf5b925e86",
+    "mtime": 1783185326.2613132,
+    "ast_hash": "f39503c60c317a46161a4dbfc0598823",
     "semantic_hash": ""
   },
   "docs/notes/linux-apps/essentials.md": {
-    "mtime": 1782055580.292897,
-    "ast_hash": "e85d8602d3c3ec0b798c08040e8e6cad",
-    "semantic_hash": ""
-  },
-  "docs/notes/linux-apps/gnomie.md": {
-    "mtime": 1782055580.292897,
-    "ast_hash": "c9a298b4ba3dd2bbe711d83d2b102a4e",
+    "mtime": 1783187471.355192,
+    "ast_hash": "707f71019dd221783e8d7fd5bb165ce8",
     "semantic_hash": ""
   },
   "docs/notes/linux-apps/popular.md": {
@@ -465,8 +460,8 @@
     "semantic_hash": ""
   },
   "docs/notes/linux-guides/gnome.md": {
-    "mtime": 1782055580.2931764,
-    "ast_hash": "57ab75f8359e699323f0ae46b249544d",
+    "mtime": 1783186381.1847184,
+    "ast_hash": "d6915ac71fdcd7c0260b6d0e5ea66254",
     "semantic_hash": ""
   },
   "resources/ghostty-terminal/keyboard-shortcuts.md": {
@@ -832,6 +827,21 @@
   "resources/key-remapping-with-keyd/README.md": {
     "mtime": 1783178512.9829686,
     "ast_hash": "7bd9b709ee3e99443a0a33be7ecef194",
+    "semantic_hash": ""
+  },
+  "notepad.md": {
+    "mtime": 1783184644.0078056,
+    "ast_hash": "4e0645e8f58bee39ed6394915df56489",
+    "semantic_hash": ""
+  },
+  "action-plans/app-lists-restructure-2026-07-04.md": {
+    "mtime": 1783185235.3341835,
+    "ast_hash": "f95ac33d90894a6cee052e0e798889b2",
+    "semantic_hash": ""
+  },
+  "docs/notes/linux-apps/dev-tools.md": {
+    "mtime": 1783188175.0083559,
+    "ast_hash": "e84e117589f7a8adf3b6733dcea2b9dd",
     "semantic_hash": ""
   }
 }

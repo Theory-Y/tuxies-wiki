@@ -1,16 +1,16 @@
 # Graph Report - tuxies-wiki  (2026-07-04)
 
 ## Corpus Check
-- 98 files · ~1,575,864 words
+- 100 files · ~1,576,887 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2090 nodes · 2064 edges · 184 communities (149 shown, 35 thin omitted)
+- 2053 nodes · 2025 edges · 187 communities (152 shown, 35 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 24 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7150ea08`
+- Built from commit: `8994bc82`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -69,10 +69,12 @@
 - [[_COMMUNITY_Misc Group 53|Misc Group 53]]
 - [[_COMMUNITY_Misc Group 54|Misc Group 54]]
 - [[_COMMUNITY_Misc Group 55|Misc Group 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
 - [[_COMMUNITY_Misc Group 57|Misc Group 57]]
 - [[_COMMUNITY_Misc Group 58|Misc Group 58]]
 - [[_COMMUNITY_Misc Group 59|Misc Group 59]]
 - [[_COMMUNITY_Misc Group 60|Misc Group 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Misc Group 63|Misc Group 63]]
 - [[_COMMUNITY_Misc Group 64|Misc Group 64]]
@@ -93,6 +95,7 @@
 - [[_COMMUNITY_Community 80|Community 80]]
 - [[_COMMUNITY_Community 81|Community 81]]
 - [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
 - [[_COMMUNITY_Community 84|Community 84]]
 - [[_COMMUNITY_Community 85|Community 85]]
 - [[_COMMUNITY_Community 86|Community 86]]
@@ -100,6 +103,7 @@
 - [[_COMMUNITY_Community 88|Community 88]]
 - [[_COMMUNITY_Community 89|Community 89]]
 - [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
 - [[_COMMUNITY_Community 92|Community 92]]
 - [[_COMMUNITY_Community 93|Community 93]]
 - [[_COMMUNITY_Community 94|Community 94]]
@@ -219,7 +223,7 @@
 ## Hyperedges (group relationships)
 - **Core Tuxies Wiki Guides** — guides_aiers_gnome, guides_logitech_linux_setup, guides_terminal_customisation_bash, guides_firefox_userjs [INFERRED 0.85]
 
-## Communities (184 total, 35 thin omitted)
+## Communities (187 total, 35 thin omitted)
 
 ### Community 0 - "Kando Menu Config"
 Cohesion: 0.04
@@ -230,8 +234,8 @@ Cohesion: 0.07
 Nodes (27): description, devDependencies, cross-env, gh-pages, http-server, sass-embedded, typescript, vue (+19 more)
 
 ### Community 2 - "Linux Apps Library"
-Cohesion: 0.05
-Nodes (45): Arch Linux Distribution, DE — Desktop Environment, Debian Linux Distribution, Linux Distributions (Distros), Fedora Linux Distribution, Flatpak, FOSS (Free and Open-Source Software), GNOME Desktop Environment (+37 more)
+Cohesion: 0.06
+Nodes (38): Arch Linux Distribution, DE — Desktop Environment, Debian Linux Distribution, Linux Distributions (Distros), Fedora Linux Distribution, Flatpak, FOSS (Free and Open-Source Software), GNOME Desktop Environment (+30 more)
 
 ### Community 3 - "Linux Distros & Vocabulary"
 Cohesion: 0.05
@@ -345,6 +349,10 @@ Nodes (10): Configuration, Copy & Paste, Font Size, Ghostty Keyboard Shortcuts (
 Cohesion: 0.22
 Nodes (8): 0. Pre-flight (verify before writing), 1. File & placement, 2. Content outline (mirror `docs/guides/ghostty-terminal.md`), 3. House-style checklist, 4. Validation (two distinct checks — don't conflate), 5. Suggested delegation (lean — one-page task), Action Plan — Rime Input Method guide, Source material (content reference, from the aierNix repo)
 
+### Community 56 - "Community 56"
+Cohesion: 0.23
+Nodes (13): CLI, **[eza](https://github.com/eza-community/eza)**, **[fastfetch](https://github.com/fastfetch-cli/fastfetch)**, **[Fresh](https://getfresh.dev/)**, **[fzf](https://github.com/junegunn/fzf)**, GUI, **[SaveDesktop](https://flathub.org/apps/io.github.vikdevelop.SaveDesktop)**, TUI (+5 more)
+
 ### Community 57 - "Misc Group 57"
 Cohesion: 0.25
 Nodes (7): **Adding the GNOME Input Source**, **Cantonese Fallback**, **Deploying**, **Enabling the Schemas**, **Installation**, **Resources**, **Switching Between Input Sources and Schemas**
@@ -361,6 +369,10 @@ Nodes (6): Action Plan — Terminal Customisation (Bash): master quick append, D
 Cohesion: 0.33
 Nodes (5): Action Plan — Logitech setup: beginner-friendly README, zip download & prerequisites note, Decisions locked, Risk & reversibility, Sequencing, Steps
 
+### Community 61 - "Community 61"
+Cohesion: 0.50
+Nodes (3): Also resolved this session, App-lists restructure (2026-07-04), Steps
+
 ### Community 62 - "Community 62"
 Cohesion: 0.22
 Nodes (9): code:block16, code:block17, code:md (:::demo-wrapper), code:md (:::demo-wrapper img), code:md (## **Heading 2**), code:md (Linux is known for being ==flexible, secure, and stable==.), Demo wrapper, Headings (+1 more)
@@ -374,8 +386,8 @@ Cohesion: 0.50
 Nodes (3): Features, Fixes, Gnome
 
 ### Community 69 - "Community 69"
-Cohesion: 0.12
-Nodes (15): **[Bitwarden](https://bitwarden.com/)**, **[Fresh](https://getfresh.dev/)**, **[Gradia](https://flathub.org/en/apps/be.alexandervanhee.gradia)**, **[Inkscape](https://flathub.org/apps/org.inkscape.Inkscape)**, **[Kooha](https://flathub.org/apps/io.github.seadve.Kooha)**, **[LocalSend](https://localsend.org/)**, **[Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter)**, **[OBS Studio](https://flathub.org/apps/com.obsproject.Studio)** (+7 more)
+Cohesion: 0.17
+Nodes (11): **[Bitwarden](https://bitwarden.com/)**, **[Gradia](https://flathub.org/en/apps/be.alexandervanhee.gradia)**, **[Inkscape](https://flathub.org/apps/org.inkscape.Inkscape)**, **[Kooha](https://flathub.org/apps/io.github.seadve.Kooha)**, **[LocalSend](https://localsend.org/)**, **[Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter)**, **[Obsidian](https://flathub.org/apps/md.obsidian.Obsidian)**, **[RClone Manager](https://flathub.org/apps/io.github.zarestia_dev.rclone-manager)** (+3 more)
 
 ### Community 71 - "Community 71"
 Cohesion: 0.04
@@ -390,8 +402,8 @@ Cohesion: 0.04
 Nodes (46): Contributions Overview, Dev Setup Guide (Contributions), Tuxies Wiki – Linux Newcomer Resource, VuePress + Plume Theme (Wiki Platform), Tuxies Wiki Homepage (VuePress), **Basic NPM Commands**, Build website, code:yaml (name: deploy) (+38 more)
 
 ### Community 74 - "Community 74"
-Cohesion: 0.06
-Nodes (39): code:bash (sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0), code:bash ([g14]), code:bash (sudo pacman -Suy), code:bash (sudo pacman -S asusctl power-profiles-daemon), code:bash (sudo pacman -S supergfxctl switcheroo-control), code:bash (sudo pacman -S rog-control-center), code:bash (sudo pacman -Syu linux-g14 linux-g14-headers), code:bash (# -g14 is the important one) (+31 more)
+Cohesion: 0.18
+Nodes (10): code:bash (# Remove yay for update), code:bash (# Install reflector), code:bash (# Example fail message:), code:bash (sudo pacman-key --refresh-keys), code:bash (# Remove the keys), code:bash (sudo rm /var/lib/pacman/db.lck), code:bash (sudo pacman -S archlinux-keyring), code:bash (ILoveCandy) (+2 more)
 
 ### Community 75 - "Community 75"
 Cohesion: 0.06
@@ -422,8 +434,12 @@ Cohesion: 0.11
 Nodes (18): Firefox user.js Privacy Configuration, **Autoscroll**, code:js (// Scrolling), code:js (user_pref("mousewheel.default.delta_multiplier_x", 200); // ), code:js (user_pref("general.autoScroll", true); // false), code:js (user_pref("apz.fling_friction", "0.004"); // "0.002"), code:js (user_pref("browser.tabs.hoverPreview.enabled", true); // fal), code:js (user_pref("zen.workspaces.separate-essentials", false); // t) (+10 more)
 
 ### Community 82 - "Community 82"
-Cohesion: 0.11
-Nodes (17): **[Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)**, code:bash (flatpak install flathub ca.desrt.dconf-editor), code:bash (sudo apt install gnome-tweaks), code:bash (flatpak install flathub io.github.vikdevelop.SaveDesktop), code:bash (flatpak install --user flathub io.github.vikdevelop.SaveDesk), code:bash (flatpak install --user flathub ca.desrt.dconf-editor), code:bash (sudo dnf install dconf-editor), code:bash (sudo pacman -S dconf-editor) (+9 more)
+Cohesion: 0.20
+Nodes (10): code:bash (sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0), code:bash ([g14]), code:bash (sudo pacman -Suy), code:bash (sudo pacman -S asusctl power-profiles-daemon), code:bash (sudo pacman -S supergfxctl switcheroo-control), code:bash (sudo pacman -S rog-control-center), code:bash (sudo pacman -Syu linux-g14 linux-g14-headers), code:bash (# -g14 is the important one) (+2 more)
+
+### Community 83 - "Community 83"
+Cohesion: 0.36
+Nodes (10): code:bash (# Example usage: Scan everything starting from /), code:bash (sudo pacman -S pacman-contrib), code:bash (# Removes all older unused packages and keep 1 version in ca), code:bash (flatpak list --columns=name,application,size), code:bash (flatpak uninstall --unused), code:bash (pip cache info), code:bash (pip cache purge), code:bash (# Safe: removes stopped containers, dangling images, unused ) (+2 more)
 
 ### Community 84 - "Community 84"
 Cohesion: 0.14
@@ -438,8 +454,8 @@ Cohesion: 0.20
 Nodes (9): code:bash (flatpak install flathub com.microsoft.Edge), code:bash (mkdir -p ~/.var/app/com.microsoft.Edge/config/microsoft-edge), code:bash (cp HubApps ~/.var/app/com.microsoft.Edge/config/microsoft-ed), code:bash (nano ~/.var/app/com.microsoft.Edge/config/edge-flags.conf), code:conf (--enable-features=TouchpadOverscrollHistoryNavigation), **Enable Touchpad Gestures**, **Fix Copilot (Missing HubApps File)**, **Fix Web App Icons on Wayland** (+1 more)
 
 ### Community 87 - "Community 87"
-Cohesion: 0.11
-Nodes (22): **[btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant)**, code:bash (flatpak install flathub com.github.tchx84.Flatseal), code:bash (reboot), code:bash (sudo dnf install gparted), code:bash (sudo pacman -S gparted), code:bash (sudo apt-get install gparted), code:bash (flatpak install flathub com.visualstudio.code), code:bash (flatpak install --user flathub com.visualstudio.code) (+14 more)
+Cohesion: 0.40
+Nodes (4): **[btrfs-assistant](https://gitlab.com/btrfs-assistant/btrfs-assistant)**, **[Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)**, **[Gparted](https://gparted.org/download.php)**, **[Timeshift](https://github.com/linuxmint/timeshift)**
 
 ### Community 88 - "Community 88"
 Cohesion: 0.22
@@ -452,6 +468,10 @@ Nodes (7): code:bash (ssh [server-username]@[server_ip] -p 22;), code:bash (ssh 
 ### Community 90 - "Community 90"
 Cohesion: 0.29
 Nodes (6): code:bash (# -d stands for decode), code:bash (hashcat -m (hashtype: 0 = MD5, 100 = SHA1, 1400 = SHA2-256, ), Cryptography, Forensics, General Knowledge, Resources
+
+### Community 91 - "Community 91"
+Cohesion: 0.22
+Nodes (9): code:bash (sudo pacman -U <directory-of-extracted-package.pkg.tar.zst>), code:bash (# Search for package name), code:bash (ls /var/cache/pacman/pkg/ | grep <package-name>), code:bash (sudo pacman -U /var/cache/pacman/pkg/<package-name>-<old-ver), code:bash (yay -S downgrade), code:bash (sudo pacman -U $(ls -t /var/cache/pacman/pkg/*.pkg.tar.zst |), code:bash (sudo pacman -S reflector), code:bash (# Example Template:) (+1 more)
 
 ### Community 92 - "Community 92"
 Cohesion: 0.29
@@ -758,8 +778,8 @@ Cohesion: 0.17
 Nodes (11): **Applying a theme**, **Background transparency and blur**, **Config File**, **Default Window Size**, **Focus-Split Up/Down on GNOME**, **GNOME Keyboard Shortcut**, **Installation**, **Keyboard Shortcuts** (+3 more)
 
 ### Community 289 - "Community 289"
-Cohesion: 0.14
-Nodes (13): **[Blender](https://www.blender.org/download/)**, code:bash (flatpak install flathub org.blender.Blender), code:bash (flatpak install --user flathub org.blender.Blender), code:bash (flatpak install flathub org.inkscape.Inkscape), code:bash (flatpak install --user org.inkscape.Inkscape), code:bash (flatpak install flathub org.darktable.Darktable), code:bash (flatpak install --user flathub org.darktable.Darktable), code:bash (sudo dnf install darktable) (+5 more)
+Cohesion: 0.29
+Nodes (6): **[Blender](https://www.blender.org/download/)**, **[Darktable](https://www.darktable.org/)**, **[Inkscape](https://flathub.org/apps/org.inkscape.Inkscape)**, **Non-flatpak install**, **[OBS Studio](https://flathub.org/apps/com.obsproject.Studio)**, [v4l2loopback (Virtual Camera and More)](https://github.com/umlaeute/v4l2loopback)
 
 ### Community 290 - "Community 290"
 Cohesion: 0.13
@@ -774,24 +794,24 @@ Cohesion: 0.50
 Nodes (3): Default theme source, Licensing and attribution, Wallpapers
 
 ## Knowledge Gaps
-- **1151 isolated node(s):** `Open`, `Rime input method — refine guide (low priority)`, `Completed`, `Better-Looking Fonts`, `Universal benefits` (+1146 more)
+- **1126 isolated node(s):** `name`, `type`, `version`, `description`, `license` (+1121 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **35 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Supply Chain Security Reference` connect `Community 227` to `Community 262`, `Community 263`, `Community 264`, `Community 265`, `Community 266`, `Community 235`, `Community 267`, `Community 236`, `Community 239`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Language-Specific Vulnerabilities` connect `Community 234` to `Community 232`, `Community 233`, `Community 249`, `Community 250`, `Community 251`, `Community 223`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `Title text` connect `Community 77` to `Community 273`, `Community 274`, `Kando Theme Colors`, `Community 62`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `JavaScript/TypeScript Security Patterns` connect `Community 240` to `Community 229`, `Community 230`, `Community 231`, `Community 244`, `Community 245`, `Community 246`, `Community 247`, `Community 248`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `Open`, `Rime input method — refine guide (low priority)`, `Completed` to the rest of the system?**
-  _1151 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `name`, `type`, `version` to the rest of the system?**
+  _1126 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Kando Menu Config` be split into smaller, more focused modules?**
   _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._
 - **Should `VuePress Build System` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `Linux Apps Library` be split into smaller, more focused modules?**
-  _Cohesion score 0.05454545454545454 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06116642958748222 - nodes in this community are weakly interconnected._
+- **Should `Linux Distros & Vocabulary` be split into smaller, more focused modules?**
+  _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
