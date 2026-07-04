@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "resources/key-remapping-with-keyd/keyd-setup.sh": {
-    "mtime": 1782138004.9351268,
-    "ast_hash": "ca7f882e72d87718ecddb6759823ee5e",
+    "mtime": 1783178503.8916273,
+    "ast_hash": "2a448836a4f1a43aacafd28c733a22fe",
     "semantic_hash": ""
   },
   "resources/logitech-linux-setup/install.sh": {
@@ -239,19 +239,14 @@
     "ast_hash": "0a6e16d2a747a17e0bedd39402ef9f95",
     "semantic_hash": ""
   },
-  "OVERRIDE.md": {
-    "mtime": 1782147031.1041365,
-    "ast_hash": "605c80cc52ac33427b8bed8a5511afc4",
-    "semantic_hash": ""
-  },
   "README.md": {
     "mtime": 1782055580.1858587,
     "ast_hash": "d9e6872ac567b59340b99dbb1d21b828",
     "semantic_hash": ""
   },
   "ROADMAP.md": {
-    "mtime": 1782183440.7584438,
-    "ast_hash": "b897c8511244dc689d682f839dbea840",
+    "mtime": 1783178523.5243552,
+    "ast_hash": "ba698ecc01e4c30ebaea41611f789392",
     "semantic_hash": ""
   },
   "action-plans/ghostty-tabs-theme-shortcuts.md": {
@@ -300,8 +295,8 @@
     "semantic_hash": ""
   },
   "docs/guides/aiers-gnome.md": {
-    "mtime": 1782055580.2918642,
-    "ast_hash": "52f2f0db5e2c25d5cc4ab20df697369a",
+    "mtime": 1783175875.9717362,
+    "ast_hash": "cf6e0390c299b0eb4bd99b74cad6e085",
     "semantic_hash": ""
   },
   "docs/guides/better-text-rendering-gnome-hi-dpi.md": {
@@ -325,13 +320,13 @@
     "semantic_hash": ""
   },
   "docs/guides/ghostty-terminal.md": {
-    "mtime": 1782159219.4813287,
-    "ast_hash": "04a55ecf7dfdf8d49e7bed64be375551",
+    "mtime": 1783176927.765567,
+    "ast_hash": "7d9e0c3f08b88e8603b42d25d80dbf01",
     "semantic_hash": ""
   },
   "docs/guides/key-remapping-with-keyd.md": {
-    "mtime": 1782235925.0206969,
-    "ast_hash": "0e33c7225c172a0f75b042b7b0018ccf",
+    "mtime": 1783178477.6829906,
+    "ast_hash": "48f504a98d2da003a965130360f84645",
     "semantic_hash": ""
   },
   "docs/guides/logitech-linux-setup.md": {
@@ -390,8 +385,8 @@
     "semantic_hash": ""
   },
   "docs/notes/about/contributions/guidelines.md": {
-    "mtime": 1782235968.098126,
-    "ast_hash": "e2242bc7192919ef9f66eec9be4111a9",
+    "mtime": 1782240671.2426405,
+    "ast_hash": "10862f3b3e674194fd49bc48b8802135",
     "semantic_hash": ""
   },
   "docs/notes/about/our-team.md": {
@@ -425,8 +420,8 @@
     "semantic_hash": ""
   },
   "docs/notes/linux-apps/editors-choice.md": {
-    "mtime": 1782055580.292897,
-    "ast_hash": "39e5624579f8ae8c2a0ade1e9d3be339",
+    "mtime": 1783174954.4172745,
+    "ast_hash": "6c3edae08aacf056738925cf5b925e86",
     "semantic_hash": ""
   },
   "docs/notes/linux-apps/essentials.md": {
@@ -460,8 +455,8 @@
     "semantic_hash": ""
   },
   "docs/notes/linux-guides/fedora.md": {
-    "mtime": 1782178582.4703,
-    "ast_hash": "a0a62604787c326bb2deac452bedf351",
+    "mtime": 1782241328.9906352,
+    "ast_hash": "67197b50f2b5ea12bd81a742929b0e72",
     "semantic_hash": ""
   },
   "docs/notes/linux-guides/flashing-guide.md": {
@@ -475,8 +470,8 @@
     "semantic_hash": ""
   },
   "resources/ghostty-terminal/keyboard-shortcuts.md": {
-    "mtime": 1782158588.9933295,
-    "ast_hash": "e9012206187187a9b0d58f54f3875d29",
+    "mtime": 1783176525.3617694,
+    "ast_hash": "099196df20d9a4abd59699d9934f75b1",
     "semantic_hash": ""
   },
   "resources/logitech-linux-setup/README.md": {
@@ -635,8 +630,8 @@
     "semantic_hash": ""
   },
   "docs/.vuepress/public/assets/fedora/btrfs-assistant-enable-timeline-systemd.png": {
-    "mtime": 1782055580.2468576,
-    "ast_hash": "d504f659b8d78da617f73e726f919842",
+    "mtime": 1782243604.3802872,
+    "ast_hash": "0d596413e8fae72334df02616ef87346",
     "semantic_hash": ""
   },
   "docs/.vuepress/public/assets/fedora/btrfs-assistant-number-of-snapshots.png": {
@@ -827,6 +822,16 @@
   "docs/.vuepress/public/assets/logitech-linux-setup/kando-marking-mode.mp4": {
     "mtime": 1782055580.2788572,
     "ast_hash": "630807813db4f14d11bc3e63707cfa8f",
+    "semantic_hash": ""
+  },
+  "action-plans/override-cleanup-2026-07-03.md": {
+    "mtime": 1783121138.2243912,
+    "ast_hash": "b0cf1b9b98b6033966bff8f165c71d25",
+    "semantic_hash": ""
+  },
+  "resources/key-remapping-with-keyd/README.md": {
+    "mtime": 1783178512.9829686,
+    "ast_hash": "7bd9b709ee3e99443a0a33be7ecef194",
     "semantic_hash": ""
   }
 }

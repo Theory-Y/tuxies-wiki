@@ -26,9 +26,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup",
       "community": 79,
-      "norm_label": "logitech-linux-setup.md"
+      "norm_label": "logitech-linux-setup.md",
+      "id": "guides_logitech_linux_setup"
     },
     {
       "label": "**Part 1: Solaar \u2014 Key Reassignment**",
@@ -36,9 +36,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L36",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_part_1_solaar_key_reassignment",
       "community": 79,
-      "norm_label": "**part 1: solaar \u2014 key reassignment**"
+      "norm_label": "**part 1: solaar \u2014 key reassignment**",
+      "id": "guides_logitech_linux_setup_part_1_solaar_key_reassignment"
     },
     {
       "label": "**Installing Solaar**",
@@ -46,9 +46,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L63",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_installing_solaar",
       "community": 79,
-      "norm_label": "**installing solaar**"
+      "norm_label": "**installing solaar**",
+      "id": "guides_logitech_linux_setup_installing_solaar"
     },
     {
       "label": "**Pairing & managing your device**",
@@ -56,9 +56,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L99",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_pairing_managing_your_device",
       "community": 79,
-      "norm_label": "**pairing & managing your device**"
+      "norm_label": "**pairing & managing your device**",
+      "id": "guides_logitech_linux_setup_pairing_managing_your_device"
     },
     {
       "label": "**Remapping buttons with rules**",
@@ -66,9 +66,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L115",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_remapping_buttons_with_rules",
       "community": 79,
-      "norm_label": "**remapping buttons with rules**"
+      "norm_label": "**remapping buttons with rules**",
+      "id": "guides_logitech_linux_setup_remapping_buttons_with_rules"
     },
     {
       "label": "**Fixing button remaps on Wayland** (uinput permissions)",
@@ -76,9 +76,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L143",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_fixing_button_remaps_on_wayland_uinput_permissions",
       "community": 79,
-      "norm_label": "**fixing button remaps on wayland** (uinput permissions)"
+      "norm_label": "**fixing button remaps on wayland** (uinput permissions)",
+      "id": "guides_logitech_linux_setup_fixing_button_remaps_on_wayland_uinput_permissions"
     },
     {
       "label": "**Part 2: Kando**",
@@ -86,9 +86,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L194",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_part_2_kando",
       "community": 79,
-      "norm_label": "**part 2: kando**"
+      "norm_label": "**part 2: kando**",
+      "id": "guides_logitech_linux_setup_part_2_kando"
     },
     {
       "label": "**Installing Kando**",
@@ -96,9 +96,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L199",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_installing_kando",
       "community": 79,
-      "norm_label": "**installing kando**"
+      "norm_label": "**installing kando**",
+      "id": "guides_logitech_linux_setup_installing_kando"
     },
     {
       "label": "**Creating your first menu**",
@@ -106,9 +106,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L231",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_creating_your_first_menu",
       "community": 79,
-      "norm_label": "**creating your first menu**"
+      "norm_label": "**creating your first menu**",
+      "id": "guides_logitech_linux_setup_creating_your_first_menu"
     },
     {
       "label": "**Gesture navigation**",
@@ -116,9 +116,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L251",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_gesture_navigation",
       "community": 79,
-      "norm_label": "**gesture navigation**"
+      "norm_label": "**gesture navigation**",
+      "id": "guides_logitech_linux_setup_gesture_navigation"
     },
     {
       "label": "**Binding menus to shortcuts**",
@@ -126,9 +126,9 @@
       "source_file": "docs/guides/logitech-linux-setup.md",
       "source_location": "L259",
       "_origin": "ast",
-      "id": "guides_logitech_linux_setup_binding_menus_to_shortcuts",
       "community": 79,
-      "norm_label": "**binding menus to shortcuts**"
+      "norm_label": "**binding menus to shortcuts**",
+      "id": "guides_logitech_linux_setup_binding_menus_to_shortcuts"
     },
     {
       "label": "README.md",
@@ -136,9 +136,9 @@
       "source_file": "resources/logitech-linux-setup/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "logitech_linux_setup_readme",
       "community": 79,
-      "norm_label": "readme.md"
+      "norm_label": "readme.md",
+      "id": "logitech_linux_setup_readme"
     },
     {
       "label": "logitech-linux-setup",
@@ -146,9 +146,9 @@
       "source_file": "resources/logitech-linux-setup/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "logitech_linux_setup_readme_logitech_linux_setup",
       "community": 79,
-      "norm_label": "logitech-linux-setup"
+      "norm_label": "logitech-linux-setup",
+      "id": "logitech_linux_setup_readme_logitech_linux_setup"
     },
     {
       "label": "client.ts",
@@ -8574,7 +8574,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "vuepress-guide.md",
       "id": "guides_vuepress_guide"
     },
@@ -8584,7 +8584,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "**installation**",
       "id": "guides_vuepress_guide_installation"
     },
@@ -8594,7 +8594,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 11,
+      "community": 73,
       "norm_label": "**folder structure**",
       "id": "guides_vuepress_guide_folder_structure"
     },
@@ -8604,7 +8604,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L312",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "start development environment",
       "id": "guides_vuepress_guide_start_development_environment"
     },
@@ -8614,7 +8614,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L315",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "start clean development environment",
       "id": "guides_vuepress_guide_start_clean_development_environment"
     },
@@ -8624,7 +8624,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L317",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "build website",
       "id": "guides_vuepress_guide_build_website"
     },
@@ -8634,7 +8634,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L319",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "preview build",
       "id": "guides_vuepress_guide_preview_build"
     },
@@ -8644,7 +8644,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L321",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "vuepress update",
       "id": "guides_vuepress_guide_vuepress_update"
     },
@@ -8654,7 +8654,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L323",
       "_origin": "ast",
-      "community": 56,
+      "community": 73,
       "norm_label": "deploy website to gh pages",
       "id": "guides_vuepress_guide_deploy_website_to_gh_pages"
     },
@@ -8664,7 +8664,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L325",
       "_origin": "ast",
-      "community": 66,
+      "community": 73,
       "norm_label": "list deployments",
       "id": "guides_vuepress_guide_list_deployments"
     },
@@ -8674,7 +8674,7 @@
       "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L343",
       "_origin": "ast",
-      "community": 66,
+      "community": 73,
       "norm_label": "**basic npm commands**",
       "id": "guides_vuepress_guide_basic_npm_commands"
     },
@@ -9324,7 +9324,7 @@
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 61,
+      "community": 73,
       "norm_label": "new-to-the-wiki.md",
       "id": "introduction_new_to_the_wiki"
     },
@@ -9334,7 +9334,7 @@
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 61,
+      "community": 73,
       "norm_label": "**about**",
       "id": "introduction_new_to_the_wiki_about"
     },
@@ -9344,7 +9344,7 @@
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 61,
+      "community": 73,
       "norm_label": "**join the discord**",
       "id": "introduction_new_to_the_wiki_join_the_discord"
     },
@@ -9354,7 +9354,7 @@
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 61,
+      "community": 73,
       "norm_label": "**navigate the wiki**",
       "id": "introduction_new_to_the_wiki_navigate_the_wiki"
     },
@@ -9364,7 +9364,7 @@
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 61,
+      "community": 73,
       "norm_label": "::devicon:linux:: [linux guides](/linux-guides/)",
       "id": "introduction_new_to_the_wiki_devicon_linux_linux_guides_linux_guides"
     },
@@ -9374,7 +9374,7 @@
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
       "source_location": "L69",
       "_origin": "ast",
-      "community": 61,
+      "community": 73,
       "norm_label": "::fluent-emoji:books:: [linux app library](/linux-apps/)",
       "id": "introduction_new_to_the_wiki_fluent_emoji_books_linux_app_library_linux_apps"
     },
@@ -9384,7 +9384,7 @@
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 61,
+      "community": 73,
       "norm_label": "::fluent-emoji:plus:: [other guides](/guides/)",
       "id": "introduction_new_to_the_wiki_fluent_emoji_plus_other_guides_guides"
     },
@@ -9794,7 +9794,7 @@
       "source_file": "docs/notes/linux-guides/arch.md",
       "source_location": "L435",
       "_origin": "ast",
-      "community": 269,
+      "community": 11,
       "norm_label": "**[rog asusctl](https://asus-linux.org/)**",
       "id": "linux_guides_arch_rog_asusctl_https_asus_linux_org"
     },
@@ -9814,7 +9814,7 @@
       "source_file": "docs/notes/linux-guides/arch.md",
       "source_location": "L590",
       "_origin": "ast",
-      "community": 271,
+      "community": 61,
       "norm_label": "**noob corner (commonly asked questions)**",
       "id": "linux_guides_arch_noob_corner_commonly_asked_questions"
     },
@@ -9824,7 +9824,7 @@
       "source_file": "docs/notes/linux-guides/arch.md",
       "source_location": "L661",
       "_origin": "ast",
-      "community": 270,
+      "community": 56,
       "norm_label": "**system maintenance**",
       "id": "linux_guides_arch_system_maintenance"
     },
@@ -11294,7 +11294,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L38",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:yaml (name: deploy)",
       "id": "guides_vuepress_guide_codeblock_1"
     },
@@ -11303,7 +11303,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L88",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:js (import { defineuserconfig } from \"vuepress\";)",
       "id": "guides_vuepress_guide_codeblock_2"
     },
@@ -11312,7 +11312,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L161",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:md (this is the folder where you put all the static assets (imag)",
       "id": "guides_vuepress_guide_codeblock_3"
     },
@@ -11321,7 +11321,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L165",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:vue (<script setup lang=\"ts\">)",
       "id": "guides_vuepress_guide_codeblock_4"
     },
@@ -11330,7 +11330,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L179",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:md (:root {)",
       "id": "guides_vuepress_guide_codeblock_5"
     },
@@ -11338,35 +11338,17 @@
       "label": "code:md (---)",
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L202",
-      "community": 11,
-      "norm_label": "code:md (---)",
-      "id": "guides_vuepress_guide_codeblock_6"
-    },
-    {
-      "label": "code:md (---)",
-      "file_type": "document",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L212",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:md (---)",
       "id": "guides_vuepress_guide_codeblock_7"
-    },
-    {
-      "label": "code:md (---)",
-      "file_type": "document",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L231",
-      "community": 11,
-      "norm_label": "code:md (---)",
-      "id": "guides_vuepress_guide_codeblock_9"
     },
     {
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L240",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:json ({)",
       "id": "guides_vuepress_guide_codeblock_10"
     },
@@ -11375,7 +11357,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L296",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:`md (this page is the readme file for github)",
       "id": "guides_vuepress_guide_codeblock_12"
     },
@@ -11384,7 +11366,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L307",
-      "community": 11,
+      "community": 73,
       "norm_label": "code:block13",
       "id": "guides_vuepress_guide_codeblock_13"
     },
@@ -11393,7 +11375,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L327",
-      "community": 66,
+      "community": 73,
       "norm_label": "code:block14",
       "id": "guides_vuepress_guide_codeblock_14"
     },
@@ -11402,7 +11384,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
       "source_location": "L349",
-      "community": 66,
+      "community": 73,
       "norm_label": "code:bash (npm run docs:dev # run the temporary development server)",
       "id": "guides_vuepress_guide_codeblock_15"
     },
@@ -13805,7 +13787,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L443",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (sudo pacman-key --recv-keys 8f654886f17d497fefe3db448b15a6b0)",
       "id": "linux_guides_arch_codeblock_41"
     },
@@ -13814,7 +13796,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L455",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash ([g14])",
       "id": "linux_guides_arch_codeblock_42"
     },
@@ -13823,7 +13805,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L462",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (sudo pacman -suy)",
       "id": "linux_guides_arch_codeblock_43"
     },
@@ -13832,7 +13814,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L467",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (sudo pacman -s asusctl power-profiles-daemon)",
       "id": "linux_guides_arch_codeblock_44"
     },
@@ -13841,7 +13823,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L472",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (sudo pacman -s supergfxctl switcheroo-control)",
       "id": "linux_guides_arch_codeblock_45"
     },
@@ -13850,7 +13832,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L478",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (sudo pacman -s rog-control-center)",
       "id": "linux_guides_arch_codeblock_46"
     },
@@ -13859,7 +13841,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L483",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (sudo pacman -syu linux-g14 linux-g14-headers)",
       "id": "linux_guides_arch_codeblock_47"
     },
@@ -13868,7 +13850,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L490",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (# -g14 is the important one)",
       "id": "linux_guides_arch_codeblock_48"
     },
@@ -13877,7 +13859,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L497",
-      "community": 269,
+      "community": 11,
       "norm_label": "code:bash (sudo pacman -s nvidia-dkms)",
       "id": "linux_guides_arch_codeblock_49"
     },
@@ -13949,7 +13931,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L596",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (sudo pacman -u <directory-of-extracted-package.pkg.tar.zst>)",
       "id": "linux_guides_arch_codeblock_57"
     },
@@ -13958,7 +13940,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L602",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (# search for package name)",
       "id": "linux_guides_arch_codeblock_58"
     },
@@ -13967,7 +13949,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L618",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (ls /var/cache/pacman/pkg/ | grep <package-name>)",
       "id": "linux_guides_arch_codeblock_59"
     },
@@ -13976,7 +13958,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L624",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (sudo pacman -u /var/cache/pacman/pkg/<package-name>-<old-ver)",
       "id": "linux_guides_arch_codeblock_60"
     },
@@ -13985,7 +13967,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L630",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (yay -s downgrade)",
       "id": "linux_guides_arch_codeblock_61"
     },
@@ -13994,7 +13976,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L637",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (sudo pacman -u $(ls -t /var/cache/pacman/pkg/*.pkg.tar.zst |)",
       "id": "linux_guides_arch_codeblock_62"
     },
@@ -14003,7 +13985,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L645",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (sudo pacman -s reflector)",
       "id": "linux_guides_arch_codeblock_63"
     },
@@ -14012,7 +13994,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L651",
-      "community": 271,
+      "community": 61,
       "norm_label": "code:bash (# example template:)",
       "id": "linux_guides_arch_codeblock_64"
     },
@@ -14021,7 +14003,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L668",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (# example usage: scan everything starting from /)",
       "id": "linux_guides_arch_codeblock_65"
     },
@@ -14030,7 +14012,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L679",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (sudo pacman -s pacman-contrib)",
       "id": "linux_guides_arch_codeblock_66"
     },
@@ -14039,7 +14021,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L685",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (# removes all older unused packages and keep 1 version in ca)",
       "id": "linux_guides_arch_codeblock_67"
     },
@@ -14048,7 +14030,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L698",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (flatpak list --columns=name,application,size)",
       "id": "linux_guides_arch_codeblock_68"
     },
@@ -14057,7 +14039,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L704",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (flatpak uninstall --unused)",
       "id": "linux_guides_arch_codeblock_69"
     },
@@ -14066,7 +14048,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L710",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (pip cache info)",
       "id": "linux_guides_arch_codeblock_70"
     },
@@ -14075,7 +14057,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L715",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (pip cache purge)",
       "id": "linux_guides_arch_codeblock_71"
     },
@@ -14084,7 +14066,7 @@
       "file_type": "document",
       "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/notes/linux-guides/arch.md",
       "source_location": "L724",
-      "community": 270,
+      "community": 56,
       "norm_label": "code:bash (# safe: removes stopped containers, dangling images, unused )",
       "id": "linux_guides_arch_codeblock_72"
     },
@@ -18040,24 +18022,6 @@
       "id": "home_aier_documents_tuxies_wiki_docs_readme_md"
     },
     {
-      "label": "ctf-second-brain.md",
-      "file_type": "document",
-      "source_file": "docs/guides/ctf-second-brain.md",
-      "source_location": "L1",
-      "community": 90,
-      "norm_label": "ctf-second-brain.md",
-      "id": "docs_guides_ctf_second_brain_md"
-    },
-    {
-      "label": "rb-14-2023-fedora.md",
-      "file_type": "document",
-      "source_file": "docs/guides/rb-14-2023-fedora.md",
-      "source_location": "L1",
-      "community": 78,
-      "norm_label": "rb-14-2023-fedora.md",
-      "id": "docs_guides_rb_14_2023_fedora_md"
-    },
-    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "docs/notes/about/README.md",
@@ -18112,33 +18076,6 @@
       "id": "tuxies_wiki_action_plan_notes_linux_guides_arch_md_handed_off_not_yet_fixed"
     },
     {
-      "label": "qemu-kvm.md",
-      "file_type": "document",
-      "source_file": "docs/archived/qemu-kvm.md",
-      "source_location": "L1",
-      "community": 94,
-      "norm_label": "qemu-kvm.md",
-      "id": "home_aier_documents_tuxies_wiki_docs_archived_qemu_kvm_md"
-    },
-    {
-      "label": "vuepress-guide.md",
-      "file_type": "document",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L1",
-      "community": 56,
-      "norm_label": "vuepress-guide.md",
-      "id": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md"
-    },
-    {
-      "label": "aiers-gnome.md",
-      "file_type": "document",
-      "source_file": "docs/guides/aiers-gnome.md",
-      "source_location": "L1",
-      "community": 65,
-      "norm_label": "aiers-gnome.md",
-      "id": "home_aier_documents_tuxies_wiki_docs_guides_aiers_gnome_md"
-    },
-    {
       "label": "**Cofiguring keyd**",
       "file_type": "document",
       "source_file": "docs/guides/key-remapping-with-keyd.md",
@@ -18152,7 +18089,7 @@
       "file_type": "document",
       "source_file": "docs/notes/linux-guides/arch.md",
       "source_location": "L658",
-      "community": 270,
+      "community": 56,
       "norm_label": "**system maintainance**",
       "id": "linux_guides_arch_system_maintainance"
     },
@@ -18597,7 +18534,7 @@
       "captured_at": null,
       "author": "aier",
       "contributor": null,
-      "community": 62,
+      "community": 73,
       "norm_label": "tuxies wiki \u2013 root readme",
       "id": "root_readme_tuxies_wiki"
     },
@@ -18610,7 +18547,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 73,
       "norm_label": "tuxies wiki homepage (vuepress)",
       "id": "docs_readme_homepage"
     },
@@ -18623,7 +18560,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 73,
       "norm_label": "contributions overview",
       "id": "about_contributions_readme"
     },
@@ -18636,7 +18573,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 73,
       "norm_label": "dev setup guide (contributions)",
       "id": "about_dev_setup_guide"
     },
@@ -18649,7 +18586,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 73,
       "norm_label": "tuxies wiki \u2013 linux newcomer resource",
       "id": "concept_tuxies_wiki"
     },
@@ -18727,7 +18664,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 73,
       "norm_label": "vuepress + plume theme (wiki platform)",
       "id": "concept_vuepress_plume"
     },
@@ -32433,7 +32370,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/archived/qemu-kvm.md",
+      "source_file": "docs/archived/qemu-kvm.md",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -32443,21 +32380,11 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/archived/qemu-kvm.md",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "archived_qemu_kvm",
-      "target": "archived_qemu_kvm_what_is_qemu_kvm"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "docs/archived/qemu-kvm.md",
       "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_archived_qemu_kvm_md",
+      "source": "archived_qemu_kvm",
       "target": "archived_qemu_kvm_what_is_qemu_kvm"
     },
     {
@@ -32489,16 +32416,6 @@
       "confidence_score": 1.0,
       "source": "archived_qemu_kvm_setting_up_qemu_kvm",
       "target": "archived_qemu_kvm_codeblock_3"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/archived/qemu-kvm.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_archived_qemu_kvm_md",
-      "target": "archived_qemu_kvm_setting_up_qemu_kvm"
     },
     {
       "relation": "contains",
@@ -32543,7 +32460,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/aiers-gnome.md",
+      "source_file": "docs/guides/aiers-gnome.md",
       "source_location": "L26",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -32553,7 +32470,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/aiers-gnome.md",
+      "source_file": "docs/guides/aiers-gnome.md",
       "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -32563,7 +32480,7 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/aiers-gnome.md",
+      "source_file": "docs/guides/aiers-gnome.md",
       "source_location": "L63",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -32609,16 +32526,6 @@
       "confidence_score": 1.0,
       "source": "guides_aiers_gnome_better_looking_fonts",
       "target": "guides_aiers_gnome_codeblock_4"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/aiers-gnome.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_aiers_gnome_md",
-      "target": "guides_aiers_gnome_better_looking_fonts"
     },
     {
       "relation": "contains",
@@ -32679,16 +32586,6 @@
       "confidence_score": 1.0,
       "source": "guides_aiers_gnome_gnome_extensions_universal_benefits",
       "target": "guides_aiers_gnome_personal_recommendations"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/aiers-gnome.md",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_aiers_gnome_md",
-      "target": "guides_aiers_gnome_gnome_extensions_universal_benefits"
     },
     {
       "relation": "contains",
@@ -32764,51 +32661,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/guides/ctf-second-brain.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ctf_second_brain_md",
-      "target": "guides_ctf_second_brain_resources"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ctf-second-brain.md",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ctf_second_brain_md",
-      "target": "guides_ctf_second_brain_general_knowledge"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ctf-second-brain.md",
-      "source_location": "L73",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ctf_second_brain_md",
-      "target": "guides_ctf_second_brain_forensics"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ctf-second-brain.md",
       "source_location": "L89",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "guides_ctf_second_brain_forensics",
       "target": "guides_ctf_second_brain_codeblock_1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/ctf-second-brain.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_ctf_second_brain_md",
-      "target": "guides_ctf_second_brain_cryptography"
     },
     {
       "relation": "contains",
@@ -32824,16 +32681,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/guides/external-resources.md",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_external_resources",
-      "target": "guides_external_resources_fixes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/external-resources.md",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -32844,11 +32691,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/guides/external-resources.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_external_resources",
+      "target": "guides_external_resources_fixes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/external-resources.md",
       "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "guides_external_resources_fixes",
       "target": "guides_external_resources_gnome"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/guides/firefox-userjs.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guides_firefox_userjs",
+      "target": "concept_firefox_userjs"
     },
     {
       "relation": "contains",
@@ -32909,16 +32776,6 @@
       "confidence_score": 1.0,
       "source": "guides_firefox_userjs",
       "target": "guides_firefox_userjs_zen_browser_specific_settings"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/guides/firefox-userjs.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "guides_firefox_userjs",
-      "target": "concept_firefox_userjs"
     },
     {
       "relation": "contains",
@@ -33614,16 +33471,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/guides/rb-14-2023-fedora.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_rb_14_2023_fedora_md",
-      "target": "guides_rb_14_2023_fedora_razerblade_14_2023_general_fedora_fix"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/rb-14-2023-fedora.md",
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -33648,26 +33495,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "guides_rb_14_2023_fedora_razerblade_14_2023_general_fedora_fix",
-      "target": "guides_rb_14_2023_fedora_wifi"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/rb-14-2023-fedora.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_rb_14_2023_fedora_md",
-      "target": "guides_rb_14_2023_fedora_speaker"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/rb-14-2023-fedora.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_rb_14_2023_fedora_md",
       "target": "guides_rb_14_2023_fedora_wifi"
     },
     {
@@ -33714,21 +33541,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/guides/rb-14-2023-fedora.md",
-      "source_location": "L44",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_rb_14_2023_fedora_wifi",
-      "target": "guides_rb_14_2023_fedora_codeblock_17"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/rb-14-2023-fedora.md",
       "source_location": "L144",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "guides_rb_14_2023_fedora_wifi",
       "target": "guides_rb_14_2023_fedora_codeblock_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/rb-14-2023-fedora.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_rb_14_2023_fedora_wifi",
+      "target": "guides_rb_14_2023_fedora_codeblock_17"
     },
     {
       "relation": "contains",
@@ -33869,16 +33696,6 @@
       "confidence_score": 1.0,
       "source": "guides_rb_14_2023_fedora_optional_timer_based_wifi6_ax_disable_trigger",
       "target": "guides_rb_14_2023_fedora_codeblock_18"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/rb-14-2023-fedora.md",
-      "source_location": "L190",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_guides_rb_14_2023_fedora_md",
-      "target": "guides_rb_14_2023_fedora_system_freeze"
     },
     {
       "relation": "contains",
@@ -34381,96 +34198,6 @@
       "target": "guides_terminal_customisation_bash_codeblock_25"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L317",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_build_website"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L323",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_deploy_website_to_gh_pages"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_folder_structure"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_installation"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L325",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_list_deployments"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L319",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_preview_build"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L315",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_start_clean_development_environment"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L312",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_start_development_environment"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "/home/lunear/theoryy/tuxies-wiki/docs/guides/vuepress-guide.md",
-      "source_location": "L321",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide",
-      "target": "guides_vuepress_guide_vuepress_update"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -34484,11 +34211,91 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L317",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_build_website"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L323",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_deploy_website_to_gh_pages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_folder_structure"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
+      "source": "guides_vuepress_guide",
       "target": "guides_vuepress_guide_installation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L325",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_list_deployments"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L319",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_preview_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L315",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_start_clean_development_environment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L312",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_start_development_environment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/guides/vuepress-guide.md",
+      "source_location": "L321",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "guides_vuepress_guide",
+      "target": "guides_vuepress_guide_vuepress_update"
     },
     {
       "relation": "contains",
@@ -34574,101 +34381,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L202",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide_folder_structure",
-      "target": "guides_vuepress_guide_codeblock_6"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L222",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "guides_vuepress_guide_folder_structure",
-      "target": "guides_vuepress_guide_codeblock_7"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
       "source_location": "L231",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "guides_vuepress_guide_folder_structure",
-      "target": "guides_vuepress_guide_codeblock_9"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_folder_structure"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L312",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_start_development_environment"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L315",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_start_clean_development_environment"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L317",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_build_website"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L319",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_preview_build"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L321",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_vuepress_update"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L323",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_deploy_website_to_gh_pages"
+      "target": "guides_vuepress_guide_codeblock_7"
     },
     {
       "relation": "contains",
@@ -34699,16 +34416,6 @@
       "confidence_score": 1.0,
       "source": "guides_vuepress_guide_list_deployments",
       "target": "guides_vuepress_guide_deployment"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/vuepress-guide.md",
-      "source_location": "L325",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_vuepress_guide_md",
-      "target": "guides_vuepress_guide_list_deployments"
     },
     {
       "relation": "contains",
@@ -36121,16 +35828,6 @@
       "target": "person_lunear"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/notes/introduction/flatpak-setup.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introduction_flatpak_setup",
-      "target": "introduction_flatpak_setup_set_up_flathub"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -36149,6 +35846,16 @@
       "weight": 1.0,
       "source": "introduction_flatpak_setup",
       "target": "concept_flatpak"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/notes/introduction/flatpak-setup.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introduction_flatpak_setup",
+      "target": "introduction_flatpak_setup_set_up_flathub"
     },
     {
       "relation": "contains",
@@ -36251,6 +35958,16 @@
       "target": "introduction_linux_vocabs_system_file_management"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "docs_readme_homepage",
+      "target": "introduction_new_to_the_wiki"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/notes/introduction/new-to-the-wiki.md",
@@ -36279,16 +35996,6 @@
       "confidence_score": 1.0,
       "source": "introduction_new_to_the_wiki",
       "target": "introduction_new_to_the_wiki_navigate_the_wiki"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "docs_readme_homepage",
-      "target": "introduction_new_to_the_wiki"
     },
     {
       "relation": "contains",
@@ -36514,6 +36221,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/notes/linux-apps/editors-choice.md",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linux_apps_editors_choice",
+      "target": "linux_apps_editors_choice_obs_studio_https_flathub_org_apps_com_obsproject_studio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/notes/linux-apps/editors-choice.md",
       "source_location": "L118",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -36569,16 +36286,6 @@
       "confidence_score": 1.0,
       "source": "linux_apps_editors_choice",
       "target": "linux_apps_editors_choice_zen_browser_https_flathub_org_apps_app_zen_browser_zen"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/notes/linux-apps/editors-choice.md",
-      "source_location": "L239",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "linux_apps_editors_choice",
-      "target": "linux_apps_editors_choice_obs_studio_https_flathub_org_apps_com_obsproject_studio"
     },
     {
       "relation": "contains",
@@ -37534,21 +37241,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/notes/linux-apps/popular.md",
-      "source_location": "L160",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "linux_apps_popular",
-      "target": "linux_apps_popular_vs_code"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/notes/linux-apps/popular.md",
       "source_location": "L64",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "linux_apps_popular",
       "target": "linux_apps_popular_vesktop_https_flathub_org_apps_dev_vencord_vesktop"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/notes/linux-apps/popular.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linux_apps_popular",
+      "target": "linux_apps_popular_vs_code"
     },
     {
       "relation": "contains",
@@ -37744,21 +37451,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/notes/linux-guides/arch.md",
-      "source_location": "L661",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "linux_guides_arch",
-      "target": "linux_guides_arch_system_maintenance"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/notes/linux-guides/arch.md",
       "source_location": "L658",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "linux_guides_arch",
       "target": "linux_guides_arch_system_maintainance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/notes/linux-guides/arch.md",
+      "source_location": "L661",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linux_guides_arch",
+      "target": "linux_guides_arch_system_maintenance"
     },
     {
       "relation": "contains",
@@ -38854,21 +38561,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/notes/linux-guides/gnome.md",
-      "source_location": "L364",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "linux_guides_gnome_append_useful_keyboard_shortcuts",
-      "target": "linux_guides_gnome_codeblock_20"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/notes/linux-guides/gnome.md",
       "source_location": "L336",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "linux_guides_gnome_append_useful_keyboard_shortcuts",
       "target": "linux_guides_gnome_codeblock_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/notes/linux-guides/gnome.md",
+      "source_location": "L364",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linux_guides_gnome_append_useful_keyboard_shortcuts",
+      "target": "linux_guides_gnome_codeblock_20"
     },
     {
       "relation": "contains",
@@ -39849,16 +39556,6 @@
       "confidence_score": 1.0,
       "source": "tuxies_wiki_roadmap_planned_testing_iterations_do_not_publish_yet",
       "target": "tuxies_wiki_roadmap_firefox_user_js_guide_defer_touchpad_scrolling_to_the_gnome_guide"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/guides/aiers-gnome.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "home_aier_documents_tuxies_wiki_docs_guides_aiers_gnome_md",
-      "target": "guides_aiers_gnome_facial_recognition_with_howdy"
     },
     {
       "relation": "contains",
@@ -43253,5 +42950,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "fdf3b016b31a943655623c142ab9d238d2198180"
+  "built_at_commit": "db6b1eb722d9540bd3426c58a3d8aacc3d4928e7"
 }

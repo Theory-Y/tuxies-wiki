@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "resources/key-remapping-with-keyd/keyd-setup.sh": {
-    "mtime": 1782138004.9351268,
-    "ast_hash": "ca7f882e72d87718ecddb6759823ee5e",
+    "mtime": 1782236564.3161945,
+    "ast_hash": "12f3acad1b404ac270528516482bce1f",
     "semantic_hash": ""
   },
   "resources/logitech-linux-setup/install.sh": {
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "OVERRIDE.md": {
-    "mtime": 1782147031.1041365,
-    "ast_hash": "605c80cc52ac33427b8bed8a5511afc4",
+    "mtime": 1783120682.9106658,
+    "ast_hash": "5e642cc33824d0dfd68d21470939c35d",
     "semantic_hash": ""
   },
   "README.md": {
@@ -250,8 +250,8 @@
     "semantic_hash": ""
   },
   "ROADMAP.md": {
-    "mtime": 1782183440.7584438,
-    "ast_hash": "b897c8511244dc689d682f839dbea840",
+    "mtime": 1782245195.9915614,
+    "ast_hash": "2bba445b41eccceb663fb3b95eae7623",
     "semantic_hash": ""
   },
   "action-plans/ghostty-tabs-theme-shortcuts.md": {
@@ -330,8 +330,8 @@
     "semantic_hash": ""
   },
   "docs/guides/key-remapping-with-keyd.md": {
-    "mtime": 1782235925.0206969,
-    "ast_hash": "0e33c7225c172a0f75b042b7b0018ccf",
+    "mtime": 1782237835.2276888,
+    "ast_hash": "1382696cd21774425097128c21fba91e",
     "semantic_hash": ""
   },
   "docs/guides/logitech-linux-setup.md": {
@@ -390,8 +390,8 @@
     "semantic_hash": ""
   },
   "docs/notes/about/contributions/guidelines.md": {
-    "mtime": 1782235968.098126,
-    "ast_hash": "e2242bc7192919ef9f66eec9be4111a9",
+    "mtime": 1782240671.2426405,
+    "ast_hash": "10862f3b3e674194fd49bc48b8802135",
     "semantic_hash": ""
   },
   "docs/notes/about/our-team.md": {
@@ -460,8 +460,8 @@
     "semantic_hash": ""
   },
   "docs/notes/linux-guides/fedora.md": {
-    "mtime": 1782178582.4703,
-    "ast_hash": "a0a62604787c326bb2deac452bedf351",
+    "mtime": 1782241328.9906352,
+    "ast_hash": "67197b50f2b5ea12bd81a742929b0e72",
     "semantic_hash": ""
   },
   "docs/notes/linux-guides/flashing-guide.md": {
@@ -635,8 +635,8 @@
     "semantic_hash": ""
   },
   "docs/.vuepress/public/assets/fedora/btrfs-assistant-enable-timeline-systemd.png": {
-    "mtime": 1782055580.2468576,
-    "ast_hash": "d504f659b8d78da617f73e726f919842",
+    "mtime": 1782243604.3802872,
+    "ast_hash": "0d596413e8fae72334df02616ef87346",
     "semantic_hash": ""
   },
   "docs/.vuepress/public/assets/fedora/btrfs-assistant-number-of-snapshots.png": {
