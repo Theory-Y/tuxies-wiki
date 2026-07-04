@@ -45,11 +45,11 @@ A list of creative software that allow work done on Linux.
 
 :::
 
-:::card title="Gnomie" icon="fluent-emoji:desktop-computer"
+:::card title="Dev (Computer Nerd) Tools" icon="fluent-emoji:desktop-computer"
 
-[For the Gnome fans!](/linux-apps/gnomie/)
+[For the tinkerers!](/linux-apps/dev-tools/)
 
-A collection of apps tailored for Gnome enthusiasts.
+A collection of command-line, terminal, and tinkerer tools.
 
 :::
 
