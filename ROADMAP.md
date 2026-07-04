@@ -13,23 +13,6 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ---
 
-## Deferred
-
-### Rime input method — refine guide (low priority)
-
-**File:** `docs/guides/rime-input-method.md` **Plan:** `action-plans/rime-input-method-guide.md` **The file has been created, but is currently abandoned due to bugs and lack of manpower**
-
-- [ ] 🟡 Write a distro-general guide for the **Rime** input method (`ibus-rime`) covering Chinese
-      Pinyin (`luna_pinyin`) and Cantonese Jyutping (`jyut6ping3`): install (Fedora/Debian/Arch
-      tabs), enabling schemas via `~/.config/ibus/rime/default.custom.yaml`, deploying, adding the
-      GNOME input source, and switching (`Super`+`Space` / `F4`). Mirror the `ghostty-terminal.md`
-      structure. **Pre-publish gate:** only Fedora's `ibus-rime`→`librime`+`brise` is verified —
-      confirm Debian (`rime-data-*`) and Arch (`rime-cantonese`) package names before publish, and
-      inline the `jyut6ping3` availability check in the Installation step. No NixOS section (scope
-      locked distro-general). Full outline in the linked action plan. (Captured 2026-06-21 from a
-      live ibus-rime setup on the aierNix repo.)
-  - _Deferred 2026-06-23 — a draft exists; low priority, pick up in a later session._
-
 ---
 
 ## Completed
