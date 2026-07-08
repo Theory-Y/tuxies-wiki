@@ -33,7 +33,7 @@ Check out ==more extensions, settings, and tips== to make more out of Gnome!
 :::card
 
 - ==Display== — Adjust refresh rate and resolution as needed.
-- ==Power== — Change performance mode, show battery %, change suspend behavior, and more.
+- ==Power== — Change performance mode, show battery %, change suspend behaviour, and more.
 - ==Multitasking== — Adjust according to your workflow.
 - ==Appearance== — You can add your own wallpaper and change to dark mode.
 - ==Online Accounts== — You can connect to your online accounts to access calendar, cloud drives, and more within Gnome apps.
