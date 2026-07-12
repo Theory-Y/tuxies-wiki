@@ -5,4 +5,6 @@ Fixes:
 
 Additions: 
 - Terra guide
-    - Vesktop can be installed via Terra
+    + Vesktop can be installed via Terra
+- Auto Power Profile extension for aiers-gnome
+    + aiers-gnome -> gnome-further-customisation to put less personal branding; remember to change all references, inline and links.
