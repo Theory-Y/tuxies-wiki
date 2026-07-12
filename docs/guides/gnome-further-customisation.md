@@ -1,7 +1,7 @@
 ---
-title: aier's Gnome (In-Depth Customisations)
+title: Gnome Further Customisation
 createTime: 2025/09/26 18:26:21
-permalink: /guides/aiers-gnome/
+permalink: /guides/gnome-further-customisation/
 tags:
   - Beginner
   - Gnome
@@ -82,21 +82,26 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   :::info Adds AppIndicator, KStatusNotifierItem and legacy Tray icons support to the Shell.
   :::
 
-  ![AppIndicator](/assets/aiers-gnome/appindicator.png)
+  ![AppIndicator](/assets/gnome-further-customisation/appindicator.png)
+
+- [Auto Power Profile](https://extensions.gnome.org/extension/6583/auto-power-profile/)
+
+  :::info Automatically switches between power profiles (Performance / Balanced / Power Saver) based on whether you're on AC or battery, and on the current battery charge level.
+  :::
 
 - 🌟 [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 
   :::info Adds customisable blur effects to GNOME Shell elements for a polished look.
   :::
 
-  ![Blur My Shell Demonstration](/assets/aiers-gnome/blur-my-shell-demonstration.png)
+  ![Blur My Shell Demonstration](/assets/gnome-further-customisation/blur-my-shell-demonstration.png)
 
 - 🌟 [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 
   :::info Prevents screen dimming and suspension on demand.
   :::
 
-  ![Caffeine Demonstration](/assets/aiers-gnome/caffeine-demonstration.png)
+  ![Caffeine Demonstration](/assets/gnome-further-customisation/caffeine-demonstration.png)
 
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
@@ -112,7 +117,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
   :::
 
-  ![Clipboard Indicator Demonstration](/assets/aiers-gnome/clipboard-indicator-demonstration.png)
+  ![Clipboard Indicator Demonstration](/assets/gnome-further-customisation/clipboard-indicator-demonstration.png)
 
 - 🌟 [Copyous](https://extensions.gnome.org/extension/8834/copyous/) _(elegant alternative to Clipboard Indicator)_
 
@@ -130,14 +135,14 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
   :::
 
-  ![Copyous Demo](/assets/aiers-gnome/copyous-demo.png)
+  ![Copyous Demo](/assets/gnome-further-customisation/copyous-demo.png)
 
 - 🌟 [GNOME Fuzzy App Search](https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/)
 
   :::info Enables fuzzy matching in Activities search to find apps without exact names.
   :::
 
-  ![Gnome Fuzzy App Search Demonstration](/assets/aiers-gnome/gnome-fuzzy-app-search-demonstration.png)
+  ![Gnome Fuzzy App Search Demonstration](/assets/gnome-further-customisation/gnome-fuzzy-app-search-demonstration.png)
 
 - 🌟 [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 
@@ -166,7 +171,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
   :::
 
-  ![Just Perfection Demonstration](/assets/aiers-gnome/just-perfection-demonstration.png)
+  ![Just Perfection Demonstration](/assets/gnome-further-customisation/just-perfection-demonstration.png)
 
 - 🌟 [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
 
@@ -205,7 +210,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   :::
 
   :::demo-wrapper
-  <video src="/assets/aiers-gnome/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
+  <video src="/assets/gnome-further-customisation/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
   :::
 
 - 🌟 [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
@@ -217,7 +222,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   Go to the extension's settings --> Appearances, turn on `Shrink the dash` to make the dash smaller and slicker.
   :::
 
-  ![Dash to Dock Demonstration](/assets/aiers-gnome/dash-to-dock-demonstration.png)
+  ![Dash to Dock Demonstration](/assets/gnome-further-customisation/dash-to-dock-demonstration.png)
 
 - [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/)
 
@@ -238,14 +243,14 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   ==Position of ordered folders --> Start==, to make folders appear before apps.
   :::
 
-  ![Alphabetical App Grid Demonstration](/assets/aiers-gnome/alphabetical-app-grid-demonstration.png)
+  ![Alphabetical App Grid Demonstration](/assets/gnome-further-customisation/alphabetical-app-grid-demonstration.png)
 
 - [GTK4 Desktop Icon NG](https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/)
 
   :::info Allows for links, folders, and files in the desktop.
   :::
 
-  ![DING4 Demo](/assets/aiers-gnome/ding4-demo.png)
+  ![DING4 Demo](/assets/gnome-further-customisation/ding4-demo.png)
 
 - [App Icons Taskbar](https://extensions.gnome.org/extension/4944/app-icons-taskbar/)
 
@@ -289,7 +294,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   :::
 
   :::demo-wrapper
-  <video src="/assets/aiers-gnome/show-desktop-plus-demo.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
+  <video src="/assets/gnome-further-customisation/show-desktop-plus-demo.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
   :::
 
 :::::
@@ -302,7 +307,7 @@ This guide is just one stop on my full setup. Here's the full checklist:
 **First steps**
 
 - [Gnome Guide](/linux-guides/gnome/)
-- aier's Gnome _(you're reading it)_
+- Further Gnome Customisation _(you're reading it)_
 - [Keyd](/guides/key-remapping-with-keyd/)
 - [Logitech Linux Setup](/guides/logitech-linux-setup/)
 - [Editor's choice](/linux-apps/editors-choice/)
