@@ -189,7 +189,7 @@ Check `sudo systemctl status fix-wifi.timer`. Expected to see `Active: active (r
 
 ## **System Freeze**
 
-==Modify GRUB Config To Pretend To Be Windows (RazerBlade motherboard specializes on Windows)==
+==Modify GRUB Config To Pretend To Be Windows (RazerBlade motherboard specialises on Windows)==
 
 Append the parameters below to `GRUB_CMDLINE_LINUX="..."`:
 

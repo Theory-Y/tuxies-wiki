@@ -94,7 +94,7 @@ user_pref("mousewheel.default.delta_multiplier_y", 200); // 100
 user_pref("mousewheel.default.delta_multiplier_z", 200); // 100
 ```
 
-The default values of different flavors of Firefox may differ, but on default Firefox it is 100, and it tends to be quite slow. 200 fits our needs.
+The default values of different flavours of Firefox may differ, but on default Firefox it is 100, and it tends to be quite slow. 200 fits our needs.
 
 ### **Autoscroll**
 

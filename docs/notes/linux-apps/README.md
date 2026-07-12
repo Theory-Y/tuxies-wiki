@@ -33,7 +33,7 @@ Apps that facilitate the use of your system and unlock its full potential.
 
 [Download as needed.](/linux-apps/popular/)
 
-Your favorite apps from Windows/Mac, but on Linux!
+Your favourite apps from Windows/Mac, but on Linux!
 
 :::
 

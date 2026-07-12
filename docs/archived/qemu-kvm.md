@@ -14,7 +14,7 @@ permalink: /archived/qemu-kvm-guide/
 
 In essence, QEMU/KVM are used to achieve virtual machines (VM) on Linux with high performanace through GPU acceleration. It offers more customibility and performance comparing with other existing VM softwares such as [GNOME Boxes](https://apps.gnome.org/Boxes/) and [VMware](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion).
 
-QEMU stands for ==Quick Emulator==, it's the main virtualization software that allows full-system emulation. KVM stands for ==Kernel-based Virtual Machine==, it's a Linux kernel module that allows VM to run efficiently at kernel level.
+QEMU stands for ==Quick Emulator==, it's the main virtualisation software that allows full-system emulation. KVM stands for ==Kernel-based Virtual Machine==, it's a Linux kernel module that allows VM to run efficiently at kernel level.
 
 ## Setting Up QEMU/KVM
 

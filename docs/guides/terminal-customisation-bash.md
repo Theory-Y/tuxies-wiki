@@ -12,7 +12,7 @@ contributors:
 ---
 
 :::info
-This guide will walk you through customizing your Bash prompt, how to run `fastfetch` on start in your terminal, and a few useful terminal programs.
+This guide will walk you through customising your Bash prompt, how to run `fastfetch` on start in your terminal, and a few useful terminal programs.
 :::
 
 :::danger
@@ -34,7 +34,7 @@ Paste into `~/.bashrc`. Each option is explained in the sections below.
 fastfetch
 
 #### custom PS1 prompt ####
-PS1='------------------\n\[$(tput setaf 56)\][\[$(tput setaf 56)\]\u \[$(tput setaf 92)\]@ \[$(tput setaf 128)\]\h\[$(tput setaf 128)\]] \[$(tput setaf 200)\]\w\[$(tput sgr0)\]\n > '
+PS1='------------------\n\[$(tput setaf 26)\][\[$(tput setaf 32)\]\u \[$(tput setaf 38)\]@ \[$(tput setaf 44)\]\h\[$(tput setaf 26)\]] \[$(tput setaf 75)\]\w\[$(tput sgr0)\]\n > '
 
 #### fzf-related aliases ####
 alias cmd='compgen -c | fzf' # search for a possible command
@@ -216,7 +216,7 @@ You can make your bash terminal autorun `fastfetch` to display system informatio
   @tab .bashrc
 
   ```bash
-  PS1='------------------\n\[$(tput setaf 56)\][\[$(tput setaf 56)\]\u \[$(tput setaf 92)\]@ \[$(tput setaf 128)\]\h\[$(tput setaf 128)\]] \[$(tput setaf 200)\]\w\[$(tput sgr0)\]\n > '
+  PS1='------------------\n\[$(tput setaf 26)\][\[$(tput setaf 32)\]\u \[$(tput setaf 38)\]@ \[$(tput setaf 44)\]\h\[$(tput setaf 26)\]] \[$(tput setaf 75)\]\w\[$(tput sgr0)\]\n > '
   ```
 
   :::

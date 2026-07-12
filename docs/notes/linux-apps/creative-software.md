@@ -9,7 +9,7 @@ contributors:
 
 ## **[Blender](https://www.blender.org/download/)**
 
-3D creation suite for modeling, animation, visual effects, and video editing
+3D creation suite for modelling, animation, visual effects, and video editing
 
 :::tabs
 
