@@ -84,10 +84,17 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
   ![AppIndicator](/assets/gnome-further-customisation/appindicator.png)
 
-- [Auto Power Profile](https://extensions.gnome.org/extension/6583/auto-power-profile/)
+- 🌟 [Auto Power Profile](https://extensions.gnome.org/extension/6583/auto-power-profile/)
 
   :::info Automatically switches between power profiles (Performance / Balanced / Power Saver) based on whether you're on AC or battery, and on the current battery charge level.
   :::
+
+- 🌟 [Battery Health Charging](https://extensions.gnome.org/extension/5724/battery-health-charging/)
+
+  :::info Set a battery charging threshold / limit / mode to maximise laptop battery lifespan. Many laptop brands work out of the box; some need extra kernel modules (see the extension's compatibility list).
+  :::
+
+  ![Battery Health Charging Demonstration](/assets/gnome-further-customisation/battery-health-limit-demonstration.png)
 
 - 🌟 [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 
@@ -124,12 +131,38 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   :::info A modern clipboard manager with support for text, code, images, files, links, characters, and colours.
   :::
 
+  ::::tip Install dependencies (needed for the SQLite clipboard-history backend)
+
+  :::tabs
+
+  @tab ::devicon:fedora:: Fedora
+
+  ```bash
+  sudo dnf install libgda libgda-sqlite
+  ```
+
+  @tab ::devicon:debian:: Debian/Ubuntu
+
+  ```bash
+  sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0
+  ```
+
+  @tab ::devicon:archlinux:: Arch
+
+  ```bash
+  sudo pacman -S libgda6
+  ```
+
+  :::
+
+  ::::
+
   :::tip Windows-like `<Super>v` keyboard shortcut
 
   ```bash
   gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>M']"
   dconf write /org/gnome/shell/extensions/copyous/open-clipboard-dialog-shortcut "['<Super>V']"
-  dconf write /org/gnome/shell/extensions/copyous/clipboard-history "'keep-all'"
+  dconf write /org/gnome/shell/extensions/copyous/database-backend "'sqlite'"
   dconf write /org/gnome/shell/extensions/copyous/clipboard-position-vertical "'bottom'"
   ```
 
