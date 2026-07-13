@@ -68,7 +68,7 @@ Consists of Fedora guide, Arch guide, and Debian/Ubuntu guide (maintainer wanted
 
 ### ::fluent-emoji:books:: [Linux App Library](/linux-apps/)
 
-Consists of all recommended Linux apps tested by maintainers and categorised in Editor's Choice, Essentials, Popular, and Dev (Computer Nerd) Tools. Includes descriptions of the applications and its appropriate installations.
+Consists of all recommended Linux apps tested by maintainers and categorised in Editor's Choice, Essentials, Creative Software, and Dev (Computer Nerd) Tools. Includes descriptions of the applications and its appropriate installations.
 :::
 
 :::card

@@ -94,11 +94,6 @@ export const enNavbar = defineNavbarConfig([
         link: "/linux-apps/essentials/",
       },
       {
-        text: "Popular",
-        icon: "mdi:hot",
-        link: "/linux-apps/popular/",
-      },
-      {
         text: "Creative Software",
         icon: "mdi:head-thinking",
         link: "/linux-apps/creative-software/",

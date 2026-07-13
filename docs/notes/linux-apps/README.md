@@ -29,14 +29,6 @@ Apps that facilitate the use of your system and unlock its full potential.
 
 :::
 
-:::card title="Popular" icon="fluent-emoji:fire"
-
-[Download as needed.](/linux-apps/popular/)
-
-Your favourite apps from Windows/Mac, but on Linux!
-
-:::
-
 :::card title="Creative Software" icon="fluent-color:design-ideas-16"
 
 [Unleash your creativity!](/linux-apps/creative-software/)

@@ -1,7 +1,10 @@
 ---
-title: Popular
+title: Discord & Vesktop
 createTime: 2025/05/29 08:29:45
-permalink: /linux-apps/popular/
+permalink: /guides/discord-vesktop/
+tags:
+  - Beginner
+  - Apps
 contributors:
   - aier
   - Lunear
@@ -34,13 +37,14 @@ Screen sharing does not work on Wayland because Discord uses an outdated electro
 
 A Discord mod (not affiliated with Discord) that allows for theming and cool features.
 
-_Fun fact: **aier** loves the 'Fluent Discord' & 'MaterialDiscord" theme found in BetterDiscord's website._
-
 **Very easy installation. Just paste this line in the terminal to run and set up the installer:**
 
 ```bash
 sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
 ```
+
+:::warning Good practice to inspect scripts before you run them!
+:::
 
 ### Discord Rich Presence (DRP)
 
