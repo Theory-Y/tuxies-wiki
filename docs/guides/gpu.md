@@ -1,0 +1,177 @@
+---
+title: GPU Guide
+createTime: 2026/07/13 12:00:00
+permalink: /guides/gpu/
+tags:
+  - Intermediate
+  - GPU
+  - Cardwire
+---
+
+:::info What this guide covers
+This guide will help you set up your GPU on linux.
+
+First, we will install ==drivers== for AMD or NVIDIA.
+
+Then for laptops — ==Cardwire== — a tool that lets a computer with two graphics chips switch between them on the fly, with no reboot, to save battery or gain power when you need it.
+:::
+
+:::warning Tested on Fedora only
+Every step here has been tested on ==Fedora==. The ideas carry over to other distros, but the exact commands may differ. If you run another distro and want to help, ==contributions are very welcome== — see [Contributions](/contributions/).
+:::
+
+::::details Quick append
+Once Cardwire is installed, this is the whole recommended setup in one place.
+
+:::tabs
+@tab Apply
+
+```bash
+cardwire config battery-auto-switch true
+cardwire config battery-auto-switch-mode hybrid
+cardwire config save
+```
+
+@tab Reset
+
+```bash
+cardwire config battery-auto-switch false
+cardwire config save
+```
+
+:::
+
+::::
+
+## **Installing drivers**
+
+::::tabs
+
+@tab ::simple-icons:nvidia:: NVIDIA
+
+NVIDIA's official driver is not in Fedora's default repositories. It lives in ==RPM Fusion==, a community repository. Enable it, then install the driver.
+
+:::steps
+
+- **Enable RPM Fusion**
+
+  This one command adds both the free and non-free RPM Fusion repositories:
+
+  ```bash
+  sudo dnf install \
+    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  ```
+
+- **Install the driver**
+
+  ```bash
+  sudo dnf install akmod-nvidia
+  ```
+
+  This also builds a kernel module tailored to your system, so it rebuilds itself automatically after future kernel updates.
+
+- **Wait, then reboot**
+
+  :::warning Give the module time to build before rebooting — usually ==around five minutes==. Reboot too early and you may boot to a black screen. You can watch it finish with:
+
+  ```bash
+  modinfo -F version nvidia
+  ```
+
+  When that prints a version number, the module is ready.
+  :::
+
+  Then reboot to load the new driver:
+
+  ```bash
+  reboot
+  ```
+
+:::note More detail on Fedora's NVIDIA setup — including CUDA and codec support — lives in the [NVIDIA GPU Driver Installation](https://docs.fedoraproject.org/en-US/gaming/drivers/) guide by the Fedora Docs.
+:::
+
+@tab ::simple-icons:amd:: AMD
+
+Good news — there is nothing to install. Fedora includes the open-source ==Mesa== AMD drivers by default, and they are kept up to date with every system update. Your card already works.
+
+::::
+
+## **Cardwire**
+
+==Cardwire== is a GPU manager for laptops that have two graphics chips. It is the modern successor to the older `supergfxctl` tool.
+
+It can block or unblock a GPU ==without a reboot or logout==.
+
+:::warning Before you start
+
+- Cardwire needs ==Wayland== — it does not work on X11. Fedora's default GNOME session is already Wayland, so you are likely fine.
+- It is ==experimental==. Expect the occasional rough edge.
+- Switching to a two-GPU mode requires ==exactly two graphics chips==, which is the typical laptop setup.
+
+:::
+
+### **Installing Cardwire**
+
+Cardwire is packaged for Fedora in the ==Terra== repository. If you have not enabled Terra yet, follow the one-command setup in the [Fedora Guide](/linux-guides/fedora/#terra-repository) first.
+
+With Terra enabled, install Cardwire and turn on its background service:
+
+```bash
+sudo dnf install cardwire
+sudo systemctl enable cardwired --now
+# The "--now" flag starts the service immediately
+# as well as enabling it on boot. No reboot needed.
+
+```
+
+### **Basic commands**
+
+Three commands cover everyday use:
+
+```bash
+cardwire list              # show every GPU, its ID, and whether it is blocked
+cardwire get               # show the current mode
+cardwire set integrated    # switch mode (integrated | hybrid | manual | smart)
+```
+
+A mode change applies to ==newly launched apps==. Anything already open keeps the GPU it started with.
+
+Here is what each mode does:
+
+| Mode         | What it does                                                                                        |
+| ------------ | --------------------------------------------------------------------------------------------------- |
+| `integrated` | Blocks the dedicated GPU. Longest battery life — everything runs on the built-in graphics.          |
+| `hybrid`     | Unblocks the dedicated GPU. Both chips available; apps can use the powerful one.                    |
+| `smart`      | Blocks the dedicated GPU by default, but watches apps as they launch and lets approved ones use it. |
+| `manual`     | The default, safe mode. You block and unblock each GPU yourself.                                    |
+
+In `manual` mode you control a single GPU directly by its ID (find IDs with `cardwire list`):
+
+```bash
+cardwire gpu 1 --block     # block GPU 1
+cardwire gpu 1 --unblock   # unblock GPU 1
+cardwire gpu 1 --lsof      # see what is currently using GPU 1
+```
+
+### **Recommended setup**
+
+We recommend setting up ==battery-based switching== to use automatically use the built-in graphic while on battery and to use the dGPU when plugged in. This maximises battery life when not plugged in and gives you full performance when plugged.
+
+```bash
+cardwire config battery-auto-switch true
+cardwire config battery-auto-switch-mode hybrid
+cardwire config save
+```
+
+:::tip
+`battery-auto-switch-mode` is the mode Cardwire returns to when plugged in. On battery it always drops to `integrated` to save power. Leaving it on `hybrid` means: full power on the charger, quiet and efficient off it.
+:::
+
+## **Gnome Extension: Cardwire GPU Toggle**
+
+A Quick Settings toggle to switch between GPU modes using cardwire
+
+[Download Link](https://extensions.gnome.org/extension/9919/cardwire-gpu-toggle/)
+
+![The Cardwire GPU Toggle in the GNOME Quick Settings menu](/assets/gpu/cardwire-gpu-toggle.png)

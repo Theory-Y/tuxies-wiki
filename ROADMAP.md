@@ -17,6 +17,20 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ## Completed
 
+- **GPU Guide — drivers + Cardwire (2026-07-13)** — new `docs/guides/gpu.md` (title `GPU Guide`,
+  permalink `/guides/gpu/`, tags Intermediate/GPU/Cardwire), auto-listed on `/guides/`. Covers:
+  identifying the GPU (`lspci`), AMD (Mesa preinstalled, no-op) vs NVIDIA (RPM Fusion + `akmod-nvidia`,
+  module-build wait, reboot) in `::::tabs` with `simple-icons` AMD/NVIDIA marks; then **Cardwire**
+  (`OpenGamingCollective/cardwire`, the eBPF-LSM `supergfxctl` successor) — Wayland/experimental
+  warning, Terra-repo install cross-linked to `fedora.md`, `cardwire list/get/set` + mode table
+  (integrated/hybrid/manual/smart), manual `gpu <id> --block/--unblock/--lsof`, and battery
+  auto-switch via `cardwire config battery-auto-switch[-mode] … && cardwire config save`; closes with
+  the **Cardwire GPU Toggle** GNOME extension (ext 9919). All commands/modes/requirements verified
+  against upstream docs — the OVERRIDE's `config-battery-auto-switch` guesswork was reconciled to the
+  real `config battery-auto-switch` subcommand syntax. Fedora-only (warned up top, other-distro
+  contributions invited). Image `Cardwire GPU toggle.png` → `assets/gpu/cardwire-gpu-toggle.png`.
+  plan: `action-plans/gpu-guide.md`. Production build passes (44 pages, no dead links); `OVERRIDE.md`
+  deleted.
 - **Same-origin downloads + guide-canonical source of truth (2026-07-13)** — routed all guide
   download links through `/assets/*.zip` (no GitHub detour); zipped extensionless/`.jsonc` files
   that 404'd under the SPA router or rendered as inline text; dropped the redundant `yazi` mirror.
