@@ -20,7 +20,7 @@ Fedora offers a high-quality out-of-the-box experience while remaining highly fl
   :::
   - [Installing Fedora in the Simplest Possible Way](https://itsfoss.com/install-fedora/) by Abhishek Prakash from It's FOSS.
 
-  - [NVIDIA Drivers Guide](https://rpmfusion.org/Howto/NVIDIA) by Official RPM Fusion.
+  - [NVIDIA GPU Driver Installation](https://docs.fedoraproject.org/en-US/gaming/drivers/) by the Fedora Docs.
 
   - [Fedora on MacBook](https://asahilinux.org/fedora/) by Official Asahi Linux.
 
