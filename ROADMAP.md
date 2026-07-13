@@ -17,6 +17,33 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ## Completed
 
+- **OVERRIDE.md batch — colour fix · GB-English sweep · Terra · guide rename (2026-07-12)** —
+  four override items cleared (smallest → largest); `OVERRIDE.md` deleted.
+  - **Bash guide master quick append — blue PS1** — the master quick append and the PS1 step
+    (`terminal-customisation-bash.md` lines 37 + 219) used the purple `setaf 56/92/128/200`
+    gradient while their screenshots (`custom-ps1.png`, `aesthetic-terminal.png`) are blue; both
+    code blocks swapped to the blue `setaf 26/32/38/44/75` gradient (matching the preview at line
+    147), so code now matches the images — no reshoot needed.
+  - **GB-English sweep** — repo-wide `-ize`/`-or` audit; 8 prose fixes (`customising`,
+    `specialises`, `analyse`, `unauthorised`, `virtualisation`, `modelling`, `flavours`,
+    `favourite`) across terminal-customisation-bash, rb-14-2023-fedora, ctf-second-brain,
+    qemu-kvm (archived), creative-software, firefox-userjs, linux-apps/README. Code/keywords left
+    American on purpose: gsettings `color-scheme`/`control-center`/`minimize,maximize`, `Mission
+    Center` (app name), the pacman `synchronize` error string, the `customize` URL, the `"license"`
+    package.json field, the `visualization` code path.
+  - **Terra added** — new **Terra repository** section in `fedora.md` (enable one-liner,
+    web+`gh`-verified: `dnf install --nogpgcheck --repofrompath 'terra,…$releasever' terra-release`).
+    Vesktop entry in `popular.md` gained two install tabs on top of the Flatpaks: **Fedora (Terra)**
+    `dnf install vesktop` (package name confirmed from the Terra `vesktop.spec`) linking the Terra
+    section, and **Arch (AUR)** `yay -S vesktop-bin` (AUR link verified).
+  - **aiers-gnome → gnome-further-customisation** — `git mv` of the guide + its asset folder
+    (`/assets/aiers-gnome/` → `/assets/gnome-further-customisation/`, 18 files, 12 inline refs);
+    title `aier's Gnome (In-Depth Customisations)` → `Further Gnome Customisation`; permalink,
+    the gnome.md inbound card link, and the self-reference in the "More resources" list all
+    repointed (0 residual refs repo-wide). Added the **Auto Power Profile** extension entry
+    (extension 6583, alphabetical slot after AppIndicator). Build-based dead-link check not run
+    (`node_modules` absent offline); internal link targets verified by hand. `graphify update` not
+    run — CLI unavailable.
 - **aiers-gnome.md — extension commands reverted to dconf; schema question resolved (2026-07-04)** —
   the extension-schema verify item closed with a twist. Schema IDs from the conversion were
   CORRECT (confirmed from the installed extensions' own `gschema.xml`: copyous, just-perfection,
