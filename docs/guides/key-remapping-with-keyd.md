@@ -103,7 +103,7 @@ Here is a minimal example that demonstrates common remaps:
 @tab /etc/keyd/default.conf
 
 ```conf
-# Keyd remaps: Copilot key -> Ctrl, CapsLock -> Backspace,
+# Keyd remaps: Copilot key -> Ctrl; CapsLock -> Backspace,
 # Shift + CapsLock -> CapsLock
 
 # Place in /etc/keyd/default.conf

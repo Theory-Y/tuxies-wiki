@@ -9,12 +9,7 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-- 🟡 **keyd `default.conf` triple-copy drift** — the same remap config lives in three places that
-  can silently diverge: the inline example in `docs/guides/key-remapping-with-keyd.md` (~line 100),
-  the `keyd-setup.sh` heredoc (self-generated, `resources/key-remapping-with-keyd/keyd-setup.sh`),
-  and `resources/key-remapping-with-keyd/default.conf` (canonical, referenced by the folder README +
-  bundled in the download zip). Edit one and the other two rot. Pick a single source of truth (or add
-  a check that they match) — not fixed during the 2026-07-13 download-link pass.
+_Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ---
 
@@ -22,7 +17,15 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
-- **OVERRIDE.md batch — NVIDIA link · Discord/Vesktop guide split · extensions (2026-07-12)** —
+- **Same-origin downloads + guide-canonical source of truth (2026-07-13)** — routed all guide
+  download links through `/assets/*.zip` (no GitHub detour); zipped extensionless/`.jsonc` files
+  that 404'd under the SPA router or rendered as inline text; dropped the redundant `yazi` mirror.
+  Then set the **guide** as canonical: scanned every `resources/` file for a guide-inline copy and
+  reconciled the only two divergences found — the `keyd` config comment (`Ctrl; ` → `Ctrl, `, now
+  identical across guide, `resources/default.conf`, and the `keyd-setup.sh` heredoc) and a stale
+  `README.md` inside the pre-existing `logitech-linux-setup.zip` (rebuilt from `resources/`). Both
+  bundle zips regenerated and verified byte-identical to their `resources/` source. Policy recorded
+  in `guidelines.md` → Download bundles. (Supersedes the earlier keyd triple-copy drift item.)
   plan: `action-plans/override-2026-07-12.md`; player-coach (council skipped per maintainer).
   Production build passes (43 pages, no dead links); `OVERRIDE.md` deleted.
   - **NVIDIA driver link** — `fedora.md` install-resources list: `NVIDIA Drivers Guide`

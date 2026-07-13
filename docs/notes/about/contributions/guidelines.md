@@ -418,6 +418,9 @@ When a guide offers a downloadable bundle — typically a folder of dotfiles plu
 - Place a zipped copy at `docs/.vuepress/public/assets/<name>/<name>.zip`, alongside the guide's other assets (the `public/` folder is served from the site root, `base: "/"`).
 - Link it with the root-relative permalink `/assets/<name>/<name>.zip`, exactly as images are referenced.
 
+:::info **The guide is the source of truth.** When a config is ==shown inline in the guide==, that inline block is canonical — the copy in `resources/<name>/`, any generator that writes it (e.g. a `keyd-setup.sh` heredoc), and the zipped artifact must all match it. Files that live ==only== in `resources/` (installers, presets, the folder README) have no guide copy, so `resources/` is canonical for those. The zip is always a rebuilt artifact of `resources/` — regenerate it, never hand-edit it.
+:::
+
 :::important Always zip — never link a raw file. The site is a ==single-page app==: a URL with no file extension (e.g. `/assets/edge/HubApps`) is caught by the client-side router and 404s, while a text file (`.jsonc`, `.conf`, `.sh`, …) is served inline as a page of text instead of downloading. Only a `.zip` extension both bypasses the router and triggers a real download. This holds even for a ==single file== — zip it (at the archive root so it extracts in place), don't link the bare file.
 :::
 
