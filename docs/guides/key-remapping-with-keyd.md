@@ -16,7 +16,7 @@ This guide walks you through installing keyd from source, writing a basic config
 :::
 
 :::details Quick append
-If you would like to append everything in this guide quickly you can download and run [this](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/key-remapping-with-keyd/keyd-setup.sh) bash script after installing all prerequisites.
+If you would like to append everything in this guide quickly you can [download the zip](/assets/key-remapping-with-keyd/key-remapping-with-keyd.zip) and run the `keyd-setup.sh` bash script after installing all prerequisites.
 :::
 
 ## **Prerequisites**
@@ -96,7 +96,7 @@ A keyd config file has two required sections:
 
 You can also add extra sections for layers — for example, a `[shift]` section changes what keys do while `Shift` is held down.
 
-Here is a minimal example that demonstrates common remaps (also available as a ready-made [default.conf](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/key-remapping-with-keyd/default.conf):
+Here is a minimal example that demonstrates common remaps:
 
 :::tabs
 

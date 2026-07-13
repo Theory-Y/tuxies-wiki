@@ -17,12 +17,18 @@ contributors:
 
 ::::details Quick append
 
-Want both presets applied at once? Download the [`logitech-linux-setup`](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) folder — or [download the zip](/assets/logitech-linux-setup/logitech-linux-setup.zip) — and run the installer. It copies the `Solaar` and `Kando` presets into the right config directories (auto-detecting `Flatpak` vs native; use `--flatpak` or `--native` to force), backing up any existing files first.
+Want both presets applied at once? [Download the `logitech-linux-setup` zip](/assets/logitech-linux-setup/logitech-linux-setup.zip) and run the installer. It copies the `Solaar` and `Kando` presets into the right config directories (auto-detecting `Flatpak` vs native; use `--flatpak` or `--native` to force), backing up any existing files first.
 
-:::warning Install `Solaar` and `Kando` before running `install.sh`. When neither a Flatpak nor a native install is detected, the configs are applied for the native app's path, but the configs would not take effect until the apps are installed!
+:::warning Install `Solaar` and `Kando` before running `install.sh`.
+When neither a Flatpak nor a native install is detected, the configs are applied for the native app's path, but ==the configs would not take effect until the apps are installed!==
 :::
 
 ```bash
+# You can do the following via your file explorer as well:
+#     1. Extract the zip file,
+#     2. right-click on install.sh, give it permission if needed
+#         Properties -> Toggle on "Executable as Program"
+#     3. run it.
 cd logitech-linux-setup
 chmod +x install.sh
 ./install.sh
@@ -35,7 +41,7 @@ chmod +x install.sh
 
 ## **Part 1: Solaar — Key Reassignment**
 
-:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup) link to download the Solaar button-remap preset (`rules.yaml`) for the MX Master 4 and MX Keys S.
+:::note [Download the zip](/assets/logitech-linux-setup/logitech-linux-setup.zip) for the Solaar button-remap preset (`rules.yaml`) for the MX Master 4 and MX Keys S.
 `rules.yaml` is the portable part of the Solaar configuration — it defines which button fires which key event and works across machines. Device-specific settings (DPI, backlight, haptic level, smart-shift, scroll ratchet, etc.) are ==not portable==: they are stored per physical device and must be configured in the Solaar GUI after pairing.
 :::
 
@@ -193,7 +199,7 @@ On Wayland, Solaar injects synthetic keypresses through `/dev/uinput`. The shipp
 
 ## **Part 2: Kando**
 
-:::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files in the section below.
+:::note [Download the zip](/assets/logitech-linux-setup/logitech-linux-setup.zip) for the Kando configuration files used in the section below.
 :::
 
 ### **Installing Kando**

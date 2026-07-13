@@ -239,7 +239,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   :::info Allows you to use the Kando Menu in Gnome Wayland sessions.
   :::
 
-  :::note Follow [this](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/logitech-linux-setup/kando) link to download configuration files to achieve the effect in the video below.
+  :::note [Download the zip](/assets/logitech-linux-setup/logitech-linux-setup.zip) for the configuration files to achieve the effect in the video below.
   :::
 
   :::demo-wrapper

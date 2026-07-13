@@ -28,7 +28,7 @@ Edge on Linux ships without a required configuration file called `HubApps`. With
 
   You can copy it from a Windows Edge installation at: `AppData\Local\Microsoft\Edge\User Data\Default\HubApps`
 
-  Alternatively, download the community-maintained copy [here](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/microsoft-edge-setup/HubApps).
+  Alternatively, download the community-maintained copy [here](/assets/microsoft-edge-setup/HubApps.zip) and extract the `HubApps` file.
 
 - **Create the target directory** if it does not already exist:
 

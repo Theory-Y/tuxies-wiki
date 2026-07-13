@@ -14,7 +14,7 @@ contributors:
 ::::details Quick append
 
 :::note
-You can also download ready-made files in this repo [here](https://github.com/Theory-Y/tuxies-wiki/tree/master/resources/yazi) and drop them into `~/.config/yazi/`.
+Copy the ready-made files below into `~/.config/yazi/`.
 
 Adjust the directory paths in `keymap.toml` to match your own home folders.
 :::

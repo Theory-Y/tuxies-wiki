@@ -418,6 +418,9 @@ When a guide offers a downloadable bundle — typically a folder of dotfiles plu
 - Place a zipped copy at `docs/.vuepress/public/assets/<name>/<name>.zip`, alongside the guide's other assets (the `public/` folder is served from the site root, `base: "/"`).
 - Link it with the root-relative permalink `/assets/<name>/<name>.zip`, exactly as images are referenced.
 
+:::important Always zip — never link a raw file. The site is a ==single-page app==: a URL with no file extension (e.g. `/assets/edge/HubApps`) is caught by the client-side router and 404s, while a text file (`.jsonc`, `.conf`, `.sh`, …) is served inline as a page of text instead of downloading. Only a `.zip` extension both bypasses the router and triggers a real download. This holds even for a ==single file== — zip it (at the archive root so it extracts in place), don't link the bare file.
+:::
+
 :::warning The hosted zip is a committed static copy — it does ==not== auto-update. Whenever you change anything in `resources/<name>/`, re-zip the folder and replace `docs/.vuepress/public/assets/<name>/<name>.zip` so the download stays in sync with the source.
 :::
 

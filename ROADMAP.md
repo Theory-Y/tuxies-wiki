@@ -9,7 +9,12 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-_Nothing open — all tracked work is complete or parked in **Deferred** below._
+- 🟡 **keyd `default.conf` triple-copy drift** — the same remap config lives in three places that
+  can silently diverge: the inline example in `docs/guides/key-remapping-with-keyd.md` (~line 100),
+  the `keyd-setup.sh` heredoc (self-generated, `resources/key-remapping-with-keyd/keyd-setup.sh`),
+  and `resources/key-remapping-with-keyd/default.conf` (canonical, referenced by the folder README +
+  bundled in the download zip). Edit one and the other two rot. Pick a single source of truth (or add
+  a check that they match) — not fixed during the 2026-07-13 download-link pass.
 
 ---
 
