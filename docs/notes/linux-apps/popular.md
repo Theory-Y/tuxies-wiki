@@ -65,9 +65,24 @@ Not Recommended, find more info in the GitHub Link
 
 Discord with screen sharing and audio support, as well as Vencord inbuilt.
 
-==If you do not care about Discord Rich Presence (DRP), proceed with the Flatpak installation.==
+We recommend installing the native versions with the commands below or via [Vesktop’s Github Releases](https://github.com/Vencord/Vesktop/releases) for all features (namely Rich Presense) to work out of the box.
 
-==If you do want DRP, check out [Vesktop’s Github Releases](https://github.com/Vencord/Vesktop/releases) and download the package for your respective distribution.==
+:::tabs
+@tab ::devicon:fedora:: Fedora (Terra)
+
+```bash
+sudo dnf install vesktop
+```
+
+@tab ::devicon:archlinux:: Arch (AUR)
+
+Via an AUR helper such as `yay` — package [`vesktop-bin`](https://aur.archlinux.org/packages/vesktop-bin):
+
+```bash
+yay -S vesktop-bin
+```
+
+:::
 
 :::tabs
 @tab ::simple-icons:flatpak:: Flatpak (System)

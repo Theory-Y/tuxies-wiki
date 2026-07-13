@@ -45,6 +45,18 @@ Fedora offers a high-quality out-of-the-box experience while remaining highly fl
 
 ::::
 
+## **Terra repository**
+
+[Terra](https://terrapkg.com/) is a community package repository for Fedora by Fyra Labs. 2000+ propietary/nonfree packages that Fedora doesn't ship by default can be found in Terra.
+
+Enabling it is optional, but a few guides here pull packages from it. One command sets it up:
+
+```bash
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+```
+
+Once enabled, you can install its packages with the regular `dnf` command.
+
 ## **Create snapshots/backups** for your computer
 
 We'll be using `btrfs-assistant`, a simple GUI for managing snapshots. It sits on top of `snapper` and uses Fedora's default `BTRFS` filesystem, so snapshots are quick and preserve SELinux labels — no permissive mode and no relabeling needed.
