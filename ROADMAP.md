@@ -17,6 +17,26 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ## Completed
 
+- **OVERRIDE.md batch — NVIDIA link · Discord/Vesktop guide split · extensions (2026-07-12)** —
+  plan: `action-plans/override-2026-07-12.md`; player-coach (council skipped per maintainer).
+  Production build passes (43 pages, no dead links); `OVERRIDE.md` deleted.
+  - **NVIDIA driver link** — `fedora.md` install-resources list: `NVIDIA Drivers Guide`
+    (rpmfusion.org/Howto/NVIDIA) → `NVIDIA GPU Driver Installation`
+    (docs.fedoraproject.org/en-US/gaming/drivers/), attribution changed to "the Fedora Docs".
+  - **Popular → standalone Discord/Vesktop guide** — `linux-apps/popular.md` (Discord-only content)
+    moved verbatim to `docs/guides/discord-vesktop.md` (title `Discord & Vesktop`, permalink
+    `/guides/discord-vesktop/`, tags Beginner/Apps, contributors aier+Lunear); auto-listed on the
+    `/guides/` index. Removed from the app series: navbar `Popular` item, `linux-apps/README.md`
+    card, and the category list in `new-to-the-wiki.md` (`Popular` → `Creative Software`, which the
+    list had been missing). 0 residual `/linux-apps/popular/` refs repo-wide.
+  - **Extensions (gnome-further-customisation.md)** — added **Battery Health Charging** (ext 5724)
+    in alphabetical slot after Auto Power Profile, using the pre-committed unused asset
+    `battery-health-limit-demonstration.png`. **Copyous** entry gained a dependency-install block
+    (`::::tip` > `:::tabs`) for Libgda-with-SQLite + GSound, verified from upstream README:
+    Fedora `libgda libgda-sqlite`, Arch `libgda6`, Ubuntu/Debian `gir1.2-gda-5.0 gir1.2-gsound-1.0`,
+    openSUSE `libgda-6_0-sqlite typelib-1_0-Gda-6_0 typelib-1_0-GSound-1_0` (openSUSE tab uses the
+    `::devicon:linux::` fallback — no opensuse devicon in the repo). Auto Power Profile was already
+    present (prior session) — left untouched, not duplicated. `graphify update` not run (CLI absent).
 - **OVERRIDE.md batch — colour fix · GB-English sweep · Terra · guide rename (2026-07-12)** —
   four override items cleared (smallest → largest); `OVERRIDE.md` deleted.
   - **Bash guide master quick append — blue PS1** — the master quick append and the PS1 step
