@@ -17,6 +17,12 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ## Completed
 
+- **GPU Guide — `experimental-nvidia-block` (2026-07-14)** — added NVIDIA-scoped H3 in
+  `docs/guides/gpu.md` after Recommended setup: `cardwire config experimental-nvidia-block true`
+  blocks shared Nvidia device files (`/dev/nvidiactl`) to stop unwanted dGPU wakeups from Vulkan/GNOME
+  apps and `nvtop`, cutting battery drain; `:::warning` notes the exactly-two-chips + experimental
+  caveat. Also wired into the Quick append Apply/Reset tabs. `auto-apply-gpu-state` evaluated and
+  skipped — niche manual-mode convenience that contradicts the guide's `battery-auto-switch` path.
 - **GPU Guide — drivers + Cardwire (2026-07-13)** — new `docs/guides/gpu.md` (title `GPU Guide`,
   permalink `/guides/gpu/`, tags Intermediate/GPU/Cardwire), auto-listed on `/guides/`. Covers:
   identifying the GPU (`lspci`), AMD (Mesa preinstalled, no-op) vs NVIDIA (RPM Fusion + `akmod-nvidia`,

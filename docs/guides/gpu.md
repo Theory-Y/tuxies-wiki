@@ -24,7 +24,7 @@ Every step here has been tested on ==Fedora==. The ideas carry over to other dis
 Once Cardwire is installed, this is the whole recommended setup in one place.
 
 :::tabs
-@tab Apply
+@tab Apply (Universal)
 
 ```bash
 cardwire config battery-auto-switch true
@@ -32,10 +32,21 @@ cardwire config battery-auto-switch-mode hybrid
 cardwire config save
 ```
 
+@tab Apply (NVIDIA-only)
+
+```bash
+cardwire config battery-auto-switch true
+cardwire config battery-auto-switch-mode hybrid
+# NVIDIA laptops only — stops the dedicated chip waking up and draining battery
+cardwire config experimental-nvidia-block true
+cardwire config save
+```
+
 @tab Reset
 
 ```bash
 cardwire config battery-auto-switch false
+cardwire config experimental-nvidia-block false
 cardwire config save
 ```
 
@@ -168,9 +179,31 @@ cardwire config save
 `battery-auto-switch-mode` is the mode Cardwire returns to when plugged in. On battery it always drops to `integrated` to save power. Leaving it on `hybrid` means: full power on the charger, quiet and efficient off it.
 :::
 
+### **NVIDIA**: stop the dedicated chip waking up
+
+:::details Tech details
+
+If your dedicated chip is an ==NVIDIA card==, it's worth turing on `experimental-nvidia-block`.
+
+Certain apps (particularly Vulkan and GTK on Gnome) — can quietly wake the dedicated chip even while it is blocked. This drains your battery for nothing.
+
+`experimental-nvidia-block` makes sure that your NVIDIA card doesn't get waken up in integrated mode, and Cardwire's authors recommend it for NVIDIA laptops.
+:::
+
+```bash
+cardwire config experimental-nvidia-block true
+cardwire config save
+```
+
+:::warning
+This only works reliably on the standard laptop setup — ==exactly two chips==: the built-in graphics plus one NVIDIA card.
+:::
+
 ## **Gnome Extension: Cardwire GPU Toggle**
 
-A Quick Settings toggle to switch between GPU modes using cardwire
+A Quick Settings toggle to switch between GPU modes using cardwire.
+
+If you already use `battery-auto-switch`, this may be redundant.
 
 [Download Link](https://extensions.gnome.org/extension/9919/cardwire-gpu-toggle/)
 
