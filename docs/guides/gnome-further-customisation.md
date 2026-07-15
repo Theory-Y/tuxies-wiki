@@ -234,7 +234,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 ::::::card
 ::::: collapse
 
-- 🌟 [Kando Integration](https://extensions.gnome.org/extension/7068/kando-integration/)
+- [Kando Integration](https://extensions.gnome.org/extension/7068/kando-integration/)
 
   :::info Allows you to use the Kando Menu in Gnome Wayland sessions.
   :::
