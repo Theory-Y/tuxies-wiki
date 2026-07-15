@@ -1,1 +1,4 @@
 add browser.tabs.fadeOutUnloadedTabs true option to Zen in user.js
+
+unstar Kando Integration. 
+
