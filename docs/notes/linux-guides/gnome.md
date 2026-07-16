@@ -277,7 +277,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>E']"
 gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog "['<Super>R']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-center "['<Super><Shift>Return']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>F']"
-gsettings set org.gnome.desktop.wm.keybindings close "['<Super>X', '<Alt>F4']"
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>Q', '<Alt>F4']"
 ```
 
 @tab ::mdi:reload:: Reset changes (cli)
@@ -312,7 +312,7 @@ gsettings reset org.gnome.desktop.wm.keybindings close
 | `Super` + `R`                  | Run command dialog                           |
 | `Super` + `Shift` + `Return`   | Centre window                                |
 | `Super` + `F`                  | Fullscreen window                            |
-| `Super` + `X`                  | Close window                                 |
+| `Super` + `Q`                  | Close window                                 |
 
 :::::
 
@@ -349,7 +349,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/launch-mission-center/ name "Launch Mission Center"
 gsettings set org.gnome.desktop.wm.keybindings move-to-center "['<Super><Shift>Return']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>F']"
-gsettings set org.gnome.desktop.wm.keybindings close "['<Super>X', '<Alt>F4']"
+gsettings set org.gnome.desktop.wm.keybindings close "['<Super>Q', '<Alt>F4']"
 flatpak install io.missioncenter.MissionCenter -y
 ```
 
@@ -389,7 +389,7 @@ gsettings reset org.gnome.desktop.wm.keybindings close
 | `Ctrl` + `Shift` + `Esc`       | Launch `Mission Center`                      |
 | `Super` + `Shift` + `Return`   | Centre window                                |
 | `Super` + `F`                  | Fullscreen window                            |
-| `Super` + `X`                  | Close window                                 |
+| `Super` + `Q`                  | Close window                                 |
 
 :::::
 
@@ -633,14 +633,14 @@ gsettings reset org.gnome.desktop.wm.keybindings close
 
 - Close window (ergonomic)
 
-  `Super` + `X`
+  `Super` + `Q`
 
   :::tabs
 
   @tab ::mdi:terminal:: Append changes (cli)
 
   ```bash
-  gsettings set org.gnome.desktop.wm.keybindings close "['<Super>X', '<Alt>F4']"
+  gsettings set org.gnome.desktop.wm.keybindings close "['<Super>Q', '<Alt>F4']"
   ```
 
   @tab ::mdi:reload:: Reset changes (cli)
