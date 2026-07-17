@@ -25,6 +25,21 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ## Completed
 
+- **fastfetch config re-theme — Tux logo + blue accents (2026-07-16)** — rebuilt
+  `docs/.vuepress/public/assets/terminal-customisation-bash/theoryy-fastfetch-config.zip`
+  (`config.jsonc`): swapped the THEORY ASCII logo for the wiki's Tux mascot rendered as a monochrome
+  light-gray (`38;2;191;191;191`) `data` logo (density-ramp ASCII from `assets/tux.png`), and recolored
+  all `keyColor`/section-header accents from gold (`212;165;55`) to steel blue (`38;2;74;144;217`, #4A90D9).
+  Doc blurb in `docs/guides/terminal-customisation-bash.md` updated to match. Verified via live `fastfetch`.
+  Follow-up layout pass: Tux vertically centred (logo `padding.top` 7), keys shortened + shifted left
+  (1-space lead, width-8 field), separators narrowed to 48, logo width 38→33-col art. Logo colour moved
+  to fastfetch `$1` placeholder + `logo.color` (raw per-line ANSI inflated the width calc to 57 cols);
+  worst-case line now ~92 visible cols — fits a 100-wide split pane. Fixed separator-row misalignment
+  (custom modules skip the key-field padding normal modules get; added 1 leading space to match).
+  Fixed a build-script bug where `GRAY`/`BLUE_ESC`/`RESET` were missing the real ESC byte (`\x1b`),
+  printing literal `[90m` text instead of colour. Trimmed 3 cols of baked-in left margin from the
+  generated Tux art to shift the whole block left. Kept `resources/` == zip byte-identical throughout.
+
 - **OVERRIDE.md batch — extension stars · Lilypad · Dash-to-Dock shortcut · MosaicWM defer (2026-07-16)** —
   five override items cleared in `docs/guides/gnome-further-customisation.md`; `OVERRIDE.md` deleted.
   - **Unstarred** four entries (removed 🌟): Battery Health Charging, Shotzy, Night Theme Switcher,

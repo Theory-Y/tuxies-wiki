@@ -2,11 +2,14 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "type": "data",
-        "source": "\u001b[37m████████╗██╗  ██╗███████╗ ██████╗ ██████╗ \u001b[38;2;212;165;55m██╗   ██╗   \u001b[0m\n\u001b[37m╚══██╔══╝██║  ██║██╔════╝██╔═══██╗██╔══██╗\u001b[38;2;212;165;55m╚██╗ ██╔╝   \u001b[0m\n\u001b[37m   ██║   ███████║█████╗  ██║   ██║██████╔╝\u001b[38;2;212;165;55m ╚████╔╝    \u001b[0m\n\u001b[37m   ██║   ██╔══██║██╔══╝  ██║   ██║██╔══██╗\u001b[38;2;212;165;55m  ╚██╔╝     \u001b[0m\n\u001b[37m   ██║   ██║  ██║███████╗╚██████╔╝██║  ██║\u001b[38;2;212;165;55m   ██║   ██╗\u001b[0m\n\u001b[37m   ╚═╝   ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝\u001b[38;2;212;165;55m   ╚═╝   ╚═╝\u001b[0m\n\n                   \u001b[30m● \u001b[31m● \u001b[32m● \u001b[33m● \u001b[34m● \u001b[35m● \u001b[36m● \u001b[37m●\u001b[0m",
+        "source": "$1             @@@@@@\n$1           @@@@@@@@@@\n$1           %+#@%==#@@@\n$1           +#*%*##-@@@\n$1           %==--=+%@@@\n$1           @*#*##=-@@@@\n$1          %@=##***=@%##@\n$1        @#+@-==-=+%%+*@@@@\n$1       @%*%@  :. =@@*#%@@@@\n$1      @@+@#%. =  %%*@@%*@@@@\n$1     @@%+@@@- : :@%@@@%-%@@@\n$1     %*#@@@@= : +@@@@%#@@@@@\n$1  %*+---+@**=--:+#+-%=#%%*-@\n$1  @------=%#:      .@------=#@\n$1  %--------#*:..:-*@#------=*@\n$1  %#**+=---+@@@@@@@@*---=*%\n$1        @%%@        @##%@",
+        "color": {
+            "1": "38;2;191;191;191"
+        },
         "padding": {
-            "top": 13,
-            "left": 2,
-            "right": 1
+            "top": 7,
+            "left": 1,
+            "right": 2
         }
     },
     "display": {
@@ -16,143 +19,143 @@
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m──────────────────────── \u001b[38;2;212;165;55mHardware\u001b[90m ────────────────────────\u001b[0m"
+            "format": " \u001b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u001b[38;2;74;144;217mHardware\u001b[90m \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[0m"
         },
         {
             "type": "host",
-            "key": "  PC      ",
-            "keyColor": "38;2;212;165;55"
+            "key": " PC      ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "cpu",
-            "key": "  CPU     ",
-            "keyColor": "38;2;212;165;55"
+            "key": " CPU     ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "gpu",
-            "key": "  GPU     ",
-            "keyColor": "38;2;212;165;55"
+            "key": " GPU     ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "display",
-            "key": "  Display ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Display ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "memory",
-            "key": "  Memory  ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Memory  ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "swap",
-            "key": "  Swap    ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Swap    ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "disk",
-            "key": "  Disk    ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Disk    ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "battery",
-            "key": "  Battery ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Battery ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "localip",
-            "key": "  Local IP",
-            "keyColor": "38;2;212;165;55"
+            "key": " IP      ",
+            "keyColor": "38;2;74;144;217"
         },
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m──────────────────────── \u001b[38;2;212;165;55mSoftware\u001b[90m ────────────────────────\u001b[0m"
+            "format": " \u001b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u001b[38;2;74;144;217mSoftware\u001b[90m \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[0m"
         },
         {
             "type": "os",
-            "key": "  OS      ",
-            "keyColor": "38;2;212;165;55"
+            "key": " OS      ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "kernel",
-            "key": "  Kernel  ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Kernel  ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "packages",
-            "key": "  Packages",
-            "keyColor": "38;2;212;165;55"
+            "key": " Pkgs    ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "shell",
-            "key": "  Shell   ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Shell   ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "de",
-            "key": "  DE      ",
-            "keyColor": "38;2;212;165;55"
+            "key": " DE      ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "wm",
-            "key": "  WM      ",
-            "keyColor": "38;2;212;165;55"
+            "key": " WM      ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "wmtheme",
-            "key": "  WM Theme",
-            "keyColor": "38;2;212;165;55"
+            "key": " WM Theme",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "theme",
-            "key": "  Theme   ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Theme   ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "icons",
-            "key": "  Icons   ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Icons   ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "font",
-            "key": "  Font    ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Font    ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "cursor",
-            "key": "  Cursor  ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Cursor  ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "terminal",
-            "key": "  Term    ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Term    ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "locale",
-            "key": "  Locale  ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Locale  ",
+            "keyColor": "38;2;74;144;217"
         },
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m───────────────────────── \u001b[38;2;212;165;55mUptime\u001b[90m ─────────────────────────\u001b[0m"
+            "format": " \u001b[90m\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u001b[38;2;74;144;217mUptime\u001b[90m \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u001b[0m"
         },
         {
             "type": "command",
-            "key": "  OS Age  ",
-            "keyColor": "38;2;212;165;55",
+            "key": " Age     ",
+            "keyColor": "38;2;74;144;217",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
-            "key": "  Uptime  ",
-            "keyColor": "38;2;212;165;55"
+            "key": " Uptime  ",
+            "keyColor": "38;2;74;144;217"
         },
         {
             "type": "datetime",
-            "key": "  DateTime",
-            "keyColor": "38;2;212;165;55"
+            "key": " Date    ",
+            "keyColor": "38;2;74;144;217"
         }
     ]
 }

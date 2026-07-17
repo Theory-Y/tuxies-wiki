@@ -204,7 +204,7 @@ You can make your bash terminal autorun `fastfetch` to display system informatio
 
 - **Apply the TheoryY config _(optional)_**
 
-  For a TheoryY-branded fastfetch — the THEORY logo with gold accents — download [this `config.jsonc`](/assets/terminal-customisation-bash/theoryy-fastfetch-config.zip), extract it, and save it to `~/.config/fastfetch/config.jsonc`. fastfetch picks it up automatically.
+  For a TheoryY-branded fastfetch — the Tux mascot in monochrome with steel-blue accents — download [this `config.jsonc`](/assets/terminal-customisation-bash/theoryy-fastfetch-config.zip), extract it, and save it to `~/.config/fastfetch/config.jsonc`. fastfetch picks it up automatically.
 
 - **Changing the look of the prompt (`PS1`)**
 
