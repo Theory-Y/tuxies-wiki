@@ -13,9 +13,36 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 
 ---
 
+## Deferred
+
+- 🟡 **MosaicWM extension** (ext 8502, `CleoMenezesJr/MosaicWM`) — mosaic/tiling WM for GNOME.
+  Currently **unstable** and needs GNOME Shell 50+; do **not** add to
+  `gnome-further-customisation.md` yet. **Re-evaluate stability from 2026-10-16 for a week
+  straight** — if stable by then, add it under the **Others** collapse (Tiling Shell neighbour)
+  with the standard link → `:::info` entry.
+
 ---
 
 ## Completed
+
+- **OVERRIDE.md batch — extension stars · Lilypad · Dash-to-Dock shortcut · MosaicWM defer (2026-07-16)** —
+  five override items cleared in `docs/guides/gnome-further-customisation.md`; `OVERRIDE.md` deleted.
+  - **Unstarred** four entries (removed 🌟): Battery Health Charging, Shotzy, Night Theme Switcher,
+    Focus changer.
+  - **Lilypad added** (ext 7266, `shendrew/Lilypad`) — top-bar icon organiser, placed directly after
+    AppIndicator in the **Universal benefits** collapse as a complementary suggestion
+    (`_(pairs well with AppIndicator)_`), single `:::info`, unstarred, no config.
+  - **Dash to Dock shortcut** — added a `:::tip Fix the keyboard shortcut` block: the extension's
+    default show-dock bind is `['<Super>q']`, which now collides with the Close window shortcut
+    (`Super`+`Q`, commit 38327f8); moved to `<Super>w` via
+    `dconf write /org/gnome/shell/extensions/dash-to-dock/shortcut "['<Super>w']"`.
+  - **MosaicWM** parked in **Deferred** above (unstable, GNOME 50+) with a 2026-10-16 re-eval note —
+    not added to the guide.
+- **Stage Manager extension (2026-07-16)** — added (ext 9528, `itsdigvijaysing/gnome-stage-manager`)
+  in the **Others** collapse right after Dash to Dock, tagged `_(alternative to Dash to Dock)_`. macOS-style
+  window grouping; `:::tip` quick-config hides the app dash via Just Perfection
+  (`dconf write /org/gnome/shell/extensions/just-perfection/dash false`) since Stage Manager lives on the
+  left edge. Build passes (44 pages).
 
 - **GPU Guide — `experimental-nvidia-block` (2026-07-14)** — added NVIDIA-scoped H3 in
   `docs/guides/gpu.md` after Recommended setup: `cardwire config experimental-nvidia-block true`
