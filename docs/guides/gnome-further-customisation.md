@@ -84,12 +84,17 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
   ![AppIndicator](/assets/gnome-further-customisation/appindicator.png)
 
-- 🌟 [Auto Power Profile](https://extensions.gnome.org/extension/6583/auto-power-profile/)
+- 🌟 [Lilypad](https://extensions.gnome.org/extension/7266/lilypad/) _(pairs well with AppIndicator)_
+
+  :::info Tidies the tray icons in your top bar — hide the ones you rarely touch.
+  :::
+
+- [Auto Power Profile](https://extensions.gnome.org/extension/6583/auto-power-profile/)
 
   :::info Automatically switches between power profiles (Performance / Balanced / Power Saver) based on whether you're on AC or battery, and on the current battery charge level.
   :::
 
-- 🌟 [Battery Health Charging](https://extensions.gnome.org/extension/5724/battery-health-charging/)
+- [Battery Health Charging](https://extensions.gnome.org/extension/5724/battery-health-charging/)
 
   :::info Set a battery charging threshold / limit / mode to maximise laptop battery lifespan. Many laptop brands work out of the box; some need extra kernel modules (see the extension's compatibility list).
   :::
@@ -206,12 +211,12 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
   ![Just Perfection Demonstration](/assets/gnome-further-customisation/just-perfection-demonstration.png)
 
-- 🌟 [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
+- [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
 
   :::info Image search on Google Lens, OCR and QR scan directly from the built-in GNOME Screenshot tool.
   :::
 
-- 🌟 [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/)
+- [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/)
 
   :::info Switcher between light and dark theme depending on sunrise/sunset.
   :::
@@ -246,7 +251,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   <video src="/assets/gnome-further-customisation/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
   :::
 
-- 🌟 [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
   :::info Moves the dash out of overview into a dock for quicker app launching and window switching.
   :::
@@ -255,14 +260,37 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   Go to the extension's settings --> Appearances, turn on `Shrink the dash` to make the dash smaller and slicker.
   :::
 
+  :::tip Fix the keyboard shortcut
+  Dash to Dock pops up the dock with `Super`+`Q` by default, which clashes with Close window shortcut from [Gnome Guide](/linux-guides/gnome). Move it to `Super`+`W`:
+
+  ```bash
+  dconf write /org/gnome/shell/extensions/dash-to-dock/shortcut "['<Super>w']"
+  ```
+
+  :::
+
   ![Dash to Dock Demonstration](/assets/gnome-further-customisation/dash-to-dock-demonstration.png)
+
+- 🌟 [Stage Manager](https://extensions.gnome.org/extension/9528/stage-manager/) _(alternative to Dash to Dock)_
+
+  :::info macOS-style window management: groups your open windows into "stages" and stacks the rest as thumbnail cards down the left edge, so only one group is on screen at a time.
+  :::
+
+  :::tip Hide the dash to make room
+  Stage Manager lives down the left edge, so the app dash just gets in the way. Hide it with the `Just Perfection` extension (listed above):
+
+  ```bash
+  dconf write /org/gnome/shell/extensions/just-perfection/dash false
+  ```
+
+  :::
 
 - [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/)
 
   :::info Brings tiling window management to GNOME, allowing automatic window arrangements in customisable layouts.
   :::
 
-- 🌟 [Focus changer](https://extensions.gnome.org/extension/4627/focus-changer/)
+- [Focus changer](https://extensions.gnome.org/extension/4627/focus-changer/)
 
   :::info Switches focus to the window sitting left, right, above, or below the current one with customisable keyboard shortcuts.
   :::
