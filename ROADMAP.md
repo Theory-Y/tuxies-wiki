@@ -9,11 +9,26 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-_Nothing open — all tracked work is complete or parked in **Deferred** below._
+- 🔵 **`asusctl.md` maintainer review in progress** — marked `draft: true`. Maintainer reviewed
+  through the **"One power manager at a time"** `:::warning` (end of Install section); a
+  `:::danger Reviewed up to this point.` marker sits at that line. Everything below it (Platform
+  Profiles onward) is still unreviewed. Remaining accuracy note: the **"Power profiles vs. your
+  desktop's toggle"** final section still says the desktop switch "routes through `asusctl`" —
+  mechanically it routes through `power-profiles-daemon` and `asusd` syncs to it. Drop `draft` +
+  the marker once review completes. Maintainer pushes manually.
 
 ---
 
 ## Deferred
+
+- 🔵 **Image backfill — `asusctl.md` + `gnome-further-customisation.md`** — both guides ship/exist
+  text-first and want screenshots added later (images go last per the entry-order rule).
+  - `docs/guides/asusctl.md`: ROG Control Center **System tab** shot (EPP-link toggle + "Throttle
+    Policy for power state" AC/battery controls) is the priority; profile-dropdown + battery-tab shots
+    are nice-to-have. Drop into `docs/.vuepress/public/assets/asusctl/`, ref `/assets/asusctl/<name>.png`.
+    Look for `<!-- TODO image: … -->` markers in the guide.
+  - `docs/guides/gnome-further-customisation.md`: sweep for extension entries missing a demo image and
+    backfill from `docs/.vuepress/public/assets/gnome-further-customisation/`.
 
 - 🟡 **MosaicWM extension** (ext 8502, `CleoMenezesJr/MosaicWM`) — mosaic/tiling WM for GNOME.
   Currently **unstable** and needs GNOME Shell 50+; do **not** add to
@@ -24,6 +39,23 @@ _Nothing open — all tracked work is complete or parked in **Deferred** below._
 ---
 
 ## Completed
+
+- **ASUS Control guide — `asusctl` + ROG Control Center (2026-07-18)** — new `docs/guides/asusctl.md`
+  (title `ASUS Laptop Control (asusctl)`, permalink `/guides/asusctl/`, tags
+  Intermediate/asusctl/Power/Laptop), auto-listed on `/guides/`. ==Beginner / GUI-first==, text-first
+  (no images). Sections: install `:::tabs` (Fedora Terra → cross-linked `fedora.md#terra-repository`;
+  Debian/Ubuntu honest build-from-source `:::warning` + link to `OpenGamingCollective/asusctl` README,
+  no inline dep dump; Arch `extra` `asusctl` + AUR `rog-control-center` with a g14-repo `:::tip`), all
+  enabling `asusd.service` + the `power-profiles-daemon` swap `:::warning`; Platform Profile / Throttle
+  Policy dial (Quiet/Balanced/Performance table + GUI dropdown, CLI kept to an `asusctl profile --help`
+  pointer); EPP + the **linked-EPP** toggle (sysfs detail in `::::details`); the payoff
+  "Throttle Policy for power state" AC/battery auto-switch `:::steps`; verify (`asusctl profile -p`,
+  `platform_profile` sysfs, unplug test, `journalctl -u asusd -f` in `::::details`); the ppd
+  shared-sysfs coexistence section; and an ==incredibly brief== tiling-WM note on **Dank ASUS Control
+  Center** (Shazzaam, `dms plugins install dankAsusControlCenter`) + `pseudofractal/AsusControl`
+  alternative. Four `<!-- TODO image: … -->` markers left for the Deferred image-backfill item.
+  Mirrors the GPU-guide structure. plan: `action-plans/asusctl-guide.md`. Production build passes
+  (45 pages, no dead links).
 
 - **fastfetch config re-theme — Tux logo + blue accents (2026-07-16)** — rebuilt
   `docs/.vuepress/public/assets/terminal-customisation-bash/theoryy-fastfetch-config.zip`
