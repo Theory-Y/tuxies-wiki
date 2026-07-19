@@ -382,7 +382,7 @@ This guide is just one stop on my full setup. Here's the full checklist:
 
 **[External resources](/guides/external-resources)**
 
-- Howdy Facial Recognition
+- Facial Recognition with [Gaze](/guides/external-resources/#facial-recognition)
 - Touchpad Scrolling Sensitivity Fix
 
 :::
