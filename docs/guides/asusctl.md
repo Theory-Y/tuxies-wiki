@@ -7,7 +7,6 @@ tags:
   - asusctl
   - Power
   - Laptop
-draft: true
 ---
 
 :::info What this guide covers
