@@ -82,8 +82,6 @@ NVIDIA's official driver is not in Fedora's default repositories. It lives in ==
 
   This also builds a kernel module tailored to your system, so it rebuilds itself automatically after future kernel updates.
 
-- **Wait, then reboot**
-
   :::warning Give the module time to build before rebooting — usually ==around five minutes==. Reboot too early and you may boot to a black screen. You can watch it finish with:
 
   ```bash
@@ -93,7 +91,25 @@ NVIDIA's official driver is not in Fedora's default repositories. It lives in ==
   When that prints a version number, the module is ready.
   :::
 
-  Then reboot to load the new driver:
+- **Trust the driver** _(only needed for Secure Boot)_
+
+  Skip this if Secure Boot is off. With Secure Boot on, your computer only loads drivers it already trusts. The NVIDIA driver you just built is brand new, so it is not trusted yet — it refuses to load and you would fall back to the open-source drivers.
+
+  Tell your computer to trust it by importing the key Fedora made for the driver:
+
+  ```bash
+  sudo mokutil --import /etc/pki/akmods/certs/public_key.der
+  ```
+
+  You will be asked to make up a password. It will be used ==once== on the very next reboot; pick something simple.
+
+  On the next reboot only, a blue screen called ==MOK Manager== appears. Choose `Enroll MOK`, then `Continue`, then `Yes`, and type the password you just set.
+
+  If you miss the screen, the computer boots as normal — just run the command again to get another go.
+
+- **Wait, then reboot**
+
+  Once the module has finished building, reboot to load the new driver. On Secure Boot, this is also the reboot where the ==MOK Manager== screen appears:
 
   ```bash
   reboot
