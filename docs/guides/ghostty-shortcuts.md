@@ -1,6 +1,22 @@
-# Ghostty Keyboard Shortcuts (based on cheatsheet by hensg @ GitHub)
+---
+title: Ghostty Keyboard Shortcuts
+tags:
+  - Beginner
+  - Ghostty
+  - Terminal
+createTime: 2026/07/21 14:00:00
+permalink: /guides/ghostty-shortcuts/
+contributors:
+  - aier9500
+---
 
-Default keyboard shortcuts for Ghostty terminal emulator. Platform-specific differences are noted where applicable.
+:::info
+Default keyboard shortcuts for the `ghostty` terminal emulator. Platform-specific differences are noted where applicable. Based on a [cheatsheet by hensg](https://github.com/hensg) on GitHub.
+:::
+
+:::tip
+Every keybind can be remapped through the config file using the `keybind` option — see the [Ghostty configuration guide](/guides/ghostty-terminal/).
+:::
 
 ## Window Management
 
@@ -92,5 +108,3 @@ Default keyboard shortcuts for Ghostty terminal emulator. Platform-specific diff
 | -------------------------------- | ---------------- | ------------------ |
 | Write scrollback to file (paste) | Ctrl+Shift+J     | Cmd+Shift+J        |
 | Write scrollback to file (open)  | Ctrl+Shift+Alt+J | Cmd+Shift+Option+J |
-
-Note: These are the default keybindings. All keybindings can be customized through the configuration file using the `keybind` option.

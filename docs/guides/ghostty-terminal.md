@@ -188,7 +188,7 @@ window-save-state = never
 
 ## **Keyboard Shortcuts**
 
-`ghostty` ships with sensible default keybinds. For reference, see [this keyboard shortcuts cheatsheet](https://github.com/Theory-Y/tuxies-wiki/blob/master/resources/ghostty-terminal/keyboard-shortcuts.md).
+`ghostty` ships with sensible default keybinds. For reference, see [this keyboard shortcuts cheatsheet](/guides/ghostty-shortcuts/).
 
 ### **Focus-Split Up/Down on GNOME**
 
