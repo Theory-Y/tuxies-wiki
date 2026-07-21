@@ -360,29 +360,3 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
 :::::
 ::::::
-
-:::info More resources...
-
-This guide is just one stop on my full setup. Here's the full checklist:
-
-**First steps**
-
-- [Gnome Guide](/linux-guides/gnome/)
-- Further Gnome Customisation _(you're reading it)_
-- [Keyd](/guides/key-remapping-with-keyd/)
-- [Logitech Linux Setup](/guides/logitech-linux-setup/)
-- [Editor's choice](/linux-apps/editors-choice/)
-- [Essentials](/linux-apps/essentials/)
-
-**Dev stuff**
-
-- [Bash customisation](/guides/terminal-customisation-bash/)
-- [ghostty-terminal](/guides/ghostty-terminal/)
-- [yazi](/guides/yazi/)
-
-**[External resources](/guides/external-resources)**
-
-- Facial Recognition with [Gaze](/guides/external-resources/#facial-recognition)
-- Touchpad Scrolling Sensitivity Fix
-
-:::

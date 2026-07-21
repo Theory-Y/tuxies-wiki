@@ -40,6 +40,15 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **Aier's Fedora blog + Gaze fix (2026-07-21)** — new `docs/guides/aiers-fedora.md`
+  (title `Aier's Fedora`, permalink `/guides/aiers-fedora/`, tags Beginner/Fedora/Gnome, `sticky: 6`,
+  first-person). Personal hub: migrated the **"More resources" full-setup checklist** out of the bottom
+  of `gnome-further-customisation.md` (which now just links here), plus a hypersimplified
+  **Gaze face-unlock-without-breaking-the-keyring** fix — `:::warning` on the login-screen/keyring gap
+  (dated 2026-07-21) and a `::::details` → `:::steps` manual-repo install using a custom authselect
+  profile with `pam_gaze` stripped from `password-auth`. Kept out of `external-resources.md` per
+  maintainer preference (that file was reverted to its plain list).
+
 - **ASUS Control guide — `asusctl` + ROG Control Center (2026-07-18)** — new `docs/guides/asusctl.md`
   (title `ASUS Laptop Control (asusctl)`, permalink `/guides/asusctl/`, tags
   Intermediate/asusctl/Power/Laptop), auto-listed on `/guides/`. ==Beginner / GUI-first==, text-first
