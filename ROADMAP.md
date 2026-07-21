@@ -40,6 +40,24 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **Merged `resources/` into `assets/` — single source of truth (2026-07-21)** — killed the repo-root
+  `resources/` tree. Each download bundle's source now lives beside its zip under
+  `docs/.vuepress/public/assets/<name>/<name>/` (subfolder), zip rebuilt at
+  `assets/<name>/<name>.zip`. Moved: `key-remapping-with-keyd`, `logitech-linux-setup` (folder-rooted
+  zips), `terminal-customisation-bash/config.jsonc` → `theoryy-fastfetch-config.zip`,
+  `microsoft-edge-setup/HubApps` → `HubApps.zip` (flat-rooted). All 4 zips rebuilt non-recursively and
+  verified content-identical to originals (byte-identity not preserved — mtimes differ). Stragglers:
+  `ghostty-terminal/keyboard-shortcuts.md` **promoted to a real wiki page** `docs/guides/ghostty-shortcuts.md`
+  (permalink `/guides/ghostty-shortcuts/`, frontmatter + `:::info`/`:::tip`); the `ghostty-terminal.md`
+  link now points to the internal permalink instead of a GitHub blob (renders in-site, no offsite hop).
+  Unreferenced `bash-template.sh` → new `authoring/` (kept out of the served site). Guidelines **Download bundles** section rewritten: canonical source is now the asset
+  subfolder, plus a `:::code-tabs` block with the **named-subfolder** zip recipe (target is always
+  `<name>/` or a named file inside it, never `.` or the parent — the old zip is structurally impossible
+  to sweep in; no exclude-globs). Trade-off accepted: raw source now ships in `dist/` alongside the zip.
+  **Source-of-truth inverted** from the 2026-07-13 policy: the build source under `assets/<name>/<name>/`
+  is now canonical for every file; a guide's inline block is a mirror to update after editing the source
+  (previously the guide-inline copy was canonical).
+
 - **Aier's Fedora blog + Gaze fix (2026-07-21)** — new `docs/guides/aiers-fedora.md`
   (title `Aier's Fedora`, permalink `/guides/aiers-fedora/`, tags Beginner/Fedora/Gnome, `sticky: 6`,
   first-person). Personal hub: migrated the **"More resources" full-setup checklist** out of the bottom

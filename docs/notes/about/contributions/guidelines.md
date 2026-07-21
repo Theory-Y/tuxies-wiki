@@ -414,18 +414,58 @@ background-opacity = 0.8
 
 When a guide offers a downloadable bundle — typically a folder of dotfiles plus an installer — serve it ==same-origin from the wiki== so the reader clicks and the download starts, with no detour out to GitHub.
 
-- Keep the canonical source in `resources/<name>/`.
-- Place a zipped copy at `docs/.vuepress/public/assets/<name>/<name>.zip`, alongside the guide's other assets (the `public/` folder is served from the site root, `base: "/"`).
+- Source and zip live together under `docs/.vuepress/public/assets/<name>/` — one folder, one source of truth. The editable source sits in a named subfolder `docs/.vuepress/public/assets/<name>/<name>/`; the built zip sits beside it as `docs/.vuepress/public/assets/<name>/<name>.zip`, alongside the guide's other assets (the `public/` folder is served from the site root, `base: "/"`).
 - Link it with the root-relative permalink `/assets/<name>/<name>.zip`, exactly as images are referenced.
 
-:::info **The guide is the source of truth.** When a config is ==shown inline in the guide==, that inline block is canonical — the copy in `resources/<name>/`, any generator that writes it (e.g. a `keyd-setup.sh` heredoc), and the zipped artifact must all match it. Files that live ==only== in `resources/` (installers, presets, the folder README) have no guide copy, so `resources/` is canonical for those. The zip is always a rebuilt artifact of `resources/` — regenerate it, never hand-edit it.
+:::file-tree
+
+- docs/.vuepress/public/assets/<name>/
+  - <name>/ build source — canonical, editable (the only thing zipped)
+    - install.sh
+    - README.md
+    - … dotfiles, presets, subfolders
+  - <name>.zip rebuilt artifact of the source subfolder — regenerate, never hand-edit
+  - screenshot.png guide images, siblings — never swept into the zip
+
+:::
+
+:::info The build source is the source of truth.
+The files under `assets/<name>/<name>/` are canonical for ==every== file whether or not it appears in a guide.
+
+When a config is shown inline in the guide, that inline block should mirror the source: edit the source subfolder first, then update the guide block (and any generator that writes it, e.g. a `keyd-setup.sh` heredoc) to match.
+
+The zip should not be hand-edited; always regenerate it from source.
 :::
 
 :::important Always zip — never link a raw file. The site is a ==single-page app==: a URL with no file extension (e.g. `/assets/edge/HubApps`) is caught by the client-side router and 404s, while a text file (`.jsonc`, `.conf`, `.sh`, …) is served inline as a page of text instead of downloading. Only a `.zip` extension both bypasses the router and triggers a real download. This holds even for a ==single file== — zip it (at the archive root so it extracts in place), don't link the bare file.
 :::
 
-:::warning The hosted zip is a committed static copy — it does ==not== auto-update. Whenever you change anything in `resources/<name>/`, re-zip the folder and replace `docs/.vuepress/public/assets/<name>/<name>.zip` so the download stays in sync with the source.
+::::warning The hosted zip is a committed static copy — it does ==not== auto-update. Whenever you change anything in `assets/<name>/<name>/`, re-zip so the download stays in sync with the source. **Always build from the named source subfolder, never the bundle folder itself** — that way the old `<name>.zip` and any sibling screenshots are not swept into the new zip.
+
+:::code-tabs
+
+@tab Folder bundle
+
+```bash
+# archive keeps a <name>/ root, extracts into a folder
+cd docs/.vuepress/public/assets/<name>
+rm -f <name>.zip
+zip -rX <name>.zip <name>/
+```
+
+@tab Single file
+
+```bash
+# archive stays flat, extracts in place; zip name is free (e.g. HubApps.zip)
+cd docs/.vuepress/public/assets/<name>/<name>
+rm -f ../<name>.zip
+zip -X ../<name>.zip <file>
+```
+
 :::
+
+The `zip` target is always the named subfolder (or a named file inside it) — never `.` or the parent — so the sibling zip can never be included.
+::::
 
 :::details See code...
 
