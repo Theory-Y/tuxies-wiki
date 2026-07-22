@@ -7,6 +7,7 @@ createTime: 2025/07/14 18:18:12
 permalink: /guides/ssh-guide/
 contributors:
   - joseporcar
+archived: true
 ---
 
 :::tip Why use SSH
