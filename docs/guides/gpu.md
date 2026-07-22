@@ -58,7 +58,7 @@ cardwire config save
 
 ::::tabs
 
-@tab ::simple-icons:nvidia:: NVIDIA
+@tab ::simple-icons:nvidia:: NVIDIA (Fedora)
 
 NVIDIA's official driver is not in Fedora's default repositories. It lives in ==RPM Fusion==, a community repository. Enable it, then install the driver.
 
