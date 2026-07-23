@@ -137,12 +137,11 @@ function y() {
 
 :::tabs
 
-@tab ::devicon:fedora:: Fedora
+@tab ::devicon:fedora:: Fedora (Terra)
 
-Enable the COPR, then install:
+[With Terra enabled:](/linux-guides/fedora/#terra-repository)
 
 ```bash
-sudo dnf copr enable lihaohong/yazi
 sudo dnf install yazi
 ```
 

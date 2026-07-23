@@ -50,19 +50,11 @@ Note that `ghostty` has no single official Linux package except for Arch — the
 
 ::::tabs
 
-@tab ::devicon:fedora:: Fedora
+@tab ::devicon:fedora:: Fedora (Terra)
 
-`ghostty` is available via the community COPR repository:
-
-```bash
-sudo dnf copr enable scottames/ghostty
-sudo dnf install ghostty
-```
-
-Alternatively, install via [Terra](https://terra.fyralabs.com/):
+[With Terra enabled:](/linux-guides/fedora/#terra-repository)
 
 ```bash
-sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 sudo dnf install ghostty
 ```
 
