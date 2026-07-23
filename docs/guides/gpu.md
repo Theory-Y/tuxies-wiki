@@ -56,13 +56,13 @@ cardwire config save
 
 ## **Installing drivers**
 
-::::tabs
+:::::tabs
 
 @tab ::simple-icons:nvidia:: NVIDIA (Fedora)
 
 NVIDIA's official driver is not in Fedora's default repositories. It lives in ==RPM Fusion==, a community repository. Enable it, then install the driver.
 
-:::steps
+::::steps
 
 - **Enable RPM Fusion**
 
@@ -118,11 +118,25 @@ NVIDIA's official driver is not in Fedora's default repositories. It lives in ==
 :::note More detail on Fedora's NVIDIA setup — including CUDA and codec support — lives in the [NVIDIA GPU Driver Installation](https://docs.fedoraproject.org/en-US/gaming/drivers/) guide by the Fedora Docs.
 :::
 
+::::
+
+@tab ::simple-icons:nvidia:: NVIDIA (Debian/Ubuntu)
+
+:::info Contribution appreciated
+NVIDIA driver setup for Debian/Ubuntu has not been written yet. If you run it and want to help, ==contributions are very welcome== — see [Contributions](/contributions/).
+:::
+
+@tab ::simple-icons:nvidia:: NVIDIA (Arch)
+
+:::info Contribution appreciated
+NVIDIA driver setup for Arch has not been written yet. If you run it and want to help, ==contributions are very welcome== — see [Contributions](/contributions/).
+:::
+
 @tab ::simple-icons:amd:: AMD
 
-Good news — there is nothing to install. Fedora includes the open-source ==Mesa== AMD drivers by default, and they are kept up to date with every system update. Your card already works.
+Good news — there is nothing to install. The open-source ==Mesa== AMD drivers ship by default on every major distro and stay up to date with your system updates. Your card already works.
 
-::::
+:::::
 
 ## **Cardwire**
 
@@ -140,6 +154,10 @@ It can block or unblock a GPU ==without a reboot or logout==.
 
 ### **Installing Cardwire**
 
+::::tabs
+
+@tab ::devicon:fedora:: Fedora
+
 Cardwire is packaged for Fedora in the ==Terra== repository. If you have not enabled Terra yet, follow the one-command setup in the [Fedora Guide](/linux-guides/fedora/#terra-repository) first.
 
 With Terra enabled, install Cardwire and turn on its background service:
@@ -151,6 +169,20 @@ sudo systemctl enable cardwired --now
 # as well as enabling it on boot. No reboot needed.
 
 ```
+
+@tab ::devicon:debian:: Debian/Ubuntu
+
+:::info Contribution appreciated
+Cardwire packaging for Debian/Ubuntu has not been documented yet. If you can help, ==contributions are very welcome== — see [Contributions](/contributions/).
+:::
+
+@tab ::devicon:archlinux:: Arch
+
+:::info Contribution appreciated
+Cardwire packaging for Arch has not been documented yet. If you can help, ==contributions are very welcome== — see [Contributions](/contributions/).
+:::
+
+::::
 
 ### **Basic commands**
 
@@ -183,7 +215,7 @@ cardwire gpu 1 --lsof      # see what is currently using GPU 1
 
 ### **Recommended setup**
 
-We recommend setting up ==battery-based switching== to use automatically use the built-in graphic while on battery and to use the dGPU when plugged in. This maximises battery life when not plugged in and gives you full performance when plugged.
+We recommend setting up ==battery-based switching== to automatically use the built-in graphic while on battery and to use the dGPU when plugged in. This maximises battery life when not plugged in and gives you full performance when plugged.
 
 ```bash
 cardwire config battery-auto-switch true
