@@ -1,6 +1,8 @@
 ---
 pageLayout: home
 externalLinkIcon: false
+title: Tuxie's Wiki — Beginner-Friendly Linux Wiki
+description: Tuxie's Wiki is a community-maintained, beginner-friendly Linux wiki. Start your Linux journey with clear, educational guides on installation, the terminal, ricing, and making Linux fun.
 config:
   - type: hero
     full: true
