@@ -20,8 +20,39 @@ export default defineUserConfig({
       {
         rel: "icon",
         type: "image/png",
-        href: "https://theme-plume.vuejs.press/favicon-32x32.png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png",
       },
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "96x96",
+        href: "/favicon-96x96.png",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png",
+      },
+    ],
+    [
+      "script",
+      { type: "application/ld+json" },
+      JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Tuxie's Wiki",
+        alternateName: "Tuxies Wiki",
+        url: "https://tuxies-wiki.theoryy.dev/",
+        description:
+          "A beginner-friendly Linux wiki with clear, educational guides on getting started, the command line, ricing, and more.",
+      }),
     ],
     [
       "script",
@@ -70,6 +101,14 @@ export default defineUserConfig({
 
     /* article prefix URL */
     article: "/article/",
+
+    /* SEO plugin: fallback social-share image for pages without one */
+    plugins: {
+      seo: {
+        fallBackImage: "https://tuxies-wiki.theoryy.dev/og-image.png",
+        canonical: (page) => `https://tuxies-wiki.theoryy.dev${page.path}`,
+      },
+    },
 
     /**
      * 编译缓存，加快编译速度

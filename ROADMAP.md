@@ -9,9 +9,11 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-- 🟡 **SEO: post-deploy manual steps** — after the next Cloudflare deploy, submit
-  `https://tuxies-wiki.theoryy.dev/sitemap.xml` in Google Search Console and request indexing of the
-  homepage. Config-side SEO already done (hostname + sitemap + robots + meta description, see Completed).
+- 🟡 **SEO: post-deploy manual steps** — sitemap already submitted in GSC (Success, 46 pages,
+  2026-07-24). After the next Cloudflare deploy: use URL Inspection on the homepage and hit
+  **Request indexing** so the site (not the GitHub ROADMAP blob) becomes the top result — GitHub
+  currently outranks it only because the site is freshly indexed; expect it to flip within days
+  to a few weeks. Config-side SEO done (see Completed).
 
 - 🔵 **`asusctl.md` maintainer review in progress** — marked `draft: true`. Maintainer reviewed
   through the **"One power manager at a time"** `:::warning` (end of Install section); a
@@ -94,6 +96,13 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   alternative. Four `<!-- TODO image: … -->` markers left for the Deferred image-backfill item.
   Mirrors the GPU-guide structure. plan: `action-plans/asusctl-guide.md`. Production build passes
   (45 pages, no dead links).
+
+- **SEO round 2 — favicons, canonical, OG image, JSON-LD, robots (2026-07-25)** — replaced the
+  hotlinked theme-plume favicon with local ones generated from `tux.png` (`favicon-32x32.png`,
+  `favicon-96x96.png`, `apple-touch-icon.png` in `docs/.vuepress/public/`), added a 1200×630
+  `og-image.png` wired as the SEO plugin's `fallBackImage`, per-page `<link rel="canonical">` via
+  the seo plugin's `canonical` option, a `WebSite` JSON-LD block in `head`, a `robots.txt` in
+  `public/` carrying the `Sitemap:` line, and GitHub repo topics (linux, wiki, documentation, …).
 
 - **SEO config — hostname + sitemap + meta (2026-07-24)** — set
   `hostname: "https://tuxies-wiki.theoryy.dev"` in `docs/.vuepress/config.ts` (activates plume's
