@@ -46,6 +46,13 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **asusctl guide: terminal quick append (2026-07-25)** — added a `::::details Quick append` after the
+  intro callouts of `asusctl.md` (mirrors gpu.md placement) with Apply/Reset `:::tabs`. Consolidates the
+  GUI-focused guide into copy-paste CLI: `systemctl enable --now asusd.service`, per-power-state auto
+  switching (`asusctl profile set -a Balanced` / `-b Quiet`), current profile, and `asusctl battery
+  limit 80` (fulfils the intro's charge-threshold promise the GUI body never covered). All commands
+  verified against local `asusctl --help` (installed on the ProArt P16).
+
 - **GPU guide: overnight sleep-drain fix section (2026-07-25)** — new `gpu.md` H2 documenting the
   NVIDIA `s2idle` battery-drain fix (dGPU stuck in `D0` all night): `/etc/modprobe.d/nvidia-pm.conf`
   with `NVreg_EnableS0ixPowerManagement=1`, plus a warning that `NVreg_PreserveVideoMemoryAllocations=1`

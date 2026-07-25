@@ -19,6 +19,49 @@ We'll keep this guide mostly away from the terminal. By the end, you will be abl
 `asusctl` only works on ASUS laptops (the ==ROG==, ==TUF==, and ==ProArt== lines). On any other laptop these tools will not find your hardware.
 :::
 
+::::details Quick append (CLI)
+Once `asusctl` is installed (see [below](#installing-asusctl)), this is the whole setup in one place if you prefer the CLI.
+
+:::tabs
+
+@tab Apply
+
+```bash
+# turn the background service on
+systemctl enable --now asusd
+
+# automatic switching: Balanced when plugged in, Quiet on battery
+asusctl profile set -a Balanced
+asusctl profile set -b Quiet
+
+# apply a profile to use right now
+asusctl profile set Balanced
+
+# stop charging at 80% to preserve long-term battery health
+asusctl battery limit 80
+```
+
+@tab Reset
+
+```bash
+# same profile on AC and battery — undo the automatic switching
+asusctl profile set -a Balanced
+asusctl profile set -b Balanced
+
+# allow charging back to 100%
+asusctl battery limit 100
+```
+
+:::
+
+:::warning
+EPP is not set via `asusctl`. The throttle-policy → EPP link lives in `/etc/asusd/asusd.ron` as `platform_profile_linked_epp`.
+
+Use ROG Control Center for it, or edit that file `asusd.ron`.
+:::
+
+::::
+
 ## **Installing asusctl**
 
 `asusctl` comes in two pieces: `asusd` (the background service that actually changes the settings) and ==ROG Control Center== (the graphical app).
