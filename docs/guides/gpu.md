@@ -247,6 +247,65 @@ cardwire config save
 This only works reliably on the standard laptop setup — ==exactly two chips==: the built-in graphics plus one NVIDIA card.
 :::
 
+## **Fixing Battery Drain** during sleep (NVIDIA dGPUs)
+
+Battery drain overnight? Laptop warm when suspended?
+
+Modern laptops no longer use S3 deep sleep, instead, they use ==modern standby== (`s2idle`), where each part of the computer is expected to power itself down. The NVIDIA driver only does this if you ask it to.
+
+Check which sleep style your laptop uses:
+
+```bash
+cat /sys/power/mem_sleep
+# [s2idle]  <-- this fix is for you
+# [deep]    <-- you have S3 sleep; this fix does not apply
+```
+
+::::steps
+
+- **Tell the NVIDIA driver to power down during sleep**
+
+  Create one small config file:
+
+  ```bash
+  sudo tee /etc/modprobe.d/nvidia-pm.conf <<'EOF'
+  options nvidia NVreg_EnableS0ixPowerManagement=1 NVreg_TemporaryFilePath=/var/tmp
+  EOF
+  ```
+
+  :::warning Do ==not== use `NVreg_PreserveVideoMemoryAllocations=1` on a modern-standby (`s2idle`) laptop. That option is meant for the old S3 sleep style — on `s2idle` machines it can ==freeze the laptop the moment it tries to sleep==. Then a force shutdown (holding the power button for 10s) is needed.
+  :::
+
+- **Reboot**
+
+  The setting is read when the driver loads, so a reboot is required:
+
+  ```bash
+  reboot
+  ```
+
+- **Verify it worked**
+
+  Put the laptop to sleep for ~5 minutes, check:
+
+  ```bash
+  journalctl -b | grep "Power state changed"
+  ```
+
+  If you see the NVIDIA dGPU reaching `D3Cold` during the sleep interval, then the dGPU drain has been fixed.
+
+::::
+
+::::details Why this happens (technical detail)
+
+- During `s2idle`, the kernel briefly wakes every PCI device to `D0` (full power) on the way into sleep. The NVIDIA driver is then responsible for saving its state and dropping the card back to `D3`.
+- Without `NVreg_EnableS0ixPowerManagement=1`, the driver skips that step and the card ==sits in `D0` for the entire sleep== — roughly 7% (5W) battery per hour on an RTX 4060, and a warm chassis by morning.
+- With the option on, the driver copies video memory into system RAM (when usage is under the `S0ixPowerManagementVideoMemoryThreshold`, 256 MB by default) and powers the card down for the duration of standby.
+- `NVreg_PreserveVideoMemoryAllocations=1` instead saves ==all== video memory to disk via `nvidia-suspend.service`. An S3-era mechanism that collides with the `s2idle` entry path and can hang the kernel causing a freeze.
+- You can watch the card's power state around a sleep cycle with `journalctl -b | grep "Power state changed"` (Cardwire logs these). A brief `D0` right at sleep entry is normal; it should read `D3Cold` once the system is back up.
+
+::::
+
 ## **Gnome Extension: Cardwire GPU Toggle**
 
 A Quick Settings toggle to switch between GPU modes using cardwire.

@@ -44,6 +44,13 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **GPU guide: overnight sleep-drain fix section (2026-07-25)** — new `gpu.md` H2 documenting the
+  NVIDIA `s2idle` battery-drain fix (dGPU stuck in `D0` all night): `/etc/modprobe.d/nvidia-pm.conf`
+  with `NVreg_EnableS0ixPowerManagement=1`, plus a warning that `NVreg_PreserveVideoMemoryAllocations=1`
+  hard-freezes `s2idle` machines at sleep entry. Includes `mem_sleep` applicability check,
+  `suspend_stats` verification, and a technical-why `::::details`. Debugged and verified live on the
+  ProArt P16 (98% hardware-sleep residency after fix).
+
 - **Merged `resources/` into `assets/` — single source of truth (2026-07-21)** — killed the repo-root
   `resources/` tree. Each download bundle's source now lives beside its zip under
   `docs/.vuepress/public/assets/<name>/<name>/` (subfolder), zip rebuilt at
