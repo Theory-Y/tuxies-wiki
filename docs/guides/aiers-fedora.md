@@ -102,3 +102,4 @@ This can be solved by modifying a copy of the stock Gaze authentification profil
 ### **Hardware**
 
 - [Logitech Linux Setup](/guides/logitech-linux-setup/)
+- [ProArt P16 2025](/guides/proart-p16-2025/)
