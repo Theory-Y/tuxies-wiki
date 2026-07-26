@@ -9,6 +9,13 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
+- 🟡 **GPU guide: sleep-drain section rewrite pending measurements** — the `gpu.md` battery-drain
+  section is commented out (`TEMPORARILY HIDDEN` marker). Measured cause on the ProArt P16 was a
+  touchpad (`ASCF1A01:00`) wakeup interrupt storm (~15 IRQ/s, 53% hw-sleep residency), fixed with a
+  udev rule (`ATTR{power/wakeup}="disabled"`). dGPU-in-`D0` contribution unconfirmed. After tonight's
+  combined-fix drain numbers (and ideally an A/B reboot test of `NVreg_EnableS0ixPowerManagement`),
+  rewrite: touchpad-storm as headline fix, dGPU option as secondary note with honest drain figures.
+
 - 🟡 **SEO: post-deploy manual steps** — sitemap already submitted in GSC (Success, 46 pages,
   2026-07-24). After the next Cloudflare deploy: use URL Inspection on the homepage and hit
   **Request indexing** so the site (not the GitHub ROADMAP blob) becomes the top result — GitHub
@@ -58,7 +65,9 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   with `NVreg_EnableS0ixPowerManagement=1`, plus a warning that `NVreg_PreserveVideoMemoryAllocations=1`
   hard-freezes `s2idle` machines at sleep entry. Includes `mem_sleep` applicability check,
   `suspend_stats` verification, and a technical-why `::::details`. Debugged and verified live on the
-  ProArt P16 (98% hardware-sleep residency after fix).
+  ProArt P16 (98% hardware-sleep residency after fix). **Section since commented out** — upower
+  drain comparison showed the dominant leak was a touchpad (`ASCF1A01:00`) wakeup interrupt storm
+  (~5.3 of ~6.8%/h); dGPU share unconfirmed pending an A/B test. See Open item.
 
 - **Merged `resources/` into `assets/` — single source of truth (2026-07-21)** — killed the repo-root
   `resources/` tree. Each download bundle's source now lives beside its zip under

@@ -247,6 +247,11 @@ cardwire config save
 This only works reliably on the standard laptop setup — ==exactly two chips==: the built-in graphics plus one NVIDIA card.
 :::
 
+<!-- TEMPORARILY HIDDEN — pending verification. Live measurements (2026-07-25) suggest the
+dominant overnight drain was a touchpad wakeup interrupt storm, not the dGPU staying in D0;
+the dGPU's real contribution is unconfirmed until an A/B test. Re-publish (rewritten) once
+tonight's numbers are in.
+
 ## **Fixing Battery Drain** during sleep (NVIDIA dGPUs)
 
 Battery drain overnight? Laptop warm when suspended?
@@ -305,6 +310,8 @@ cat /sys/power/mem_sleep
 - You can watch the card's power state around a sleep cycle with `journalctl -b | grep "Power state changed"` (Cardwire logs these). A brief `D0` right at sleep entry is normal; it should read `D3Cold` once the system is back up.
 
 ::::
+
+END TEMPORARILY HIDDEN -->
 
 ## **Gnome Extension: Cardwire GPU Toggle**
 
