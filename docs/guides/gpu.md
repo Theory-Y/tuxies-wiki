@@ -247,12 +247,10 @@ cardwire config save
 This only works reliably on the standard laptop setup — ==exactly two chips==: the built-in graphics plus one NVIDIA card.
 :::
 
-<!-- TEMPORARILY HIDDEN — pending verification. Live measurements (2026-07-25) suggest the
-dominant overnight drain was a touchpad wakeup interrupt storm, not the dGPU staying in D0;
-the dGPU's real contribution is unconfirmed until an A/B test. Re-publish (rewritten) once
-tonight's numbers are in.
-
 ## **Fixing Battery Drain** during sleep (NVIDIA dGPUs)
+
+:::warning Still in lab testing stage (2026-07-26)
+:::
 
 Battery drain overnight? Laptop warm when suspended?
 
@@ -304,14 +302,12 @@ cat /sys/power/mem_sleep
 ::::details Why this happens (technical detail)
 
 - During `s2idle`, the kernel briefly wakes every PCI device to `D0` (full power) on the way into sleep. The NVIDIA driver is then responsible for saving its state and dropping the card back to `D3`.
-- Without `NVreg_EnableS0ixPowerManagement=1`, the driver skips that step and the card ==sits in `D0` for the entire sleep== — roughly 7% (5W) battery per hour on an RTX 4060, and a warm chassis by morning.
+- Without `NVreg_EnableS0ixPowerManagement=1`, the driver skips that step and the card ==sits in `D0` for the entire sleep==. In our measurements on an RTX 4060 laptop this cost roughly 1–1.5% battery per hour; reports vary by model.
 - With the option on, the driver copies video memory into system RAM (when usage is under the `S0ixPowerManagementVideoMemoryThreshold`, 256 MB by default) and powers the card down for the duration of standby.
 - `NVreg_PreserveVideoMemoryAllocations=1` instead saves ==all== video memory to disk via `nvidia-suspend.service`. An S3-era mechanism that collides with the `s2idle` entry path and can hang the kernel causing a freeze.
 - You can watch the card's power state around a sleep cycle with `journalctl -b | grep "Power state changed"` (Cardwire logs these). A brief `D0` right at sleep entry is normal; it should read `D3Cold` once the system is back up.
 
 ::::
-
-END TEMPORARILY HIDDEN -->
 
 ## **Gnome Extension: Cardwire GPU Toggle**
 

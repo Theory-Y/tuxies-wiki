@@ -9,12 +9,6 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-- 🟡 **GPU guide: sleep-drain section rewrite pending measurements** — the `gpu.md` battery-drain
-  section is commented out (`TEMPORARILY HIDDEN` marker). Measured cause on the ProArt P16 was a
-  touchpad (`ASCF1A01:00`) wakeup interrupt storm (~15 IRQ/s, 53% hw-sleep residency), fixed with a
-  udev rule (`ATTR{power/wakeup}="disabled"`). dGPU-in-`D0` contribution unconfirmed. After tonight's
-  combined-fix drain numbers (and ideally an A/B reboot test of `NVreg_EnableS0ixPowerManagement`),
-  rewrite: touchpad-storm as headline fix, dGPU option as secondary note with honest drain figures.
 
 - 🟡 **SEO: post-deploy manual steps** — sitemap already submitted in GSC (Success, 46 pages,
   2026-07-24). After the next Cloudflare deploy: use URL Inspection on the homepage and hit
@@ -52,6 +46,15 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 ---
 
 ## Completed
+
+- **Sleep-drain docs republished after overnight verification (2026-07-26)** — overnight numbers with
+  both fixes: 99.97% hw-sleep residency, ~0.8%/h drain (vs 6.8%/h before). `gpu.md` sleep section
+  un-hidden and rewritten measure-first (Step 1: `suspend_stats` residency + wakeup-source hunt;
+  Step 2: `NVreg_EnableS0ixPowerManagement=1` with honest ~1–1.5%/h impact note, `Preserve*` freeze
+  warning kept). New machine guide `docs/guides/proart-p16-2025.md` (`/guides/proart-p16-2025/`):
+  touchpad (`ASCF1A01:00`) wakeup-storm udev fix, results, diagnosis `::::details`; cross-links with
+  the GPU Guide both ways. dGPU-in-`D0` exact share still unquantified (A/B test not run) — wording
+  kept honest about that.
 
 - **asusctl guide: terminal quick append (2026-07-25)** — added a `::::details Quick append` after the
   intro callouts of `asusctl.md` (mirrors gpu.md placement) with Apply/Reset `:::tabs`. Consolidates the
