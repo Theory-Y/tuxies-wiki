@@ -47,6 +47,16 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **dGPU A/B test done; lab-testing labels lifted (2026-07-26)** — 2h suspend with
+  `NVreg_EnableS0ixPowerManagement=1` off (touchpad fix on): 99.88% residency, ~0.9%/h drain vs
+  0.79%/h with the fix — dGPU contribution ≈ noise; touchpad storm was the whole drain. Driver
+  default `DynamicPowerManagement: 3` (RTD3) already lands the idle card in `D3cold` pre-suspend, so
+  the `NVreg_EnableS0ixPowerManagement=1` advice was redundant. Wiki: `gpu.md` sleep section rewritten
+  — dGPU sleeps by default, verify via `power_state` (not `nvidia-smi`/`lspci`, they wake the card),
+  residency measure + link to ProArt worked example, `Preserve*` freeze warning kept; heading suffix
+  dropped so ProArt anchors work. ProArt guide: lab-testing warning + `draft: true` removed, results
+  tip touchpad-only numbers. Local `/etc/modprobe.d/nvidia-pm.conf` left commented out.
+
 - **Sleep-drain docs republished after overnight verification (2026-07-26)** — overnight numbers with
   both fixes: 99.97% hw-sleep residency, ~0.8%/h drain (vs 6.8%/h before). `gpu.md` sleep section
   un-hidden and rewritten measure-first (Step 1: `suspend_stats` residency + wakeup-source hunt;

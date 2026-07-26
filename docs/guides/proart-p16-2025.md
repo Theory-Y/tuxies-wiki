@@ -6,7 +6,6 @@ tags:
 title: ProArt P16 (2025) Fedora
 createTime: 2026/07/26 09:40:00
 permalink: /guides/proart-p16-2025/
-draft: true
 ---
 
 :::info What this guide covers
@@ -16,9 +15,6 @@ For everything that is not specific to this machine — NVIDIA driver install, =
 :::
 
 ## **Overnight Battery Drain** while asleep
-
-:::warning Still in lab testing stage (2026-07-26)
-:::
 
 The symptom: close the lid on a full battery, wake up to a ==dead, warm laptop==. On our unit this drained ~7% per hour asleep — a full battery gone in one night.
 
@@ -60,7 +56,7 @@ The fix: tell the system the touchpad is not allowed to wake the machine. The li
 :::tip Results on our unit
 Before any fixes: ==~6.8% battery per hour== asleep, warm chassis, 53% hardware-sleep residency.
 
-After this fix (plus the [NVIDIA sleep setting](/guides/gpu/#fixing-battery-drain-during-sleep) from the GPU Guide): ==~0.8% per hour== and 99.97% residency — 9% battery over a full 11-hour night.
+After this fix: ==under 1% per hour== and over 99.8% residency — a full night of sleep now costs under 10% battery.
 :::
 
 ::::details How the culprit was found (technical detail)
