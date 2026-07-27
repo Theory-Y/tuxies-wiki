@@ -15,13 +15,17 @@ contributors:
 This guide will walk you through customising your Bash prompt, how to run `fastfetch` on start in your terminal, and a few useful terminal programs.
 :::
 
+:::demo-wrapper img
+![Terminal preview](/assets/terminal-customisation-bash/terminal-preview.png)
+:::
+
 :::danger
 This tutorial assumes that you are using Bash as your shell, even though some part of the tutorial may apply to non-Bash shells.
 
 ==For non-Bash users, we cannot guarantee success and will not take responsibility to damages to your system.==
 :::
 
-::::details Master quick append
+::::details Master quick append (Bash)
 
 Paste into `~/.bashrc`. Each option is explained in the sections below.
 
@@ -36,34 +40,15 @@ fastfetch
 #### custom PS1 prompt ####
 PS1='------------------\n\[$(tput setaf 26)\][\[$(tput setaf 32)\]\u \[$(tput setaf 38)\]@ \[$(tput setaf 44)\]\h\[$(tput setaf 26)\]] \[$(tput setaf 75)\]\w\[$(tput sgr0)\]\n > '
 
+#### quick config edit ####
+alias edit-bash='$EDITOR ~/.bashrc' # edit this file with your default editor
+
 #### fzf-related aliases ####
-alias cmd='compgen -c | fzf' # search for a possible command
-alias zh='history | fzf' # search in bash command history
+alias show-commands='compgen -c | fzf' # show all commands
+alias search-history='history | fzf' # search in bash command history
 
 #### enabling zoxide ####
 eval "$(zoxide init bash)"
-
-#### eza-related aliases ####
-# list directories in a tree format (or specify how many levels to list them)
-alias lsd='eza -TD'
-alias lsd1='eza -TD --level 1'
-alias lsd2='eza -TD --level 2'
-alias lsd3='eza -TD --level 3'
-# list items in tree format (or specify how many levels to list them)
-alias lst='eza -T'
-alias lst1='eza -T --level 1'
-alias lst2='eza -T --level 2'
-alias lst3='eza -T --level 3'
-# list all directories in tree format including hidden ones (or specify how many levels to list them)
-alias lsda='eza -TDa'
-alias lsda1='eza -TDa --level 1'
-alias lsda2='eza -TDa --level 2'
-alias lsda3='eza -TDa --level 3'
-# list all items in tree format including hidden ones (or specify how many levels to list them)
-alias lsta='eza -Ta'
-alias lsta1='eza -Ta --level 1'
-alias lsta2='eza -Ta --level 2'
-alias lsta3='eza -Ta --level 3'
 
 #### yazi: cd-on-exit wrapper ####
 function y() {
@@ -79,12 +64,105 @@ function y() {
 
 ::::
 
+::::details Master quick append (Fish)
+
+Quick install:
+
+:::tabs
+
+@tab ::devicon:fedora:: Fedora
+
+```bash
+sudo dnf install fish
+```
+
+@tab ::devicon:debian:: Debian/Ubuntu
+
+```bash
+sudo apt install fish
+```
+
+@tab ::devicon:archlinux:: Arch
+
+```bash
+pacman -S fish
+```
+
+:::
+
+Then set `fish` as your default shell (log out and back in for it to take effect):
+
+```bash
+chsh -s $(which fish)
+```
+
+Fish loads functions on demand from `~/.config/fish/functions/`.
+
+```fish
+mkdir -p ~/.config/fish/functions
+```
+
+In `~/.config/fish/`:
+
+:::code-tabs
+
+@tab config.fish
+
+```fish
+if status is-interactive
+    #### disable welcome greeting ####
+    set -g fish_greeting
+
+    #### autorun fastfetch ####
+    fastfetch
+
+    #### quick config edit ####
+    alias edit-fish='$EDITOR ~/.config/fish/config.fish' # edit this file with your default editor
+
+    #### fzf-related aliases ####
+    alias show-commands='complete -C "" | fzf' # show all commands
+    alias search-history='history | fzf' # search in fish command history
+
+    #### enabling zoxide ####
+    zoxide init fish | source
+end
+```
+
+@tab functions/fish_prompt.fish
+
+```fish
+#### custom prompt ####
+function fish_prompt
+    echo '------------------'
+    echo (set_color 005fd7)'['(set_color 0087d7)$USER(set_color 00afd7)' @ '(set_color 00d7d7)(hostname)(set_color 005fd7)'] '(set_color 5fafff)(prompt_pwd)(set_color normal)
+    echo -n ' > '
+end
+```
+
+@tab functions/y.fish
+
+```fish
+#### yazi: cd-on-exit wrapper ####
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	command yazi $argv --cwd-file="$tmp"
+	if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		builtin cd -- "$cwd"
+	end
+	command rm -f -- "$tmp"
+end
+```
+
+:::
+
+::::
+
 ## **Back up current `.bashrc`**
 
 Make a copy of your current `.bashrc` file and place it somewhere safe.
 
 ```bash
-cp ~/.bashrc ~/.bashrc-original # Makes a copy of current .bashrc file named .bashrc-original
+cp ~/.bashrc ~/.bashrc.bak # Makes a copy of current .bashrc file named .bashrc.bak
 ```
 
 Make sure that you have a `.bashrc` file in your `/home/$USER/` at all times. If you followed the command above, you'd be fine.
@@ -131,7 +209,7 @@ unset rc
 
 ## **Aesthetic Changes**
 
-:::::details Quick append & preview
+:::::details Quick append
 
 Your `.bashrc` should look something like this if you decide to follow all instructions in the following section:
 
@@ -148,8 +226,6 @@ PS1='------------------\n\[$(tput setaf 26)\][\[$(tput setaf 32)\]\u \[$(tput se
 ```
 
 :::
-
-![Aesthetic Terminal](/assets/terminal-customisation-bash/aesthetic-terminal.png)
 
 :::::
 
@@ -196,15 +272,9 @@ You can make your bash terminal autorun `fastfetch` to display system informatio
 
   :::
 
-  and here is what it looks like:
+- **Apply the Tuxie's Wiki config _(optional)_**
 
-  :::demo-wrapper img
-  ![fastfetch](/assets/terminal-customisation-bash/fastfetch.png)
-  :::
-
-- **Apply the TheoryY config _(optional)_**
-
-  For a TheoryY-branded fastfetch — the Tux mascot in monochrome with steel-blue accents — download [this `config.jsonc`](/assets/terminal-customisation-bash/theoryy-fastfetch-config.zip), extract it, and save it to `~/.config/fastfetch/config.jsonc`. fastfetch picks it up automatically.
+  For a Tuxie's Wiki-branded fastfetch — the Tux mascot in monochrome with steel-blue accents — download [this `config.jsonc`](/assets/terminal-customisation-bash/theoryy-fastfetch-config.zip), extract it, and save it to `~/.config/fastfetch/config.jsonc`. fastfetch picks it up automatically.
 
 - **Changing the look of the prompt (`PS1`)**
 
@@ -221,10 +291,6 @@ You can make your bash terminal autorun `fastfetch` to display system informatio
 
   :::
 
-  and here is what it looks like:
-
-  ![Custom PS1](/assets/terminal-customisation-bash/custom-ps1.png)
-
 - **More resources**
   - [`PS1` customisation by Rahul from tecadmin.net](https://tecadmin.net/how-to-customize-bash-prompt-ps1-in-linux/)
 
@@ -232,7 +298,7 @@ You can make your bash terminal autorun `fastfetch` to display system informatio
 
 ## **Terminal programs**
 
-:::::details Quick append & preview
+:::::details Quick append
 
 Your `.bashrc` should look something like this if you decide to follow all instructions in the following section:
 
@@ -243,33 +309,11 @@ Your `.bashrc` should look something like this if you decide to follow all instr
 # ... omitted original .bashrc content above
 
 #### fzf-related aliases ####
-alias cmd='compgen -c | fzf' # search for a possible command
-alias zh='history | fzf' # search in bash command history
+alias show-commands='compgen -c | fzf' # show all commands
+alias search-history='history | fzf' # search in bash command history
 
 #### enabling zoxide ####
 eval "$(zoxide init bash)"
-
-#### eza-related aliases ####
-# list directories in a tree format (or specify how many levels to list them)
-alias lsd='eza -TD'
-alias lsd1='eza -TD --level 1'
-alias lsd2='eza -TD --level 2'
-alias lsd3='eza -TD --level 3'
-# list items in tree format (or specify how many levels to list them)
-alias lst='eza -T'
-alias lst1='eza -T --level 1'
-alias lst2='eza -T --level 2'
-alias lst3='eza -T --level 3'
-# list all directories in tree format including hidden ones (or specify how many levels to list them)
-alias lsda='eza -TDa'
-alias lsda1='eza -TDa --level 1'
-alias lsda2='eza -TDa --level 2'
-alias lsda3='eza -TDa --level 3'
-# list all items in tree format including hidden ones (or specify how many levels to list them)
-alias lsta='eza -Ta'
-alias lsta1='eza -Ta --level 1'
-alias lsta2='eza -Ta --level 2'
-alias lsta3='eza -Ta --level 3'
 
 #### yazi: cd-on-exit wrapper ####
 function y() {
@@ -327,8 +371,8 @@ function y() {
   @tab .bashrc
 
   ```bash
-  alias cmd='compgen -c | fzf' # search for a possible command
-  alias zh='history | fzf' # search in bash command history
+  alias show-commands='compgen -c | fzf' # show all commands
+  alias search-history='history | fzf' # search in bash command history
   ```
 
   :::
@@ -390,75 +434,6 @@ function y() {
   - [More info](https://github.com/ajeetdsouza/zoxide) about `zoxide` from the official `zoxide` GitHub page
 
 ::::
-
-### **Using `eza`**
-
-:::tip What is `eza`?
-`eza` is a modern alternative to the classic `ls`, it provides colour-coding, tree-styled outputs, git integration, and more.
-:::
-
-:::::steps
-
-- **Installation**
-
-  ::::tabs
-
-  @tab ::devicon:fedora:: Fedora
-
-  ```bash
-  sudo dnf install eza
-  ```
-
-  @tab ::devicon:archlinux:: Arch
-
-  ```bash
-  pacman -S eza
-  ```
-
-  @tab ::devicon:debian:: Debian/Ubuntu
-
-  ```bash
-  sudo apt install eza
-  ```
-
-  ::::
-
-- **Add aliases**
-
-  Below are some example aliases:
-  :::code-tabs
-
-  @tab .bashrc
-
-  ```bash
-  # list directories in a tree format (or specify how many levels to list them)
-  alias lsd='eza -TD'
-  alias lsd1='eza -TD --level 1'
-  alias lsd2='eza -TD --level 2'
-  alias lsd3='eza -TD --level 3'
-  # list items in tree format (or specify how many levels to list them)
-  alias lst='eza -T'
-  alias lst1='eza -T --level 1'
-  alias lst2='eza -T --level 2'
-  alias lst3='eza -T --level 3'
-  # list all directories in tree format including hidden ones (or specify how many levels to list them)
-  alias lsda='eza -TDa'
-  alias lsda1='eza -TDa --level 1'
-  alias lsda2='eza -TDa --level 2'
-  alias lsda3='eza -TDa --level 3'
-  # list all items in tree format including hidden ones (or specify how many levels to list them)
-  alias lsta='eza -Ta'
-  alias lsta1='eza -Ta --level 1'
-  alias lsta2='eza -Ta --level 2'
-  alias lsta3='eza -Ta --level 3'
-  ```
-
-  :::
-
-- **More resources**
-  - [Quick overview](https://www.youtube.com/watch?v=mmqDYw9C30I&t=615s) on `eza` by Josean Martinez
-
-:::::
 
 ### **Using `yazi`**
 

@@ -47,6 +47,18 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **Terminal-customisation guide consolidated; fish folded in (2026-07-27)** — separate fish guide
+  scrapped; single bash-centric `terminal-customisation-bash.md` remains. Two master quick appends —
+  "(Bash)" and "(Fish)" details blocks (nested shell/distro tabs rendered flat, so split) — fish one
+  adds distro-tabbed quick install + `chsh -s $(which fish)` and an autoload-style config split
+  across code-tabs — `config.fish` (interactive-only block) + `functions/fish_prompt.fish` (hex
+  `set_color` equivalents of the tput-256 PS1 colours) + `functions/y.fish` — prefaced by
+  `mkdir -p ~/.config/fish/functions`. New `edit-bash`/`edit-fish` `$EDITOR` aliases. fzf aliases renamed
+  `cmd`→`show-commands`, `zh`→`search-history` (both shells verified). eza section + aliases removed
+  (deprecated in favour of yazi). Demo images consolidated: single `terminal-preview.png` (cropped
+  fastfetch + fish prompt screenshot) shown after the intro; `aesthetic-terminal.png`,
+  `custom-ps1.png`, `fastfetch.png` deleted.
+
 - **dGPU A/B test done; lab-testing labels lifted (2026-07-26)** — 2h suspend with
   `NVreg_EnableS0ixPowerManagement=1` off (touchpad fix on): 99.88% residency, ~0.9%/h drain vs
   0.79%/h with the fix — dGPU contribution ≈ noise; touchpad storm was the whole drain. Driver
