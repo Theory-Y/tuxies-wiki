@@ -12,7 +12,5 @@
       }
     ]
   },
-  "enabledPlugins": {
-    "theoryy-workflow@theoryy": true
-  }
+  "enabledPlugins": {}
 }
