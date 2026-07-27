@@ -213,7 +213,7 @@ unset rc
 
 Your `.bashrc` should look something like this if you decide to follow all instructions in the following section:
 
-::: code-tabs
+:::code-tabs
 
 @tab .bashrc
 
@@ -245,16 +245,16 @@ You can make your bash terminal autorun `fastfetch` to display system informatio
   sudo dnf install fastfetch
   ```
 
-  @tab ::devicon:archlinux:: Arch
-
-  ```bash
-  pacman -S fastfetch
-  ```
-
   @tab ::devicon:debian:: Debian/Ubuntu
 
   ```bash
   sudo apt install fastfetch
+  ```
+
+  @tab ::devicon:archlinux:: Arch
+
+  ```bash
+  pacman -S fastfetch
   ```
 
   :::
@@ -348,16 +348,16 @@ function y() {
   sudo dnf install fzf
   ```
 
-  @tab ::devicon:archlinux:: Arch
-
-  ```bash
-  pacman -S fzf
-  ```
-
   @tab ::devicon:debian:: Debian/Ubuntu
 
   ```bash
   sudo apt install fzf
+  ```
+
+  @tab ::devicon:archlinux:: Arch
+
+  ```bash
+  pacman -S fzf
   ```
 
   :::
@@ -402,16 +402,16 @@ function y() {
   sudo dnf install zoxide
   ```
 
-  @tab ::devicon:archlinux:: Arch
-
-  ```bash
-  pacman -S zoxide
-  ```
-
   @tab ::devicon:debian:: Debian/Ubuntu
 
   ```bash
   sudo apt install zoxide
+  ```
+
+  @tab ::devicon:archlinux:: Arch
+
+  ```bash
+  pacman -S zoxide
   ```
 
   :::
