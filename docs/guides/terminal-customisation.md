@@ -134,7 +134,7 @@ end
 #### custom prompt ####
 function fish_prompt
     echo '------------------'
-    echo (set_color 005fd7)'['(set_color 0087d7)$USER(set_color 00afd7)' @ '(set_color 00d7d7)(hostname)(set_color 005fd7)'] '(set_color 5fafff)(prompt_pwd)(set_color normal)
+    echo (set_color 005fd7)'['(set_color 0087d7)$USER(set_color 00afd7)' @ '(set_color 00d7d7)(hostname)(set_color 005fd7)'] '(set_color 5fafff)(prompt_pwd -d 0)(set_color normal)
     echo -n ' > '
 end
 ```
