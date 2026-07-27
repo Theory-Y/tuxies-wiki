@@ -23,7 +23,7 @@ contributors:
 
 ### **Dev stuff**
 
-- [Bash customisation](/guides/terminal-customisation-bash/)
+- [Terminal customisation](/guides/terminal-customisation/)
 - [ghostty-terminal](/guides/ghostty-terminal/)
 - [yazi](/guides/yazi/)
 

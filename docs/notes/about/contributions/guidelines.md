@@ -46,9 +46,9 @@ Gnome Guide @ `/docs/notes/linux-guides/gnome.md`
 
 --> ==/linux-guides/gnome/==
 
-Terminal Customisation (Bash) @ `/docs/guides/terminal-customisation-bash.md`
+Terminal Customisation @ `/docs/guides/terminal-customisation.md`
 
---> ==/guides/terminal-customisation-bash/==
+--> ==/guides/terminal-customisation/==
 :::
 
 ### **Article tagging**

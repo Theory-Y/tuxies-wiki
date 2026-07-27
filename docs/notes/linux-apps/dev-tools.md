@@ -9,7 +9,7 @@ contributors:
 A collection of command-line, terminal, and tinkerer tools for the more technical crowd.
 
 :::info Want a guided setup instead?
-Our [Terminal Customisation (Bash)](/guides/terminal-customisation-bash/) offers presets and guides walks you through setting up `fastfetch`, `fzf`, `zoxide`, `eza`, and `yazi` end-to-end, including aliases and a custom prompt.
+Our [Terminal Customisation](/guides/terminal-customisation/) offers presets and walks you through setting up `fastfetch`, `fzf`, `zoxide`, and `yazi` end-to-end, including aliases and a custom prompt.
 :::
 
 ## GUI

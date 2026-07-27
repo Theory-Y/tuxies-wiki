@@ -57,7 +57,10 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   `cmd`→`show-commands`, `zh`→`search-history` (both shells verified). eza section + aliases removed
   (deprecated in favour of yazi). Demo images consolidated: single `terminal-preview.png` (cropped
   fastfetch + fish prompt screenshot) shown after the intro; `aesthetic-terminal.png`,
-  `custom-ps1.png`, `fastfetch.png` deleted.
+  `custom-ps1.png`, `fastfetch.png` deleted. Later renamed shell-agnostic:
+  `terminal-customisation.md`, permalink `/guides/terminal-customisation/`, assets folder
+  `terminal-customisation/`; inbound links (aiers-fedora, dev-tools, guidelines example, notepad)
+  updated; stub page at old permalink links the new one (`article: false`, out of listings).
 
 - **dGPU A/B test done; lab-testing labels lifted (2026-07-26)** — 2h suspend with
   `NVreg_EnableS0ixPowerManagement=1` off (touchpad fix on): 99.88% residency, ~0.9%/h drain vs
