@@ -43,9 +43,9 @@ Gaze's manual install (via adding repository) enables the `GDM` login, requiring
 This can be solved by modifying a copy of the stock Gaze authentification profile.
 :::
 
-::::details Install steps
+:::::details Install steps
 
-:::steps
+::::steps
 
 - **Add the repo and install**
 
@@ -76,6 +76,12 @@ This can be solved by modifying a copy of the stock Gaze authentification profil
 
 - **Wire it up, minus the login screen**
 
+  Either block works, pick one.
+
+  :::tabs
+
+  @tab Default
+
   ```bash
   # copy stock profile
   sudo authselect create-profile gaze-nogdm --base-on=gaze
@@ -86,13 +92,27 @@ This can be solved by modifying a copy of the stock Gaze authentification profil
   sudo authselect apply-changes
   ```
 
+  @tab with-face-simultaneous
+
+  ```bash
+  # copy stock profile
+  sudo authselect create-profile gaze-nogdm --base-on=gaze
+  # delete all lines containing pam_gaze in password-auth
+  sudo sed -i '/pam_gaze/d' /etc/authselect/custom/gaze-nogdm/password-auth
+  # select & apply custom profile
+  sudo authselect select custom/gaze-nogdm with-face-simultaneous with-silent-lastlog --force
+  sudo authselect apply-changes
+  ```
+
+  :::
+
 - **Check**
 
   `sudo echo test` fires the camera. After a reboot the login screen asks for my password, and the keyring unlocks on its own.
 
-:::
-
 ::::
+
+:::::
 
 ## **Desktop / Hardware-Dependent**
 
