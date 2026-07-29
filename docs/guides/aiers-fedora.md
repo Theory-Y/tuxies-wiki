@@ -66,6 +66,14 @@ This can be solved by modifying a copy of the stock Gaze authentification profil
   sudo dnf install gaze gaze-gui
   ```
 
+- **Reboot**
+
+- **Start the `gazed` daemon**
+
+  ```bash
+  sudo systemctl enable --now gazed
+  ```
+
 - **Wire it up, minus the login screen**
 
   ```bash
