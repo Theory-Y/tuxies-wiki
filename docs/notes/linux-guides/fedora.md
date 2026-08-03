@@ -93,10 +93,9 @@ Once enabled, you can install its packages with the regular `dnf` command.
 
 ## **Flathub (Flatpaks)**
 
-Many Linux apps are distributed as Flatpaks, a universal package format that works on every distro. 
+Many Linux apps are distributed as Flatpaks, a universal package format that works on every distro.
 
 Set up the largest Flatpak repository here: [Flatpak Setup](/introduction/flatpak-setup/).
-
 
 ## **Multimedia Codecs**
 
@@ -210,9 +209,3 @@ Every step below is also available through the `snapper` CLI if you'd rather not
   :::
 
 ::::
-
-## **Further customisation**
-
-From this point on, customisation for your Fedora installation would mainly be based on the DE that you are using.
-
-- [Gnome Guide](/linux-guides/gnome/)
