@@ -37,6 +37,25 @@ Fedora offers a high-quality out-of-the-box experience while remaining highly fl
   ![Gnome Software Update Button](/assets/fedora/gnome-software-update.svg)
   :::
 
+- **Update your firmware**
+
+  Firmware updates can fix real bugs (battery life, sleep problems, dodgy webcams).
+
+  :::tabs
+  @tab Terminal
+
+  ```bash
+  fwupdmgr refresh --force
+  fwupdmgr get-updates
+  fwupdmgr update
+  ```
+
+  @tab GUI (Gnome Software)
+  Firmware updates show up next to your normal updates in the ==Updates== tab.
+
+  ![The Updates tab in Gnome Software](/assets/fedora/gnome-software-updates-tab.png)
+  :::
+
 - **Reboot**
 
   ```bash
@@ -45,17 +64,95 @@ Fedora offers a high-quality out-of-the-box experience while remaining highly fl
 
 ::::
 
-## **Terra repository**
+## **Other Repositories**
+
+Fedora leaves out a fair amount of software for legal, licensing, and philosophical reasons. You may consider the repositories below.
+
+### **RPM Fusion**
+
+[RPM Fusion](https://rpmfusion.org/) carries video and audio formats, NVIDIA drivers, and plenty more. Most readers will want this one.
+
+```bash
+sudo dnf install \
+  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
+:::note Gnome Software's ==Third Party Repositories== toggle is not the same thing. It only adds a couple of narrow slices of RPM Fusion, such as the NVIDIA driver and Steam.
+:::
+
+### **Terra**
 
 [Terra](https://terrapkg.com/) is a community package repository for Fedora by Fyra Labs. 2000+ propietary/nonfree packages that Fedora doesn't ship by default can be found in Terra.
-
-Enabling it is optional, but a few guides here pull packages from it. One command sets it up:
 
 ```bash
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
 
 Once enabled, you can install its packages with the regular `dnf` command.
+
+## **Flathub (Flatpaks)**
+
+Many Linux apps are distributed as Flatpaks, a universal package format that works on every distro. 
+
+Set up the largest Flatpak repository here: [Flatpak Setup](/introduction/flatpak-setup/).
+
+
+## **Multimedia Codecs**
+
+Fedora ships without several common video and audio formats, so some videos refuse to play and some files won't open. Pull these from RPM Fusion:
+
+::::steps
+
+- **Install codecs**
+  :::warning Enable [RPM Fusion](#rpm-fusion) first, or these commands will have nothing to fetch.
+  :::
+
+  ```bash
+  sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+  sudo dnf group upgrade multimedia
+  sudo dnf group upgrade core
+  ```
+
+- **Reboot once it finishes**
+
+  ```bash
+  reboot
+  ```
+
+### **Hardware video acceleration**
+
+Fedora's stock drivers cannot process two common video formats (H.264 and HEVC) on your graphics chip. To avoid draining your battery and stutter on high-resolution video:
+
+::::steps
+
+- **Install drivers**
+  :::tabs
+
+  @tab ::simple-icons:amd:: AMD
+
+  ```bash
+  sudo dnf install mesa-va-drivers-freeworld
+  ```
+
+  @tab ::simple-icons:intel:: Intel
+
+  ```bash
+  sudo dnf install intel-media-driver
+  ```
+
+  @tab ::simple-icons:nvidia:: NVIDIA
+
+  ```bash
+  sudo dnf install libva-nvidia-driver
+  ```
+
+  :::
+
+- **Reboot**
+  ```bash
+  reboot
+  ```
 
 ## **Create snapshots/backups** for your computer
 

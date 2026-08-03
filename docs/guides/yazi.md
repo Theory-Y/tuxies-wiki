@@ -139,7 +139,7 @@ function y() {
 
 @tab ::devicon:fedora:: Fedora (Terra)
 
-[With Terra enabled:](/linux-guides/fedora/#terra-repository)
+[With Terra enabled:](/linux-guides/fedora/#terra)
 
 ```bash
 sudo dnf install yazi

@@ -72,7 +72,7 @@ Install both, then turn the service on.
 
 @tab ::devicon:fedora:: Fedora (Terra)
 
-[With Terra enabled:](/linux-guides/fedora/#terra-repository)
+[With Terra enabled:](/linux-guides/fedora/#terra)
 
 ```bash
 sudo dnf install asusctl asusctl-rog-gui

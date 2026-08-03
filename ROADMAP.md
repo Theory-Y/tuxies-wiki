@@ -10,6 +10,18 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 ## Open
 
 
+- 🔵 **Hardware video acceleration — Intel tab unverified** — AMD and NVIDIA tabs in `fedora.md`
+  verified on Fedora 44 by probing VA-API through `libva`. AMD (Radeon 890M), before *and* after:
+  stock Mesa exposes only JPEG, VP9 and AV1 — no H.264, no HEVC; `mesa-va-drivers-freeworld` adds
+  H.264 (all profiles) + HEVC Main/Main10 with decode *and* encode (JPEG decode drops off). NVIDIA
+  (RTX 4060, driver 610.43.03): `libva-nvidia-driver` yields H.264 + HEVC (Main/10/12/444) and needs
+  no env vars — libva autodetects it and picks the direct NVDEC backend. Intel
+  (`intel-media-driver`) still follows RPM Fusion's documentation untested — no Intel graphics to
+  hand. Confirm with `vainfo` before/after (`libva-utils`), checking H.264/HEVC appear as `VLD`.
+
+  On a hybrid laptop the dGPU must be unblocked for its driver to be reachable at all — Cardwire in
+  `integrated` mode hides the NVIDIA render node entirely. Possible guide note if it trips others up.
+
 - 🟡 **SEO: post-deploy manual steps** — sitemap already submitted in GSC (Success, 46 pages,
   2026-07-24). After the next Cloudflare deploy: use URL Inspection on the homepage and hit
   **Request indexing** so the site (not the GitHub ROADMAP blob) becomes the top result — GitHub
@@ -46,6 +58,18 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 ---
 
 ## Completed
+
+- **Fedora guide: codecs, RPM Fusion, firmware (2026-08-02)** — highest-value gaps from TechHut's
+  Fedora 44 post-install guide folded in. `## Terra repository` became `## Other Repositories`
+  holding `### RPM Fusion` + `### Terra` (four dependent `#terra-repository` anchors repointed to
+  `#terra` across `gpu.md`, `asusctl.md`, `ghostty-terminal.md`, `yazi.md`; `gpu.md` now links here
+  instead of repeating the RPM Fusion command). New `## Multimedia Codecs` (`ffmpeg` swap +
+  `multimedia`/`core` group upgrades) with a `### Hardware video acceleration` vendor-tab subsection,
+  new firmware `fwupdmgr` step with a Gnome Software screenshot, and a `## Flatpak` pointer.
+  Deliberately skipped: `dnf.conf` tweaks (defaults checked — 3 parallel downloads; `defaultyes`
+  removes a confirmation prompt, wrong for a beginner guide), plus Docker/SSH/NetBird/SMB/OBS
+  (dev-specific) and GNOME extensions (already covered). Intel acceleration tab unverified — see
+  **Open**.
 
 - **Terminal-customisation guide consolidated; fish folded in (2026-07-27)** — separate fish guide
   scrapped; single bash-centric `terminal-customisation-bash.md` remains. Two master quick appends —

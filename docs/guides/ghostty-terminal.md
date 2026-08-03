@@ -52,7 +52,7 @@ Note that `ghostty` has no single official Linux package except for Arch — the
 
 @tab ::devicon:fedora:: Fedora (Terra)
 
-[With Terra enabled:](/linux-guides/fedora/#terra-repository)
+[With Terra enabled:](/linux-guides/fedora/#terra)
 
 ```bash
 sudo dnf install ghostty

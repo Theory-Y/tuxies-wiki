@@ -66,13 +66,7 @@ NVIDIA's official driver is not in Fedora's default repositories. It lives in ==
 
 - **Enable RPM Fusion**
 
-  This one command adds both the free and non-free RPM Fusion repositories:
-
-  ```bash
-  sudo dnf install \
-    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-  ```
+  If you have not enabled it yet, follow the setup in the [Fedora Guide](/linux-guides/fedora/#rpm-fusion).
 
 - **Install the driver**
 
@@ -158,7 +152,7 @@ It can block or unblock a GPU ==without a reboot or logout==.
 
 @tab ::devicon:fedora:: Fedora
 
-Cardwire is packaged for Fedora in the ==Terra== repository. If you have not enabled Terra yet, follow the one-command setup in the [Fedora Guide](/linux-guides/fedora/#terra-repository) first.
+Cardwire is packaged for Fedora in the ==Terra== repository. If you have not enabled Terra yet, follow the one-command setup in the [Fedora Guide](/linux-guides/fedora/#terra) first.
 
 With Terra enabled, install Cardwire and turn on its background service:
 
