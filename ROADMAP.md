@@ -139,6 +139,12 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   is now canonical for every file; a guide's inline block is a mirror to update after editing the source
   (previously the guide-inline copy was canonical).
 
+- **Aier's Fedora — Gaze custom-profile workaround retired (2026-08-08)** — upstream Gaze now ships
+  `pam_gaze_grosshack.so` in its stock `authselect` profile (`with-face-simultaneous`), fixing the
+  GDM keyring gap. `aiers-fedora.md`: `:::warning` → `:::note` (historical), both custom-profile
+  tabs replaced by one step — `sudo authselect select gaze with-face-simultaneous
+  with-silent-lastlog --force`. Verified live on Fedora 44, gaze 0.2.9, `gaze doctor` 17/17.
+
 - **Aier's Fedora blog + Gaze fix (2026-07-21)** — new `docs/guides/aiers-fedora.md`
   (title `Aier's Fedora`, permalink `/guides/aiers-fedora/`, tags Beginner/Fedora/Gnome, `sticky: 6`,
   first-person). Personal hub: migrated the **"More resources" full-setup checklist** out of the bottom

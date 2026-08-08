@@ -36,16 +36,12 @@ contributors:
 
 - Facial Recognition with [Gaze](https://gaze.gundulabs.com/)
 
-:::warning
-
-Gaze's manual install (via adding repository) enables the `GDM` login, requiring a manual password entry for apps using keyrings.
-
-This can be solved by modifying a copy of the stock Gaze authentification profile.
+:::note Older Gaze versions broke automatic keyring unlock at `GDM` login, needing a custom `authselect` profile with `pam_gaze` stripped from `password-auth`. Fixed upstream — the stock profile now works as is.
 :::
 
-:::::details Install steps
+::::details Install steps
 
-::::steps
+:::steps
 
 - **Add the repo and install**
 
@@ -74,45 +70,23 @@ This can be solved by modifying a copy of the stock Gaze authentification profil
   sudo systemctl enable --now gazed
   ```
 
-- **Wire it up, minus the login screen**
+- **Select the Gaze `authselect` profile**
 
-  Either block works, pick one.
-
-  :::tabs
-
-  @tab Default
+  `with-face-simultaneous` allows you to input password the same time the facial recognition is firing.
 
   ```bash
-  # copy stock profile
-  sudo authselect create-profile gaze-nogdm --base-on=gaze
-  # delete all lines containing pam_gaze in password-auth
-  sudo sed -i '/pam_gaze/d' /etc/authselect/custom/gaze-nogdm/password-auth
-  # select & apply custom profile
-  sudo authselect select custom/gaze-nogdm with-silent-lastlog --force
-  sudo authselect apply-changes
+  sudo authselect select gaze with-face-simultaneous with-silent-lastlog --force
   ```
 
-  @tab with-face-simultaneous
+- **Configure & Test**
 
-  ```bash
-  # copy stock profile
-  sudo authselect create-profile gaze-nogdm --base-on=gaze
-  # delete all lines containing pam_gaze in password-auth
-  sudo sed -i '/pam_gaze/d' /etc/authselect/custom/gaze-nogdm/password-auth
-  # select & apply custom profile
-  sudo authselect select custom/gaze-nogdm with-face-simultaneous with-silent-lastlog --force
-  sudo authselect apply-changes
-  ```
+  Set up face in the Gaze GUI, along with tweaking some of its settings.
 
-  :::
+  Try in the terminal: `sudo echo test`.
 
-- **Check**
-
-  `sudo echo test` fires the camera. After a reboot the login screen asks for my password, and the keyring unlocks on its own.
+:::
 
 ::::
-
-:::::
 
 ## **Desktop / Hardware-Dependent**
 
