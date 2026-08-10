@@ -59,6 +59,14 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **Kitty guide added alongside Ghostty (2026-08-10)** — new `docs/guides/kitty-terminal.md`
+  (`/guides/kitty-terminal/`) mirrors the Ghostty guide's configs in `kitty.conf` terms: quick
+  append, distro install tabs (official repos everywhere — no Terra), `kitten themes` picker,
+  `background_opacity`/`background_blur` (+ Blur my Shell warning), `remember_window_size no` +
+  `initial_window_width/height` in cells, shortcut list, GNOME launcher keybind. Kitty's draw:
+  smooth touchpad scrolling. ==Ghostty stays the wiki's default recommendation== (`yazi.md` tip
+  unchanged); `aiers-fedora.md` Dev stuff lists both guides.
+
 - **Fedora guide: codecs, RPM Fusion, firmware (2026-08-02)** — highest-value gaps from TechHut's
   Fedora 44 post-install guide folded in. `## Terra repository` became `## Other Repositories`
   holding `### RPM Fusion` + `### Terra` (four dependent `#terra-repository` anchors repointed to

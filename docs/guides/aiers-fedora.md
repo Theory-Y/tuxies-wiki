@@ -25,6 +25,7 @@ contributors:
 
 - [Terminal customisation](/guides/terminal-customisation/)
 - [ghostty-terminal](/guides/ghostty-terminal/)
+- [kitty-terminal](/guides/kitty-terminal/)
 - [yazi](/guides/yazi/)
 
 ### **Apps**
