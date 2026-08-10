@@ -42,7 +42,7 @@ Check out ==more extensions, settings, and tips== to make more out of Gnome!
   :::
 
 :::tip See also
-Check out the [External Resources](/guides/external-resources/) page for additional fixes, including a touchpad scrolling sensitivity fix for Gnome.
+Check out the [External Resources](/guides/external-resources/) page for additional fixes, including a touchpad scrolling sensitivity fix.
 :::
 
 ### **Install some apps for more advanced options**
