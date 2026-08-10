@@ -67,6 +67,11 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   smooth touchpad scrolling. ==Ghostty stays the wiki's default recommendation== (`yazi.md` tip
   unchanged); `aiers-fedora.md` Dev stuff lists both guides.
 
+- **Touchpad scrolling fix rebranded Gnome → Hardware (2026-08-10)** — the external
+  touchpad-sensitivity tweak is not Gnome-specific: `external-resources.md` `### Gnome` →
+  `### Hardware`, `gnome.md` pointer de-GNOME'd, `aiers-fedora.md` entry moved to its Hardware
+  list (anchor now `#hardware`).
+
 - **Fedora guide: codecs, RPM Fusion, firmware (2026-08-02)** — highest-value gaps from TechHut's
   Fedora 44 post-install guide folded in. `## Terra repository` became `## Other Repositories`
   holding `### RPM Fusion` + `### Terra` (four dependent `#terra-repository` anchors repointed to

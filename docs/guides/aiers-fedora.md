@@ -99,10 +99,10 @@ contributors:
 
 - [Gnome Guide](/linux-guides/gnome/)
 - [Further Gnome Customisation](/guides/gnome-further-customisation/)
-- [External Resources](/guides/external-resources/#gnome/)
-  - Gnome touchpad scrolling speed fix
 
 ### **Hardware**
 
 - [Logitech Linux Setup](/guides/logitech-linux-setup/)
 - [ProArt P16 2025](/guides/proart-p16-2025/)
+- [External Resources](/guides/external-resources/#hardware/)
+  - Touchpad scrolling speed fix
