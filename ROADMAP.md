@@ -9,11 +9,10 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
-
 - 🔵 **Hardware video acceleration — Intel tab unverified** — AMD and NVIDIA tabs in `fedora.md`
-  verified on Fedora 44 by probing VA-API through `libva`. AMD (Radeon 890M), before *and* after:
+  verified on Fedora 44 by probing VA-API through `libva`. AMD (Radeon 890M), before _and_ after:
   stock Mesa exposes only JPEG, VP9 and AV1 — no H.264, no HEVC; `mesa-va-drivers-freeworld` adds
-  H.264 (all profiles) + HEVC Main/Main10 with decode *and* encode (JPEG decode drops off). NVIDIA
+  H.264 (all profiles) + HEVC Main/Main10 with decode _and_ encode (JPEG decode drops off). NVIDIA
   (RTX 4060, driver 610.43.03): `libva-nvidia-driver` yields H.264 + HEVC (Main/10/12/444) and needs
   no env vars — libva autodetects it and picks the direct NVDEC backend. Intel
   (`intel-media-driver`) still follows RPM Fusion's documentation untested — no Intel graphics to
@@ -122,7 +121,7 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   intro callouts of `asusctl.md` (mirrors gpu.md placement) with Apply/Reset `:::tabs`. Consolidates the
   GUI-focused guide into copy-paste CLI: `systemctl enable --now asusd.service`, per-power-state auto
   switching (`asusctl profile set -a Balanced` / `-b Quiet`), current profile, and `asusctl battery
-  limit 80` (fulfils the intro's charge-threshold promise the GUI body never covered). All commands
+limit 80` (fulfils the intro's charge-threshold promise the GUI body never covered). All commands
   verified against local `asusctl --help` (installed on the ProArt P16).
 
 - **GPU guide: overnight sleep-drain fix section (2026-07-25)** — new `gpu.md` H2 documenting the
@@ -156,7 +155,7 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   `pam_gaze_grosshack.so` in its stock `authselect` profile (`with-face-simultaneous`), fixing the
   GDM keyring gap. `aiers-fedora.md`: `:::warning` → `:::note` (historical), both custom-profile
   tabs replaced by one step — `sudo authselect select gaze with-face-simultaneous
-  with-silent-lastlog --force`. Verified live on Fedora 44, gaze 0.2.9, `gaze doctor` 17/17.
+with-silent-lastlog --force`. Verified live on Fedora 44, gaze 0.2.9, `gaze doctor` 17/17.
 
 - **Aier's Fedora blog + Gaze fix (2026-07-21)** — new `docs/guides/aiers-fedora.md`
   (title `Aier's Fedora`, permalink `/guides/aiers-fedora/`, tags Beginner/Fedora/Gnome, `sticky: 6`,
@@ -212,7 +211,7 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   - Same-origin downloads: every bundle routed through `/assets/*.zip`, guide-inline copy set as
     canonical source-of-truth, keyd/logitech drift reconciled + zips rebuilt byte-identical; Discord
     content split into its own `/guides/discord-vesktop/`; Battery Health Charging + Copyous-deps
-    extension entries added (2026-07-13). *(source-of-truth later re-inverted — see 2026-07-21 entry.)*
+    extension entries added (2026-07-13). _(source-of-truth later re-inverted — see 2026-07-21 entry.)_
   - OVERRIDE batch: blue-PS1 code/screenshot match, repo-wide GB-English `-ise`/`-our` sweep, new
     **Terra repository** section in `fedora.md`, `aiers-gnome`→`gnome-further-customisation` rename +
     Auto Power Profile extension (2026-07-12).

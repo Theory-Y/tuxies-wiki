@@ -340,8 +340,8 @@ After saving, reload your shell with `source ~/.bashrc` and use `y`.
 
 `yazi` supports in-terminal image rendering and ==auto-detects== the best protocol for your terminal — no manual configuration needed.
 
-:::tip For maximum compatibility, use Ghostty
-`ghostty` implements the ==Kitty image protocol== (Unicode placeholders), which `yazi` supports natively and with zero extra configuration. See the [Ghostty Terminal guide](/guides/ghostty-terminal/) to get set up.
+:::tip For maximum compatibility, use Kitty
+`kitty` is where the ==Kitty image protocol== comes from, so `yazi` previews work natively with zero extra configuration. See the [Kitty Terminal guide](/guides/kitty-terminal/) to get set up.
 :::
 
 ### **Resizing image previews**
