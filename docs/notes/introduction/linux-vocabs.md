@@ -13,13 +13,27 @@ The definitions are simplified to be beginner friendly.
 
 ## **Core Concepts**
 
-**FOSS (Free and Open-Source Software):** Free means you can use, study, change, and share the software however you like with no cost. Open source means the source code (the blueprint of the software) is available for anyone to look at, modify, or improve.
+:::::collapse
 
-==FOSS is transparent, collaborative, and serves the community.==
+- **FOSS (Free and Open-Source Software)**
 
-**OS (Operating System):** An OS is a core layer of software that acts as a bridge between your computer's hardware and the applications you run. e.g. Windows, macOS, GNU/Linux.
+  Free means you can use, study, change, and share the software however you like with no cost. Open source means the source code (the blueprint of the software) is available for anyone to look at, modify, or improve.
 
-**GNU/Linux:** A free and open source Unix-like operating system powered by the GNU collection of free software and the Linux Kernel. This set of software forms the operating system that we usually refer to simply as 'Linux'.
+  ==FOSS is transparent, collaborative, and serves the community.==
+
+- **OS (Operating System)**
+
+  An OS is a core layer of software that acts as a bridge between your computer's hardware and the applications you run. e.g. Windows, macOS, GNU/Linux.
+
+- **GNU/Linux**
+
+  A free and open source Unix-like operating system powered by the GNU collection of free software and the Linux Kernel. This set of software forms the operating system that we usually refer to simply as 'Linux'.
+
+- **Virtualisation**
+
+  Running one or more virtual computers (VMs) inside your real one, each acting like its own separate machine with its own OS. e.g. VirtualBox, QEMU/KVM, VMware.
+
+:::::
 
 ## **Parts of the GNU/Linux OS**
 
@@ -75,99 +89,112 @@ The definitions are simplified to be beginner friendly.
 
 :::::
 
+## **Boot & Installation**
+
+:::::collapse
+
+- **Firmware**
+
+  Low-level software built into a piece of hardware that lets it start up and lets the OS talk to it.
+
+- **BIOS (Basic Input/Output System)**
+
+  Older firmware that initialises your hardware and hands control over to the bootloader when you switch your computer on.
+
+- **UEFI (Unified Extensible Firmware Interface)**
+
+  The modern replacement for BIOS. Faster, supports larger drives, and adds features like Secure Boot.
+
+- **GRUB (Grand Unified Bootloader)**
+
+  The bootloader — the first program that runs after firmware — that lets you pick which OS or kernel to start.
+
+- **Initramfs (Initial RAM Filesystem)**
+
+  A small, temporary filesystem loaded into memory during boot that prepares just enough of the system to mount your real filesystem and hand off to the kernel.
+
+- **ISO**
+
+  A single file containing an entire disk's worth of data, most commonly used to install or boot an OS from a USB drive or DVD.
+
+:::::
+
 ## **System & File Management**
 
-:::warning Under Construction
-:::
+:::::collapse
 
-**Root**: The user with full system control (root user, /root directory).
+- **Root**
 
-**sudo (SuperUser DO)**: A command to run programs with root privileges.
+  The user with full system control (the `root` user, `/root` directory).
 
-**Path**: The location of a file/directory (e.g., `/usr/bin/python3`).
+- **sudo (SuperUser DO)**
 
-**Symlink (Symbolic Link)**: A shortcut pointing to another file/directory (like Windows shortcuts).
+  A command to run programs with root privileges.
 
-**Alias**: A custom shortcut for a command (e.g., `alias ll='ls -la'`).
+- **Path**
+
+  The location of a file/directory (e.g., `/usr/bin/python3`).
+
+- **Partition**
+
+  A section of your disk's storage that's split off and formatted on its own, e.g. keeping your OS files and personal files separate.
+
+- **Symlink (Symbolic Link)**
+
+  A shortcut pointing to another file/directory (like Windows shortcuts).
+
+- **Alias**
+
+  A custom shortcut for a command (e.g., `alias ll='ls -la'`).
+
+:::::
 
 ## **Package & Software Management**
 
-**Package Manager**: A tool to install/remove software (e.g., `apt` — Debian, `dnf` — Fedora, `pacman` — Arch).
+:::::collapse
 
-**Repository (Repo)**: A server hosting software packages for download.
+- **Package Manager**
 
-**Dependency**: Additional software required for a program to run.
+  A tool to install/remove software (e.g., `apt` — Debian, `dnf` — Fedora, `pacman` — Arch).
 
-**Flatpak**: A universal package format that works across Linux distros (sandboxed).
+- **Repository (Repo)**
+
+  A server hosting software packages for download.
+
+- **Dependency**
+
+  Additional software required for a program to run.
+
+- **Flatpak**
+
+  A universal package format that works across Linux distros (sandboxed).
+
+:::::
 
 ## **Networking & Permissions**
 
-**SSH (Secure Shell)**: A protocol for secure remote login (`ssh user@host`).
+:::::collapse
 
-**IP (Internet Protocol)**: A unique address for network communication (`ifconfig`/`ip a`).
+- **SSH (Secure Shell)**
+
+  A protocol for secure remote login (`ssh user@host`).
+
+- **IP (Internet Protocol)**
+
+  A unique address for network communication (`ifconfig`/`ip a`).
+
+:::::
 
 ## **Processes & System Control**
 
-**Daemon**: A background service (e.g., `sshd` for SSH).
+:::::collapse
 
-**Systemd**: A modern init system managing services (`systemctl start/stop`).
+- **Daemon**
 
-<!-- ## Must know vocabularies
+  A background service (e.g., `sshd` for SSH).
 
-Linux: A free, open-source Unix-like operating system (like Windows and MacOS), often used to cover the entirety of different distributions e.g., Debian, Ubuntu, Fedora, Arch.
+- **Systemd**
 
-Kernel: The intermediate part or a bridge that links software applications and hardware. It manages system resources including CPU, memory, disks, processes, device drivers, etc.
+  A modern init system managing services (`systemctl start/stop`).
 
-Terminal: A text-based interface to control the operating system.
-
-Shell: The command-line interpreter (e.g., Bash, Zsh) that executes user commands.
-
-Bash: The default shell in most Linux distributions.
-
-Desktop Environment (DE): A complete graphical interface (e.g., GNOME, KDE Plasma, XFCE).
-
-Flatpak:
-
-Package Manager:
-
-Repository (Repo):
-
-SSH:
-
-IP:
-
-Daemon:
-
-Systemd:
-
-Partition:
-
-Basic Input/Output System (BIOS):
-
-Unified Extensible Firmware Interface (UEFI):
-
-Initramfs:
-
-ISO:
-
-Firmware:
-
-Grand Unified Bootloader (GRUB):
-
-Command Line Interface (CLI):
-
-Graphical User Interface (GUI):
-
-Window Manager:
-
-Alias:
-
-Dependency:
-
-Sudo:
-
-Root:
-
-Path:
-
-Virtualisation: -->
+:::::
