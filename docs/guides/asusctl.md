@@ -90,15 +90,24 @@ Follow the ==official build instructions== in the
 
 @tab ::devicon:archlinux:: Arch
 
-`asusctl` is in the official `extra` repository. ROG Control Center is in the AUR:
+`asusctl` and `rog-control-center` are both in the [AUR](https://aur.archlinux.org/packages/asusctl):
 
 ```bash
-sudo pacman -S asusctl
-yay -S rog-control-center
+yay -S asusctl rog-control-center
 systemctl enable --now asusd.service
 ```
 
+:::tip Prefer a prebuilt package over building from the AUR?
+The [OpenGamingCollective/asusctl](https://github.com/OpenGamingCollective/asusctl) README documents their maintained pacman repo, which skips the AUR build step.
+:::
+
 ::::
+
+:::warning `supergfxctl` is deprecated
+Older guides (including ours, previously) paired `asusctl` with `supergfxctl` for switching between the integrated and dedicated GPU. That project is now archived and unmaintained.
+
+Its experimental successor is [`cardwire`](https://github.com/OpenGamingCollective/cardwire) — early enough that you should expect rough edges. This guide only covers power profiles, not dGPU switching.
+:::
 
 ## **Power profiles vs. your desktop's toggle**
 
