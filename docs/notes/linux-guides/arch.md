@@ -434,72 +434,11 @@ This guide only works with UEFI/GPT Systems. For BIOS/MBR Systems, this guide wi
 
 ## **[ROG Asusctl](https://asus-linux.org/)**
 
-:::::collapse accordion
+For ASUS ROG, TUF, and ProArt laptops, see the dedicated [Asusctl Guide](/guides/asusctl/) — it covers Arch install steps for `asusctl` and ROG Control Center, plus setting up power profiles and battery charge limits.
 
-::::steps
-
-- **Repo**
-
-  ```bash
-  sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-
-  sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-
-  sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-
-  sudo pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-  ```
-
-  - Edit `/etc/pacman.conf` and add
-
-  ```bash
-  [g14]
-  Server = https://arch.asus-linux.org
-  ```
-
-  - Perform a full system update
-
-  ```bash
-  sudo pacman -Suy
-  ```
-
-- **Asusctl - custom fan profiles, anime, led control etc.**
-  ```bash
-  sudo pacman -S asusctl power-profiles-daemon
-  systemctl enable --now power-profiles-daemon.service
-  ```
-- **Superfxctl - graphics switching**
-  ```bash
-  sudo pacman -S supergfxctl switcheroo-control
-  systemctl enable --now supergfxd
-  systemctl enable --now switcheroo-control
-  ```
-- **ROG Control Center - GUI**
-  ```bash
-  sudo pacman -S rog-control-center
-  ```
-- **Custom Kernel**
-
-  ```bash
-  sudo pacman -Syu linux-g14 linux-g14-headers
-  grub-mkconfig -o /boot/grub/grub.cfg
-  ```
-
-  - Run `uname -r` it should output:
-
-  ```bash
-  # -g14 is the important one
-  6.8.1-arch1-g14
-  ```
-
-  - If you are using a custom kernel use the `nvidia-dkms` package for nvidia drivers.
-
-  ```bash
-  sudo pacman -S nvidia-dkms
-  ```
-
-::::
-:::::
+:::warning
+That guide's Arch tab installs from the AUR. If you previously followed the old `[g14]` pacman repo listed here, note that `supergfxctl` (the GPU-switching daemon it used to pair with `asusctl`) is now deprecated and unmaintained — see the [Asusctl Guide](/guides/asusctl/#installing-asusctl) for its successor.
+:::
 
 ## **Known Errors and Fixes**
 

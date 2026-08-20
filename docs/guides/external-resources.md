@@ -14,7 +14,8 @@ contributors:
 
 ### Hardware
 
-- [Touchpad scrolling sensitivity fix.](https://github.com/shivasai573/touchpad-sensitivity-tweak) _(Guide on GitHub by shivasai573)_
+- [Touchpad scrolling sensitivity fix](https://github.com/shivasai573/touchpad-sensitivity-tweak) _(Guide on GitHub by shivasai573)_
+- [RazerBlade 2023 audio fix](https://github.com/yadu-tv/rb14-2023-audio-fix/)
 
 ## Features
 
