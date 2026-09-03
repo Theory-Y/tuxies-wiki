@@ -93,7 +93,7 @@ contributors:
 
 ### **Niri**
 
-- My [niri-noctalia](https://github.com/aier9500/niri-noctalia) repo (supercededs [niri-dms](https://github.com/aier9500/niri-dms))
+- My [niri-dms](https://github.com/aier9500/niri-dms) and [niri-noctalia](https://github.com/aier9500/niri-noctalia).
 
 ### **Gnome**
 
