@@ -8,12 +8,3 @@ docs/.vuepress/dist
 *.log
 
 .vscode
-
-
-# Recommended additions from graphify docs
-
-# mtime-based, breaks after git clone
-graphify-out/manifest.json 
-
-# local only
-graphify-out/cost.json
