@@ -1,0 +1,1 @@
+- [Bundle zips stay committed](project_bundle_zips.md) — build-time zips rejected 2026-10-03; no drift found; tux files are design sources

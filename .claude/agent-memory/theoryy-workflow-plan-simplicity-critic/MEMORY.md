@@ -1,0 +1,1 @@
+- [gitattributes binary recurrence](project_gitattributes-binary-recurrence.md) — forced `* text` corrupted 3 binary types; `text=auto` is earned
