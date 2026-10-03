@@ -21,6 +21,10 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   On a hybrid laptop the dGPU must be unblocked for its driver to be reachable at all — Cardwire in
   `integrated` mode hides the NVIDIA render node entirely. Possible guide note if it trips others up.
 
+- 🟡 **Confirm the `HubApps.zip` fix is live** — after the next push and Cloudflare deploy, run
+  `curl -sO https://tuxies-wiki.theoryy.dev/assets/microsoft-edge-setup/HubApps.zip && unzip -tq HubApps.zip`.
+  It should print `No errors detected`.
+
 - 🟡 **SEO: post-deploy manual steps** — sitemap already submitted in GSC (Success, 46 pages,
   2026-07-24). After the next Cloudflare deploy: use URL Inspection on the homepage and hit
   **Request indexing** so the site (not the GitHub ROADMAP blob) becomes the top result — GitHub
