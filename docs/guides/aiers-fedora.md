@@ -37,9 +37,6 @@ contributors:
 
 - Facial Recognition with [Gaze](https://gaze.gundulabs.com/)
 
-:::note Older Gaze versions broke automatic keyring unlock at `GDM` login, needing a custom `authselect` profile with `pam_gaze` stripped from `password-auth`. Fixed upstream — the stock profile now works as is.
-:::
-
 ::::details Install steps
 
 :::steps
