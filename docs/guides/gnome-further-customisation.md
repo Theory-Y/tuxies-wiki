@@ -248,7 +248,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   :::
 
   :::demo-wrapper
-  <video src="/assets/gnome-further-customisation/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
+  <video src="/assets/logitech-linux-setup/kando-marking-mode.mp4" autoplay loop muted playsinline onloadedmetadata="this.playbackRate=1.25"></video>
   :::
 
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
