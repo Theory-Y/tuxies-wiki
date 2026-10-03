@@ -106,7 +106,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
   :::info Adds customisable blur effects to GNOME Shell elements for a polished look.
   :::
 
-  ![Blur My Shell Demonstration](/assets/gnome-further-customisation/blur-my-shell-demonstration.png)
+  ![Blur My Shell Demonstration](/assets/gnome-further-customisation/overview-demonstration.png)
 
 - 🌟 [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 
@@ -209,7 +209,7 @@ Extensions installed from extensions.gnome.org keep their settings schemas insid
 
   :::
 
-  ![Just Perfection Demonstration](/assets/gnome-further-customisation/just-perfection-demonstration.png)
+  ![Just Perfection Demonstration](/assets/gnome-further-customisation/overview-demonstration.png)
 
 - [Shotzy](https://extensions.gnome.org/extension/9707/shotzy/)
 
