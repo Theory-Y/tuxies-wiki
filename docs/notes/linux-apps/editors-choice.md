@@ -160,7 +160,7 @@ flatpak install --user flathub be.alexandervanhee.gradia
 ## **[Kooha](https://flathub.org/apps/io.github.seadve.Kooha)**
 
 :::details Simple and elegant screen recorder for Wayland.
-![Kooha Demo](/assets/editors-choice/kooha-demo.png)
+![Kooha Demo](/assets/editors-choice/kooha-demo.avif)
 :::
 
 :::tabs
