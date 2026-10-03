@@ -9,6 +9,9 @@
 *.woff binary
 *.woff2 binary
 
+# Archives: forced text mode strips \r from \r\n byte pairs
+*.zip binary
+
 # User added to stop videos from corrupting
 *.mp4 binary
 *.mov binary
