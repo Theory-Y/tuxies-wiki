@@ -46,7 +46,7 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
     are nice-to-have. Drop into `docs/.vuepress/public/assets/asusctl/`, ref `/assets/asusctl/<name>.png`.
     Look for `<!-- TODO image: … -->` markers in the guide.
   - `docs/guides/gnome-further-customisation.md`: sweep for extension entries missing a demo image and
-    backfill from `docs/.vuepress/public/assets/gnome-further-customisation/`.
+    add new screenshots to `docs/.vuepress/public/assets/gnome-further-customisation/`.
 
 - 🟡 **MosaicWM extension** (ext 8502, `CleoMenezesJr/MosaicWM`) — mosaic/tiling WM for GNOME.
   Currently **unstable** and needs GNOME Shell 50+; do **not** add to
@@ -58,6 +58,23 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **Repo cleanup — zips, assets, graphify (2026-10-03)**
+  - `HubApps.zip` was corrupt in git and on the live site. `.gitattributes` forced text mode on
+    every file, so git stripped two `\r` bytes from the zip at commit. Fix: `*.zip binary`, and
+    `* text=auto eol=lf` in place of `* text eol=lf`. The working file was intact and is now
+    committed as-is. A fresh clone gives four zips that pass `unzip -tq`. The live copy updates on
+    the next deploy.
+  - A new binary file type needs its own `binary` line in `.gitattributes`.
+  - graphify removed: `graphify-out/`, `.graphifyignore`, the `CLAUDE.md` section, the hook in
+    `.claude/settings.json`, the `.gitignore` lines.
+  - Stray Electron `main.js` removed from the repo root.
+  - 12 unused screenshots deleted from `assets/gnome/` and `assets/gnome-further-customisation/`.
+  - Two duplicates merged. The Kando video lives in `assets/logitech-linux-setup/`. Blur my Shell
+    and Just Perfection share `overview-demonstration.png`.
+  - `kooha-demo.png` was an AVIF image. Renamed to `kooha-demo.avif`.
+  - Every committed image, video and zip was checked and opens.
+  - `.git` is still 124 MB. Shrinking it needs a history rewrite and a force-push.
+
 - **Fastfetch auto-trim + zip audit (2026-10-03)** — fastfetch `config.jsonc`: every line now fits
   inside the section rulers (39 chars). Host, GPU, WM theme and font cut with `…` via `{var:-N}`
   formats; fastfetch has no global value-width option. Host drops its version suffix; GPU drops its
@@ -66,6 +83,8 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   `100% AC Connected`). Module list now identical between the wiki config and the maintainer's
   `~/.config/fastfetch/config.jsonc`; only the logo differs. `theoryy-fastfetch-config.zip` rebuilt.
   All four zips open, match their source folders, and match the guides' inline blocks where present.
+  **Correction:** this audit tested the working files. `HubApps.zip` was corrupt in git — see the
+  entry above.
 
 - **Kitty guide added alongside Ghostty (2026-08-10)** — new `docs/guides/kitty-terminal.md`
   (`/guides/kitty-terminal/`) mirrors the Ghostty guide's configs in `kitty.conf` terms: quick
