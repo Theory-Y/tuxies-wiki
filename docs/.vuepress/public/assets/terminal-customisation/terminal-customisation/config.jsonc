@@ -24,7 +24,8 @@
         {
             "type": "host",
             "key": " PC      ",
-            "keyColor": "38;2;74;144;217"
+            "keyColor": "38;2;74;144;217",
+            "format": "{name:-38}"
         },
         {
             "type": "cpu",
@@ -34,12 +35,14 @@
         {
             "type": "gpu",
             "key": " GPU     ",
-            "keyColor": "38;2;74;144;217"
+            "keyColor": "38;2;74;144;217",
+            "format": "{name:-25}{?type} [{type}]{?}"
         },
         {
             "type": "display",
             "key": " Display ",
-            "keyColor": "38;2;74;144;217"
+            "keyColor": "38;2;74;144;217",
+            "format": "{width}x{height} @ {refresh-rate} Hz{?scale-factor}, {scale-factor}x{?}"
         },
         {
             "type": "memory",
@@ -59,7 +62,8 @@
         {
             "type": "battery",
             "key": " Battery ",
-            "keyColor": "38;2;74;144;217"
+            "keyColor": "38;2;74;144;217",
+            "format": "{capacity} {status}"
         },
         {
             "type": "localip",
@@ -74,7 +78,8 @@
         {
             "type": "os",
             "key": " OS      ",
-            "keyColor": "38;2;74;144;217"
+            "keyColor": "38;2;74;144;217",
+            "format": "{name} {version-id} {arch}"
         },
         {
             "type": "kernel",
@@ -104,7 +109,8 @@
         {
             "type": "wmtheme",
             "key": " WM Theme",
-            "keyColor": "38;2;74;144;217"
+            "keyColor": "38;2;74;144;217",
+            "format": "{result:-38}"
         },
         {
             "type": "theme",
@@ -119,7 +125,8 @@
         {
             "type": "font",
             "key": " Font    ",
-            "keyColor": "38;2;74;144;217"
+            "keyColor": "38;2;74;144;217",
+            "format": "{combined:-38}"
         },
         {
             "type": "cursor",

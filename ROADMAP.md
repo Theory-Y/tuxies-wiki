@@ -58,6 +58,15 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **Fastfetch auto-trim + zip audit (2026-10-03)** — fastfetch `config.jsonc`: every line now fits
+  inside the section rulers (39 chars). Host, GPU, WM theme and font cut with `…` via `{var:-N}`
+  formats; fastfetch has no global value-width option. Host drops its version suffix; GPU drops its
+  vendor prefix (`GeForce RTX…`, not `NVIDIA GeForce RTX…`). Display, OS and battery use shorter
+  formats from the maintainer's own config (`3840x2160 @ 60 Hz, 1.50x`, `Fedora Linux 44 x86_64`,
+  `100% AC Connected`). Module list now identical between the wiki config and the maintainer's
+  `~/.config/fastfetch/config.jsonc`; only the logo differs. `theoryy-fastfetch-config.zip` rebuilt.
+  All four zips open, match their source folders, and match the guides' inline blocks where present.
+
 - **Kitty guide added alongside Ghostty (2026-08-10)** — new `docs/guides/kitty-terminal.md`
   (`/guides/kitty-terminal/`) mirrors the Ghostty guide's configs in `kitty.conf` terms: quick
   append, distro install tabs (official repos everywhere — no Terra), `kitten themes` picker,
