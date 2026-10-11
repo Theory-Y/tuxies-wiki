@@ -46,7 +46,9 @@ Edge on Linux ships without a required configuration file called `HubApps`. With
 
 ::::::
 
-## **Enable Touchpad Gestures**
+<!-- Touchpad gestures are by enabled by default as of 2026-10-11 -->
+
+<!-- ## **Enable Touchpad Gestures**
 
 By default, the Flatpak version of Edge does not enable touchpad swipe for back/forward navigation. A flags configuration file fixes this.
 
@@ -70,6 +72,35 @@ By default, the Flatpak version of Edge does not enable touchpad swipe for back/
   :::
 
   Save with `Ctrl + O`, `Enter`, then exit with `Ctrl + X`.
+
+- **Restart Edge** to apply the flag.
+
+:::::: -->
+
+## **Fine-Grained Flag Editing**
+
+Many flags that are compatible on linux cannot be found on `edge:flags`, but we can still edit them via a flag file.
+
+::::::steps
+
+- **Edit the flag file**
+
+  ```bash
+  nano ~/.var/app/com.microsoft.Edge/config/edge-flags.conf
+  ```
+
+- **Example flags**
+
+  :::tabs
+  @tab ~/.var/app/com.microsoft.Edge/config/edge-flags.conf
+
+  ```conf
+  --disable-features=ElasticOverscroll
+  ```
+
+  :::
+
+- `Ctrl`+`O` → `Enter` → `Ctrl`+`X` to save file and exit
 
 - **Restart Edge** to apply the flag.
 
