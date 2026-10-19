@@ -166,6 +166,21 @@ curl https://raw.githubusercontent.com/sinelaw/fresh/refs/heads/master/scripts/i
 
 ```
 
+@tab ::devicon:bash:: Bash default editor
+
+```bash
+export EDITOR=fresh
+export VISUAL=fresh
+```
+
+@tab ::devicon:fish:: fish default editor
+
+```fish
+set -Ux VISUAL fresh
+set -Ux EDITOR fresh
+set -Ux SUDO_EDITOR fresh
+```
+
 :::
 
 ## CLI
