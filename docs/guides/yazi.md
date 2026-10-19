@@ -82,26 +82,6 @@ run  = "cd ~/.dotfiles"
 desc = "Go to .dotfiles"
 ```
 
-@tab ~/.config/yazi/theme.toml
-
-```toml
-# Partial override — only [which] is changed; everything else uses yazi defaults.
-# Fixes the low-contrast g/which-key cheatsheet popup. Neutral dark palette.
-
-[which]
-cols = 3
-# raised panel above the terminal background so the popup stands out
-mask            = { bg = "#1e2228" }
-# the highlighted next-key candidate(s) — gold accent, bold
-cand            = { fg = "#dbbc7f", bold = true }
-# remaining keys of a pending multi-key sequence — neutral grey
-rest            = { fg = "#8a8f98" }
-# the action description text — neutral off-white for readability
-desc            = { fg = "#c5c8d0" }
-separator       = "  "
-separator_style = { fg = "#6b7280" }
-```
-
 @tab ~/.config/yazi/yazi.toml
 
 ```toml
@@ -202,7 +182,7 @@ Check `yazi`'s [Quick Start](https://yazi-rs.github.io/docs/quick-start/) for mo
 
 ### **Custom navigation shortcuts**
 
-These optional configs extend the `g` (go-to) shortcuts with quick jumps to common directories, plus a high-contrast cheatsheet popup. The `theme.toml` uses a neutral dark palette for the `[which]` popup.
+These optional configs extend the `g` (go-to) shortcuts with quick jumps to common directories.
 
 | Keys      | Jumps to          |
 | --------- | ----------------- |
@@ -220,8 +200,6 @@ These optional configs extend the `g` (go-to) shortcuts with quick jumps to comm
 :::tip
 `g` + `i` (`~/Installations`) and `g` + `w` (`~/Projects`) point to ==custom folders==. Create them with `mkdir ~/Installations ~/Projects`, or edit those two paths in `keymap.toml` to suit your own setup.
 :::
-
-The `theme.toml` below is a ==partial== override — it changes only the `[which]` popup, so other elements are `yazi` default.
 
 ::::details Custom config files
 
@@ -286,26 +264,6 @@ desc = "Go to Projects"
 on   = [ "g", "." ]
 run  = "cd ~/.dotfiles"
 desc = "Go to .dotfiles"
-```
-
-@tab ~/.config/yazi/theme.toml
-
-```toml
-# Partial override — only [which] is changed; everything else uses yazi defaults.
-# Fixes the low-contrast g/which-key cheatsheet popup. Neutral dark palette.
-
-[which]
-cols = 3
-# raised panel above the terminal background so the popup stands out
-mask            = { bg = "#1e2228" }
-# the highlighted next-key candidate(s) — gold accent, bold
-cand            = { fg = "#dbbc7f", bold = true }
-# remaining keys of a pending multi-key sequence — neutral grey
-rest            = { fg = "#8a8f98" }
-# the action description text — neutral off-white for readability
-desc            = { fg = "#c5c8d0" }
-separator       = "  "
-separator_style = { fg = "#6b7280" }
 ```
 
 :::
