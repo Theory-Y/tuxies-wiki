@@ -73,3 +73,94 @@ Credit: Debugged with Claude
 - The storm itself (15 interrupts/s even while awake) looks like an `i2c-hid` quirk on this board; a future BIOS/firmware update may calm it. Disarming it as a wakeup source is enough to fix sleep either way.
 
 ::::
+
+## **ProArt Button** does nothing
+
+The button next to the power key opens ProArt Creator Hub on Windows. On Linux it is ==silent==: the keyboard sends a code the kernel driver does not turn into a key, so no desktop, keybind tool or `keyd` can see it.
+
+The fix is a small background service that reads the keyboard directly and runs a command of your choice when the button is pressed.
+
+::::steps
+
+- **Allow your user to read the keyboard**
+
+  Only root can read the raw keyboard by default. This udev rule lets the `input` group (which your user is in) read it too:
+
+  ```bash
+  sudo tee /etc/udev/rules.d/70-proart-key.rules <<'EOF'
+  KERNEL=="hidraw*", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="19b6", GROUP="input", MODE="0640"
+  EOF
+  sudo udevadm control --reload && sudo udevadm trigger --subsystem-match=hidraw
+  ```
+
+- **Create the listener**
+
+  Save this as `~/.local/bin/proart-key`. Change `ACTION` to whatever you want the button to run. The example toggles the [Dank ASUS Control](https://github.com/aier9500/DankAsusControl) popout; `["rog-control-center"]` would open ROG Control Center instead.
+
+  ```python
+  #!/usr/bin/env python3
+  import glob, os, subprocess
+
+  KBD_HID_ID = "HID_ID=0003:00000B05:000019B6"
+  ACTION = ["dms", "ipc", "call", "widget", "toggle", "dankAsusControlCenter"]
+
+  dev = next(
+      "/dev/" + p.split("/")[4]
+      for p in glob.glob("/sys/class/hidraw/*/device/uevent")
+      if KBD_HID_ID in open(p).read()
+  )
+  fd = os.open(dev, os.O_RDONLY)
+  while True:
+      if os.read(fd, 64)[:2] == b"\x5a\x8b":
+          subprocess.Popen(ACTION, start_new_session=True)
+  ```
+
+  ```bash
+  chmod +x ~/.local/bin/proart-key
+  ```
+
+- **Run it at login**
+
+  ```bash
+  mkdir -p ~/.config/systemd/user
+  tee ~/.config/systemd/user/proart-key.service <<'EOF'
+  [Unit]
+  Description=ProArt key listener
+  After=graphical-session.target
+  PartOf=graphical-session.target
+
+  [Service]
+  ExecStart=%h/.local/bin/proart-key
+  Restart=always
+  RestartSec=3
+
+  [Install]
+  WantedBy=graphical-session.target
+  EOF
+  systemctl --user daemon-reload
+  systemctl --user enable --now proart-key.service
+  ```
+
+- **Verify**
+
+  Press the button. If nothing happens, check the service:
+
+  ```bash
+  systemctl --user status proart-key
+  ```
+
+::::
+
+:::tip Other ASUS laptops
+The `idProduct` (`19b6`) and `HID_ID` are for the ProArt P16's keyboard. On another model, find yours with `grep HID_ID /sys/class/hidraw/*/device/uevent` (the one whose `HID_NAME` says `ITE`) and swap both values.
+:::
+
+::::details How the button was traced (technical detail)
+
+Credit: Debugged with Claude
+
+- `libinput debug-events` and `evtest` showed nothing on press: the button never becomes an input event.
+- Reading the keyboard's `hidraw` node as root printed `5a 8b 00` on press and `5a 00 00` on release. `0x5a` is the ASUS vendor report, `0x8b` the button's code.
+- The `hid-asus` kernel driver has no mapping for `0x8b`, so it drops the report. Until a kernel adds one, reading `hidraw` directly is the only way to see it.
+
+::::

@@ -62,6 +62,11 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **ProArt button section added to `proart-p16-2025.md` (2026-10-24)** — the button sends an
+  unmapped `hid-asus` report (`5a 8b`), invisible to evdev/keyd. New `## ProArt Button does
+  nothing` section: udev rule, `hidraw` listener script, user service, verify step, details block
+  with the trace. Example action toggles the Dank ASUS Control DMS popout. No image yet.
+
 - **Repo cleanup — zips, assets, graphify (2026-10-03)**
   - `HubApps.zip` was corrupt in git and on the live site. `.gitattributes` forced text mode on
     every file, so git stripped two `\r` bytes from the zip at commit. Fix: `*.zip binary`, and
