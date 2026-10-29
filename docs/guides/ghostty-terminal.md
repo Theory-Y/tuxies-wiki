@@ -34,6 +34,9 @@ window-height = 40
 
 # restore window state across launches: default | never | always
 window-save-state = never
+
+# ask before closing a tab, split, or window: true | false | always
+confirm-close-surface = always
 ```
 
 :::
@@ -174,6 +177,24 @@ window-height = 40
 
 ```ini
 window-save-state = never
+```
+
+:::
+
+## **Close Confirmation**
+
+`confirm-close-surface` decides whether `ghostty` asks before closing a tab, split, or window.
+
+- `true` (default) asks only when a program is still running, such as `vim` or an update.
+- `false` never asks.
+- `always` asks every time, even at an empty prompt. This guards against a stray `Ctrl`+`Shift`+`W` or a misclick on the close button.
+
+:::code-tabs
+
+@tab ~/.config/ghostty/config.ghostty
+
+```ini
+confirm-close-surface = always
 ```
 
 :::
