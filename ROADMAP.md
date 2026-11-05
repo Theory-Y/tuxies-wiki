@@ -62,6 +62,14 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **`aiers-fedora.md` pruned to one pick per need (2026-11-04)** — Hyprland + DMS
+  ([hypr-dms](https://github.com/aier9500/hypr-dms)) leads the desktop section; Gnome is the
+  fallback; Niri links dropped. Ghostty is the one terminal; Kitty, bash prompt, yazi and Editor's
+  choice moved to one collapsed Extras block. New fastfetch download
+  (`assets/aiers-fedora/aiers-fastfetch-config.zip`, source in `assets/aiers-fedora/aiers-fedora/`).
+  Gaze steps gain the DMS lock screen password-first fix, moved from hypr-dms. `proart-p16-2025.md`
+  gains a tip pointing Dank ASUS Control users at its one-command `proart-key` installer.
+
 - **ProArt button section added to `proart-p16-2025.md` (2026-10-24)** — the button sends an
   unmapped `hid-asus` report (`5a 8b`), invisible to evdev/keyd. New `## ProArt Button does
   nothing` section: udev rule, `hidraw` listener script, user service, verify step, details block

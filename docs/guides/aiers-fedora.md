@@ -5,13 +5,13 @@ permalink: /guides/aiers-fedora/
 tags:
   - Beginner
   - Fedora
+  - Hyprland
   - Gnome
-  - Niri
 contributors:
   - aier
 ---
 
-:::info My personal Fedora setup — the full checklist I follow, plus a couple of fixes I always apply. This one is written for me, so the explanations are short.
+:::info My personal Fedora setup, one pick per need. Written for me, so the explanations are short. Optional extras sit at the bottom.
 :::
 
 ## **First Steps**
@@ -19,23 +19,46 @@ contributors:
 - [Fedora Guide](/linux-guides/fedora/)
 - [Keyd](/guides/key-remapping-with-keyd/)
 
-## **Further Setup**
+## **Desktop**
 
-### **Dev stuff**
+### **Hyprland + DMS**
 
-- [Terminal customisation](/guides/terminal-customisation/)
-- [ghostty-terminal](/guides/ghostty-terminal/)
-- [kitty-terminal](/guides/kitty-terminal/)
-- [yazi](/guides/yazi/)
+- [hypr-dms](https://github.com/aier9500/hypr-dms)
 
-### **Apps**
+  :::info Hyprland with DankMaterialShell (DMS): the bar, launcher, lock screen and settings app. Install DMS and link one folder; DMS Settings covers the rest.
+  :::
 
-- [Editor's choice](/linux-apps/editors-choice/)
+### **Gnome** as a fallback
+
+- [Gnome Guide](/linux-guides/gnome/)
+- [Further Gnome Customisation](/guides/gnome-further-customisation/)
+
+## **Terminal**
+
+- [Ghostty](/guides/ghostty-terminal/)
+
+  :::info The terminal DMS sets up and colours to match the wallpaper.
+  :::
+
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+
+  :::info Prints system info next to a logo.
+  :::
+
+  :::tip My config
+  [Download the zip](/assets/aiers-fedora/aiers-fastfetch-config.zip), extract it, and save `config.jsonc` to `~/.config/fastfetch/config.jsonc`.
+  :::
+
+## **Apps**
+
 - [Essentials](/linux-apps/essentials/)
 
-### **Misc**
+## **Face Unlock**
 
-- Facial Recognition with [Gaze](https://gaze.gundulabs.com/)
+- [Gaze](https://gaze.gundulabs.com/)
+
+  :::info Face unlock for Linux, like Windows Hello.
+  :::
 
 ::::details Install steps
 
@@ -82,24 +105,41 @@ contributors:
 
   Try in the terminal: `sudo echo test`.
 
+- **Skip the face wait on the DMS lock screen**
+
+  The DMS lock screen waits for face recognition to fail before it checks a typed password. Copy its login rules and put the password first:
+
+  ```bash
+  cd ~/.local/state/DankMaterialShell/pam
+  cp dankshell dankshell-gaze
+  $EDITOR dankshell-gaze
+  ```
+
+  Move the `pam_unix.so` line above the `pam_gaze.so` line:
+
+  ```ini
+  auth    sufficient  pam_unix.so nullok try_first_pass
+  auth    sufficient  pam_gaze.so
+  ```
+
+  Then pick the file in DMS Settings → Lock Screen → Authentication → `Custom…`.
+
 :::
 
 ::::
 
-## **Desktop / Hardware-Dependent**
+## **Hardware**
 
-### **Niri**
-
-- My [niri-dms](https://github.com/aier9500/niri-dms) and [niri-noctalia](https://github.com/aier9500/niri-noctalia).
-
-### **Gnome**
-
-- [Gnome Guide](/linux-guides/gnome/)
-- [Further Gnome Customisation](/guides/gnome-further-customisation/)
-
-### **Hardware**
-
-- [Logitech Linux Setup](/guides/logitech-linux-setup/)
 - [ProArt P16 2025](/guides/proart-p16-2025/)
+- [Logitech Linux Setup](/guides/logitech-linux-setup/)
 - [External Resources](/guides/external-resources/#hardware/)
   - Touchpad scrolling speed fix
+
+:::details Extras
+
+- [Editor's choice](/linux-apps/editors-choice/) — more apps worth a look
+- [Kitty](/guides/kitty-terminal/) — an alternative terminal
+- [Terminal customisation](/guides/terminal-customisation/) — `bash` prompt, autorun `fastfetch`
+- [yazi](/guides/yazi/) — terminal file manager
+
+:::
