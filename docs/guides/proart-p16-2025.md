@@ -80,6 +80,15 @@ The button next to the power key opens ProArt Creator Hub on Windows. On Linux i
 
 The fix is a small background service that reads the keyboard directly and runs a command of your choice when the button is pressed.
 
+:::tip Using [Dank ASUS Control](https://github.com/aier9500/DankAsusControl)?
+Its [`proart-key`](https://github.com/aier9500/DankAsusControl/tree/main/proart-key) folder installs this listener, set to open the plugin's popout, in one command:
+
+```bash
+~/.config/DankMaterialShell/plugins/dankAsusControlCenter/proart-key/install.sh
+```
+
+:::
+
 ::::steps
 
 - **Allow your user to read the keyboard**
