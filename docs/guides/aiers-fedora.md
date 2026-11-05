@@ -28,6 +28,11 @@ contributors:
   :::info Hyprland with DankMaterialShell (DMS): the bar, launcher, lock screen and settings app. Install DMS and link one folder; DMS Settings covers the rest.
   :::
 
+- [Fcitx5](/guides/fcitx5-customisation/) _(Chinese input)_
+
+  :::info hypr-dms installs Fcitx5 with Rime and starts it at login. Add Rime in Fcitx5 Configuration to type Chinese.
+  :::
+
 ### **Gnome** as a fallback
 
 - [Gnome Guide](/linux-guides/gnome/)
@@ -58,66 +63,35 @@ contributors:
 
 :::steps
 
-- **Add the repo and install**
+- **Install**
 
-  Hopefully Gaze will be packaged into the `fedora` or `terra` in the future when mature. For now, we import the repo manually.
+  The script adds the Gaze repo, installs Gaze and its settings app, and starts the face service.
 
   ```bash
-  sudo rpm --import https://packages.gundulabs.com/keys/gundulabs-repo.asc
-  sudo tee /etc/yum.repos.d/gundulabs.repo > /dev/null << 'EOF'
-  [gundulabs]
-  name=Gundu Labs
-  baseurl=https://packages.gundulabs.com/rpm/fedora/$releasever/$basearch
-  enabled=1
-  gpgcheck=1
-  repo_gpgcheck=1
-  gpgkey=https://packages.gundulabs.com/keys/gundulabs-repo.asc
-  EOF
-  sudo dnf makecache
-  sudo dnf install gaze gaze-gui
+  curl -fsSL https://gaze.gundulabs.com/install.sh | sh
   ```
 
 - **Reboot**
 
-- **Start the `gazed` daemon**
+- **Never wait for the camera**
+
+  By default the password prompt waits until face recognition gives up. This runs both at once: ==look at the camera or just type==. A wrong password, or Enter on an empty field, gives the camera a second look.
 
   ```bash
-  sudo systemctl enable --now gazed
+  sudo authselect enable-feature with-face-simultaneous
+  sudo authselect enable-feature with-face-retry
   ```
 
-- **Select the Gaze `authselect` profile**
+  The DMS lock screen follows this when Settings → Lock Screen → Authentication is `Auto`: type your password, or press Enter on the empty field to use your face.
 
-  `with-face-simultaneous` allows you to input password the same time the facial recognition is firing.
+- **Add your face**
 
-  ```bash
-  sudo authselect select gaze with-face-simultaneous with-silent-lastlog --force
-  ```
+  Open Gaze from the launcher and enrol your face. Test it in a terminal: `sudo echo test`.
 
-- **Configure & Test**
+:::
 
-  Set up face in the Gaze GUI, along with tweaking some of its settings.
-
-  Try in the terminal: `sudo echo test`.
-
-- **Skip the face wait on the DMS lock screen**
-
-  The DMS lock screen waits for face recognition to fail before it checks a typed password. Copy its login rules and put the password first:
-
-  ```bash
-  cd ~/.local/state/DankMaterialShell/pam
-  cp dankshell dankshell-gaze
-  $EDITOR dankshell-gaze
-  ```
-
-  Move the `pam_unix.so` line above the `pam_gaze.so` line:
-
-  ```ini
-  auth    sufficient  pam_unix.so nullok try_first_pass
-  auth    sufficient  pam_gaze.so
-  ```
-
-  Then pick the file in DMS Settings → Lock Screen → Authentication → `Custom…`.
-
+:::tip Uninstall
+`gaze uninstall` removes Gaze and restores your previous login settings. Add `--keep-data` to keep your enrolled face.
 :::
 
 ::::
