@@ -37,13 +37,7 @@ contributors:
 
 - [Ghostty](/guides/ghostty-terminal/)
 
-  :::info The terminal DMS sets up and colours to match the wallpaper.
-  :::
-
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
-
-  :::info Prints system info next to a logo.
-  :::
 
   :::tip My config
   [Download the zip](/assets/aiers-fedora/aiers-fastfetch-config.zip), extract it, and save `config.jsonc` to `~/.config/fastfetch/config.jsonc`.
@@ -131,15 +125,10 @@ contributors:
 ## **Hardware**
 
 - [ProArt P16 2025](/guides/proart-p16-2025/)
-- [Logitech Linux Setup](/guides/logitech-linux-setup/)
-- [External Resources](/guides/external-resources/#hardware/)
-  - Touchpad scrolling speed fix
 
-:::details Extras
+## **Extras**
 
 - [Editor's choice](/linux-apps/editors-choice/) — more apps worth a look
 - [Kitty](/guides/kitty-terminal/) — an alternative terminal
 - [Terminal customisation](/guides/terminal-customisation/) — `bash` prompt, autorun `fastfetch`
 - [yazi](/guides/yazi/) — terminal file manager
-
-:::
