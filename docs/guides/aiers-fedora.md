@@ -82,7 +82,16 @@ contributors:
   sudo authselect enable-feature with-face-retry
   ```
 
-  The DMS lock screen follows this when Settings → Lock Screen → Authentication is `Auto`: type your password, or press Enter on the empty field to use your face.
+- **Password first on the DMS lock screen**
+
+  The DMS lock screen still waits for the camera before it checks a typed password. This makes a copy of its login rules with the password checked first:
+
+  ```bash
+  cd ~/.local/state/DankMaterialShell/pam
+  sed -e '/pam_gaze.so/d' -e 's/^\(auth.*pam_unix.so.*\)$/\1\nauth        sufficient                                   pam_gaze.so/' dankshell > dankshell-gaze
+  ```
+
+  Pick `dankshell-gaze` in DMS Settings → Lock Screen → Authentication → `Custom…`. A typed password unlocks at once; Enter on the empty field uses your face.
 
 - **Add your face**
 

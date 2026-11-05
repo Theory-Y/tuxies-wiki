@@ -67,9 +67,9 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
   fallback; Niri links dropped. Ghostty is the one terminal; Kitty, bash prompt, yazi and Editor's
   choice moved to one collapsed Extras block. New fastfetch download
   (`assets/aiers-fedora/aiers-fastfetch-config.zip`, source in `assets/aiers-fedora/aiers-fedora/`).
-  Gaze installs via its one-line script; `with-face-simultaneous` + `with-face-retry` replace the
-  DMS lock screen's custom password-first PAM file (DMS on `Auto` follows system auth), and
-  `gaze uninstall` is the exit. Fcitx5 entry for Chinese input. `proart-p16-2025.md`
+  Gaze installs via its one-line script; `with-face-simultaneous` + `with-face-retry` for sudo and
+  polkit; `gaze uninstall` is the exit. The DMS lock screen keeps its own password-first PAM copy
+  (one `sed` command): simultaneous mode still made a typed password wait there. Fcitx5 entry for Chinese input. `proart-p16-2025.md`
   gains a tip pointing Dank ASUS Control users at its one-command `proart-key` installer.
 
 - **ProArt button section added to `proart-p16-2025.md` (2026-10-24)** — the button sends an
