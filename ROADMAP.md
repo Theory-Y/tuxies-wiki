@@ -62,6 +62,12 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Completed
 
+- **ProArt button dropped from the wiki (2026-11-11)** — the `proart-p16-2025.md` section
+  (udev rule, Python listener, systemd unit) was too hard for the audience and niche. Dank ASUS
+  Control's README now owns it whole, including the other-model ID tip, and no longer links back.
+  The wiki mentions Dank ASUS Control nowhere, to keep it lean. Supersedes the 2026-10-24 and
+  2026-11-04 entries below. Plan: `action-plans/proart-link-cleanup.md`.
+
 - **`aiers-fedora.md` pruned to one pick per need (2026-11-04)** — Hyprland + DMS
   ([hypr-dms](https://github.com/aier9500/hypr-dms)) leads the desktop section; Gnome is the
   fallback; Niri links dropped. Ghostty is the one terminal; Kitty, bash prompt, yazi and Editor's
