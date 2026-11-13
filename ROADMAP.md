@@ -9,6 +9,10 @@ Legend: 🔴 dangerous / data-loss · 🟠 broken command · 🟡 missing step /
 
 ## Open
 
+- 🔵 **80/20 cut-down — plan awaiting approval** — core series keeps what 80% of beginners need;
+  blog posts keep niche topics, each cut to what 80% of that niche needs; the rest is deleted.
+  45 pages → 27. Plan: `action-plans/wiki-80-20-cutdown.md`. Nothing executed.
+
 - 🔵 **Hardware video acceleration — Intel tab unverified** — AMD and NVIDIA tabs in `fedora.md`
   verified on Fedora 44 by probing VA-API through `libva`. AMD (Radeon 890M), before _and_ after:
   stock Mesa exposes only JPEG, VP9 and AV1 — no H.264, no HEVC; `mesa-va-drivers-freeworld` adds
